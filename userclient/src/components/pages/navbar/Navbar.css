@@ -1,0 +1,16 @@
+.NavigationBarMainContainer {
+  display: flex;
+  flex-direction: column;
+}
+.NavigationBarMainContainer .NavigationBarImage img {
+  width: 20%;
+  height: 100% !important;
+}
+.NavigationBarMainContainer .navbar {
+  width: 100%;
+}
+
+.navbar-nav {
+  justify-content: center !important;
+  width: 100%;
+}/*# sourceMappingURL=Navbar.css.map */

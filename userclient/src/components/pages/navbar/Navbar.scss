@@ -1,0 +1,17 @@
+.NavigationBarMainContainer{
+    display: flex;
+    flex-direction: column;
+    .NavigationBarImage{
+        img{
+            width: 20%;
+            height: 100% !important;
+        }
+    }
+    .navbar{
+        width: 100%;
+    }
+}
+.navbar-nav{
+    justify-content: center !important;
+    width: 100%;
+}
