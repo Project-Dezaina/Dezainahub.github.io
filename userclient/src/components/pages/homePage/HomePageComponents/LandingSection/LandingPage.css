@@ -1,4 +1,9 @@
-.LandingPageMainComponents {
-  margin: -126px;
+.LandingPageMainComponents .landingPageContainer .LandingPageImageSec {
+  background-image: url("./Image//LandingPageImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding: 50vh;
 }/*# sourceMappingURL=LandingPage.css.map */
