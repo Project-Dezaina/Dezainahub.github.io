@@ -10,6 +10,7 @@ const LandingPage = () => {
         <div className="LandingPageImageSec">
              {/* <img src={LandingPageImg}  alt="" />  */}
            {/* <h1 >Hey</h1> */}
+           
       
    </div>
             {<div className ='landing-card'>
@@ -45,6 +46,7 @@ const LandingPage = () => {
             </div>
         </div>
       </div> }
+
            
           
     
@@ -55,6 +57,7 @@ const LandingPage = () => {
       </div>
     // </div>
   )
+  
 }
 
 export default LandingPage
