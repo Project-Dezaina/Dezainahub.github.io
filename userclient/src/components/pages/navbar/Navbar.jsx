@@ -1,10 +1,7 @@
 import React from "react";
 import "./Navbar.css";
-<<<<<<< HEAD
 import NavbarImg from "./Image/NavLogo.png";
-=======
-import NavbarImg from './ImageM/NavLogo.png';
->>>>>>> 0e2229994452802932099cc275977dd2ef78886f
+
 const Navbar = () => {
   return (
     <div className="NavigationBarMainContainer">
