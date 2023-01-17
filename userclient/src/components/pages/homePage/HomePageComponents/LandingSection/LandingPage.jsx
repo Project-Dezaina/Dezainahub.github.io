@@ -1,6 +1,6 @@
 import React from 'react'
 import "./LandingPage.css"
-import LandingPageImg from "./Image/LandingPageImage.png";
+// import LandingPageImg from "./Image/LandingPageImage.png";
 
 
 const LandingPage = () => {
