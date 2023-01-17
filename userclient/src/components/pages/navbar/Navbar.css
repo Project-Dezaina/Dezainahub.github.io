@@ -1,37 +1,24 @@
-.NavigationBarMainContainer {
-  display: flex;
+.NavigationBarMainContainer .NavigationBarImage {
   position: relative;
   z-index: 1;
-  flex-direction: column;
-}
-.NavigationBarMainContainer .NavigationBarImage {
-  padding: 1em;
-  background-color: rgba(34, 37, 28, 0.75);
-}
-.NavigationBarMainContainer .navbar-class {
-  background-color: rgba(34, 37, 28, 0.6) !important;
-}
-.NavigationBarMainContainer .navbar-class ul {
-  gap: 3rem;
-}
-.NavigationBarMainContainer .navbar-class ul .nav-item a {
-  color: aliceblue !important;
-  font-size: large;
-}
-.NavigationBarMainContainer .NavigationBarImage {
-  z-index: 1 !important;
 }
 .NavigationBarMainContainer .NavigationBarImage img {
-  width: 20%;
-  height: 100% !important;
-  padding: 0rem 0;
+  width: 250px;
+  height: 100%;
 }
-.NavigationBarMainContainer .navbar {
-  width: 100%;
+.NavigationBarMainContainer .NavigationBarImage li .nav-item {
+  text-align: center;
 }
 
-.navbar-nav {
-  justify-content: center !important;
+.container-fluid {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.container-fluid .navbar-nav {
   gap: 2rem;
+}
+.container-fluid .nav-item-last a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=Navbar.css.map */
