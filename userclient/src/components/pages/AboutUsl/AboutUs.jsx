@@ -15,6 +15,7 @@ const AboutUs = () => {
           creative design firm specializing in custom web design and graphic
           design services. We offer a complete range of graphic design services,
           including branding and logo design, website design and print design</p>
+          <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
     </div>
