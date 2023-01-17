@@ -1,9 +1,8 @@
 
 import './App.css';
-import AboutUs from './components/pages/aboutUs/AboutUs';
+import AboutUs from './components/pages/AboutUsl/AboutUs';
 import Homepage from './components/pages/homePage/Homepage';
 import Navbar from './components/pages/navbar/Navbar';
-// import AboutUs from './components/pages/aboutUs/aboutUs';
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
     <Navbar/> 
     <Homepage/>
     <AboutUs/>
-    {/* <AboutUS/> */}
    </div>
   );
 }
