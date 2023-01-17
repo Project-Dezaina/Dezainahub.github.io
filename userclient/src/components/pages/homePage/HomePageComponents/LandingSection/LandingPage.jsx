@@ -1,63 +1,59 @@
-import React from 'react'
-import "./LandingPage.css"
+import React from "react";
+import "./LandingPage.css";
 // import LandingPageImg from "./Image/LandingPageImage.png";
+// import Icon1 from "../../../navbar/Image/landingpage/Icon1.png"
+// import Icon2 from "../../../navbar/Image/landingpage/Icon2.png"
+// import Icon3 from "../../../navbar/Image/landingpage/Icon3.png"
 
-
+import Icon1 from "./Image/Icon1.png";
+import Icon2 from "./Image/Icon2.png";
+import Icon3 from "./Image/Icon3.png";
 const LandingPage = () => {
   return (
-    <div className='LandingPageMainComponents'>
+    <div className="LandingPageMainComponents">
       <div className="landingPageContainer">
         <div className="LandingPageImageSec">
-             {/* <img src={LandingPageImg}  alt="" />  */}
-           {/* <h1 >Hey</h1> */}
-           
-      
-   </div>
-            {<div className ='landing-card'>
-        
-
-        <div class="landing-card1">
-            <div class="card-head"><h1>This is card Head</h1></div>
-            <div class="card-body">This is card body This is card body
-                This is card body
-                This is card body
-                This is card body
-                This is card body
+          {/* <img src={LandingPageImg}  alt="" />  */}
+          {/* <h1 >Hey</h1> */}
+        </div>
+        <div className="landing-card container">
+          <div className="landing-card1">
+            <div className="card-Icon"><img src={Icon1} /></div>
+            <div class="card-head">
+              <h2>CORPORATE BRANDING</h2>
             </div>
-        </div>
-        <div class="landing-card2">
-            <div class="card-head"><h1>This is card Head</h1></div>
-            <div class="card-body">This is card body This is card body
-                This is card body
-                This is card body
-                This is card body
-                This is card body
-                This is card body
+            <div class="card-body">
+              This is card body This is card body This is card body This is card
+              body This is card body This is card body
             </div>
-        </div>
-        <div class="landing-card3">
-            <div class="card-head"><h1>This is card Head</h1></div>
-            <div class="card-body">This is card body This is card body
-                This is card body
-                This is card body
-                This is card bodyThis is card body
-                This is card body
-                This is card body
+          </div>
+          <div className="landing-card1">
+            <div className="card-Icon"><img src={Icon2} /></div>
+            <div class="card-head">
+              <h2>ADVERTISING CONTENT</h2>
             </div>
-        </div>
-      </div> }
-
-           
-          
-    
-        </div>
-        <div className="LandingPageContent">
-
+            <div class="card-body">
+              This is card body This is card body This is card body This is card
+              body This is card body This is card body This is card body
+            </div>
+          </div>
+          <div className="landing-card1">
+            <div className="card-Icon"><img src={Icon3} /></div>
+            <div class="card-head">
+              <h2>DESIGN RENDERING</h2>
+            </div>
+            <div class="card-body">
+              This is card body This is card body This is card body This is card
+              body This is card bodyThis is card body This is card body This is
+              card body
+            </div>
+          </div>
         </div>
       </div>
+      <div className="LandingPageContent"></div>
+    </div>
     // </div>
-  )
-  
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;

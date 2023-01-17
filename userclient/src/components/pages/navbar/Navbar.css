@@ -1,7 +1,22 @@
 .NavigationBarMainContainer {
   display: flex;
-  z-index: 11;
+  position: relative;
+  z-index: 1;
   flex-direction: column;
+}
+.NavigationBarMainContainer .NavigationBarImage {
+  padding: 1em;
+  background-color: rgba(34, 37, 28, 0.75);
+}
+.NavigationBarMainContainer .navbar-class {
+  background-color: rgba(34, 37, 28, 0.6) !important;
+}
+.NavigationBarMainContainer .navbar-class ul {
+  gap: 3rem;
+}
+.NavigationBarMainContainer .navbar-class ul .nav-item a {
+  color: aliceblue !important;
+  font-size: large;
 }
 .NavigationBarMainContainer .NavigationBarImage {
   z-index: 1 !important;
