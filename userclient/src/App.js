@@ -3,7 +3,7 @@ import './App.css';
 import AboutUs from './components/pages/AboutUsl/AboutUs';
 import Homepage from './components/pages/homePage/Homepage';
 import Navbar from './components/pages/navbar/Navbar';
-import OurServices from './components/pages/ourServices/OurServices';
+import OurServices from './components/pages/OurServicesV1/OurServices';
 
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
     <Homepage/>
     <AboutUs/>
     <OurServices/>
-
    </div>
   );
 }
