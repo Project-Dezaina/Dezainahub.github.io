@@ -1,10 +1,13 @@
 import React from "react";
 import "./LandingPage.css";
 // import LandingPageImg from "./Image/LandingPageImage.png";
-import Icon1 from "../../../navbar/Image/landingpage/Icon1.png"
-import Icon2 from "../../../navbar/Image/landingpage/Icon2.png"
-import Icon3 from "../../../navbar/Image/landingpage/Icon3.png"
+// import Icon1 from "../../../navbar/Image/landingpage/Icon1.png"
+// import Icon2 from "../../../navbar/Image/landingpage/Icon2.png"
+// import Icon3 from "../../../navbar/Image/landingpage/Icon3.png"
 
+import Icon1 from "./Image/Icon1.png";
+import Icon2 from "./Image/Icon2.png";
+import Icon3 from "./Image/Icon3.png";
 const LandingPage = () => {
   return (
     <div className="LandingPageMainComponents">
