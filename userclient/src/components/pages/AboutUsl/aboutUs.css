@@ -7,15 +7,32 @@
 .aboutUsImageSec img {
   width: 50rem;
   height: 30rem;
+  border-radius: 10px;
+  box-shadow: 0px 7px 7px gray;
+}
+.aboutUsImageSec .about-float-icon {
+  background-color: rgb(255, 249, 249);
+  border-radius: 10%;
+  box-shadow: 10px;
+  padding-top: 80px;
+  width: 15rem;
+  height: 15rem;
 }
 .aboutUsImageSec .About-Content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.aboutUsImageSec .About-Content h1 {
-  margin-top: -10px;
-}
-.aboutUsImageSec .About-Content h6 {
+.aboutUsImageSec .About-Content h4 {
   color: #13b8dd;
+}
+.aboutUsImageSec .aboutUsContainer {
+  width: 50%;
+  height: 50%;
+}
+.aboutUsImageSec .aboutUsContainer img {
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  height: 50%;
 }/*# sourceMappingURL=aboutUs.css.map */
