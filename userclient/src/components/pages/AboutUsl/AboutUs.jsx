@@ -1,6 +1,8 @@
 import React from "react";
 import "./aboutUs.css";
 import about from "../navbar/ImageM/aboutUs/S4.jpeg";
+  
+
 
 const AboutUs = () => {
   return (
@@ -50,13 +52,17 @@ const AboutUs = () => {
           <div className="about-icon"></div>
           {/* <div className="About-Content1"> */} {/* <h6>Who are we</h6> */}
           <h4> About Us </h4>
-          <h1> We are the solution for your Graphic Designing Problems. </h1>
+          <h1> We are the <span className="Sol">Solution</span> for your Graphic Designing <span className="Sol">Problem</span></h1>
           <p>
             We are the perfect solution for your graphic design needs.Our team
             of experienced professionals have the knowledge and expertise to
             create stunning visuals that will help you stand out from the
             competition.
           </p>
+          <div className="aboutUs-button">
+
+          <button class="button-40" role="button">Let's Discuss</button>
+          </div>
         </div>
       </div>
     </div>
