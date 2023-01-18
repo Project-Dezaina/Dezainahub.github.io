@@ -1,10 +1,10 @@
 import React from "react";
-import "./ourServices.css"
+import "./OurServices.css"
 import S1 from "../navbar/ImageM/ourServices/s1.png";
 import S2 from "../navbar/ImageM/ourServices/s2.png";
 import S3 from "../navbar/ImageM/ourServices/s3.png";
 
-const ourServices = () => {
+const OurServices = () => {
   return (
     <div className="ourServicesContainer">
       <div className="ourServicesUsImageSecContainer">
@@ -84,4 +84,4 @@ const ourServices = () => {
   );
 };
 
-export default ourServices;
+export default OurServices;
