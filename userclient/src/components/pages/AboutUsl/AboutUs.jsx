@@ -12,8 +12,8 @@ const AboutUs = () => {
           <div className="about-float-window">
             <div className="about-float-icon">
               <svg
-                width="32"
-                height="32"
+                width="50"
+                height="50"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -50,12 +50,15 @@ const AboutUs = () => {
           <div className="about-icon"></div>
           {/* <div className="About-Content1"> */} {/* <h6>Who are we</h6> */}
           <h4> About Us </h4>
-          <h1> We are the solution for your Graphic Designing Problems. </h1>
+          <h1> We are the <span>solution</span> for your Graphic Designing <span>Problems</span>. </h1>
           <p>
             We are the perfect solution for your graphic design needs.Our team
             of experienced professionals have the knowledge and expertise to
             create stunning visuals that will help you stand out from the
             competition.
+            <p>We are the perfect solution for your graphic design needs.Our team
+            of experienced professionals have the knowledge and expertise to
+            create stunning visuals that will help you stand out from <span>...Read More</span></p>
           </p>
         </div>
       </div>
