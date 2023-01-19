@@ -1,21 +1,21 @@
 import "./App.css";
-import AboutUs from "./components/pages/AboutUsl/AboutUs";
+// import AboutUs from "./components/pages/NewAbout/AboutUs";
 import Homepage from "./components/pages/homePage/Homepage";
-import Navbar from "./components/pages/navbar/Navbar";
-import OurServices from "./components/pages/OurServicesV1/OurServices";
-// import Footer from "./components/pages/Footer/Footer";
-import Footer from "./components/pages/NewFooter/Footer"
-import Testimonial from "./components/pages/Testimonial/Testimonial";
+// import Navbar from "./components/pages/navbar/Navbar";
+// import OurServices from "./components/pages/OurServicesV1/OurServices";
+// import Footer from "./components/pages/NewFooter/Footer"
+// import Testimonial from "./components/pages/NewTestimonial/Testimonial";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+    
       <Homepage />
-      <AboutUs />
-      <OurServices />
-      <Testimonial />
-      <Footer />
+      {/* <Navbar /> */}
+      {/* <AboutUs /> */}
+      {/* <OurServices /> */}
+      {/* <Testimonial /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
