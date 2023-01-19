@@ -1,9 +1,13 @@
 import React from 'react'
+import "./Testimonial.css";
 
-const testimonial = () => {
+const Testimonial = () => {
   return (
-    <div>
-      <div>What Our Clients Say About Us</div>
+    <div className='Testimonial-Main container'>
+    <div className='Testimonial-heading'>
+      <div className='Testimonial-Topic'>Testimonial</div>
+      <div className='Testimonial-head'>What Our <span>Clients</span> Say About Us</div>
+      </div>
       <div>
     <div className='Client-1'>
         <div>Image</div>
@@ -12,23 +16,10 @@ const testimonial = () => {
         <div>Tareef</div>
     </div>
     
-    <div className='Client-1'>
-        <div>Image</div>
-        <div>Client Name</div>
-        <div>Star</div>
-        <div>Tareef</div>
-    </div>
-
     
-    <div className='Client-1'>
-        <div>Image</div>
-        <div>Client Name</div>
-        <div>Star</div>
-        <div>Tareef</div>
-    </div>
       </div>
     </div>
   )
 }
 
-export default testimonial
+export default Testimonial
