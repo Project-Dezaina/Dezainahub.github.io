@@ -1,3 +1,4 @@
+
 .aboutUsImageSec{
     
     display: flex;
@@ -39,9 +40,12 @@
             text-align: center;
             margin-left: 0.8rem;
         }
-        
+
     }
+    h1{
+        margin-left: 0.5rem;
     }
+
         .About-Content {
             // display: grid;
             display: flex;
@@ -80,11 +84,12 @@ span {
                 width: 50%;
                 height: 50%;
 
-                img{
-                    flex-direction: column;
-            justify-content: flex-end;
-            width: 50%;
-            height: 50%;
+    
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 
                 }
             }
@@ -150,3 +155,4 @@ span {
             }
         }
     }
+

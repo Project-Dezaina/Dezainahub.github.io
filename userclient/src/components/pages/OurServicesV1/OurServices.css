@@ -18,30 +18,42 @@
 }
 .ourServices-container h4 {
   color: #aadcf7;
+  box-shadow: 50%;
 }
-.ourServices-container .service-head h3 {
+.ourServices-container h4 .Service-sec {
+  color: #fff;
+  margin-right: 10vw;
+  display: flex;
+  align-items: center;
+}
+.ourServices-container h4 .Service-sec span {
+  color: #5AC5FF;
+}
+.ourServices-container h4 h4 {
+  color: #aadcf7;
+}
+.ourServices-container h4 .service-head h3 {
   color: #fff;
 }
-.ourServices-container .service-content {
+.ourServices-container h4 .service-content {
   display: flex;
   flex-direction: row;
   gap: 5rem;
 }
-.ourServices-container .service-content .service1-side, .ourServices-container .service-content .service2-side {
+.ourServices-container h4 .service-content .service1-side, .ourServices-container h4 .service-content .service2-side {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
-.ourServices-container .service-content .icon1 svg {
+.ourServices-container h4 .service-content .icon1 svg {
   height: 50px !important;
   width: 70px !important;
 }
-.ourServices-container .service-content .service-head-content p {
+.ourServices-container h4 .service-content .service-head-content p {
   width: 15rem;
   color: #fff;
 }
-
-.button-10 {
+.ourServices-container .button-10 {
   position: relative;
   margin: 0;
   padding: 0.1rem;
@@ -63,12 +75,10 @@
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-
-button:hover {
+.ourServices-container button:hover {
   -webkit-animation: sh0 0.5s ease-in-out both;
           animation: sh0 0.5s ease-in-out both;
 }
-
 @-webkit-keyframes sh0 {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
@@ -86,7 +96,6 @@ button:hover {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
-
 @keyframes sh0 {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
@@ -104,15 +113,14 @@ button:hover {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
-button:hover span {
+.ourServices-container button:hover span {
   -webkit-animation: storm 0.7s ease-in-out both;
           animation: storm 0.7s ease-in-out both;
   -webkit-animation-delay: 0.06s;
           animation-delay: 0.06s;
 }
-
-button::before,
-button::after {
+.ourServices-container button::before,
+.ourServices-container button::after {
   content: "";
   position: absolute;
   right: 0;
@@ -126,17 +134,14 @@ button::after {
   z-index: -1;
   transform: translate(100%, -25%) translate3d(0, 0, 0);
 }
-
-button:hover::before,
-button:hover::after {
+.ourServices-container button:hover::before,
+.ourServices-container button:hover::after {
   opacity: 0.15;
   transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-
-button:hover::before {
+.ourServices-container button:hover::before {
   transform: translate3d(50%, 0, 0) scale(0.9);
 }
-
-button:hover::after {
+.ourServices-container button:hover::after {
   transform: translate(50%, 0) scale(1.1);
 }/*# sourceMappingURL=OurServices.css.map */
