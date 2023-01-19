@@ -1,7 +1,7 @@
 .aboutUsImageSec {
   display: flex;
   flex-direction: row;
-  padding: 0rem 5rem;
+  padding: 0rem 5rem 0rem 5rem;
   margin-top: 10rem;
 }
 .aboutUsImageSec .abt-img {
