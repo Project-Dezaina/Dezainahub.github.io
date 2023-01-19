@@ -59,6 +59,7 @@ const AboutUs = () => {
             <p>We are the perfect solution for your graphic design needs.Our team
             of experienced professionals have the knowledge and expertise to
             create stunning visuals that will help you stand out from <span>...Read More</span></p>
+            <p></p>
           </p>
         </div>
       </div>
