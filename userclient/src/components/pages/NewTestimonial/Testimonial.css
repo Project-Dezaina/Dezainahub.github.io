@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   margin: 20vh auto 30vh auto;
+  font-family: "Montserrat";
 }
 .Testimonial-Main .Testimonial-heading {
   width: 50rem;
@@ -16,7 +17,7 @@
   font-weight: 500;
 }
 .Testimonial-Main .Testimonial-heading .Testimonial-head {
-  width: 30rem;
+  width: 35rem;
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -25,12 +26,39 @@
   color: #4bace0;
 }
 .Testimonial-Main .Client-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   background-color: #fff;
-  padding: 30px;
+  padding: 20px;
   width: 21rem;
   height: 22rem;
   border-radius: 1.2rem;
   box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+.Testimonial-Main .Client-1 .Client-Img img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.Testimonial-Main .Client-1 .Client-Name h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.Testimonial-Main .Client-1 .Client-Rate {
+  margin-top: -0.8rem;
+}
+.Testimonial-Main .Client-1 .Client-Words {
+  margin-top: 1rem;
+}
+.Testimonial-Main .Client-1 .Client-Words p {
+  width: 18rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -52,4 +80,4 @@
     width: 20rem;
     height: 25rem;
   }
-}/*# sourceMappingURL=testimonial.css.map */
+}/*# sourceMappingURL=Testimonial.css.map */

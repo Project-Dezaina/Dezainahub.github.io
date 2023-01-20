@@ -5,32 +5,32 @@
     display: flex;
     flex-direction: row;
     .Landing-Content {
-        width: 80vw;
-        // border: 2px solid red;
-        display: flex;
-        flex-direction: column;
-        // place-items: center;
-        place-content: center;
-        // align-items: center;
-        // align-self: center;
-        // align-content: center;
-        // justify-content: center;
-        // justify-items: center;
-    //   margin-top: 12rem;
+      width: 80vw;
+      // border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      // place-items: center;
+      place-content: center;
+      // align-items: center;
+      // align-self: center;
+      // align-content: center;
+      // justify-content: center;
+      // justify-items: center;
+      //   margin-top: 12rem;
       padding: 50px;
       padding-left: 0px;
       color: black;
-      h1{
+      h1 {
         // width: 40vw;
         margin-right: -8rem;
         font-size: 3rem;
         position: relative;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
-        color:#364154;
-            span{
-                color:#25C1EC;
-            }
+        color: #364154;
+        span {
+          color: #25c1ec;
+        }
       }
       p {
         width: 30rem;
@@ -217,7 +217,7 @@
         align-items: flex-end;
         justify-items: flex-end;
         justify-content: flex-end;
-       
+
         img {
           bottom: 0px;
           right: 0rem;
@@ -272,81 +272,77 @@
   }
 }
 
-
-@media screen and (max-width:900px){
-    .LandingPageMainComponents{
-        
-        .landingPageContainer {
-            flex-direction: column-reverse;
-            .Landing-Content{
-              text-align: center;
-              h1{
-                padding-top: 4rem;
-                font-size: 2rem;
-                text-align: center;
-
-              }
-              p{
-                margin-left: 1rem;
-              }
-              .landing-buttons {
-                // margin-left: 5rem;
-                margin-right: -7rem !important;
-                align-items: center;
-                place-content: center;
-                button {
-                  font-size: 10px !important;
-                  height: 30px;
-                }
-              }
-            }
-            .Landing-img-box {
-              .landing-box{
-        width: 20rem;
-        height: 20rem;
-        bottom: -1rem;
-        right: -0.75rem;
-              }
-              .landing-img{
-                top: 3rem;
-          left: -4rem;
-          // width: 50px !important;
-          // height: 30px !important;
-          img {
-            width:23rem !important;
-            height: 20rem !important;
-            
-          }
-              }
-              .landing-small-box{
-                width: 12rem;
-                height: 4rem;
-                // background-color: rgb(255, 255, 255);
-        // width: 15rem;
-        // border-radius: 1.2em;
-        // position: absolute;
-        // padding: 15px;
-        z-index: 25;
-        bottom: -2.5rem;
-        left: 0rem;
-                
-                .small-box-content{
-                  padding-left: 10px;
-                  gap: 1rem;
-                  .SmallBoxContentSvg{
-                    svg{
-                      width: 1.5rem;
-                    }
-                  }
-                  .SmallBocContentP{
-                    p{
-                  font-size: 10px !important;
-                }
-                }
-              }
-              }
-            }
+@media screen and (max-width: 900px) {
+  .LandingPageMainComponents {
+    .landingPageContainer {
+      flex-direction: column-reverse;
+      .Landing-Content {
+        text-align: center;
+        h1 {
+          padding-top: 4rem;
+          font-size: 2rem;
+          text-align: center;
         }
-        
+        p {
+          margin-left: 1rem;
+        }
+        .landing-buttons {
+          // margin-left: 5rem;
+          margin-right: -7rem !important;
+          align-items: center;
+          place-content: center;
+          button {
+            font-size: 10px !important;
+            height: 30px;
+          }
+        }
+      }
+      .Landing-img-box {
+        margin-top: 4rem;
+        .landing-box {
+          width: 20rem;
+          height: 25rem;
+          bottom: 2rem;
+          right: -0.75rem;
+        }
+        .landing-img {
+          top: -4rem;
+          left: -4rem;
+          // width: 20rem !important;
+          // height: 3px !important;
+          img {
+            width: 23rem !important;
+            height: 20rem !important;
+          }
+        }
+        .landing-small-box {
+          width: 12rem;
+          height: 4rem;
+          // background-color: rgb(255, 255, 255);
+          // width: 15rem;
+          // border-radius: 1.2em;
+          // position: absolute;
+          // padding: 15px;
+          z-index: 25;
+          bottom: 5rem;
+          left: 0rem;
+
+          .small-box-content {
+            padding-left: 10px;
+            gap: 1rem;
+            .SmallBoxContentSvg {
+              svg {
+                width: 1.5rem;
+              }
             }
+            .SmallBocContentP {
+              p {
+                font-size: 10px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

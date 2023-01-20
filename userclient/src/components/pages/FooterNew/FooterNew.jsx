@@ -1,8 +1,8 @@
 import React from 'react'
-import "./Footer.css";
+import "./FooterNew.css";
 import Dezainalogo from "../navbar/image/Logo-Name.png"
 
-const NewFooter = () => {
+const FooterNew = () => {
   return (
     <div className="Footer-Main">
       <div className="container">
@@ -51,4 +51,4 @@ const NewFooter = () => {
   );
 }
 
-export default NewFooter
+export default FooterNew
