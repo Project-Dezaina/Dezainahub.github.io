@@ -51,23 +51,29 @@ const AboutUs = () => {
         <div className="About-Content">
           <div className="about-icon"></div>
           {/* <div className="About-Content1"> */} {/* <h6>Who are we</h6> */}
-          <h4> About Us </h4>
-
-          <h1> We are the <span>solution</span> for your Graphic Designing <span>Problems</span>. </h1>
-
+          <h6> About Us </h6>
+          <h1>
+            {" "}
+            We are the <span>solution</span> for your Graphic Designing{" "}
+            <span>Problems</span>.{" "}
+          </h1>
           <p>
             We are the perfect solution for your graphic design needs.Our team
             of experienced professionals have the knowledge and expertise to
             create stunning visuals that will help you stand out from the
             competition Yes.
-            <p>We are the perfect solution for your graphic design needs.Our team
-            of experienced professionals have the knowledge and expertise to
-            create stunning visuals that will help you stand out from <span>...Read More</span></p>
+            <p>
+              We are the perfect solution for your graphic design needs.Our team
+              of experienced professionals have the knowledge and expertise to
+              create stunning visuals that will help you stand out from{" "}
+              <span>...Read More</span>
+            </p>
             <p></p>
           </p>
           <div className="aboutUs-button">
-
-          <button class="button-40" role="button">Let's Discuss</button>
+            <button class="button-40" role="button">
+              Know More
+            </button>
           </div>
         </div>
       </div>

@@ -4,8 +4,9 @@ import AboutUs from "../NewAbout/AboutUs";
 // import Homepage from "./components/pages/homePage/Homepage";
 import Navbar from "../navbar/Navbar";
 import OurServices from "../OurServicesV1/OurServices";
-import Footer from "../NewFooter/Footer"
 import Testimonial from "../NewTestimonial/Testimonial";
+import NewFooter from "../NewFooter/Footer"
+// import FooterNew from "../FooterNew/FooterNew"
 
 const Homepage = () => {
   return (
@@ -16,7 +17,8 @@ const Homepage = () => {
       <AboutUs />
       <OurServices />
       <Testimonial />
-      <Footer />
+      <NewFooter/>
+      {/* <FooterNew/> */}
     </div>
   )
 }

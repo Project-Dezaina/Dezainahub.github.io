@@ -1,30 +1,21 @@
 .Testimonial-Main {
-    // position: absolute;
-    // top: -8rem;
-    // min-width: 75vw;
-    // min-height: 35vh;
-    // background-color: aqua;
     padding: 50px;
     color: #364154;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    // gap: 0rem !important;
     margin: 20vh auto 30vh auto;
-    // border-radius: 1.2em;
-    // box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+    font-family: 'Montserrat';
     .Testimonial-heading {
       width: 50rem;
       .Testimonial-Topic {
         color: #4bace0;
         font-size: 18px;
-  
-        // font-family: 'Montserrat';
         font-weight: 500;
       }
       .Testimonial-head {
-        width: 30rem;
+        width: 35rem;
         font-size: 3.5rem;
         // font-family: 'Montserrat';
         font-weight: 700;
@@ -35,14 +26,49 @@
       }
     }
     .Client-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
       background-color: #fff;
-      padding: 30px;
-      // width: 20vw;
-      // height: 45vh;
+      // padding-top: 20px !important;
+      padding: 20px;
       width: 21rem;
       height: 22rem;
       border-radius: 1.2rem;
       box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+      text-align: center;
+      align-items: center;
+      justify-items: center;
+        .Client-Img{
+          img{
+            // border: 2px solid red;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .Client-Name{
+          h3{
+            text-align: center;
+          font-size: 1.7rem;
+          font-weight: 700;
+        }
+        }
+        .Client-Rate {
+          margin-top: -0.8rem;
+          svg{
+            // width: 2rem;
+            // height: 2rem;
+          }
+        }
+        .Client-Words{
+          margin-top: 1rem;
+          p{
+            width: 18rem;
+            text-align: center;
+            font-size: 0.9rem;
+          }
+        }
     }
   }
   

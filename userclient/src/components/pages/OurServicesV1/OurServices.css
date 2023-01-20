@@ -1,9 +1,12 @@
 .ourServices-container {
   margin: 20vh;
   background: #2f455c;
-  padding: 10vw;
+  padding: 5rem;
   border-radius: 2rem;
   display: flex;
+  align-items: center;
+  place-content: center;
+  font-family: "Montserrat";
   flex-direction: row;
   box-shadow: 50%;
 }
@@ -13,50 +16,60 @@
   display: flex;
   align-items: center;
 }
-.ourServices-container .Service-sec span {
-  color: #5AC5FF;
+.ourServices-container .Service-sec h2 {
+  font-size: 3rem;
+  font-weight: 700;
 }
-.ourServices-container h4 {
-  color: #aadcf7;
-  box-shadow: 50%;
+.ourServices-container .Service-sec h2 span {
+  color: #5ac5ff;
 }
-.ourServices-container h4 .Service-sec {
-  color: #fff;
-  margin-right: 10vw;
-  display: flex;
-  align-items: center;
+.ourServices-container .Service-sec h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ccedff;
 }
-.ourServices-container h4 .Service-sec span {
-  color: #5AC5FF;
-}
-.ourServices-container h4 h4 {
-  color: #aadcf7;
-}
-.ourServices-container h4 .service-head h3 {
-  color: #fff;
-}
-.ourServices-container h4 .service-content {
+.ourServices-container .service-content {
   display: flex;
   flex-direction: row;
   gap: 5rem;
 }
-.ourServices-container h4 .service-content .service1-side, .ourServices-container h4 .service-content .service2-side {
+.ourServices-container .service-content .service1-side,
+.ourServices-container .service-content .service2-side {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
-.ourServices-container h4 .service-content .icon1 svg {
-  height: 50px !important;
-  width: 70px !important;
+.ourServices-container .service-content .service1-side .Content,
+.ourServices-container .service-content .service2-side .Content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-.ourServices-container h4 .service-content .service-head-content p {
+.ourServices-container .service-content .service-head h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.ourServices-container .service-content .icon1 {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.ourServices-container .service-content .icon1 svg {
+  height: 50px !important;
+  width: 50px !important;
+}
+.ourServices-container .service-content .service-head-content p {
+  font-size: 0.6rem;
   width: 15rem;
   color: #fff;
 }
-.ourServices-container .button-10 {
+.ourServices-container .Services-button {
+  margin-top: 1rem;
+}
+.ourServices-container .Services-button button {
   position: relative;
   margin: 0;
-  padding: 0.1rem;
+  padding: 1em 2em;
   outline: none;
   text-decoration: none;
   display: flex;
@@ -65,17 +78,16 @@
   cursor: pointer;
   border: none;
   text-transform: uppercase;
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px;
-  color: #2F455C;
-  font-weight: 3rem;
-  font-size: 15px;
-  font-family: inherit;
+  background-color: #ccedff;
+  border-radius: 1.2em;
+  color: #2f455c;
+  font-weight: 500;
+  font-size: 10px;
   z-index: 0;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-.ourServices-container button:hover {
+.ourServices-container .Services-button button:hover {
   -webkit-animation: sh0 0.5s ease-in-out both;
           animation: sh0 0.5s ease-in-out both;
 }
@@ -113,14 +125,14 @@
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
-.ourServices-container button:hover span {
+.ourServices-container .Services-button button:hover span {
   -webkit-animation: storm 0.7s ease-in-out both;
           animation: storm 0.7s ease-in-out both;
   -webkit-animation-delay: 0.06s;
           animation-delay: 0.06s;
 }
-.ourServices-container button::before,
-.ourServices-container button::after {
+.ourServices-container .Services-button button::before,
+.ourServices-container .Services-button button::after {
   content: "";
   position: absolute;
   right: 0;
@@ -134,14 +146,55 @@
   z-index: -1;
   transform: translate(100%, -25%) translate3d(0, 0, 0);
 }
-.ourServices-container button:hover::before,
-.ourServices-container button:hover::after {
+.ourServices-container .Services-button button:hover::before,
+.ourServices-container .Services-button button:hover::after {
   opacity: 0.15;
   transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-.ourServices-container button:hover::before {
+.ourServices-container .Services-button button:hover::before {
   transform: translate3d(50%, 0, 0) scale(0.9);
 }
-.ourServices-container button:hover::after {
+.ourServices-container .Services-button button:hover::after {
   transform: translate(50%, 0) scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  .ourServices-container {
+    padding: 3rem;
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ourServices-container .Service-sec {
+    margin-right: 0px;
+  }
+  .ourServices-container .Service-sec h2 {
+    font-size: 2.2rem;
+  }
+  .ourServices-container .service-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .ourServices-container .service-content .service1-side,
+.ourServices-container .service-content .service2-side {
+    gap: 3rem;
+  }
+  .ourServices-container .service-content .service1-side .Content,
+.ourServices-container .service-content .service2-side .Content {
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .ourServices-container .service-content .icon1 svg {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  .ourServices-container .service-content .service-head-content p {
+    font-size: 0.6rem;
+  }
+  .ourServices-container .service-content .service-head-content .Services-button {
+    padding-left: 25%;
+  }
 }/*# sourceMappingURL=OurServices.css.map */
