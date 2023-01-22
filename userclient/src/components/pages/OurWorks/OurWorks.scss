@@ -1,42 +1,108 @@
-.OurWork-Main { 
-    
-        
-    .work-cards{
-        .Work-card-body{
-
-            display: grid;
-    grid-template-columns: 15rem 15rem;
-    gap: 5rem;
-    // padding: ;
-
+.OurWork-Main {
+    font-family: 'Montserrat';
+    h1{
+        font-weight: 700;
     }
-    
-    
-        
-    
-            .Work-Photo{
+  .work-cards {
+    .Work-card-body {
+      display: grid;
+    //   grid-template-columns: 15rem 15rem;
+      gap: 5rem;
+        .New-Card{
+            // border: 2px solid red;
+            // background-color: aqua;
+            border-radius: 1.2em;
+            box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+            width: 40rem;
+            padding: 20px;
+            // position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            .card-img{
+                width: 100%;
+                // border: 2px solid green;
+                border-radius: 1.2em 1.2em 0px 1.2em;
+                overflow: hidden;
+                height: 12rem;
 
+            }
+            .NewCard-body{
+                // border: 2px solid red;
                 
-               
-                
-               
-                width: 20rem;
-                height: 100px;
-                margin: rem 0rem;
-                display: grid;
-                grid-column: span;
-                
+                h3{
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                        }
 
-           
+        }
+    }
+    .New-Card-V2{
+        // border: 2px solid red;
+        // background-color: aqua;
+        border-radius: 1.2em;
+        box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+        width: 40rem;
+        padding: 20px;
+        // position: relative;
+        display: flex;
+        flex-direction: column;
+        // gap: 1.5rem;
+        .card-img{
+            border-radius: 1.2em 1.2em 0px 1.2em;
+            // overflow: hidden;
+
+            // height: 12rem;
+            // position: relative;
+            z-index: -2222222;
+            img{
+                border-radius: 1.2em 1.2em 0px 1.2em;
+                width: 100%;
+                height: 192px;
+                overflow: hidden;
+                
             }
             
         }
+        .NewCard-body{
+            // border: 2px solid red;
+            .Body-Header{
+                // width: 200%;
+                background-color: transparent;
+                width: 100%;
+                // padding-top: 13px !important;
+                // position: absolute;
+                z-index: 10px;
+                // padding-bottom: -5px !important;
+                // padding: 10px 5px 0.1px 10px;
+            }
+            h3{
+                border-radius:0  1.2rem 0  0;
+                
+                padding: 10px 5px 0.1px 10px;
+                background-color: #fff;
+                margin-top: -2.45rem;
+                // position: static;
+                // z-index: 2222222222;
+                width: 50%;
+                font-size: 1.5rem;
+                font-weight: 500;
+                // border: 1px solid black;
+                
+                margin-bottom: 1rem;
+                    }
+
     }
-    
-
-
-img {
-    width: 200px;
-    
-    // height: 100%;
 }
+
+    // .Work-Photo {
+    //   width: 20rem;
+    //   height: 100px;
+    //   margin: rem 0rem;
+    //   display: grid;
+    //   grid-column: span;
+    // }
+  }
+}
+}
+

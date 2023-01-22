@@ -1,1 +1,62 @@
-.OurWork-Main .work-cards .Work-card-body{display:grid;grid-template-columns:15rem 15rem;gap:5rem}.OurWork-Main .work-cards .Work-Photo{width:20rem;height:100px;margin:rem 0rem;display:grid;grid-column:span}img{width:200px}
+.OurWork-Main {
+  font-family: "Montserrat";
+}
+.OurWork-Main h1 {
+  font-weight: 700;
+}
+.OurWork-Main .work-cards .Work-card-body {
+  display: grid;
+  gap: 5rem;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card {
+  border-radius: 1.2em;
+  box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+  width: 40rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card .card-img {
+  width: 100%;
+  border-radius: 1.2em 1.2em 0px 1.2em;
+  overflow: hidden;
+  height: 12rem;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card .NewCard-body h3 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 {
+  border-radius: 1.2em;
+  box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+  width: 40rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .card-img {
+  border-radius: 1.2em 1.2em 0px 1.2em;
+  z-index: -2222222;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .card-img img {
+  border-radius: 1.2em 1.2em 0px 1.2em;
+  width: 100%;
+  height: 192px;
+  overflow: hidden;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .NewCard-body .Body-Header {
+  background-color: transparent;
+  width: 100%;
+  z-index: 10px;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .NewCard-body h3 {
+  border-radius: 0 1.2rem 0 0;
+  padding: 10px 5px 0.1px 10px;
+  background-color: #fff;
+  margin-top: -2.45rem;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=OurWorks.css.map */
