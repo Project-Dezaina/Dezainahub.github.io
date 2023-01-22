@@ -53,6 +53,9 @@
   justify-content: flex-end;
   margin: 0 0 0 7rem;
 }
+.aboutUsImageSec .About-Content h6 {
+  color: #13b8dd;
+}
 .aboutUsImageSec .About-Content h1 {
   width: 30rem;
   font-size: 1.9rem;

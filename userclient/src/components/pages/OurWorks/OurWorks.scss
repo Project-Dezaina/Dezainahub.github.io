@@ -1,0 +1,42 @@
+.OurWork-Main { 
+    
+        
+    .work-cards{
+        .Work-card-body{
+
+            display: grid;
+    grid-template-columns: 15rem 15rem;
+    gap: 5rem;
+    // padding: ;
+
+    }
+    
+    
+        
+    
+            .Work-Photo{
+
+                
+               
+                
+               
+                width: 20rem;
+                height: 100px;
+                margin: rem 0rem;
+                display: grid;
+                grid-column: span;
+                
+
+           
+            }
+            
+        }
+    }
+    
+
+
+img {
+    width: 200px;
+    
+    // height: 100%;
+}

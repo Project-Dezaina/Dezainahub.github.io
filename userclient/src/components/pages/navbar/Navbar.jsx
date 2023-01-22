@@ -46,7 +46,7 @@ const Navbar = () => {
                     {/* <a class="nav-link" href="/">
                       Check Status
                     </a> */}
-                    <button class="c-button c-button--gooey"> Hover me
+                    <button class="c-button c-button--gooey"> Check Status
   <div class="c-button__blobs">
   <div></div>
   <div></div>
