@@ -5,8 +5,9 @@ import AboutUs from "../NewAbout/AboutUs";
 import Navbar from "../navbar/Navbar";
 import OurServices from "../OurServicesV1/OurServices";
 import Testimonial from "../NewTestimonial/Testimonial";
-import NewFooter from "../NewFooter/Footer"
+import Blogs from "../Blog/Blog";
 // import FooterNew from "../FooterNew/FooterNew"
+import NewFooter from "../NewFooter/Footer";
 
 const Homepage = () => {
   return (
@@ -17,8 +18,9 @@ const Homepage = () => {
       <AboutUs />
       <OurServices />
       <Testimonial />
-      <NewFooter/>
+      <Blogs />
       {/* <FooterNew/> */}
+      <NewFooter/>
     </div>
   )
 }

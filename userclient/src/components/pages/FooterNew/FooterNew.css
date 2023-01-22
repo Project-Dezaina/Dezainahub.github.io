@@ -1,1 +1,94 @@
-/*# sourceMappingURL=FooterNew.css.map */
+.V1Footer-Main {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  min-height: 60vh;
+  bottom: 0rem;
+  font-family: "Montserrat";
+}
+.V1Footer-Main .Newsletter {
+  padding: 5rem;
+  background-color: #364154;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.V1Footer-Main .Newsletter .Newsletter-V2 {
+  display: flex !important;
+  flex-direction: row !important;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.V1Footer-Main .Newsletter .Newsletter-topic {
+  color: #4BACE0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.V1Footer-Main .Newsletter .Newsletter-head {
+  width: 30vw;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.V1Footer-Main .Newsletter .Newsletter-head span {
+  color: #4BACE0;
+}
+.V1Footer-Main .Newsletter .button-box {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  place-items: center;
+}
+.V1Footer-Main .Newsletter .button-box .button {
+  background-color: #ccedff;
+  color: #364154;
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 24px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.V1Footer-Main .Bellow-Newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.V1Footer-Main .Bellow-Newsletter .Footer {
+  display: flex;
+  flex-direction: row;
+  gap: 15vw;
+  place-content: center;
+  flex-flow: row;
+  margin-bottom: 1.25rem;
+}
+.V1Footer-Main .Bellow-Newsletter .Footer .About-Footer .Footer-Heading {
+  color: #364154;
+}
+.V1Footer-Main .Bellow-Newsletter .Footer-base {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  gap: 40vw;
+  color: rgb(175, 175, 175);
+  align-items: center;
+}
+.V1Footer-Main .Bellow-Newsletter .Footer-base img {
+  width: 15vw;
+}
+
+hr {
+  margin: -3rem !important;
+  width: 100vw !important;
+  display: flex;
+  place-self: center;
+}
+
+.Footer-Heading {
+  color: #364154;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}/*# sourceMappingURL=FooterNew.css.map */

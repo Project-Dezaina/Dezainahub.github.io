@@ -13,7 +13,13 @@ const NewFooter = () => {
               Book a Free <p><span>consultancy</span> Today</p>
             </div>
           </div>
-          <div className="button">Get a Call</div>
+          <div className='button-box'>
+          <button type='button'>
+          {/* <div className="button"> */}
+          Get a Call
+          {/* </div> */}
+          </button>
+          </div>
         </div>
 
         <div className="Bellow-Newsletter">
