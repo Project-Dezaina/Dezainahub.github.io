@@ -23,7 +23,7 @@ const LandingPage = () => {
               Explore More
               <div class="icon">
                 <svg
-                  height="24"
+                  height="24"o
                   width="24"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
