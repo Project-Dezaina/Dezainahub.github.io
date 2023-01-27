@@ -51,7 +51,7 @@ const AboutUs = () => {
         <div className="About-Content">
           <div className="about-icon"></div>
           {/* <div className="About-Content1"> */} {/* <h6>Who are we</h6> */}
-          <h6> About Us </h6>
+          <h4> About Us </h4>
           <h1>
             {" "}
             We are the <span>solution</span> for your Graphic Designing{" "}

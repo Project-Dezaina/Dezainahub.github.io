@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 import LandingPage from './HomePageComponents/LandingSection/LandingPage'
 import AboutUs from "../NewAbout/AboutUs";
-// import Homepage from "./components/pages/homePage/Homepage";
 import Navbar from "../navbar/Navbar";
+import OurWorks from "../OurWorks/OurWorks"
 import OurServices from "../OurServicesV1/OurServices";
 import Testimonial from "../NewTestimonial/Testimonial";
-import Blogs from "../Blog/Blog";
+// import NewFooter from "../NewFooter/Footer"
 // import FooterNew from "../FooterNew/FooterNew"
+import Blogs from "../Blog/Blog"
 import NewFooter from "../NewFooter/Footer";
 
 const Homepage = () => {
@@ -14,11 +15,12 @@ const Homepage = () => {
     <div className='homePageMainContainer'>
       <Navbar />
       <LandingPage/>
-      {/* <Homepage /> */}
       <AboutUs />
       <OurServices />
+      <OurWorks/>
       <Testimonial />
-      <Blogs />
+      <Blogs/>
+      {/* <NewFooter/> */}
       {/* <FooterNew/> */}
       <NewFooter/>
     </div>
