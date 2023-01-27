@@ -5,7 +5,15 @@
     font-weight: 700;
   }
   .work-cards {
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    align-content: center;
+    justify-items: center;
+    place-items: center;
+    // text-align: center;
     .Work-card-body {
+      
         .ourWorksBio{
             padding-left: 3rem;
             h3{

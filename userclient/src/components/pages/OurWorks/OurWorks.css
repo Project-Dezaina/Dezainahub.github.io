@@ -1,1 +1,201 @@
-.OurWork-Main{font-family:"Montserrat";margin:5rem auto}.OurWork-Main h1{font-weight:700}.OurWork-Main .work-cards .Work-card-body{display:grid;grid-template-columns:repeat(2, 1fr);gap:3rem;grid-template-areas:"a d" "b c"}.OurWork-Main .work-cards .Work-card-body .ourWorksBio{padding-left:3rem}.OurWork-Main .work-cards .Work-card-body .ourWorksBio h3{width:20rem;font-weight:700 !important;font-size:2.5rem;color:#364154;line-height:1.2;padding-bottom:.5rem}.OurWork-Main .work-cards .Work-card-body .ourWorksBio h3 span{color:#4bace0}.OurWork-Main .work-cards .Work-card-body .ourWorksBio p{width:27rem;font-size:1rem;margin-bottom:1rem !important}.OurWork-Main .work-cards .Work-card-body #aa{grid-area:a}.OurWork-Main .work-cards .Work-card-body #bb{grid-area:b}.OurWork-Main .work-cards .Work-card-body #cc{grid-area:c}.OurWork-Main .work-cards .Work-card-body #dd{grid-area:d;display:flex;align-items:center}.OurWork-Main .work-cards .Work-card-body .New-Card{grid-area:a;border-radius:1.2em;box-shadow:0px 5px 30px 2px rgba(136,137,137,.25);width:35rem;height:20rem;padding:20px;display:flex;flex-direction:column;gap:1.5rem}.OurWork-Main .work-cards .Work-card-body .New-Card .card-img{width:100%;border-radius:1.2em 1.2em 0px 1.2em;overflow:hidden;height:12rem}.OurWork-Main .work-cards .Work-card-body .New-Card .NewCard-body h3{font-weight:500;margin-bottom:1rem}.OurWork-Main .work-cards .Work-card-body .New-Card-V2{border-radius:1.2em;box-shadow:0px 5px 30px 2px rgba(136,137,137,.25);width:40rem;height:25rem;padding:20px;display:flex;flex-direction:column}.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .card-img{border-radius:1.2em 1.2em 0px 1.2em;z-index:-2222222}.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .card-img img{border-radius:1.2em 1.2em 0px 1.2em;width:100%;height:192px;overflow:hidden}.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .NewCard-body .Body-Header{background-color:rgba(0,0,0,0);width:100%;z-index:10px}.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .NewCard-body h3{border-radius:0 1.2rem 0 0;font-weight:500;padding:10px 5px .1px 20px;background-color:#fff;margin-top:-2.44rem;width:50%;font-size:1.5rem;font-weight:500;margin-bottom:3rem}.OurWork-Main .OurWorks-button button{position:relative;margin:0;padding:1em 2em;outline:none;text-decoration:none;display:flex;justify-content:center;align-items:center;cursor:pointer;border:none;text-transform:uppercase;background-color:#2f455c;border-radius:1.2em;color:#fff;font-weight:500;font-size:15px;z-index:0;overflow:hidden;transition:all .3s cubic-bezier(0.02, 0.01, 0.47, 1)}.OurWork-Main .OurWorks-button button:hover{animation:sh0 .5s ease-in-out both}@keyframes sh0{0%{transform:rotate(0deg) translate3d(0, 0, 0)}25%{transform:rotate(7deg) translate3d(0, 0, 0)}50%{transform:rotate(-7deg) translate3d(0, 0, 0)}75%{transform:rotate(1deg) translate3d(0, 0, 0)}100%{transform:rotate(0deg) translate3d(0, 0, 0)}}.OurWork-Main .OurWorks-button button:hover span{animation:storm .7s ease-in-out both;animation-delay:.06s}.OurWork-Main .OurWorks-button button::before,.OurWork-Main .OurWorks-button button::after{content:"";position:absolute;right:0;bottom:0;width:100px;height:100px;border-radius:50%;background:#fff;opacity:0;transition:transform .15s cubic-bezier(0.02, 0.01, 0.47, 1),opacity .15s cubic-bezier(0.02, 0.01, 0.47, 1);z-index:-1;transform:translate(100%, -25%) translate3d(0, 0, 0)}.OurWork-Main .OurWorks-button button:hover::before,.OurWork-Main .OurWorks-button button:hover::after{opacity:.15;transition:transform .2s cubic-bezier(0.02, 0.01, 0.47, 1),opacity .2s cubic-bezier(0.02, 0.01, 0.47, 1)}.OurWork-Main .OurWorks-button button:hover::before{transform:translate3d(50%, 0, 0) scale(0.9)}.OurWork-Main .OurWorks-button button:hover::after{transform:translate(50%, 0) scale(1.1)}
+.OurWork-Main {
+  font-family: "Montserrat";
+  margin: 5rem auto;
+}
+.OurWork-Main h1 {
+  font-weight: 700;
+}
+.OurWork-Main .work-cards {
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  align-content: center;
+  justify-items: center;
+  place-items: center;
+}
+.OurWork-Main .work-cards .Work-card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  grid-template-areas: "a d" "b c";
+}
+.OurWork-Main .work-cards .Work-card-body .ourWorksBio {
+  padding-left: 3rem;
+}
+.OurWork-Main .work-cards .Work-card-body .ourWorksBio h3 {
+  width: 20rem;
+  font-weight: 700 !important;
+  font-size: 2.5rem;
+  color: #364154;
+  line-height: 1.2;
+  padding-bottom: 0.5rem;
+}
+.OurWork-Main .work-cards .Work-card-body .ourWorksBio h3 span {
+  color: #4BACE0;
+}
+.OurWork-Main .work-cards .Work-card-body .ourWorksBio p {
+  width: 27rem;
+  font-size: 1rem;
+  margin-bottom: 1rem !important;
+}
+.OurWork-Main .work-cards .Work-card-body #aa {
+  grid-area: a;
+}
+.OurWork-Main .work-cards .Work-card-body #bb {
+  grid-area: b;
+}
+.OurWork-Main .work-cards .Work-card-body #cc {
+  grid-area: c;
+}
+.OurWork-Main .work-cards .Work-card-body #dd {
+  grid-area: d;
+  display: flex;
+  align-items: center;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card {
+  grid-area: a;
+  border-radius: 1.2em;
+  box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+  width: 35rem;
+  height: 20rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card .card-img {
+  width: 100%;
+  border-radius: 1.2em 1.2em 0px 1.2em;
+  overflow: hidden;
+  height: 12rem;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card .NewCard-body h3 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 {
+  border-radius: 1.2em;
+  box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+  width: 40rem;
+  height: 25rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .card-img {
+  border-radius: 1.2em 1.2em 0px 1.2em;
+  z-index: -2222222;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .card-img img {
+  border-radius: 1.2em 1.2em 0px 1.2em;
+  width: 100%;
+  height: 192px;
+  overflow: hidden;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .NewCard-body .Body-Header {
+  background-color: transparent;
+  width: 100%;
+  z-index: 10px;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card-V2 .NewCard-body h3 {
+  border-radius: 0 1.2rem 0 0;
+  font-weight: 500;
+  padding: 10px 5px 0.1px 20px;
+  background-color: #fff;
+  margin-top: -2.44rem;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.OurWork-Main .OurWorks-button button {
+  position: relative;
+  margin: 0;
+  padding: 1em 2em;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgb(47, 69, 92);
+  border-radius: 1.2em;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.OurWork-Main .OurWorks-button button:hover {
+  -webkit-animation: sh0 0.5s ease-in-out both;
+          animation: sh0 0.5s ease-in-out both;
+}
+@-webkit-keyframes sh0 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+@keyframes sh0 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+.OurWork-Main .OurWorks-button button:hover span {
+  -webkit-animation: storm 0.7s ease-in-out both;
+          animation: storm 0.7s ease-in-out both;
+  -webkit-animation-delay: 0.06s;
+          animation-delay: 0.06s;
+}
+.OurWork-Main .OurWorks-button button::before,
+.OurWork-Main .OurWorks-button button::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+.OurWork-Main .OurWorks-button button:hover::before,
+.OurWork-Main .OurWorks-button button:hover::after {
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.OurWork-Main .OurWorks-button button:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+.OurWork-Main .OurWorks-button button:hover::after {
+  transform: translate(50%, 0) scale(1.1);
+}/*# sourceMappingURL=OurWorks.css.map */

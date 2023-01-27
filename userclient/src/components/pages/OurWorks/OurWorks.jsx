@@ -78,7 +78,7 @@ const Ourworks = () => {
             <div className="Work-card-body">
             <div className="New-Card" id="aa">
               <div className="card-img">
-                <img src={Img1} alt="" />
+                <img src={Img2} alt="" />
               </div>
               <div className="NewCard-body">
                 <h3>Project Rendering</h3>
@@ -106,7 +106,7 @@ const Ourworks = () => {
 
             <div className="New-Card" id="cc">
               <div className="card-img">
-                <img src={Img1} alt="" />
+                <img src={Img3} alt="" />
               </div>
               <div className="NewCard-body">
                 <div className="Body-Header">

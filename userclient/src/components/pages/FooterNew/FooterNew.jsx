@@ -4,18 +4,24 @@ import Dezainalogo from "../navbar/image/Logo-Name.png"
 
 const FooterNew = () => {
   return (
-    <div className="Footer-Main">
-      <div className="container">
-        <div className="Newsletter">
+    <div className="V1Footer-Main">
+      <div className="Newsletter">
+        <div className="Newsletter-V2 container">
           <div>
             <div className="Newsletter-topic">Lets Discuss</div>
             <div className="Newsletter-head">
-              Book a Free <p><span>consultancy</span> Today</p>
+              Book a Free
+              <p>
+                <span>consultancy</span> Today
+              </p>
             </div>
           </div>
-          <div className="button">Get a Call</div>
+          <div className="button-box">
+            <div className="button">Get a Call</div>
+          </div>
         </div>
-
+      </div>
+      <div className="container">
         <div className="Bellow-Newsletter">
           <div className="Footer">
             <div className="About-Footer">
@@ -35,7 +41,9 @@ const FooterNew = () => {
               <div>Explore More</div>
             </div>
             <div className="Email-Footer">
-              <div className='Footer-Heading'>Not Quite Ready For the Designs?</div>
+              <div className="Footer-Heading">
+                Not Quite Ready For the Designs?
+              </div>
               <div>Email</div>
               <div>Social Media</div>
             </div>
@@ -43,7 +51,9 @@ const FooterNew = () => {
           <hr></hr>
           <div className="Footer-base">
             <div>All rights reserved @2022 by Dezaina.hub</div>
-            <div><img src={Dezainalogo}></img></div>
+            <div>
+              <img src={Dezainalogo}></img>
+            </div>
           </div>
         </div>
       </div>
