@@ -1,0 +1,44 @@
+.ContactUsContainer{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    font-family: Montserrat;
+    padding: 0 3rem;
+.ContactBio{
+  width: 60%;
+  padding: 0 0 0 3rem;
+  
+  h3{
+    color: #4BACE0;
+    font-weight:bold;
+  }
+  h2{
+    color: #2F455C;
+    font-size: 80px;
+    font-weight: bold;
+    width: 60%;
+  }
+
+  
+  
+}
+.ContactForm{
+    width: 30%;
+    .ContactFormContainer{
+ background-color: #F6F8FA;
+ border-radius: 50px;
+ min-height: 80vh;
+ .contactforminputbox{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    ;
+ }
+    }
+}
+}
