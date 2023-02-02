@@ -2,6 +2,7 @@ import "./App.css";
 
 // import Homepage from "./components/pages/homePage/Homepage";
 import AboutPage from "./components/MainPages/AboutPage/AboutPage";
+import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
 import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
 function App() {
   return (
@@ -9,7 +10,11 @@ function App() {
     
       {/* <Homepage /> */}
       {/* <AboutPage/> */}
+      <ContactUSContext>
       <ContactUsPage/>
+
+      </ContactUSContext>
+     {/* <Cstage1/> */}
       
 
      

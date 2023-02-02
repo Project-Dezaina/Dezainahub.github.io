@@ -5,11 +5,13 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    font-family: Montserrat;
-    padding: 0 3rem;
+    font-family: "Montserrat";
+    padding: 0 0 0 3rem;
+   
 .ContactBio{
   width: 60%;
-  padding: 0 0 0 3rem;
+  margin-left: 10rem;
+  // padding: 0 0 0 10rem;
   
   h3{
     color: #4BACE0;
@@ -19,7 +21,10 @@
     color: #2F455C;
     font-size: 80px;
     font-weight: bold;
-    width: 60%;
+    width: 50rem;
+  }
+  p{
+    width: 30rem;
   }
 
   
@@ -27,18 +32,83 @@
 }
 .ContactForm{
     width: 30%;
+    gap: 10rem;
+    margin-right: 20rem;
+    
     .ContactFormContainer{
- background-color: #F6F8FA;
+ background-color: #f0f2f4;
+ 
  border-radius: 50px;
- min-height: 80vh;
+ min-height: 37rem;
+ min-width: 33rem;
+ display: flex;
+//  align-items: center;
+  // text-align: left;
+  // justify-content: center;
+  place-content: center;
+  // justify-items: center;
+  place-items: center;
+ 
+ .contactforminputboxBody{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:20rem;
+  // align-items: center;
+  // text-align: left;
+ 
+ }
+ 
+
  .contactforminputbox{
+  
+  input, textarea {
+   border: none;
+   width: 20rem;
+   border-radius: 0.6em;
+   padding-left: 1rem;
+   font-size: 0.8rem;
+  //  font-weight: 700;
+  }
+  input {
+    height:3rem;
+
+    
+  }
+textarea{
+  padding-top: 0.5rem;
+}
+  label{
+    text-align: left;
+    align-items: left;
+  justify-content: center;
+  width: 20rem;
+  }
+  color: #364154;
+  // font-weight: 600;
+   font-weight: 700;
+
     display: flex;
     flex-direction: column;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    ;
+    // gap: 1rem;
+    width: 20rem;
+    // padding: 1.5rem;
+
  }
     }
 }
+button {
+  
+  margin-top: 0.5rem;
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  background: #4BACE0;
+  color: white;
+  border-radius: 0.6em;
+  width: 20rem;
+  
+ }
+ 
+
 }
