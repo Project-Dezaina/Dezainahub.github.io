@@ -153,7 +153,7 @@ const AboutPage = () => {
       <div className="AboutPageContainer container">
         <div className="AboutHeadContent">
           <div className="HeadContent">
-            <h1>Everything you need to grow your business</h1>
+            <h1>Everything you need to grow your business visually</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's
@@ -246,16 +246,8 @@ const AboutPage = () => {
               What Do<span> We Do ?</span>
             </h1>
             <p>
-              We are the perfect solution for your graphic design needs.Our team
-              of experienced professionals have the knowledge and expertise to
-              create stunning visuals that will help you stand out from the
-              competition Yes.
-              <p>
-                We are the perfect solution for your graphic design needs.Our
-                team of experienced professionals have the knowledge and
-                expertise to create stunning visuals that will help you stand
-                out from{" "}
-              </p>
+            Dezaina.hub is a graphic design business based in Bengaluru, KA. We specialize in creating beautiful, professional, and unique designs that can help your business stand out. Our team of talented designers use the latest tools to create custom logos, brochures, websites, and more. Let us help you take your business to the next level.
+              
             </p>
             <div className="AboutPointsHead">
               <div className="AboutPoints">
