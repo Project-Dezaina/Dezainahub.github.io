@@ -122,14 +122,51 @@
     }
     .HeadContentImage {
       display: flex;
+      flex-direction: column;
       margin-top: 3rem;
-      // place-items: center;
-      // place-content: center;
+    //   place-items: center;
+    //   place-content: center;
       justify-content: center;
-      img {
-        width: 40rem;
-        height: 22rem;
-        border-radius: 1.2em;
+      position: relative;
+      .AboutImage2{
+
+        //   position: relative;
+          display: flex;
+          place-content: center;
+          place-items: center;
+        //   left: 25%;
+
+          img {
+            width: 40rem;
+            height: 22rem;
+            border-radius: 1.2em;
+            // left: 25%;
+            // right: 30%;
+          }
+      }
+      .AboutArrows{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            // place-content: center;
+            gap: 1rem;
+            bottom: -2rem;
+            right: 34.5rem;
+          .ImageArrow{
+            // border: 2px solid red;
+            background-color: #fff;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+            display: flex;
+            place-content: center;
+            place-items: center;
+            svg{
+                width: 3rem;
+                height: 3rem;
+            }
+          }
       }
     }
   }

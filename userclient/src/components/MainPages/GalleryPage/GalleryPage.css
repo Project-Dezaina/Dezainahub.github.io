@@ -1,5 +1,6 @@
 .GalleryPageContent {
-  margin: 0rem;
+  margin-bottom: -12rem;
+  padding: 0px 5rem;
 }
 .GalleryPageContent iframe {
   width: 100%;
