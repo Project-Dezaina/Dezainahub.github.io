@@ -1,21 +1,28 @@
 import "./App.css";
-// import AboutUs from "./components/pages/NewAbout/AboutUs";
-import Homepage from "./components/pages/homePage/Homepage";
-// import Navbar from "./components/pages/navbar/Navbar";
-// import OurServices from "./components/pages/OurServicesV1/OurServices";
-// import Footer from "./components/pages/NewFooter/Footer"
-// import Testimonial from "./components/pages/NewTestimonial/Testimonial";
 
+// import Homepage from "./components/pages/homePage/Homepage";
+// import AboutPage from "./components/MainPages/AboutPage/AboutPage";
+// import ProductPage from "./components/MainPages/ProductPage/ProductPage";
+import ProductPage from "./components/MainPages/ProductPage/ProductPage";
+// import GalleryPage from "./components/MainPages/GalleryPage/GalleryPage";
+// import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
+// import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
 function App() {
   return (
     <div className="App">
     
-      <Homepage />
-      {/* <Navbar /> */}
-      {/* <AboutUs /> */}
-      {/* <OurServices /> */}
-      {/* <Testimonial /> */}
-      {/* <Footer /> */}
+      {/* <Homepage /> */}
+      {/* <AboutPage/> */}
+      <ProductPage/>
+      {/* <GalleryPage/> */}
+      {/* <ContactUSContext>
+      <ContactUsPage/>
+
+      </ContactUSContext> */}
+     {/* <Cstage1/> */}
+      
+
+     
     </div>
   );
 }
