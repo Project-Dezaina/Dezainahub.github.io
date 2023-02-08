@@ -133,30 +133,29 @@
   place-content: center;
 }
 
-.ProductCards {
+.SingleCards {
   margin-top: 3rem;
-}
-.ProductCards .SingleCards {
   background-color: #2F455C;
   border-radius: 1.2em;
   width: 25rem;
-  height: 18rem;
+  height: 18.5rem;
   padding: 25px;
   color: #fff;
 }
-.ProductCards .SingleCards .CardHead {
+.SingleCards .CardHead {
   display: flex;
   gap: 6rem;
   flex-direction: row;
   place-items: center;
 }
-.ProductCards .SingleCards .CardHead .ProductSubHead {
+.SingleCards .CardHead .ProductSubHead {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   place-items: center;
+  color: #fff;
 }
-.ProductCards .SingleCards .CardHead .ProductSVG {
+.SingleCards .CardHead .ProductSVG {
   background-color: #fff;
   width: 4rem;
   height: 4rem;
@@ -165,20 +164,112 @@
   place-content: center;
   place-items: center;
 }
-.ProductCards .SingleCards .CardHead .ProductSVG svg {
+.SingleCards .CardHead .ProductSVG svg {
   width: 2rem;
   height: 2rem;
 }
-.ProductCards .SingleCards .CardBody {
+.SingleCards .CardBody {
   margin: 1.5rem 0rem;
 }
-.ProductCards .SingleCards .CardBase .BaseButton {
+.SingleCards .CardBase {
+  display: flex;
+  gap: 7rem;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+.SingleCards .CardBase .BaseButton {
   color: #2F455C;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 0.8rem !important;
   width: 10rem;
+  height: 2.5rem;
   display: flex;
   place-content: center;
+  place-items: center;
   background-color: #fff;
   border-radius: 1.2em;
-  padding: 0.2rem;
+}
+.SingleCards .CardBase .AddToCartButton .icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+}
+.SingleCards .CardBase .AddToCartButton .add-btn:hover {
+  width: 8rem;
+}
+.SingleCards .CardBase .AddToCartButton .add-btn::before,
+.SingleCards .CardBase .AddToCartButton .add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: #4BACE0;
+}
+.SingleCards .CardBase .AddToCartButton .add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.SingleCards .CardBase .AddToCartButton .add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.SingleCards .CardBase .AddToCartButton .icon-btn:focus {
+  outline: none;
+}
+.SingleCards .CardBase .AddToCartButton .btn-txt {
+  opacity: 0;
+  font-size: 0.8rem !important;
+  margin: 0px 5px !important;
+  transition: opacity 0.2s;
+}
+.SingleCards .CardBase .AddToCartButton .add-btn:hover::before,
+.SingleCards .CardBase .AddToCartButton .add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+.SingleCards .CardBase .AddToCartButton .add-btn:hover .btn-txt {
+  opacity: 1;
+}
+.SingleCards .CardBase .AddToCartButton .add-icon::after,
+.SingleCards .CardBase .AddToCartButton .add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: #4BACE0;
+  overflow: hidden;
+}
+.SingleCards .CardBase .AddToCartButton .add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.SingleCards .CardBase .AddToCartButton .add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.SingleCards .CardBase .AddToCartButton .add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+.SingleCards .CardBase .AddToCartButton .add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
 }/*# sourceMappingURL=ProductPage.css.map */
