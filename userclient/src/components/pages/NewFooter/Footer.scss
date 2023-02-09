@@ -160,20 +160,37 @@
         flex-flow: row;
         margin-bottom: 1.25rem;
         // .About-Footer{
+        //   ul
         // }
-        .Footer-Heading{
-            color: #4BACE0;
-            // color: #fff;
-        }
+          .footerLinks{
+
+            li{
+
+              font-size: 1rem;
+              a{
+                text-decoration: none;
+                color: #fff;
+              }
+              a:hover{
+                color: #4BACE0;
+                // font-size: 1.2rem;
+                // transition: 0.3s ease-out;
+              }
+            }
+          }
+        
     }
     .Footer-base {
         // background-color: #4BACE0;
         display: flex;
         flex-direction:row;
         place-content: center;
-        gap: 40vw;
+        gap: 30vw;
         color: rgb(175, 175, 175);
         align-items: center;
+        .BaseContent{
+          width: 50rem !important;
+        }
         img {
             width: 15vw;
         }
@@ -188,12 +205,24 @@ hr {
 }
 
 .Footer-Heading{
-    color: #364154;
+    color: #4BACE0 !important;
     font-family: Montserrat;
-font-size: 20px;
+font-size: 1.5rem;
 font-weight: 600;
+
+// text-align: center;
 // line-height: 15px;
 // letter-spacing: 0em;
 // text-align: left;
 
+}
+.Email-Footer{
+
+  .SocialIcons{
+display: flex;
+place-content: center;
+
+
+    gap:1rem;
+  }
 }
