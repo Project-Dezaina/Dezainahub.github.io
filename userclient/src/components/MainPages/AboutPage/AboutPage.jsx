@@ -4,6 +4,11 @@ import Header from "../../pages/navbar/Navbar";
 import NewFooter from "../../pages/NewFooter/Footer";
 import Img1 from "./Image/Img1.jpg";
 import about from "./Image/124.png";
+import {useRef , useState } from "react";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide} from "swiper/react";
+import { Autoplay, Navigation, Pagination} from "swiper";
 
 
 
@@ -147,7 +152,9 @@ import about from "./Image/124.png";
 
 const AboutPage = () => {
   return (
-    <div>
+    
+
+  <div>
       <Header />
       {/* <div className="flipbook"> */}
       <div className="AboutPageContainer container">
@@ -168,9 +175,54 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="HeadContentImage">
-            <div className="AboutImage2"><img src={Img1} alt="" /></div>
+            
+            {/* <div className="AboutImage2"><img src={Img1} alt="" /></div> */}
+
+            <Swiper
+        // slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          type: "fraction",
+          // clickable: true,
+        }}
+        navigation={true} 
+        
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+      <div className="HeadContentImage">
+        <SwiperSlide>
+        <div className="AboutImage2"><img src={Img1} alt="" /></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        
+        <div className="AboutImage2"><img src={Img1} alt="" /></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        
+        <div className="AboutImage2"><img src={Img1} alt="" /></div></SwiperSlide>
+        <SwiperSlide>
+       
+        <div className="AboutImage2"><img src={Img1} alt="" /></div></SwiperSlide>
+        {/* <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide> */}
+        <button>df</button>
+        </div>
+      </Swiper>
+      
+    
+            
+{/* 
             <div className="AboutArrows">
-            <div className="ImageArrow">
+            <div className="ImageArrow ">
               <svg
                 width="24"
                 height="24"
@@ -194,7 +246,7 @@ const AboutPage = () => {
 </svg>
 
             </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="aboutUsImageSec">
@@ -233,6 +285,9 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
+
+              
+       
               <div className="about-float-window-content">
                 <p>Lorem Ipsum is simply dummy text of the printing</p>
               </div>

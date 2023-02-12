@@ -1,0 +1,130 @@
+.CheckStatusPageMain {
+  margin-top: 3rem;
+  font-family: "Montserrat";
+}
+.CheckStatusPageMain .CheckStatus-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.CheckStatusPageMain .CheckStatus-container .CheckStatusContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  place-items: center;
+}
+.CheckStatusPageMain .CheckStatus-container .CheckStatusContent h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #364154;
+}
+.CheckStatusPageMain .CheckStatus-container .CheckStatusContent p {
+  font-size: 1.5rem;
+  color: grey;
+}
+.CheckStatusPageMain .CheckStatus-container .HeadingCards {
+  width: 95%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3.15rem;
+}
+.CheckStatusPageMain .CheckStatus-container .HeadingCards #ActiveCard {
+  background-color: #364154;
+}
+.CheckStatusPageMain .CheckStatus-container .HeadingCards #ActiveCard h4 {
+  color: #fff;
+}
+.CheckStatusPageMain .CheckStatus-container .HeadingCards #ActiveCard h1 {
+  color: #fff;
+}
+.CheckStatusPageMain .CheckStatus-container .HeadingCards .CardHeads {
+  width: 23.5rem;
+  height: 13.1rem;
+  background-color: #F1F1F1;
+  padding: 30px;
+  border-radius: 1.2em;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+.CheckStatusPageMain .CheckStatus-container .HeadingCards .SubCard1 h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #364154;
+}
+.CheckStatusPageMain .CheckStatus-container .HeadingCards .cardNum h1 {
+  font-weight: 700;
+  color: #364154;
+  font-size: 4rem;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent {
+  width: 95%;
+  margin-top: 3.15rem;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .Nav-Order-Content {
+  background-color: #364154;
+  height: 3.5rem;
+  border-radius: 1.2em 1.2em 0 0;
+  display: flex;
+  place-items: center;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .Nav-Order-Content h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 3rem;
+  margin-bottom: 0;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers {
+  background-color: #F1F1F1;
+  border-radius: 0 0 1.2em 1.2em;
+  padding: 1rem 0rem;
+  padding-bottom: 2rem;
+  margin-top: 0rem !important;
+  position: relative;
+  z-index: -100;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content {
+  margin-top: 0rem !important;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .PosterIcon {
+  position: relative;
+  place-items: center;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .PosterIcon .vl {
+  z-index: -1;
+  position: absolute;
+  left: 1.7rem;
+  top: -10rem;
+  border-left: 0.5rem solid #364154;
+  height: 100%;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .PosterIcon svg {
+  width: 4rem !important;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .OrderContent-Content {
+  margin-left: 2rem;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .OrderContent-Content h4 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  height: 4rem;
+  display: flex;
+  place-items: center;
+  color: #364154;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .OrderContent-Content p {
+  width: 60rem;
+}/*# sourceMappingURL=CheckStatus.css.map */

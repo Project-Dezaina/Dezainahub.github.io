@@ -30,7 +30,7 @@ const ContactUsPage = () => {
         <div className="ContactBio">
           <h3>Contact</h3>
    
-          <h2>Looking To Find And Heir Great Designers? </h2>
+          <h2>Looking To Find And Heir Great <span>Designers?</span></h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, omnis
             id. Iure maiores iste perspiciatis dolorem tempora itaque aperiam
