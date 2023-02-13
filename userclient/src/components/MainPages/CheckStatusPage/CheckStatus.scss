@@ -87,19 +87,30 @@
             width: 95%;
             margin-top: 3.15rem;
             .Nav-Order-Content{
-                background-color: $secondarycolor;
+                 background-color: $secondarycolor;
                 height: 3.5rem;
                 border-radius: 1.2em 1.2em 0 0;
                 display: flex;
                 place-items: center;
+                
                 h3{
                     color: #fff;
                     font-size: 1.5rem;
                     font-weight: 700;
-                    margin-left: 3rem;
+                    margin-right: 3rem;
                     margin-bottom: 0 ;
                     // padding: .6rem;
                 }
+            
+                .NavImg{
+                    
+
+                    svg{
+                        margin-left: 1rem;   
+                    }
+                }
+
+            
             }
             .OrderNumbers{
                 background-color: $thirdcolor;
@@ -109,10 +120,24 @@
                 padding-bottom: 2rem;
                 margin-top: 0rem !important;
                 position: relative;
-                z-index: -100;
-
+                // z-index: -2;
+             
+                
                 .OrderNum-Content{
                     margin-top: 0rem !important;
+
+                    .PosterHead{
+                        margin-left: 2rem;
+                        margin-top: 1rem;
+                        h4{
+                            font-size: 2rem;
+                            font-weight:  700;
+                            color: $secondarycolor;
+                            
+    
+                        }
+                    }
+                    
 
                 //     .OrderCard1{
                 //         .OrderCard-Inner-Inner{
@@ -162,39 +187,37 @@
 
                 // }
                 .OrderContent-Details{
-                    margin-top: 2rem;
+                    margin-top: 2.5rem;
                     overflow: hidden;
                     .PCard1{
+                        position: relative;
                         display: flex;
                         flex-direction: row;
                         margin-left: 3rem;
-                        // margin-bottom: 2rem;
-                        // place-content: center;
-
-                    
+                        svg{
+                            // display: a;
+                            position: absolute;
+                            // top: -3rem;
+                            width: 4rem !important;
+                            z-index: 2 !important;
+                            // height: 1rem;
+                        }
                         .PosterIcon{
                             position: relative;
-                            // border-left: 5px solid;
-                            // height: 200px;
-                            // z-index: -1;
                             place-items: center;
                             .vl {
-                                z-index: -1;
                                 position: absolute;
-                                // place-content: center;
                                 left: 1.7rem;
                                 top: -10rem;
                                 border-left: .5rem solid $secondarycolor;
                                 height: 100%;
                               }
-                        svg{
-                        width: 4rem !important;
-                        // height: 1rem;
-                    }
+                       
 
                     }
 
                     .OrderContent-Content{
+                        margin-left: 5rem;
                         h4{
                             font-size: 1.7rem;
                             font-weight:700;
@@ -206,15 +229,54 @@
                         p{
                             width: 60rem;
                         }
-                        margin-left: 2rem;
+                       
+                        
                     }
+                    
+                    
+                   
                 }
+                            
+                       
+                    
+                    
+                }
+                
+                
+            }
+            .ReqButton{
+                display: flex;
+                place-content: center;
+                .ReqButtonbutton {
+                    font-size: 17px;
+                    z-index: 9999999;
+                    padding: 0.5em 2em;
+                    border: transparent;
+                    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+                    background: $secondarycolor;
+                    color: white;
+                    border-radius: 4px;
+                    &:hover {
+                     background: rgb(2,0,36);
+                     background: linear-gradient(90deg, rgb(0, 64, 128) 0%, rgb(16, 74, 86) 100%);
+                    }
+                   }
+                   
+                   
+                   button:active {
+                    transform: translate(0em, 0.2em);
+                   }
+
+            }
             }
         }
 
                             }
                         }
-                    }
+                    
 
-                }
-            
+                     
+                        
+                       
+
+                       
