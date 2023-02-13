@@ -1,0 +1,89 @@
+.PageLayoutContainer {
+  position: relative;
+  font-family: "Montserrat";
+}
+.PageLayoutContainer .LogoImg {
+  left: -4rem;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.PageLayoutContainer .LogoImg img {
+  width: 5rem;
+  height: 4.3rem;
+}
+.PageLayoutContainer .PageLayoutInnerContent {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 13rem;
+  place-items: center;
+}
+.PageLayoutContainer .PageLayoutInnerContent .FormLayoutOuter {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+.PageLayoutContainer .PageLayoutInnerContent .FormLayoutOuter .FormLayout {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.PageLayoutContainer .PageLayoutInnerContent .FormLayoutOuter .FormLayout h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.PageLayoutContainer .PageLayoutInnerContent .FormLayoutOuter .FormLayout h6 {
+  text-align: left;
+  font-size: 1rem;
+  color: gray;
+}
+.PageLayoutContainer .PageLayoutInnerContent .FormLayoutOuter .FormLayout form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.PageLayoutContainer .PageLayoutInnerContent .FormLayoutOuter .FormLayout form input {
+  border: none;
+  border-bottom: 2px solid grey;
+  padding: 0.5rem auto 0.5rem 5rem;
+}
+.PageLayoutContainer .PageLayoutInnerContent .FormLayoutOuter .FormLayout .LoginButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.PageLayoutContainer .PageLayoutInnerContent .FormLayoutOuter .FormLayout .LoginButtons button {
+  border: none;
+  height: 3rem;
+  border-radius: 1.2em;
+  font-weight: 700;
+}
+.PageLayoutContainer .PageLayoutInnerContent .LoginImage {
+  margin: 1rem 1rem 0rem 0rem;
+  width: 50%;
+}
+.PageLayoutContainer .PageLayoutInnerContent .LoginImage img {
+  position: relative;
+  width: 52rem;
+  height: auto;
+  border-radius: 1.2em;
+}
+.PageLayoutContainer .PageLayoutInnerContent .LoginImage button {
+  position: absolute;
+  top: 1rem;
+  right: -11rem;
+  margin: 1rem 1rem 0rem 0rem;
+  z-index: 1;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background-color: #364154;
+  border-radius: 1.2em;
+  color: #fff;
+}/*# sourceMappingURL=PageLayout.css.map */
