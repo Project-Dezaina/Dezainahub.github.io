@@ -1,19 +1,58 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./PageLayout.css";
 
 import LogoImg from "../Image/Dezaina.png";
-import LoginImg from "../Image/LoginImg.jpg";
-import LoginSignupImg from "../Image/LoginSignupImg.jpg";
+// import LoginImg from "../Image/LoginImg.jpg";
+// import LoginSignupImg from "../Image/LoginImage.jpg";
+import LoginSignupImg from "../Image/LoginImage.jpg";
+import SignupPage from "../SignupPage/SignupPage";
+import LoginPage from "../LoginPage/LoginPage";
+import VerificationPage from "../VerificationPage/VerificationPage"
+import { multiStepContext } from "../LoginSignupPage";
 
 const PageLayout = () => {
+  const {setStep, currentStep} = useContext(multiStepContext);
+  const Showstep = (step) => {
+    switch (step) {
+      case 1:
+        return <LoginPage/>;
+      case 2:
+        return <VerificationPage/>;
+      case 3:
+        return <SignupPage/>;
+    }
+  };
+
+
+//   const FormLayout = [
+//     {
+//       Head: "Create Your Account",
+//       SecondaryHead: "Begin Your Journey to a Better Experience",
+//       Input1: "Name",
+//       Input2: "Contact Number",
+//       Input3: "Email",
+//       button1: "Create Account",
+//       button1: "Signup with google",
+//   },
+// ]
+const handlestate = ()=>{
+  // setStep(3)
+  // PresentStep = currentStep
+  if (currentStep==1){
+      setStep(3)
+  }
+  else {
+    setStep(1)
+  }
+}
   return (
-    <div className="PageLayoutContainer container">
+    <div className="PageLayoutContainer">
       <div className="LogoImg">
         <img src={LogoImg} />
       </div>
 
       <div className="PageLayoutInnerContent container">
-      <div className="FormLayoutOuter">
+      {/* <div className="FormLayoutOuter">
         <div className="FormLayout">
           <div>
           <h2>Create Your Account</h2>
@@ -25,7 +64,7 @@ const PageLayout = () => {
             <input placeholder="Email"></input>
           </form>
           <div className="LoginButtons">
-          <button type="Submit">Create Account</button>
+          <button className="Button-Proceed" type="Submit">Create Account</button>
           <button type="Submit">
             <svg
               width="20"
@@ -43,11 +82,13 @@ const PageLayout = () => {
           </button>
           </div>
         </div>
-        </div>
-
+        </div> */}
+        {/* <SignupPage /> */}
+        {Showstep(currentStep)}
         <div className="LoginImage">
           <img src={LoginSignupImg} alt="" />
-            <button className="LoginSignupButton">Login</button>
+          {currentStep==2 ? <div className="HiddenButton"></div>: <button className="LoginSignupButton" onClick={handlestate}>{currentStep==1 ? <div>Signup</div>: currentStep==2 ? <div></div>: <div>Login</div> }</button>}
+            
         </div>
         </div>
       </div>
