@@ -134,6 +134,8 @@
 }
 .Footer-Main .Bellow-Newsletter .Footer .footerLinks li a:hover {
   color: #4BACE0;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
 }
 .Footer-Main .Bellow-Newsletter .Footer-base {
   display: flex;

@@ -4,7 +4,7 @@ import "./PageLayout.css";
 import LogoImg from "../Image/Dezaina.png";
 // import LoginImg from "../Image/LoginImg.jpg";
 // import LoginSignupImg from "../Image/LoginImage.jpg";
-import LoginSignupImg from "../Image/LoginImage.jpg";
+import LoginSignupImg from "../Image/D.jpeg";
 import SignupPage from "../SignupPage/SignupPage";
 import LoginPage from "../LoginPage/LoginPage";
 import VerificationPage from "../VerificationPage/VerificationPage"
@@ -20,25 +20,17 @@ const PageLayout = () => {
         return <VerificationPage/>;
       case 3:
         return <SignupPage/>;
+        default:
+          return <LoginPage/>
     }
   };
 
 
-//   const FormLayout = [
-//     {
-//       Head: "Create Your Account",
-//       SecondaryHead: "Begin Your Journey to a Better Experience",
-//       Input1: "Name",
-//       Input2: "Contact Number",
-//       Input3: "Email",
-//       button1: "Create Account",
-//       button1: "Signup with google",
-//   },
-// ]
+
 const handlestate = ()=>{
   // setStep(3)
   // PresentStep = currentStep
-  if (currentStep==1){
+  if (currentStep===1){
       setStep(3)
   }
   else {
@@ -48,7 +40,7 @@ const handlestate = ()=>{
   return (
     <div className="PageLayoutContainer">
       <div className="LogoImg">
-        <img src={LogoImg} />
+        <img src={LogoImg} alt=""/>
       </div>
 
       <div className="PageLayoutInnerContent container">
@@ -84,10 +76,12 @@ const handlestate = ()=>{
         </div>
         </div> */}
         {/* <SignupPage /> */}
+        <div className="CommonForm">
         {Showstep(currentStep)}
+        </div>
         <div className="LoginImage">
           <img src={LoginSignupImg} alt="" />
-          {currentStep==2 ? <div className="HiddenButton"></div>: <button className="LoginSignupButton" onClick={handlestate}>{currentStep==1 ? <div>Signup</div>: currentStep==2 ? <div></div>: <div>Login</div> }</button>}
+          {currentStep===2 ? <div className="HiddenButton"></div>: <button className="LoginSignupButton" onClick={handlestate}>{currentStep===1 ? <div>Signup</div>: currentStep===2 ? <div></div>: <div>Login</div> }</button>}
             
         </div>
         </div>
