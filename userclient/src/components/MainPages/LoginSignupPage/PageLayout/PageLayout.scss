@@ -39,6 +39,9 @@
         // place-content: center;
         place-items: center;
         
+        .CommonForm{
+            // position: relative;
+        
         .FormLayoutOuter{
 
             width: 22rem;
@@ -97,6 +100,7 @@
             }
         }
         }
+    }
 
         .LoginImage{
             // margin: 1rem 0rem 1rem 0rem;
@@ -105,7 +109,7 @@
             // display:contents;
             // place-content: center;
             // place-items: center;
-            // position: relative;
+            position: relative;
             width: 50%;
             img{
                 position: relative;
@@ -117,8 +121,8 @@
             }
             button{
                 position: absolute;
-                top: 1rem;
-                right: -10rem;
+                top: 0rem;
+                right: -16rem;
                 margin: 1rem 1rem 0rem 0rem;
                 z-index: 1;
                 width: 8rem;

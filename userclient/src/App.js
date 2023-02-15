@@ -1,8 +1,7 @@
 import "./App.css";
-import LoginSignupPage from "./components/MainPages/LoginSignupPage/LoginSignupPage";
-
-// import Homepage from "./components/pages/homePage/Homepage";
-// import AboutPage from "./components/MainPages/AboutPage/AboutPage";
+// import LoginSignupPage from "./components/MainPages/LoginSignupPage/LoginSignupPage";
+import Homepage from "./components/pages/homePage/Homepage";
+import AboutPage from "./components/MainPages/AboutPage/AboutPage";
 // import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import GalleryPage from "./components/MainPages/GalleryPage/GalleryPage";
@@ -19,9 +18,9 @@ function App() {
   return (
     <div className="App">
     
-     <LoginSignupPage/>
+     {/* <LoginSignupPage/> */}
       {/* <Homepage /> */}
-      {/* <AboutPage/> */}
+      <AboutPage/>
       {/* <ProductPage/> */}
       {/* <GalleryPage/> */}
       {/* <ContactUSContext>

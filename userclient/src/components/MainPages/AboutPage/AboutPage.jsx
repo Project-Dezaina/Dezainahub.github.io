@@ -13,150 +13,12 @@ import { Autoplay, Navigation, Pagination} from "swiper";
 
 
 
-
-
-
-
-
-// class LoginControl extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.handleLoginClick = this.handleLoginClick.bind(this);
-//     this.handleLogoutClick = this.handleLogoutClick.bind(this);
-//     this.state = {isLoggedIn: false};
-//   }
-
-//   handleLoginClick() {
-//     this.setState({isLoggedIn: true});
-//   }
-
-//   handleLogoutClick() {
-//     this.setState({isLoggedIn: false});
-//   }
-
-//   render() {
-//     const isLoggedIn = this.state.isLoggedIn;
-//     let button;
-
-//     if (isLoggedIn) {
-//       button = <LogoutButton onClick={this.handleLogoutClick} />;
-//     } else {
-//       button = <LoginButton onClick={this.handleLoginClick} />;
-//     }
-
-//     return (
-//       <div>
-//         <Greeting isLoggedIn={isLoggedIn} />
-//         {button}
-//       </div>
-//     );
-//   }
-// }
-
-// function UserGreeting(props) {
-//   return (
-//     <div className="BoxContent">
-//       <h1>Everything you need to grow your business</h1>
-//       <p>
-//         Lorem Ipsum is simply dummy text of the printing and typesetting
-//         industry. Lorem Ipsum has been the industry's
-//       </p>
-//     </div>
-//   );
-// }
-
-// function GuestGreeting(props) {
-//   return (
-//     <div className="BoxContent">
-//       // <h1>Everything you need to grow your business</h1>
-//       <p>
-//         Lorem Ipsum is simply dummy text of the printing and typesetting
-//         industry. Lorem Ipsum has been the industry's
-//       </p>
-//     </div>
-//   );
-// }
-
-// function Greeting(props) {
-//   const isLoggedIn = props.isLoggedIn;
-//   if (isLoggedIn) {
-//     return <UserGreeting />;
-//   }
-//   return <GuestGreeting />;
-// }
-
-// function LoginButton(props) {
-//   return (
-//     <button onClick={props.onClick}>
-//       Mission
-//     </button>
-//   );
-// }
-
-// function LogoutButton(props) {
-//   return (
-//     <button onClick={props.onClick}>
-//       Vission
-//     </button>
-//   );
-// }
-
-// const root = ReactDOM.createRoot(document.getElementById('root')); 
-// React.render(<LoginControl />);
-
-// function Mission(props) {
-//   return (<button onClick={props.onClick}>
-//     Mission
-//   </button>);
-// }
-
-// function Vission(props) {
-//   return (<button onClick={props.onClick}>
-//     Vission
-//   </button>);
-// }
-
-// function MissionBox(content) {
-//   return (
-//     <div className="BoxContent">
-//       <h1>Everything you need to grow your business</h1>
-//       <p>
-//         Lorem Ipsum is simply dummy text of the printing and typesetting
-//         industry. Lorem Ipsum has been the industry's
-//       </p>
-//     </div>
-//   );
-// }
-
-// function VissionBox(content) {
-//   return (
-//     <div className="BoxContent">
-//       <h1>Everything you need to grow your business</h1>
-//       <p>
-//         Lorem Ipsum is simply dummy text of the printing and typesetting
-//         industry. Lorem Ipsum has been the industry's
-//       </p>
-//     </div>
-//   );
-// }
-
-// function MissionVission(constant) {
-//   const MissionBoxVissible = constant.MissionBoxVissible;
-//   if (MissionBoxVissible) {
-//     return <MissionBox />;
-//   } else {
-//   return <VissionBox />;
-// }
-// }
-// React.render(<MissionVission MissionBoxVissible={false} />);
-
 const AboutPage = () => {
   return (
     
 
   <div>
       <Header />
-      {/* <div className="flipbook"> */}
       <div className="AboutPageContainer container">
         <div className="AboutHeadContent">
           <div className="HeadContent">
@@ -175,6 +37,7 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="HeadContentImage">
+          
             
             {/* <div className="AboutImage2"><img src={Img1} alt="" /></div> */}
 
@@ -186,10 +49,10 @@ const AboutPage = () => {
           delay: 2000,
           disableOnInteraction: false,
         }}
-        pagination={{
-          type: "fraction",
-          // clickable: true,
-        }}
+        // pagination={{
+        //   type: "fraction",
+        //   // clickable: true,
+        // }}
         navigation={true} 
         
         modules={[Autoplay, Pagination, Navigation]}
@@ -214,7 +77,7 @@ const AboutPage = () => {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide> */}
-        <button>df</button>
+        {/* <button>df</button> */}
         </div>
       </Swiper>
       
@@ -615,8 +478,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* <iframe   class="fp-iframe"  src="https://heyzine.com/flip-book/5c5560b9f6.html"></iframe> */}
-      {/* </div> */}
+      
       <NewFooter />
     </div>
   );
