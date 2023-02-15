@@ -1,0 +1,12 @@
+@import "../../../globalcss/global.scss";
+
+.ProductNavigation{
+    margin-top: 0rem;
+
+    background-color: #2F455C;
+    color: #fff;
+    display: flex;
+    gap: 5rem;
+    padding: 1.5rem;
+    place-content: center;
+}

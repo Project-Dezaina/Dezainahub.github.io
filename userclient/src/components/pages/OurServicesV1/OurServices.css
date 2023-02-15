@@ -88,25 +88,7 @@
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .ourServices-container .Services-button button:hover {
-  -webkit-animation: sh0 0.5s ease-in-out both;
-          animation: sh0 0.5s ease-in-out both;
-}
-@-webkit-keyframes sh0 {
-  0% {
-    transform: rotate(0deg) translate3d(0, 0, 0);
-  }
-  25% {
-    transform: rotate(7deg) translate3d(0, 0, 0);
-  }
-  50% {
-    transform: rotate(-7deg) translate3d(0, 0, 0);
-  }
-  75% {
-    transform: rotate(1deg) translate3d(0, 0, 0);
-  }
-  100% {
-    transform: rotate(0deg) translate3d(0, 0, 0);
-  }
+  animation: sh0 0.5s ease-in-out both;
 }
 @keyframes sh0 {
   0% {
@@ -126,10 +108,8 @@
   }
 }
 .ourServices-container .Services-button button:hover span {
-  -webkit-animation: storm 0.7s ease-in-out both;
-          animation: storm 0.7s ease-in-out both;
-  -webkit-animation-delay: 0.06s;
-          animation-delay: 0.06s;
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
 }
 .ourServices-container .Services-button button::before,
 .ourServices-container .Services-button button::after {
@@ -179,11 +159,11 @@
     gap: 3rem;
   }
   .ourServices-container .service-content .service1-side,
-.ourServices-container .service-content .service2-side {
+  .ourServices-container .service-content .service2-side {
     gap: 3rem;
   }
   .ourServices-container .service-content .service1-side .Content,
-.ourServices-container .service-content .service2-side .Content {
+  .ourServices-container .service-content .service2-side .Content {
     gap: 0.5rem;
     align-items: center;
   }

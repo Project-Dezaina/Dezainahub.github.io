@@ -1,3 +1,5 @@
+@import "../../globalcss/global.scss";
+
 * {
     // background-color: aqua;
     font-family: "Montserrat";
@@ -7,6 +9,7 @@
     margin-top: 5rem;
     margin-bottom: 25rem;
     .ProductPageHead{
+        margin-bottom: 15rem;
         .PageHeadContent{
             display: flex;
             flex-direction: column;
@@ -129,182 +132,190 @@
         }
         }
     }
-    .ProductNavigation{
-        margin-top: 15rem;
-        background-color: #2F455C;
-        color: #fff;
-        display: flex;
-        gap: 5rem;
-        padding: 1.5rem;
-        place-content: center;
-    }
+    // .ProductNavigation{
+    //     margin-top: 15rem;
+    //     background-color: #2F455C;
+    //     color: #fff;
+    //     display: flex;
+    //     gap: 5rem;
+    //     padding: 1.5rem;
+    //     place-content: center;
+    // }
 }
     // .ProductCards{
-        .SingleCards{
-            margin-top: 3rem;
-            background-color: #2F455C;
-            border-radius: 1.2em;
-            width: 25rem;
-            height: 18.5rem;
-            padding: 25px;
-            color: #fff;
-            .CardHead{
-                display: flex;
-                gap: 6rem;
-                flex-direction: row;
-                place-items: center;
+    //     .SingleCards{
+    //         margin-top: 3rem;
+    //         background-color: #2F455C;
+    //         border-radius: 1.2em;
+    //         width: 25rem;
+    //         height: 18.5rem;
+    //         padding: 25px;
+    //         color: #fff;
+    //         .CardHead{
+    //             display: flex;
+    //             gap: 6rem;
+    //             flex-direction: row;
+    //             place-items: center;
 
             
-            .ProductSubHead{
-                display: flex;
-                flex-direction: row;
-                gap: 1rem;
-                place-items: center;
-                color: #fff;
-                // font-size: 2rem !important;
+    //         .ProductSubHead{
+    //             display: flex;
+    //             flex-direction: row;
+    //             gap: 1rem;
+    //             place-items: center;
+    //             color: #fff;
+    //         }
+    //         .ProductSVG{
+    //             background-color: #fff;
+    //             width: 4rem;
+    //             height: 4rem;
+    //             border-radius: 50%;
+    //             display: flex;
+    //             place-content: center;
+    //             place-items: center;
+    //             svg{
+    //                 width: 2rem;
+    //                 height: 2rem;
+    //             }
+    //         }
+    //     }
+    //     .CardBody{
+    //         margin: 1.5rem 0rem;
+    //     }
+    //     .CardBase{
+    //         display: flex;
+    //         gap: 7rem;
+    //         place-items: center;
+    //         margin-bottom: 1rem;
+    //         .BaseButton {
+    //             color: #2F455C;
+    //             font-weight: 700;
+    //             font-size: 0.8rem !important;
+    //             width: 10rem;
+    //             height: 2.5rem;
+    //             display: flex;
+    //             place-content: center;
+    //             place-items: center;
+    //             background-color: #fff;
+    //             border-radius: 1.2em;
+    //         }
+    //                     .AddToCartButton {
+    //                         .icon-btn {
+    //                             // width: 2.5rem;
+    //                             // height: 2.5rem;
+    //                             width: 50px;
+    //                             height: 50px;
+    //                             border: 1px solid #cdcdcd;
+    //                             background: white;
+    //                             border-radius: 25px;
+    //                             overflow: hidden;
+    //                             position: relative;
+    //                             transition: width 0.2s ease-in-out;
+    //                             font-weight: 500;
+    //                             font-family: inherit;
+    //                         }
+            
+    //                         .add-btn:hover {
+    //                             width: 8rem;
+    //                         }
+            
+    //                         .add-btn::before,
+    //                         .add-btn::after {
+    //                             transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    //                             content: "";
+    //                             position: absolute;
+    //                             height: 4px;
+    //                             width: 10px;
+    //                             top: calc(50% - 2px);
+    //                             background: #4BACE0 ;
+    //                         }
+            
+    //                         .add-btn::after {
+    //                             right: 14px;
+    //                             overflow: hidden;
+    //                             border-top-right-radius: 2px;
+    //                             border-bottom-right-radius: 2px;
+    //                         }
+            
+    //                         .add-btn::before {
+    //                             left: 14px;
+    //                             border-top-left-radius: 2px;
+    //                             border-bottom-left-radius: 2px;
+    //                         }
+            
+    //                         .icon-btn:focus {
+    //                             outline: none;
+    //                         }
+            
+    //                         .btn-txt {
+    //                             opacity: 0;
+    //                             font-size: 0.8rem !important;
+    //                             // padding: 4px !important;
+    //                             margin: 0px 5px !important;
+    //                             transition: opacity 0.2s;
+    //                         }
+            
+    //                         .add-btn:hover::before,
+    //                         .add-btn:hover::after {
+    //                             width: 4px;
+    //                             border-radius: 2px;
+    //                         }
+            
+    //                         .add-btn:hover .btn-txt {
+    //                             opacity: 1;
+    //                         }
+            
+    //                         .add-icon::after,
+    //                         .add-icon::before {
+    //                             transition: all 0.2s ease-in-out;
+    //                             content: "";
+    //                             position: absolute;
+    //                             height: 20px;
+    //                             width: 2px;
+    //                             top: calc(50% - 10px);
+    //                             background: #4BACE0;
+    //                             overflow: hidden;
+    //                         }
+            
+    //                         .add-icon::before {
+    //                             left: 22px;
+    //                             border-top-left-radius: 2px;
+    //                             border-bottom-left-radius: 2px;
+    //                         }
+            
+    //                         .add-icon::after {
+    //                             right: 22px;
+    //                             border-top-right-radius: 2px;
+    //                             border-bottom-right-radius: 2px;
+    //                         }
+            
+    //                         .add-btn:hover .add-icon::before {
+    //                             left: 15px;
+    //                             height: 4px;
+    //                             top: calc(50% - 2px);
+    //                         }
+            
+    //                         .add-btn:hover .add-icon::after {
+    //                             right: 15px;
+    //                             height: 4px;
+    //                             top: calc(50% - 2px);
+    //                         }
+    //                     }
+    //     }
+    //     }
+    //     #WhiteBase{
+    //         background-color: #fff;
+            
+    //     }
+    //     #WhiteBaseTextColor {
+    //         color: $secondarycolor !important; 
+    //         // border: 5px solid red;
+    //         // background-color: #4BACE0;
 
-                // height: 2rem;
-            }
-            .ProductSVG{
-                background-color: #fff;
-                width: 4rem;
-                height: 4rem;
-                border-radius: 50%;
-                display: flex;
-                place-content: center;
-                place-items: center;
-                svg{
-                    width: 2rem;
-                    height: 2rem;
-                }
-            }
-        }
-        .CardBody{
-            margin: 1.5rem 0rem;
-        }
-        .CardBase{
-            display: flex;
-            gap: 7rem;
-            place-items: center;
-            margin-bottom: 1rem;
-            .BaseButton {
-                color: #2F455C;
-                font-weight: 700;
-                font-size: 0.8rem !important;
-                width: 10rem;
-                height: 2.5rem;
-                display: flex;
-                place-content: center;
-                place-items: center;
-                background-color: #fff;
-                border-radius: 1.2em;
-                // padding: 0.2rem;
-            }
-                        .AddToCartButton {
-                            .icon-btn {
-                                // width: 2.5rem;
-                                // height: 2.5rem;
-                                width: 50px;
-                                height: 50px;
-                                border: 1px solid #cdcdcd;
-                                background: white;
-                                border-radius: 25px;
-                                overflow: hidden;
-                                position: relative;
-                                transition: width 0.2s ease-in-out;
-                                font-weight: 500;
-                                font-family: inherit;
-                            }
-            
-                            .add-btn:hover {
-                                width: 8rem;
-                            }
-            
-                            .add-btn::before,
-                            .add-btn::after {
-                                transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
-                                content: "";
-                                position: absolute;
-                                height: 4px;
-                                width: 10px;
-                                top: calc(50% - 2px);
-                                background: #4BACE0 ;
-                            }
-            
-                            .add-btn::after {
-                                right: 14px;
-                                overflow: hidden;
-                                border-top-right-radius: 2px;
-                                border-bottom-right-radius: 2px;
-                            }
-            
-                            .add-btn::before {
-                                left: 14px;
-                                border-top-left-radius: 2px;
-                                border-bottom-left-radius: 2px;
-                            }
-            
-                            .icon-btn:focus {
-                                outline: none;
-                            }
-            
-                            .btn-txt {
-                                opacity: 0;
-                                font-size: 0.8rem !important;
-                                // padding: 4px !important;
-                                margin: 0px 5px !important;
-                                transition: opacity 0.2s;
-                            }
-            
-                            .add-btn:hover::before,
-                            .add-btn:hover::after {
-                                width: 4px;
-                                border-radius: 2px;
-                            }
-            
-                            .add-btn:hover .btn-txt {
-                                opacity: 1;
-                            }
-            
-                            .add-icon::after,
-                            .add-icon::before {
-                                transition: all 0.2s ease-in-out;
-                                content: "";
-                                position: absolute;
-                                height: 20px;
-                                width: 2px;
-                                top: calc(50% - 10px);
-                                background: #4BACE0;
-                                overflow: hidden;
-                            }
-            
-                            .add-icon::before {
-                                left: 22px;
-                                border-top-left-radius: 2px;
-                                border-bottom-left-radius: 2px;
-                            }
-            
-                            .add-icon::after {
-                                right: 22px;
-                                border-top-right-radius: 2px;
-                                border-bottom-right-radius: 2px;
-                            }
-            
-                            .add-btn:hover .add-icon::before {
-                                left: 15px;
-                                height: 4px;
-                                top: calc(50% - 2px);
-                            }
-            
-                            .add-btn:hover .add-icon::after {
-                                right: 15px;
-                                height: 4px;
-                                top: calc(50% - 2px);
-                            }
-                        }
-        }
-        }
+    //     }
+    //     #buttonId{
+    //         background-color: $secondarycolor !important;
+    //         color: #fff;
+    //         border: 5px solid red;
+    //     }
     // }
-// .ProductPageMainV{
-//     background-color: #2F455C ;
-// }

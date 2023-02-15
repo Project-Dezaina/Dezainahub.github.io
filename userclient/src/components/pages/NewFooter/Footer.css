@@ -63,25 +63,7 @@
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 .Footer-Main .Newsletter .button-box button:hover {
-  -webkit-animation: sh0 0.5s ease-in-out both;
-          animation: sh0 0.5s ease-in-out both;
-}
-@-webkit-keyframes sh0 {
-  0% {
-    transform: rotate(0deg) translate3d(0, 0, 0);
-  }
-  25% {
-    transform: rotate(7deg) translate3d(0, 0, 0);
-  }
-  50% {
-    transform: rotate(-7deg) translate3d(0, 0, 0);
-  }
-  75% {
-    transform: rotate(1deg) translate3d(0, 0, 0);
-  }
-  100% {
-    transform: rotate(0deg) translate3d(0, 0, 0);
-  }
+  animation: sh0 0.5s ease-in-out both;
 }
 @keyframes sh0 {
   0% {
@@ -101,10 +83,8 @@
   }
 }
 .Footer-Main .Newsletter .button-box button:hover span {
-  -webkit-animation: storm 0.7s ease-in-out both;
-          animation: storm 0.7s ease-in-out both;
-  -webkit-animation-delay: 0.06s;
-          animation-delay: 0.06s;
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
 }
 .Footer-Main .Newsletter .button-box button::before,
 .Footer-Main .Newsletter .button-box button::after {
@@ -145,16 +125,26 @@
   flex-flow: row;
   margin-bottom: 1.25rem;
 }
-.Footer-Main .Bellow-Newsletter .Footer .Footer-Heading {
+.Footer-Main .Bellow-Newsletter .Footer .footerLinks li {
+  font-size: 1rem;
+}
+.Footer-Main .Bellow-Newsletter .Footer .footerLinks li a {
+  text-decoration: none;
+  color: #fff;
+}
+.Footer-Main .Bellow-Newsletter .Footer .footerLinks li a:hover {
   color: #4BACE0;
 }
 .Footer-Main .Bellow-Newsletter .Footer-base {
   display: flex;
   flex-direction: row;
   place-content: center;
-  gap: 40vw;
+  gap: 30vw;
   color: rgb(175, 175, 175);
   align-items: center;
+}
+.Footer-Main .Bellow-Newsletter .Footer-base .BaseContent {
+  width: 50rem !important;
 }
 .Footer-Main .Bellow-Newsletter .Footer-base img {
   width: 15vw;
@@ -168,8 +158,14 @@ hr {
 }
 
 .Footer-Heading {
-  color: #364154;
+  color: #4BACE0 !important;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 600;
+}
+
+.Email-Footer .SocialIcons {
+  display: flex;
+  place-content: center;
+  gap: 1rem;
 }/*# sourceMappingURL=Footer.css.map */
