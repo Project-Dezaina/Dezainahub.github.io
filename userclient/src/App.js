@@ -5,8 +5,8 @@ import "./App.css";
 // import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import GalleryPage from "./components/MainPages/GalleryPage/GalleryPage";
-// import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
-// import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
+import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
+import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
 import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
 import YourCartPage from "./components/MainPages/YourCartPage/YourCartPage";
 function App() {
@@ -17,13 +17,13 @@ function App() {
       {/* <AboutPage/> */}
       {/* <ProductPage/> */}
       {/* <GalleryPage/> */}
-      {/* <ContactUSContext>
+      <ContactUSContext>
       <ContactUsPage/>
     
 
 
 
-      </ContactUSContext> */}
+      </ContactUSContext>
      {/* <Cstage1/> */}
      <CheckStatusPage/>
      <YourCartPage/>

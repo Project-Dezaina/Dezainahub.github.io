@@ -155,15 +155,19 @@
                         
                         .QuantityBox, .PriceBox{
                             width: 7rem;
+                            
                             .QuantityButton, .TotalPricing {
                                 background-color: $thirdcolor;
+                                height: 2rem;
                                 // background-color: red;
                                 // width: 6rem;
                                 border-radius: $SecondaryBorderRadius;
                                 display: flex;
                                 gap: .5rem;
-                                padding: 0.2rem 0.5rem;
+                                // padding: 0.2rem 0.5rem;
                                 place-content: center;
+
+                                
                                 
 
                                 #QuantButt{
@@ -181,7 +185,11 @@
                                   place-items: center;
                                   margin-bottom: 0;
                                   width: 2rem;
+                                  
                                 }
+                            }
+                            .TotalPricing{
+                                    // padding: ;
                             }
 
 
