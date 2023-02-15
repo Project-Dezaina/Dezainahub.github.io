@@ -5,10 +5,15 @@ import "./App.css";
 // import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import GalleryPage from "./components/MainPages/GalleryPage/GalleryPage";
-import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
-import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
-import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
-import YourCartPage from "./components/MainPages/YourCartPage/YourCartPage";
+// import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
+// import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
+// import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
+// import YourCartPage from "./components/MainPages/YourCartPage/YourCartPage";
+// import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
+// import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
+// import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
+import LoginSignupPage from "./components/MainPages/LoginSignupPage/LoginSignupPage";
+
 function App() {
   return (
     <div className="App">
@@ -17,16 +22,19 @@ function App() {
       {/* <AboutPage/> */}
       {/* <ProductPage/> */}
       {/* <GalleryPage/> */}
-      <ContactUSContext>
+      {/* <ContactUSContext>
       <ContactUsPage/>
     
 
 
 
-      </ContactUSContext>
+      </ContactUSContext> */}
      {/* <Cstage1/> */}
-     <CheckStatusPage/>
-     <YourCartPage/>
+     {/* <CheckStatusPage/> */}
+     {/* <YourCartPage/> */}
+     {/* <CheckStatusPage/> */}
+
+     <LoginSignupPage/>
       
 
      
