@@ -75,8 +75,11 @@
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-left: 3rem;
+  margin-right: 3rem;
   margin-bottom: 0;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .Nav-Order-Content .NavImg svg {
+  margin-left: 1rem;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers {
   background-color: #F1F1F1;
@@ -85,37 +88,47 @@
   padding-bottom: 2rem;
   margin-top: 0rem !important;
   position: relative;
-  z-index: -100;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content {
   margin-top: 0rem !important;
 }
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .PosterHead {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .PosterHead h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #364154;
+}
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   overflow: hidden;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin-left: 3rem;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 svg {
+  position: absolute;
+  width: 4rem !important;
+  z-index: 2 !important;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .PosterIcon {
   position: relative;
   place-items: center;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .PosterIcon .vl {
-  z-index: -1;
   position: absolute;
   left: 1.7rem;
   top: -10rem;
   border-left: 0.5rem solid #364154;
   height: 100%;
 }
-.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .PosterIcon svg {
-  width: 4rem !important;
-}
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .OrderContent-Content {
-  margin-left: 2rem;
+  margin-left: 5rem;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .OrderContent-Content h4 {
   font-size: 1.7rem;
@@ -127,4 +140,25 @@
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .OrderContent-Content p {
   width: 60rem;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .ReqButton {
+  display: flex;
+  place-content: center;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .ReqButton .ReqButtonbutton {
+  font-size: 17px;
+  z-index: 9999999;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: #364154;
+  color: white;
+  border-radius: 4px;
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .ReqButton .ReqButtonbutton:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(0, 64, 128) 0%, rgb(16, 74, 86) 100%);
+}
+.CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .ReqButton button:active {
+  transform: translate(0em, 0.2em);
 }/*# sourceMappingURL=CheckStatus.css.map */

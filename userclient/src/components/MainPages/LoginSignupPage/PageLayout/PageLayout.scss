@@ -10,6 +10,11 @@
     // background-color: aqua;
     position: relative;
     font-family: "Montserrat";
+    min-height: 99.76vh;
+    padding: 0rem !important;
+    margin: 0rem !important;
+    
+
     // width: 450rem !important;
     
     .LogoImg{
@@ -30,77 +35,83 @@
         position: relative;
         // gap: 13rem;
         gap: 13rem;
+        min-height: 99.76vh;
         // place-content: center;
         place-items: center;
         
-    //     .FormLayoutOuter{
+        .FormLayoutOuter{
 
-    //         width: 30rem;
-    //         height: 100%;
-    //         display: flex;
-    //         // margin-left: 8rem;
-    //         // justify-content: start;
-    //         // place-content: center;
+            width: 22rem;
+            height: 100%;
+            display: flex;
+            // margin-left: 8rem;
+            // justify-content: start;
+            // place-content: center;
         
-    //         position: relative;
-    //         left: -6rem;
-    //         top: -5rem;
-    //     .FormLayout{
-    //         width: 28rem;
-    //         display: flex;
-    //         flex-direction: column;
-    //         gap: 5rem;
-    //         h2{
-    //             text-align: left;
-    //             font-size: 2.5rem;
-    //             font-weight: 700;
-    //         }
-    //         h6{
-    //             text-align: left;
-    //             font-size: 1.25rem;
-    //             color: gray;
-    //         }
-    //         form{
-    //             display: flex;
-    //             flex-direction: column;
-    //             gap: 1rem;
-    //             input{
-    //                 // width: 27rem;
-    //                 border: none;
-    //                 border-bottom: 2px solid rgb(212, 212, 212) ;
-    //                 padding: 0.5rem auto 0.5rem 5rem;
-    //                 padding: 1rem !important;
-    //                 // margin: 1rem;
-    //             }
-    //         }
-    //         .LoginButtons{
-    //             display: flex;
-    //             flex-direction: column;
-    //             gap: 1rem;
-    //             button{
-    //                 // width: 27rem;
-    //                 border: none;
-    //                 height: 3rem;
-    //                 border-radius: 1.2em;
-    //                 font-weight: 700;
-    //             }
-    //             .Button-Proceed{
-    //                 background-color: $secondarycolor;
-    //                 color: #fff;
-    //             }
-    //         }
-    //     }
-    // }
+            position: relative;
+            // left: -2rem;
+            // top: -8rem;
+        .FormLayout{
+            // width: 30rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            h2{
+                text-align: left;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            h6{
+                text-align: left;
+                font-size: 1rem;
+                color: gray;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                input{
+                    // width: 27rem;
+                    border: none;
+                    border-bottom: 2px solid rgb(212, 212, 212) ;
+                    padding: 0.5rem auto 0.5rem 5rem;
+                    padding: 1rem !important;
+                    // margin: 1rem;
+                }
+            }
+            .LoginButtons{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                button{
+                    // width: 27rem;
+                    border: none;
+                    height: 3rem;
+                    border-radius: 1.2em;
+                    font-weight: 700;
+                }
+                .Button-Proceed{
+                    background-color: $secondarycolor;
+                    color: #fff;
+                }
+            }
+        }
+        }
 
         .LoginImage{
-            margin: 1rem 1rem 0rem 0rem;
+            // margin: 1rem 0rem 1rem 0rem;
+            margin: 0rem !important;
+            margin-bottom: 0rem !important;
+            // display:contents;
+            // place-content: center;
+            // place-items: center;
             // position: relative;
             width: 50%;
             img{
                 position: relative;
-                left: -1rem;
+                left: -1.5rem;
                 // width: 52rem;
-                width: 58rem;
+                width: 58.2rem;
                 height: auto;
                 border-radius: 1.2em ;
             }
@@ -125,3 +136,152 @@
 
 }
 }
+@media screen and (max-width: 900px) {
+    .PageLayoutContainer {
+        
+        .LogoImg{
+            // left: -4rem;
+            position: absolute;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        img{
+            width: 5rem;
+            height: 4.3rem;
+        }
+    }
+        .PageLayoutInnerContent{
+            // padding: 5rem;
+            // background-color: black;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            // gap: 13rem;
+            gap: 0rem;
+            // place-content: center;
+            place-items: center;
+            .CommonForm{
+                .FormLayoutOuter{
+                    padding: 3rem;
+                // background-color:rgba(255, 255, 255, 1);
+                // opacity: 20%;
+                border-radius: 1.2em;
+                // box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, 0.32);
+    
+                width: 25rem;
+                height: 100%;
+                display: flex;
+                // margin-left: 8rem;
+                // justify-content: start;
+                // place-content: center;
+            
+                position: relative;
+                left: 5rem;
+                // top: -12rem;
+                    }
+                }
+            .FormLayout{
+                // width: 30rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem !important;
+                h2{ 
+                    text-align: left;
+                    font-size: 1.5rem !important;
+                    font-weight: 700;
+                    // color: $secondarycolor;
+                    color: #fff;
+                }
+                h6{
+                    text-align: left;
+                    font-size: 0.7rem !important;
+                    color: #fff !important;
+                    // color: $secondarycolor !important;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    input{
+
+                        
+                        // width: 27rem;
+                        color: #fff !important;
+                        // color: $secondarycolor !important;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 2px solid rgb(212, 212, 212) ;
+                        padding: 0.5rem auto 0.5rem 5rem;
+                        padding: 1rem !important;
+                        // margin: 1rem;
+                        &::placeholder{
+                            color: #fff;
+                            // color: $secondarycolor;
+                        }
+                    }
+                }
+                .LoginButtons{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    button{
+                        // width: 27rem;
+                        border: none;
+                        height: 3rem;
+                        border-radius: 1.2em;
+                        font-weight: 700;
+                    }
+                    .Button-Proceed{
+                        background-color: $secondarycolor;
+                        color: #fff;
+                    }
+                }
+            }
+            }
+    
+            .LoginImage{
+                margin: 1rem 1rem 0rem 0rem;
+                // position: relative;
+                width: 50%;
+                img{
+                    position: relative;
+                    left: -27rem !important;
+                    top: -0.5rem;
+                    z-index: -1;
+                    
+                    opacity: 90%;
+                    // width: 52rem;
+                    width: 58rem;
+                    height: auto;
+                    border-radius: 1.2em ;
+                }
+                button{
+                    position: absolute;
+                    top: 0rem !important;
+                    // left: 25rem;
+                    right: 0.5rem !important;
+                    margin: 1rem 1rem 0rem 0rem;
+                    z-index: 1;
+                    width: 8rem;
+                    height: 3rem;
+                    border: none;
+                    display: flex;
+                    place-content: center;
+                    place-items: center;
+                    background-color: $secondarycolor;
+                    border-radius: 1.2em;
+                    color: #fff;
+                }
+            }
+        
+    
+    }
+    }
+   
+
+
+
+// div{
+//     background-color: aqua;
+//     width: 100%;
+//     height: 20rem;
+// }

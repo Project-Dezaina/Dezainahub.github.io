@@ -10,36 +10,12 @@ const CheckStatus = () => {
   //   title: "Restaurant Posters",
   //   text: "24/12/2023",
   // },
-  // {
-  //   // Image: Fotu,
-  //   title: "Restaurant Posters",
-  //   text: "24/12/2023",
-  // },
-  // {
-  //   // Image: Fotu,
-  //   title: "Restaurant Posters",
-  //   text: "24/12/2023",
-  // },
-  // {
-  //   // Image: Fotu,
-  //   title: "Restaurant Posters",
-  //   text: "24/12/2023",
-  // },
-  // {
-  //   // Image: Fotu,
-  //   title: "Restaurant Posters",
-  //   text: "24/12/2023",
-  // },
-  // {
-  //   // Image: Fotu,
-  //   title: "Restaurant Posters",
-  //   text: "24/12/2023",
-  // },
+  // 
   // ];
   const StatusCards = [
     {
       // Image: Fotu,
-      title: "Restaurant Posters",
+      title: "Want a Poster",
       text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
@@ -95,7 +71,24 @@ const CheckStatus = () => {
           </div>
           <div className="OrderContent">
             <div className="Nav-Order-Content">
-              <h3>Total Orders</h3>
+              <div className="NavImg">
+                <svg
+                  width="25"
+                  height="50"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.57185 2.88116L5.8331 4.61991L4.76602 5.68158C4.55003 5.8979 4.42871 6.1911 4.42871 6.49679C4.42871 6.80248 4.55003 7.09568 4.76602 7.312L7.57185 10.1178C7.94019 10.4862 8.56852 10.2207 8.56852 9.70616V3.29283C8.56852 2.77283 7.94019 2.51283 7.57185 2.88116Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
+              <h3  onClick={()=>{
+                    console.log("clicked");
+                  }}>Back</h3>
             </div>
             <div className="OrderNumbers">
               <div className="OrderNum-Content">
@@ -149,12 +142,18 @@ const CheckStatus = () => {
                     </div>
                   ))}
                 </div> */}
+                <div className="PosterHead">
+                  <h4  onClick={()=>{
+                    console.log("clicked");
+                  }}>Restaurant Poster</h4>
+                </div>
                 <div className="OrderContent-Details">
                   {StatusCards.map((card, i) => (
                     <div key={i} className="PCard1">
                       <div className="PosterIcon">
                         <div class="vl"></div>
                         {/* <div className="vertical"> */}
+                      </div>
                         <svg
                           // width="34"
                           // height="34"
@@ -176,17 +175,32 @@ const CheckStatus = () => {
                             fill="white"
                           />
                         </svg>
-                      </div>
                       <div className="OrderContent-Content">
-                        <h4> {card.title}</h4>
+                        <h4 onClick={()=>{
+                    console.log("clicked");
+                  }}> {card.title}</h4>
 
                         <p>{card.text}</p>
                       </div>
-                    </div>
-                  ))}
+                      </div>
+                      
+                  ))}    
                   {/* </div> */}
+                  
+                  
+
                 </div>
+
+                
               </div>
+                <div className="ReqButton">
+                  <button className="ReqButtonbutton" onClick={()=>{
+                    console.log("clicked");
+                  }}>
+                    Place a Request 
+                  </button>
+
+                </div>
             </div>
           </div>
         </div>
