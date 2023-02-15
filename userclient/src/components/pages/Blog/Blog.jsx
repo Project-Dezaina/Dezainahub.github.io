@@ -217,9 +217,9 @@ const Blog = () => {
      
           
             <Swiper
-        slidesPerView={2.5}
+        slidesPerView={2}
         spaceBetween={0}
-        loop={true}
+        // loop={true}
         mousewheel={true}
         // direction={"Vertical"}
         modules={[Pagination, Navigation, Mousewheel]}
