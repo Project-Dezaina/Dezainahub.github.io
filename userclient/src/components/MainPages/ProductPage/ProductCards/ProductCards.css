@@ -1,0 +1,188 @@
+.ProductCardsContainer {
+  background-color: #F1F1F1;
+  padding: 5rem 0rem;
+}
+.ProductCardsContainer .container h1 {
+  font-weight: 700;
+  color: #364154;
+}
+.ProductCardsContainer .container .ProductCards {
+  display: grid;
+  grid-template-columns: 28rem 28rem 28rem;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards {
+  margin-top: 3rem;
+  background-color: #fff;
+  border-radius: 1.2em;
+  width: 25rem;
+  height: 18.5rem;
+  padding: 25px;
+  color: #364154;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardHead {
+  display: flex;
+  gap: 6rem;
+  flex-direction: row;
+  place-items: center;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardHead .ProductSubHead {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  place-items: center;
+  color: #364154;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardHead .ProductSVG {
+  background-color: #364154;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardHead .ProductSVG svg {
+  width: 2rem;
+  height: 2rem;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBody {
+  margin: 1.5rem 0rem;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase {
+  display: flex;
+  gap: 7rem;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .BaseButton {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem !important;
+  width: 10rem;
+  height: 2.5rem;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background-color: #364154;
+  border-radius: 1.2em;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: #364154;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn:hover {
+  width: 8rem;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn::before,
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: #fff;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .icon-btn:focus {
+  outline: none;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .btn-txt {
+  opacity: 0;
+  font-size: 0.8rem !important;
+  margin: 0px 5px !important;
+  transition: opacity 0.2s;
+  color: #fff;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn:hover::before,
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn:hover .btn-txt {
+  opacity: 1;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-icon::after,
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: #fff;
+  overflow: hidden;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+.ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+.ProductCardsContainer .container .ProductCards #WhiteBase {
+  background-color: #fff;
+}
+.ProductCardsContainer .container .ProductCards #WhiteBaseTextColor {
+  color: #364154 !important;
+}
+.ProductCardsContainer .container .ProductCards #WhiteBaseButtonColor {
+  background-color: #364154 !important;
+  color: #fff;
+}
+.ProductCardsContainer .container .ProductCards #WhiteBaseButtonColor .add-icon::after, .ProductCardsContainer .container .ProductCards #WhiteBaseButtonColor .add-icon::before {
+  background: #fff !important;
+}
+.ProductCardsContainer .container .ProductCards #WhiteBaseButtonColor .add-btn::before,
+.ProductCardsContainer .container .ProductCards #WhiteBaseButtonColor .add-btn::after {
+  background: #fff !important;
+}
+.ProductCardsContainer .container .ProductCards #BlueBase {
+  background-color: #364154;
+}
+.ProductCardsContainer .container .ProductCards #BlueBaseTextColor {
+  color: #fff !important;
+}
+.ProductCardsContainer .container .ProductCards #BlueBaseButtonColor {
+  background-color: #fff !important;
+  color: #364154;
+}
+.ProductCardsContainer .container .ProductCards #BlueBaseButtonColor .add-icon::after,
+.ProductCardsContainer .container .ProductCards #BlueBaseButtonColor .add-icon::before {
+  background: #4BACE0 !important;
+}
+.ProductCardsContainer .container .ProductCards #BlueBaseButtonColor .add-btn::before,
+.ProductCardsContainer .container .ProductCards #BlueBaseButtonColor .add-btn::after {
+  background: #364154 !important;
+}/*# sourceMappingURL=ProductCards.css.map */

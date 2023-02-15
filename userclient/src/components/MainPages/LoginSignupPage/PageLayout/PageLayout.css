@@ -1,0 +1,47 @@
+.PageLayoutContainer {
+  position: relative;
+  font-family: "Montserrat";
+}
+.PageLayoutContainer .LogoImg {
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.PageLayoutContainer .LogoImg img {
+  width: 5rem;
+  height: 4.3rem;
+}
+.PageLayoutContainer .PageLayoutInnerContent {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 13rem;
+  place-items: center;
+}
+.PageLayoutContainer .PageLayoutInnerContent .LoginImage {
+  margin: 1rem 1rem 0rem 0rem;
+  width: 50%;
+}
+.PageLayoutContainer .PageLayoutInnerContent .LoginImage img {
+  position: relative;
+  left: -1rem;
+  width: 58rem;
+  height: auto;
+  border-radius: 1.2em;
+}
+.PageLayoutContainer .PageLayoutInnerContent .LoginImage button {
+  position: absolute;
+  top: 1rem;
+  right: -10rem;
+  margin: 1rem 1rem 0rem 0rem;
+  z-index: 1;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background-color: #364154;
+  border-radius: 1.2em;
+  color: #fff;
+}/*# sourceMappingURL=PageLayout.css.map */
