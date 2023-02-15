@@ -2,62 +2,62 @@
 .VerificationPageContainer{
 
 
-// .FormLayoutOuter{
+.FormLayoutOuter{
 
-//     width: 22rem;
-//     height: 100%;
-//     display: flex;
-//     // margin-left: 8rem;
-//     // justify-content: start;
-//     // place-content: center;
+    width: 22rem;
+    height: 100%;
+    display: flex;
+    // margin-left: 8rem;
+    // justify-content: start;
+    // place-content: center;
 
-//     position: relative;
-//     left: -2rem;
-//     top: -8rem;
-// .FormLayout{
-//     width: 28rem;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 3rem;
-//     h2{
-//         text-align: left;
-//         font-size: 2rem;
-//         font-weight: 700;
-//     }
-//     h6{
-//         text-align: left;
-//         font-size: 1rem;
-//         color: gray;
-//     }
-//     form{
-//         display: flex;
-//         flex-direction: column;
-//         gap: 1rem;
-//         input{
-//             // width: 27rem;
-//             border: none;
-//             border-bottom: 2px solid rgb(212, 212, 212) ;
-//             padding: 0.5rem auto 0.5rem 5rem;
-//             padding: 1rem !important;
-//             // margin: 1rem;
-//         }
-//     }
-//     .LoginButtons{
-//         display: flex;
-//         flex-direction: column;
-//         gap: 1rem;
-//         button{
-//             // width: 27rem;
-//             border: none;
-//             height: 3rem;
-//             border-radius: 1.2em;
-//             font-weight: 700;
-//         }
-//         .Button-Proceed{
-//             background-color: $secondarycolor;
-//             color: #fff;
-//         }
-//     }
-// }
-// }
+    position: relative;
+    left: -2rem;
+    top: -8rem;
+.FormLayout{
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    h2{
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    h6{
+        text-align: left;
+        font-size: 1rem;
+        color: gray;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        input{
+            // width: 27rem;
+            border: none;
+            border-bottom: 2px solid rgb(212, 212, 212) ;
+            padding: 0.5rem auto 0.5rem 5rem;
+            padding: 1rem !important;
+            // margin: 1rem;
+        }
+    }
+    .LoginButtons{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        button{
+            // width: 27rem;
+            border: none;
+            height: 3rem;
+            border-radius: 1.2em;
+            font-weight: 700;
+        }
+        .Button-Proceed{
+            background-color: $secondarycolor;
+            color: #fff;
+        }
+    }
+}
+}
 }
