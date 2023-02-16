@@ -1,0 +1,78 @@
+.OurValues {
+  margin: 10rem 0rem;
+}
+.OurValues .ValuesHead {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+}
+.OurValues .ValuesHead h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 25rem;
+}
+.OurValues .ValuesHead h6 {
+  font-weight: 500;
+  width: 10rem;
+}
+.OurValues .ValuesBody {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  gap: 10.4rem;
+}
+.OurValues .ValuesBody .Value1 {
+  position: relative;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  place-items: center;
+  text-align: center;
+}
+.OurValues .ValuesBody .Value1 .ValueSVG {
+  background-color: #364154 !important;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+.OurValues .ValuesBody .Value1 .ValueSVG svg {
+  width: 2rem;
+  height: 2rem;
+}
+.OurValues .ValuesBody .Value1 .ValueContent h3 {
+  font-weight: 700;
+}
+.OurValues .ValuesBody .Value1 .ValueContent p {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 900px) {
+  .OurValues {
+    margin: 10rem 0rem;
+    margin-top: 5rem;
+  }
+  .OurValues .ValuesHead {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+  }
+  .OurValues .ValuesHead h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 20rem;
+  }
+  .OurValues .ValuesHead h6 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: 10rem;
+  }
+  .OurValues .ValuesBody .Value1 {
+    width: 20rem;
+  }
+}/*# sourceMappingURL=OurValues.css.map */

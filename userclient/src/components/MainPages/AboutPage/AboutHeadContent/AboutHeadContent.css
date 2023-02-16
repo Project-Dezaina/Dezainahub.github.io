@@ -1,0 +1,373 @@
+.AboutHeadContent {
+  padding-top: 5rem;
+}
+.AboutHeadContent .HeadContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  place-items: center;
+}
+.AboutHeadContent .HeadContent .HeadContentHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.AboutHeadContent .HeadContent .HeadContentHead h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 61rem;
+}
+.AboutHeadContent .HeadContent .HeadContentHead p {
+  width: 45rem;
+}
+.AboutHeadContent .HeadContent .subHeadContent {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+.AboutHeadContent .HeadContent .subHeadContent h6 {
+  font-weight: 600;
+}
+.AboutHeadContent .HeadContent .button-box {
+  margin-top: 1rem;
+}
+.AboutHeadContent .HeadContent .button-box button {
+  position: relative;
+  padding: 1em 2em;
+  outline: none;
+  text-decoration: none;
+  align-items: center;
+  border: none;
+  background-color: #364154;
+  border-radius: 1.2em;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  z-index: 0;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.AboutHeadContent .HeadContent .button-box button:hover {
+  animation: sh0 0.5s ease-in-out both;
+}
+@keyframes sh0 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+.AboutHeadContent .HeadContent .button-box button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+.AboutHeadContent .HeadContent .button-box button::before,
+.AboutHeadContent .HeadContent .button-box button::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+.AboutHeadContent .HeadContent .button-box button:hover::before,
+.AboutHeadContent .HeadContent .button-box button:hover::after {
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.AboutHeadContent .HeadContent .button-box button:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+.AboutHeadContent .HeadContent .button-box button:hover::after {
+  transform: translate(50%, 0) scale(1.1);
+}
+.AboutHeadContent .HeadContentImage {
+  display: flex;
+  flex-direction: row !important;
+  margin-top: 3rem;
+  justify-content: center !important;
+  position: relative;
+}
+.AboutHeadContent .HeadContentImage .swiper {
+  width: 40rem;
+  height: 100%;
+}
+.AboutHeadContent .HeadContentImage .swiper-slide {
+  text-align: center;
+  padding: 0rem;
+  font-size: 18px;
+  background: #fff;
+  width: 40rem !important;
+  height: 22rem;
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.AboutHeadContent .HeadContentImage .AboutImage2 {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  place-items: center;
+}
+.AboutHeadContent .HeadContentImage .AboutImage2 img {
+  width: 40rem;
+  height: 22rem;
+  border-radius: 1.2em;
+}
+.AboutHeadContent .HeadContentImage .AboutArrows {
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  bottom: -5.5rem;
+  right: 34.5rem;
+}
+.AboutHeadContent .HeadContentImage .AboutArrows .ImageArrow {
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.AboutHeadContent .HeadContentImage .AboutArrows .ImageArrow svg {
+  width: 3rem;
+  height: 3rem;
+}
+.AboutHeadContent .swiper-pointer-events {
+  display: flex;
+  flex-direction: row;
+}
+.AboutHeadContent .swiper-pointer-events .swiper-button-next,
+.AboutHeadContent .swiper-pointer-events .swiper-button-prev {
+  background-color: #fff !important;
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 50% !important;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25) !important;
+  display: flex !important;
+  place-content: center !important;
+  place-items: center !important;
+  bottom: 2rem !important;
+  top: auto;
+}
+.AboutHeadContent .swiper-button-next {
+  display: flex !important;
+  place-content: center !important;
+  place-items: center !important;
+  right: 14rem !important;
+}
+.AboutHeadContent .swiper-button-next:after {
+  color: #4BACE0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.AboutHeadContent .swiper-button-prev {
+  left: 15rem !important;
+  display: flex !important;
+  place-content: center !important;
+  place-items: center !important;
+}
+.AboutHeadContent .swiper-button-prev:after {
+  font-size: 2rem;
+  color: #4BACE0;
+  font-weight: 900;
+}
+.AboutHeadContent .swiper {
+  min-height: 50vh;
+}
+
+@media screen and (max-width: 900px) {
+  .AboutHeadContent {
+    padding-top: 5rem;
+  }
+  .AboutHeadContent .HeadContent {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    gap: 0rem;
+  }
+  .AboutHeadContent .HeadContent h1 {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    width: 27rem !important;
+  }
+  .AboutHeadContent .HeadContent p {
+    font-size: 0.8rem !important;
+    width: 27rem !important;
+  }
+  .AboutHeadContent .HeadContent .subHeadContent {
+    margin-top: 1rem !important;
+    display: flex;
+  }
+  .AboutHeadContent .HeadContent .subHeadContent h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .AboutHeadContent .HeadContent .button-box {
+    margin-top: 0rem;
+  }
+  .AboutHeadContent .HeadContent .button-box button {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border-radius: 1.2em;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.6rem;
+    z-index: 0;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .AboutHeadContent .HeadContent .button-box button:hover {
+    animation: sh0 0.5s ease-in-out both;
+  }
+  @keyframes sh0 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(7deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-7deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  .AboutHeadContent .HeadContent .button-box button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  .AboutHeadContent .HeadContent .button-box button::before,
+  .AboutHeadContent .HeadContent .button-box button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+  }
+  .AboutHeadContent .HeadContent .button-box button:hover::before,
+  .AboutHeadContent .HeadContent .button-box button:hover::after {
+    opacity: 0.15;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .AboutHeadContent .HeadContent .button-box button:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.9);
+  }
+  .AboutHeadContent .HeadContent .button-box button:hover::after {
+    transform: translate(50%, 0) scale(1.1);
+  }
+  .AboutHeadContent .HeadContentImage {
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 3rem;
+    justify-content: center !important;
+    position: relative;
+  }
+  .AboutHeadContent .HeadContentImage .swiper {
+    width: 32rem;
+    height: 100%;
+  }
+  .AboutHeadContent .HeadContentImage .swiper-slide {
+    text-align: center;
+    padding: 0rem;
+    font-size: 18px;
+    background: #fff;
+    width: 32rem !important;
+    height: 22rem;
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .AboutHeadContent .HeadContentImage .swiper-button-next {
+    right: 12rem !important;
+    width: 4rem !important;
+    height: 4rem !important;
+    top: 18.5rem !important;
+  }
+  .AboutHeadContent .HeadContentImage .swiper-button-next:after {
+    color: #4BACE0 !important;
+    font-size: 1.5rem !important;
+  }
+  .AboutHeadContent .HeadContentImage .swiper-button-prev {
+    top: 18.5rem !important;
+    left: 11.5rem !important;
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+  .AboutHeadContent .HeadContentImage .swiper-button-prev:after {
+    color: #4BACE0;
+    font-size: 1.5rem !important;
+  }
+  .AboutHeadContent .HeadContentImage .swiper {
+    min-height: 52vh;
+  }
+  .AboutHeadContent .HeadContentImage .AboutImage2 {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+  }
+  .AboutHeadContent .HeadContentImage .AboutImage2 img {
+    width: 25rem;
+    height: 17rem;
+    border-radius: 1.2em;
+  }
+  .AboutHeadContent .HeadContentImage .AboutArrows {
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    bottom: -5.5rem;
+    right: 34.5rem;
+  }
+  .AboutHeadContent .HeadContentImage .AboutArrows .ImageArrow {
+    background-color: #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    place-content: center;
+    place-items: center;
+  }
+  .AboutHeadContent .HeadContentImage .AboutArrows .ImageArrow svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}/*# sourceMappingURL=AboutHeadContent.css.map */

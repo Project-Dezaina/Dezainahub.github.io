@@ -1,0 +1,38 @@
+@import "../../../../globalcss/global.scss";
+
+.MissionVission{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    .MissionVissionButton{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem ;
+        .MissionBoxHeadColor{
+            background-color: red ;
+        }
+        .VissionBoxHeadColor{
+            background-color: blue ;
+        }
+        .MissionBoxHead, .VissionBoxHead{
+                // background-color: aqua;
+                border-radius: $SecondaryBorderRadius;
+                width: 10rem;
+                height: 11rem;
+                display: flex;
+                place-content: center;
+                place-items: center;
+                // pointer-events:visible;
+                cursor:pointer ;
+                button{
+                    background-color: transparent;
+                    border: none;
+                    
+                color: #fff;
+                    outline: none;
+                }
+        }
+    }
+
+}

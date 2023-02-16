@@ -11,19 +11,13 @@ import VerificationPage from "../VerificationPage/VerificationPage"
 import { multiStepContext } from "../LoginSignupPage";
 
 const PageLayout = () => {
-  const {setStep, currentStep} = useContext(multiStepContext);
-  const Showstep = (step) => {
-    switch (step) {
-      case 1:
-        return <LoginPage/>;
-      case 2:
-        return <VerificationPage/>;
-      case 3:
-        return <SignupPage/>;
-        default:
-          return <LoginPage/>
-    }
-  };
+  
+  const [currentStep, setStep] = useState(1);
+  
+  const [currentStep, setStep] = useState(1);
+  
+  const [currentStep, setStep] = useState(1);
+  
 
 
 

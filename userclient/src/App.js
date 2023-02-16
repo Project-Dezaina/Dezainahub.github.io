@@ -1,6 +1,6 @@
 import "./App.css";
 // import LoginSignupPage from "./components/MainPages/LoginSignupPage/LoginSignupPage";
-// import Homepage from "./components/pages/homePage/Homepage";
+import Homepage from "./components/pages/homePage/Homepage";
 import AboutPage from "./components/MainPages/AboutPage/AboutPage";
 // import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import ProductPage from "./components/MainPages/ProductPage/ProductPage";
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
     
      {/* <LoginSignupPage/> */}
-      <Homepage />
+      {/* <Homepage /> */}
       <AboutPage/>
       {/* <ProductPage/> */}
       {/* <GalleryPage/> */}

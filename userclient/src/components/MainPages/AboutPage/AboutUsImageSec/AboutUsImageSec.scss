@@ -1,0 +1,199 @@
+@import "../../../globalcss/global.scss";
+
+.aboutUsImageSec {
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+    padding: 0rem 5rem 0rem 5rem;
+    margin-top: 10rem;
+    .abt-img {
+      width: 80%;
+      height: 20%;
+      position: relative;
+      img {
+        width: 30rem;
+        height: 38rem;
+        border-radius: 10px;
+        box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, 0.32);
+      }
+      .about-float-window {
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+        position: absolute;
+        top: 24rem;
+        right: 0rem;
+        width: 10rem;
+        height: 10rem;
+        justify-content: baseline;
+        .about-float-window-content {
+          color: gray;
+          width: 8rem;
+          text-align: center;
+          margin-top: 0.5rem;
+          margin-left: 1rem;
+          font-size: 11px;
+        }
+        .about-float-icon {
+          padding-top: 2rem;
+          text-align: center;
+          margin-left: 0.8rem;
+        }
+      }
+      h1 {
+        margin-left: 0.5rem;
+      }
+
+      .aboutUsContainer {
+        width: 50%;
+        height: 50%;
+      }
+    }
+
+    .About-Content {
+      // display: grid;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      // margin-left: 7rem;
+      margin: 0 0 0 7rem;
+
+      h6 {
+        color: #13b8dd;
+      }
+      h1 {
+        width: 30rem;
+        font-size: 1.9rem;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1rem;
+        color: #2f455c;
+        span {
+          color: #4bace0;
+        }
+      }
+
+      h5 {
+        color: #13b8dd;
+      }
+      p {
+        width: 29rem;
+        font-size: 14px;
+        margin-bottom: 0px;
+        span {
+          color: rgb(154, 153, 153);
+        }
+      }
+
+      .AboutPointsHead {
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        gap: 0.2rem;
+        margin-top: 2rem;
+        .AboutPoints {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          svg {
+            width: 1.2rem;
+            height: 1.2rem;
+          }
+          h6 {
+            font-size: 1rem;
+            color: #2f455c;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 900px) {
+   
+      .aboutUsImageSec {
+        flex-direction: column;
+        margin-top: 5rem;
+        place-items: center;
+        place-content: center;
+        align-items: center;
+        padding: 0rem !important;
+        .abt-img {
+          // width: 20rem;
+          img {
+            width: 20rem;
+            height: 25rem;
+            margin-left: 3rem;
+          }
+          .about-float-window {
+            top: 13rem;
+            right: -1rem;
+            width: 8rem;
+            height: 8rem;
+  
+            .about-float-icon {
+              padding-top: 0.7rem;
+              text-align: center;
+              margin-left: 0rem;
+            }
+  
+            .about-float-window-content {
+              width: 8rem;
+              padding: 2px;
+              text-align: center;
+              margin-top: 0.5rem;
+              margin-left: 0rem;
+              font-size: 11px;
+            }
+          }
+        }
+        .About-Content {
+          text-align: center;
+          margin: 3rem auto 5rem auto;
+          place-items: center;
+  
+          // margin-left: 0px !important;
+          h6 {
+            font-size: 1rem;
+          }
+          h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            width: 27rem;
+          }
+          p {
+            font-size: 0.8rem;
+            width: 28rem;
+          }
+  
+          .AboutPointsHead {
+            display: grid;
+            grid-template-columns: 13.5rem 13.5rem;
+            gap: 0.2rem;
+            margin-top: 1rem;
+            .AboutPoints {
+              place-content: center;
+              place-items: center;
+              display: flex;
+              flex-direction: row;
+              gap: 1rem;
+              svg {
+                width: 1.2rem;
+                height: 1.2rem;
+              }
+              h6 {
+                font-size: 0.8rem;
+                font-weight: 700;
+                margin-bottom: 0rem;
+              }
+            }
+          }
+        }
+      }
+      
+      
+    
+  }
