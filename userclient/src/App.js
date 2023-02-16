@@ -19,7 +19,7 @@ function App() {
     <div className="App">
     
      {/* <LoginSignupPage/> */}
-      {/* <Homepage /> */}
+      <Homepage />
       <AboutPage/>
       {/* <ProductPage/> */}
       {/* <GalleryPage/> */}

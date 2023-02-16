@@ -22,12 +22,13 @@ const AboutPage = () => {
       <div className="AboutPageContainer container">
         <div className="AboutHeadContent">
           <div className="HeadContent">
+          <div className='HeadContentHead'>
             <h1>Everything you need to grow your business visually</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's
             </p>
-            {/* <button>Get Started With Dezaina</button> */}
+            </div>
             <div className="button-box">
               <button type="button">Get Started With Dezaina</button>
             </div>
@@ -159,7 +160,7 @@ const AboutPage = () => {
           <div className="About-Content">
             <div className="about-icon"></div>
             {/* <div className="About-Content1"> */} {/* <h6>Who are we</h6> */}
-            <h5>Our Duties</h5>
+            <h6>Our Duties</h6>
             <h1>
               What Do<span> We Do ?</span>
             </h1>
