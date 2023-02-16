@@ -50,13 +50,13 @@ const ProductCards = () => {
               </div>
               <h5 id={card.TextId}>{card.Pricing}</h5>
             </div>
-            <div className="CardBody" id={card.TextId}>{card.Body}</div>
+            <div className="CardBody" id={card.TextId}><p>{card.Body}</p></div>
             <div className="CardBase">
-              <div className="BaseButton" id={card.buttonId}>Learn More</div>
+              <div className="BaseButton" id={card.buttonId}><p>Learn More</p></div>
               <div className="AddToCartButton">
                 <button class="icon-btn add-btn" id={card.buttonId}>
                   <div class="add-icon"></div>
-                  <div class="btn-txt" id={card.buttonId}>Add To Cart</div>
+                  <div class="btn-txt" id={card.buttonId}><p>Add To Cart</p></div>
                 </button>
               </div>
             </div>

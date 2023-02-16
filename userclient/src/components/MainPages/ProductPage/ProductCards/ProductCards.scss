@@ -234,3 +234,155 @@
 }
 }
 }
+
+@media screen and (max-width:900px) {
+    .ProductCardsContainer{
+       
+        .container{
+            // margin-left: 2rem ;
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+        h1{
+            font-size: 1.5rem;
+            }
+        .ProductCards {
+        display: grid;
+        grid-template-columns: 25rem !important;
+        row-gap: 0rem !important;
+            margin-top: 1rem;
+            place-items: center;
+        .SingleCards{
+            display: flex;
+            flex-direction: column;
+            gap: 0rem !important;
+            margin-top: 1rem !important;
+            width: 20rem !important;
+            height: 15rem !important;
+            
+            .CardHead{
+             h5{
+                font-size: 1rem;
+                margin-bottom: 0rem !important;
+             }   
+            
+            .ProductSubHead{
+                gap: 1rem !important;
+               
+                h3{
+                    font-size: 1.3rem;
+                    margin-bottom: 0rem !important;
+                }
+            }
+            .ProductSVG{
+                width: 2.5rem;
+                height: 2.5rem;
+                svg{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+        .CardBody{
+            margin: 1rem 0rem;
+            p{
+
+                font-size: 0.8rem !important;
+            }
+        }
+        .CardBase{
+            gap: 7rem;
+            .BaseButton {
+                font-size: 0.6rem !important;
+                width: 6rem;
+                height: 1.8rem;
+                p{
+                    font-size: 0.4rem;
+                    margin-top: 0.9rem !important;
+                }
+            }
+                        
+        }
+        .CardBase:hover{
+            .BaseButton {
+                height: 1.8rem;
+            }
+        }
+        .AddToCartButton {
+            .icon-btn {
+                width: 30px !important;
+                height: 30px !important;
+                // overflow: visible !important;
+            }
+            
+
+            .add-btn:hover {
+                width: 6rem !important;
+                
+                .btn-txt{
+                    p{
+                        margin-top: 0.4rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            .add-btn::before,
+            .add-btn::after {
+                
+                top: 12px !important;
+                height: 3px !important;
+                width: 8px !important;
+            }
+
+            .add-btn::after {
+                right: 7px !important;
+            }
+
+            .add-btn::before {
+                left: 7px !important;
+            }
+
+            .btn-txt {
+                font-size: 0.8rem !important;
+                // padding: 4px !important;
+                margin: 0px 5px !important;
+                
+            }
+
+            .add-btn:hover::before,
+            .add-btn:hover::after {
+                width: 4px !important;
+            }
+
+            
+
+            .add-icon::after,
+            .add-icon::before {
+                top: 6px !important;
+                height: 15px !important;
+                width: 2px !important;
+                
+            }
+            .add-icon::after{
+                right: 13.5px !important;
+            }
+            .add-icon::before{
+                left: 13.5px !important;
+                // right: 15px !important;
+                // right: 20px !important;
+            }
+
+            
+
+            
+
+            
+        }    
+    }
+        
+       
+    }
+    }
+    }
+}

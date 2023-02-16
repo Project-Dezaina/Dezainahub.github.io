@@ -6,4 +6,16 @@
   gap: 5rem;
   padding: 1.5rem;
   place-content: center;
+}
+.ProductNavigation a {
+  font-size: 1rem !important;
+}
+
+@media screen and (max-width: 900px) {
+  .ProductNavigation {
+    gap: 3rem;
+  }
+  .ProductNavigation a h6 {
+    font-size: 0.8rem !important;
+  }
 }/*# sourceMappingURL=ProductNavigation.css.map */

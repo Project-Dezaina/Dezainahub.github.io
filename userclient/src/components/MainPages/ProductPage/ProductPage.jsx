@@ -49,7 +49,7 @@ const ProductPage = () => {
               <div className="PageHeadCards">
                 <div className="PageCards" id="PageCard1">
                   <div className="CardBackShadow"></div>
-                  <div className="PageSubCard1">
+                  <div className="PageSubCard1" id="Subcard1">
                     <h3>Click on Learn More</h3>
                     <p>
                       Read how some proficient designs can help your business

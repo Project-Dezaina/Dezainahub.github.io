@@ -18,6 +18,7 @@
             // place-content: center;
             place-items: center ;
             h1{
+                color: $secondarycolor;
                 font-size: 3.5rem;
                 font-weight: 700;
                 width: 60rem;
@@ -319,3 +320,287 @@
     //         border: 5px solid red;
     //     }
     // }
+
+    @media screen and (max-width:900px) {
+        .ProductPageMain{
+            .ProductPageHead{
+                margin-bottom: 15rem;
+                .PageHeadContent{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    display: flex;
+                    // place-content: center;
+                    place-items: center ;
+                    h1{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        width: 30rem;
+                    }
+                    p{
+                        font-size: 0.6rem;
+                        width: 22rem;
+                    }
+                }
+                .PageHeadCards{
+                    margin: 5rem auto;
+                    
+                    display: grid;
+                    row-gap: 10rem;
+                    column-gap: 1rem;
+                    grid-template-columns: 14rem 14rem ;
+                    margin-left: 2.5rem;
+                    // place-content: center;
+                    .PageCards{
+                        position: relative;
+                        .PageSubCard1{
+                        padding: 1.5rem;
+                        width: 12rem;
+                        transform: rotate(5deg);
+                        position: relative;
+                        top: 0.6rem;
+                        left: -0.75rem;
+                        h3{
+                            font-size: 1rem;
+                            width: 100%;
+                        }
+                        p{
+                            width: 100%;
+                            font-size: 0.5rem;
+                        }
+                        .ProgressBar{
+                            gap: 0.2rem;
+                            .ProgressBarContent{
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 3.4rem;
+                                    text-align: center;
+                                    place-items: center;
+                                .BarProgress{
+            
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 0.3rem;
+                                    text-align: center;
+                                    place-items: center;
+                                    svg{
+                                        width: 0.8rem;
+                                        height: 0.8rem;
+                                    }
+                                    h4{
+                                        margin-top: 0.5rem;
+                                        font-size: 0.7rem;
+                                    }
+                                }
+                                h6{
+                                    font-size: 0.5rem;
+                                    display: flex;
+                                    place-content: center;
+                                    place-items: center;
+                                    margin-top: 0.5rem;
+                                }
+            
+                            }
+                            // .BarBar {
+                            //     // width: 100%;
+                            //     // height: 0.6rem;
+                            //     // background-color: #2F455C;
+                            //     // border-radius: 1.2em;
+                            // }
+                        }
+                    }
+                    // .PageSubCard1{
+                    //     // visibility: hidden;
+                    // }
+                    #Subcard2 {
+                        position: relative;
+                        left: 0.85rem !important;
+                        position: relative;
+                    }
+                    #Subcard4 {
+                        // position: relative;
+                        // left: -0.65rem !important;
+                        
+                        position: relative;
+                        left: 0.8rem !important;
+                    }
+                    #Subcard3{
+                        // position: relative;
+                        // left: 0.8rem !important;
+                        
+                        position: relative;
+                        left: -0.65rem !important;
+                    }
+                    .CardBackShadow{
+                        position: absolute;
+                        top: 0rem;
+                        left: 0rem;
+                        z-index: -1;
+                        border-radius: 1.2em;
+                        width: 12rem;
+                        height: 11rem;
+                        background-color: #F4F4F4;
+                    }
+                }
+                #PageCard2{
+                    position: relative;
+                    top: 10rem;
+                }
+                #PageCard4{
+                    position: relative;
+                    top: 10rem;
+                }
+                }
+            }
+            
+        }
+    }
+
+
+    @media screen and (max-width:900px) {
+        .container{
+            // margin-left: 2rem ;
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+        h1{
+            font-size: 1.5rem;
+            }
+        .ProductCards {
+        display: grid;
+        grid-template-columns: 25rem !important;
+        row-gap: 0rem !important;
+            margin-top: 1rem;
+            place-items: center;
+        .SingleCards{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem !important;
+            width: 20rem !important;
+            height: 15rem !important;
+            
+            .CardHead{
+             h5{
+                font-size: 1rem;
+                margin-bottom: 0rem !important;
+             }   
+            
+            .ProductSubHead{
+                gap: 1rem !important;
+               
+                h3{
+                    font-size: 1.3rem;
+                    margin-bottom: 0rem !important;
+                }
+            }
+            .ProductSVG{
+                width: 2.5rem;
+                height: 2.5rem;
+                svg{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+        .CardBody{
+            margin: 1rem 0rem;
+            p{
+
+                font-size: 0.8rem !important;
+            }
+        }
+        .CardBase{
+            gap: 7rem;
+            .BaseButton {
+                font-size: 0.6rem !important;
+                width: 6rem;
+                height: 1.8rem;
+                p{
+                    font-size: 0.4rem;
+                    margin-top: 0.9rem !important;
+                }
+            }
+                        
+        }
+        .CardBase:hover{
+            .BaseButton {
+                height: 1.8rem;
+            }
+        }
+        .AddToCartButton {
+            .icon-btn {
+                width: 30px !important;
+                height: 30px !important;
+                // overflow: visible !important;
+            }
+            
+
+            .add-btn:hover {
+                width: 6rem !important;
+                
+                .btn-txt{
+                    p{
+                        margin-top: 0.4rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            .add-btn::before,
+            .add-btn::after {
+                
+                top: 12px !important;
+                height: 3px !important;
+                width: 8px !important;
+            }
+
+            .add-btn::after {
+                right: 7px !important;
+            }
+
+            .add-btn::before {
+                left: 7px !important;
+            }
+
+            .btn-txt {
+                font-size: 0.8rem !important;
+                // padding: 4px !important;
+                margin: 0px 5px !important;
+                
+            }
+
+            .add-btn:hover::before,
+            .add-btn:hover::after {
+                width: 4px !important;
+            }
+
+            
+
+            .add-icon::after,
+            .add-icon::before {
+                top: 6px !important;
+                height: 15px !important;
+                width: 2px !important;
+                
+            }
+            .add-icon::after{
+                right: 13.5px !important;
+            }
+            .add-icon::before{
+                left: 13.5px !important;
+                // right: 15px !important;
+                // right: 20px !important;
+            }
+
+            
+
+            
+
+            
+        }    
+    }
+        
+       
+    }
+    }
+    }
