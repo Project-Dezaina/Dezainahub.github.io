@@ -1,19 +1,7 @@
 import React from "react";
-import "./OrderCard1.css";
-const OrderCard1 = () => {
+import "./CompletedOrderCard.css";
+const CompletedOrderCard = () => {
   const cards = [
-    {
-      // Image: Fotu,
-      title: "Restaurant Posters",
-      Price: "500/-",
-      text: "24/12/2023",
-    },
-    {
-      // Image: Fotu,
-      title: "Restaurant Posters",
-      Price: "500/-",
-      text: "24/12/2023",
-    },
     {
       // Image: Fotu,
       title: "Restaurant Posters",
@@ -94,4 +82,4 @@ const OrderCard1 = () => {
   );
 };
 
-export default OrderCard1;
+export default CompletedOrderCard;

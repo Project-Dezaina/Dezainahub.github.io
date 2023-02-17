@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { multiStepContext } from "../CheckStatus";
-import "./OrderContent.css"
-import OrderCard1 from './OrderCard1/OrderCard1';
-import OrderContentDetails from './OrderContentDetails/OrderContentDetails';
-const OrderContent = () => {
-  const {setStep, currentStep} = useContext(multiStepContext);
+import "./ActiveOrderContent.css"
+import ActiveOrderCard from './ActiveOrderCard/ActiveOrderCard';
+import ActiveOrderStatusContent from './ActiveOrderStatusContent/ActiveOrderStatusContent';
+const ActiveOrderContent = () => {
+    const {setStep, currentStep} = useContext(multiStepContext);
 
   return (
     <div className="OrderContent">
@@ -31,8 +31,8 @@ const OrderContent = () => {
             <div className="OrderNumbers">
               <div className="OrderNum-Content">
                 
-                <OrderCard1/>
-                {/* <OrderContentDetails/> */}
+                <ActiveOrderCard/>
+                {/* <ActiveOrderStatusContent/> */}
                 
 
                 
@@ -50,4 +50,4 @@ const OrderContent = () => {
   )
 }
 
-export default OrderContent;
+export default ActiveOrderContent;
