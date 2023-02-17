@@ -1,28 +1,14 @@
-import React, { useContext, useStep } from "react";
+import React, { useState } from "react";
 import Header from "../../pages/navbar/Navbar";
 import NewFooter from "../../pages/NewFooter/Footer";
-import { multistep } from "./ContactUsContext/ContactUSContext";
+import ContactUSContext from "./ContactUsContext/ContactUSContext";
 import "./ContactUsPage.css";
-// import Cstage1 from "./ContactUsStages/Cstage1";
-// import Cstage2 from "./ContactUsStages/Cstage2";
-// import Cstage3 from "./ContactUsStages/Cstage3";
 
 
+export const multiStepContactContext = React.createContext();
 
 const ContactUsPage = () => {
-  const { currentStep, setStep } = useContext(multistep);
-  const showStep = (step) => {
-    // switch (step) {
-    //   case 1:
-    //     <Cstage1/>;
-
-    //   case 2:
-    //     <Cstage2/>;
-    //   case 3:
-    //    <Cstage3/>;
-  
-    // }
-  };
+  const [currentStep, setStep] = useState(1);
   return (
     <div>
       <Header />
@@ -38,8 +24,8 @@ const ContactUsPage = () => {
           </p>
         </div>
         <div className="ContactForm">
-          <div className="ContactFormContainer container">
-            <form action="">
+          {/* <div className="ContactFormContainer container"> */}
+            {/* <form action="">
               <div className="contactforminputboxBody">
                 <div className="contactforminputbox">
                   <label htmlFor="">Name</label>
@@ -57,9 +43,56 @@ const ContactUsPage = () => {
                   <button> Next</button>
                 </div>
               </div>
-            </form>
-            {/* {showStep(currentStep)}; */}
-          </div>
+            </form> */}
+            {/* <form action="">
+              <div className="contactforminputboxBody">
+                <div className="contactforminputbox">
+                  <label htmlFor="">Website URL (if any) </label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="URL"
+                  ></input>
+                </div>
+                <div className="contactforminputbox">
+                  <label htmlFor="">Mobile Number</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Mobile Number"
+                  ></input>
+                </div>
+                <div className="contactforminputbox">
+                  <label htmlFor="">Email</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Email"
+                  ></input>
+                  <label htmlFor="">Select Slot</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Select Slot"
+                  ></input>
+                  </div>
+                <div className="FormButton">
+                  <button onClick={()=>{
+                    setStep(2)
+                  }}> Next</button>
+                  
+                </div>
+              </div>
+            </form> */}
+          {/* </div> */}
+            <multiStepContactContext.Provider 
+      value={{currentStep, setStep}}>
+        <ContactUSContext/>
+      </multiStepContactContext.Provider>
         </div>
       </div>
 
