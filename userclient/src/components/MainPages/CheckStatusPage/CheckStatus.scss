@@ -27,50 +27,50 @@
         color: grey;
       }
     }
-    .HeadingCards {
-      width: 95%;
-      margin-top: 3rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 3.15rem;
+    // .HeadingCards {
+    //   width: 95%;
+    //   margin-top: 3rem;
+    //   display: flex;
+    //   flex-direction: row;
+    //   justify-content: center;
+    //   gap: 3.15rem;
 
-      #ActiveCard {
-        background-color: $secondarycolor;
-        h4 {
-          color: #fff;
-        }
-        h1 {
-          color: #fff;
-        }
-      }
+    //   #ActiveCard {
+    //     background-color: $secondarycolor;
+    //     h4 {
+    //       color: #fff;
+    //     }
+    //     h1 {
+    //       color: #fff;
+    //     }
+    //   }
 
-      .CardHeads {
-        width: 23.5rem;
-        height: 13.1rem;
-        background-color: $thirdcolor;
-        padding: 30px;
-        border-radius: 1.2em;
-        display: flex;
-        flex-direction: column;
-        place-content: center;
-      }
+    //   .CardHeads {
+    //     width: 23.5rem;
+    //     height: 13.1rem;
+    //     background-color: $thirdcolor;
+    //     padding: 30px;
+    //     border-radius: 1.2em;
+    //     display: flex;
+    //     flex-direction: column;
+    //     place-content: center;
+    //   }
 
-      .SubCard1 {
-        h4 {
-          font-size: 1.3rem;
-          font-weight: 700;
-          color: $secondarycolor;
-        }
-      }
-      .cardNum {
-        h1 {
-          font-weight: 700;
-          color: $secondarycolor;
-          font-size: 4rem;
-        }
-      }
-    }
+    //   .SubCard1 {
+    //     h4 {
+    //       font-size: 1.3rem;
+    //       font-weight: 700;
+    //       color: $secondarycolor;
+    //     }
+    //   }
+    //   .cardNum {
+    //     h1 {
+    //       font-weight: 700;
+    //       color: $secondarycolor;
+    //       font-size: 4rem;
+    //     }
+    //   }
+    // }
     .OrderContent {
       width: 95%;
       margin-top: 3.15rem;
@@ -212,6 +212,7 @@
         //   }
         }
         .ReqButton {
+          margin-top: 2rem !important;
           display: flex;
           place-content: center;
           .ReqButtonbutton {
