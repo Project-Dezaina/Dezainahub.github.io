@@ -1,0 +1,39 @@
+.OrderCard1 .OrderCard-Inner-Inner {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+}
+.OrderCard1 .OrderCard-Inner-Inner .Order-Content1, .OrderCard1 .OrderCard-Inner-Inner .Order-Content2 {
+  display: flex;
+  flex-direction: row;
+}
+.OrderCard1 .OrderCard-Inner-Inner .Order-Content1 {
+  margin-top: 1rem;
+  gap: 1rem;
+  width: 50%;
+  place-items: center;
+  margin-left: 3rem;
+}
+.OrderCard1 .OrderCard-Inner-Inner .Order-Content1 h4 {
+  margin-bottom: 0 !important;
+}
+.OrderCard1 .OrderCard-Inner-Inner .Order-Content2 {
+  margin-top: 1rem;
+  width: 50%;
+  padding-right: 2rem;
+  gap: 5rem;
+  place-items: center;
+  justify-content: right;
+}
+.OrderCard1 .OrderCard-Inner-Inner .Order-Content2 h6 {
+  color: grey;
+  margin-bottom: 0% !important;
+}
+.OrderCard1 .OrderCard-Inner-Inner .Order-Content2 .Nxt-Icon {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.OrderCard1 .OrderCard-Inner-Inner .Bullet-Icon {
+  width: 0.9rem;
+  height: 0.9rem;
+}/*# sourceMappingURL=OrderCard1.css.map */
