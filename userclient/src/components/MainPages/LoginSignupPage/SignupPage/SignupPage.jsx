@@ -3,8 +3,13 @@ import React, { useContext } from "react";
 import "./SignupPage.css"
 import { multiStepContext } from "../LoginSignupPage";
 
+
+
 const SignupPage = () => {
     const {setStep, currentStep} = useContext(multiStepContext);
+    const ChangeStep = () => {
+      setStep(2)
+    };
     return (
         <div className="SignupPageContainer">
             {/* <PageLayout/> */}
@@ -20,7 +25,7 @@ const SignupPage = () => {
             <input placeholder="Email"></input>
           </form>
           <div className="LoginButtons">
-          <button className="Button-Proceed" type="Submit" onClick={() => setStep(2)}>Create Account</button>
+          <button className="Button-Proceed" type="Submit" onClick={(ChangeStep) => setStep(2)}>Create Account</button>
           <button type="Submit">
             <svg
               width="20"
