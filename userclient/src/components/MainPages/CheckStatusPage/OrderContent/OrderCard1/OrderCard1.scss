@@ -1,0 +1,65 @@
+@import "../../../../globalcss/global.scss";
+
+.OrderCard1 {
+  .OrderCard-Inner-Inner {
+       margin-top: 0rem !important;
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    // place-content: center;
+    // place-items: center !important;
+    // align-items: center;
+    // gap: 3rem;
+    .Order-Content1,
+    .Order-Content2 {
+      display: flex;
+      flex-direction: row;
+    }
+    .Order-Content1 {
+      margin-top: 1rem;
+
+      gap: 3rem !important;
+      width: 50%;
+      place-items: center;
+      margin-left: 3rem;
+      // justify-content: right;
+      .Order-ContentInner{
+        display: flex;
+      flex-direction: row;
+      
+      place-items: center;
+      gap: 1rem;
+      h4 {
+        margin-bottom: 0 !important;
+      }
+      }
+      p{
+        width: 5rem;
+        margin-bottom: 0rem !important;
+        color: gray;
+        text-align: center;
+      }
+    }
+    .Order-Content2 {
+      margin-top: 1rem;
+      width: 50%;
+      // display: flex;
+      padding-right: 2rem;
+      gap: 5rem;
+      place-items: center;
+      justify-content: right;
+      h6 {
+        color: grey;
+        margin-bottom: 0% !important;
+      }
+      .Nxt-Icon {
+        width: 0.9rem;
+        height: 0.9rem;
+      }
+    }
+    .Bullet-Icon {
+      width: 0.9rem;
+      height: 0.9rem;
+    }
+  }
+}

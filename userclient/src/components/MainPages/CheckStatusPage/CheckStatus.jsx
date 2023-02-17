@@ -1,40 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "../../pages/navbar/Navbar";
 import NewFooter from "../../pages/NewFooter/Footer";
 import "./CheckStatus.css";
 import OrderContent from "./OrderContent/OrderContent";
+import StatusStages from "./StatusStages/StatusStages";
+
+
+export const multiStepContext = React.createContext();
+
 
 const CheckStatus = () => {
-  // const cards = [
-  // {
-  //   // Image: Fotu,
-  //   title: "Restaurant Posters",
-  //   text: "24/12/2023",
-  // },
-  // 
-  // ];
-  // const StatusCards = [
-  //   {
-  //     // Image: Fotu,
-  //     title: "Want a Poster",
-  //     text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  //   },
-  //   {
-  //     // Image: Fotu,
-  //     title: "Need to change some layouts",
-  //     text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  //   },
-  //   {
-  //     // Image: Fotu,
-  //     title: "Layouts Done. Text changes",
-  //     text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  //   },
-  //   {
-  //     // Image: Fotu,
-  //     title: "Project Completed",
-  //     text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  //   },
-  // ];
+  const [currentStep, setStep] = useState(1);
   return (
     <div>
       <Header />
@@ -44,7 +20,7 @@ const CheckStatus = () => {
             <h1>Welcome Back</h1>
             <p>Check your order status</p>
           </div>
-          <div className="HeadingCards">
+          {/* <div className="HeadingCards">
             <div className="CardHeads" id="ActiveCard">
               <div className="SubCard1">
                 <h4>Total Orders</h4>
@@ -69,8 +45,14 @@ const CheckStatus = () => {
                 <h1>20</h1>
               </div>
             </div>
-          </div>
-          <OrderContent/>
+          </div> */}
+          {/* <StatusStages/> */}
+          
+          <multiStepContext.Provider 
+      value={{currentStep, setStep}}>
+        <StatusStages/>
+      </multiStepContext.Provider>
+      {/* <OrderContent/> */}
         </div>
       </div>
 

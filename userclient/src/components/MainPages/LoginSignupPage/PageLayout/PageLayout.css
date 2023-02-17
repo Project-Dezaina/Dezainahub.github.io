@@ -87,7 +87,6 @@
   top: 0rem;
   right: -16rem;
   margin: 1rem 1rem 0rem 0rem;
-  z-index: 1;
   width: 8rem;
   height: 3rem;
   border: none;
@@ -96,6 +95,9 @@
   place-items: center;
   background-color: #364154;
   border-radius: 1.2em;
+  color: #fff;
+}
+.PageLayoutContainer .PageLayoutInnerContent .LoginImage button .TestingButtons1 {
   color: #fff;
 }
 

@@ -11,7 +11,8 @@ import { multiStepContext } from "../LoginSignupPage";
 
 const PageLayout = () => {
   
-  const [currentStep, setStep] = useState(1);
+  const {setStep, currentStep} = useContext(multiStepContext);
+  // const [currentStep, setStep] = useState(1);
 const Showstep = (step)=>{
   switch (step) {
     case 1:
@@ -76,7 +77,8 @@ const handlestate = ()=>{
         </div>
         <div className="LoginImage">
           <img src={LoginSignupImg} alt="" />
-          {currentStep===2 ? <div className="HiddenButton"></div>: <button className="LoginSignupButton" onClick={handlestate}>{currentStep===1 ? <div>Signup</div>: currentStep===2 ? <div></div>: <div>Login</div> }</button>}
+          {currentStep===2 ? <div className="HiddenButton"></div>: <button className="LoginSignupButton" onClick={handlestate}>{currentStep==1 ? <div className="TestingButtons1">Signup</div> : <div className="TestingButtons1">Login</div>}</button>}
+          {/* {currentStep===1 ? <div>Signup</div>: currentStep===2 ? <div></div>: <div>Login</div> } */}
             
         </div>
         </div>

@@ -1,0 +1,38 @@
+.HeadingCards {
+  width: 95%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3.15rem;
+}
+.HeadingCards #ActiveCard {
+  background-color: #364154;
+}
+.HeadingCards #ActiveCard h4 {
+  color: #fff;
+}
+.HeadingCards #ActiveCard h1 {
+  color: #fff;
+}
+.HeadingCards .CardHeads {
+  cursor: pointer;
+  width: 23.5rem;
+  height: 13.1rem;
+  background-color: #F1F1F1;
+  padding: 30px;
+  border-radius: 1.2em;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+.HeadingCards .SubCard1 h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #364154;
+}
+.HeadingCards .cardNum h1 {
+  font-weight: 700;
+  color: #364154;
+  font-size: 4rem;
+}/*# sourceMappingURL=StatusStages.css.map */

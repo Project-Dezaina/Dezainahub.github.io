@@ -1,0 +1,40 @@
+.OrderDetails .OrderContent-Details {
+  margin-top: 2.5rem;
+  overflow: hidden !important;
+}
+.OrderDetails .OrderContent-Details .PCard1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+}
+.OrderDetails .OrderContent-Details .PCard1 svg {
+  position: absolute;
+  width: 4rem !important;
+  z-index: 2 !important;
+}
+.OrderDetails .OrderContent-Details .PCard1 .PosterIcon {
+  position: relative;
+  place-items: center;
+}
+.OrderDetails .OrderContent-Details .PCard1 .PosterIcon .vl {
+  position: absolute;
+  left: 1.7rem;
+  top: -10rem;
+  border-left: 0.5rem solid #364154;
+  height: 100%;
+}
+.OrderDetails .OrderContent-Details .PCard1 .OrderContent-Content {
+  margin-left: 5rem;
+}
+.OrderDetails .OrderContent-Details .PCard1 .OrderContent-Content h4 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  height: 4rem;
+  display: flex;
+  place-items: center;
+  color: #364154;
+}
+.OrderDetails .OrderContent-Details .PCard1 .OrderContent-Content p {
+  width: 60rem;
+}/*# sourceMappingURL=CompletedOrderStatusContent.css.map */

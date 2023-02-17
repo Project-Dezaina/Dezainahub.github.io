@@ -18,9 +18,9 @@ function App() {
   return (
     <div className="App">
     
-     <LoginSignupPage/>
+     {/* <LoginSignupPage/> */}
       {/* <Homepage /> */}
-      {/* <AboutPage/> */}
+      <AboutPage/>
       {/* <ProductPage/> */}
       {/* <GalleryPage/> */}
       {/* <ContactUSContext>
@@ -32,7 +32,7 @@ function App() {
       </ContactUSContext> */}
      {/* <Cstage1/> */}
      <CheckStatusPage/>
-     <YourCartPage/>
+     {/* <YourCartPage/> */}
       
 
 

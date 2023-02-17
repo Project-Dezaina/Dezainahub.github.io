@@ -23,43 +23,6 @@
   font-size: 1.5rem;
   color: grey;
 }
-.CheckStatusPageMain .CheckStatus-container .HeadingCards {
-  width: 95%;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 3.15rem;
-}
-.CheckStatusPageMain .CheckStatus-container .HeadingCards #ActiveCard {
-  background-color: #364154;
-}
-.CheckStatusPageMain .CheckStatus-container .HeadingCards #ActiveCard h4 {
-  color: #fff;
-}
-.CheckStatusPageMain .CheckStatus-container .HeadingCards #ActiveCard h1 {
-  color: #fff;
-}
-.CheckStatusPageMain .CheckStatus-container .HeadingCards .CardHeads {
-  width: 23.5rem;
-  height: 13.1rem;
-  background-color: #F1F1F1;
-  padding: 30px;
-  border-radius: 1.2em;
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-}
-.CheckStatusPageMain .CheckStatus-container .HeadingCards .SubCard1 h4 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #364154;
-}
-.CheckStatusPageMain .CheckStatus-container .HeadingCards .cardNum h1 {
-  font-weight: 700;
-  color: #364154;
-  font-size: 4rem;
-}
 .CheckStatusPageMain .CheckStatus-container .OrderContent {
   width: 95%;
   margin-top: 3.15rem;
@@ -141,6 +104,7 @@
   height: 0.9rem;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .ReqButton {
+  margin-top: 2rem !important;
   display: flex;
   place-content: center;
 }
