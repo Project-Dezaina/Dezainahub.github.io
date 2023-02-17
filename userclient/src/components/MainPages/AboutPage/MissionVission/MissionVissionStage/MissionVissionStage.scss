@@ -3,21 +3,27 @@
 .MissionVission{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 0rem;
+    background-color: $secondarycolor;
+    padding: 0rem;
 
     .MissionVissionButton{
+        
         display: flex;
         flex-direction: column;
         gap: 1rem ;
-        .MissionBoxHeadColor{
-            background-color: red ;
+        #MissionBoxHeadColor{
+            background-color: $secondarycolor ;
+            button{
+                font-weight: 700;
+                color: #fff;
+
+            }
         }
-        .VissionBoxHeadColor{
-            background-color: blue ;
-        }
+        
         .MissionBoxHead, .VissionBoxHead{
-                // background-color: aqua;
-                border-radius: $SecondaryBorderRadius;
+                background-color: $thirdcolor;
+                border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
                 width: 10rem;
                 height: 11rem;
                 display: flex;
@@ -29,10 +35,12 @@
                     background-color: transparent;
                     border: none;
                     
-                color: #fff;
+                color: $secondarycolor;
                     outline: none;
                 }
         }
     }
-
+    .MissionVissionBox{
+        padding: 3rem;
+    }
 }

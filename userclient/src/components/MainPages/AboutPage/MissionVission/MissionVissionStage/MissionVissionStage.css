@@ -1,21 +1,25 @@
 .MissionVission {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 0rem;
+  background-color: #364154;
+  padding: 0rem;
 }
 .MissionVission .MissionVissionButton {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.MissionVission .MissionVissionButton .MissionBoxHeadColor {
-  background-color: red;
+.MissionVission .MissionVissionButton #MissionBoxHeadColor {
+  background-color: #364154;
 }
-.MissionVission .MissionVissionButton .VissionBoxHeadColor {
-  background-color: blue;
+.MissionVission .MissionVissionButton #MissionBoxHeadColor button {
+  font-weight: 700;
+  color: #fff;
 }
 .MissionVission .MissionVissionButton .MissionBoxHead, .MissionVission .MissionVissionButton .VissionBoxHead {
-  border-radius: 0.5em;
+  background-color: #F1F1F1;
+  border-radius: 0.5em 0rem 0rem 0.5em;
   width: 10rem;
   height: 11rem;
   display: flex;
@@ -26,6 +30,9 @@
 .MissionVission .MissionVissionButton .MissionBoxHead button, .MissionVission .MissionVissionButton .VissionBoxHead button {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #364154;
   outline: none;
+}
+.MissionVission .MissionVissionBox {
+  padding: 3rem;
 }/*# sourceMappingURL=MissionVissionStage.css.map */
