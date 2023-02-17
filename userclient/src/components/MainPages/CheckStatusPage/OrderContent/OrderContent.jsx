@@ -27,8 +27,7 @@ const OrderContent = () => {
     title: "Restaurant Posters",
     text: "24/12/2023",
   },
-  ~
-]
+];
   
     // const StatusCards = [
     //     {
