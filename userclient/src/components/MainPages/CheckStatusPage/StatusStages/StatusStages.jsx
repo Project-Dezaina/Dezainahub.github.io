@@ -21,6 +21,7 @@ const StatusStages = () => {
 
   const TotalOrderStage =()=>{
     setStep(1)
+    // currentStep===1 ? 
     // console.log(currentStep)
   }
   const ActiveOrderStage =()=>{
@@ -31,10 +32,27 @@ const StatusStages = () => {
     setStep(3)
     // console.log(currentStep)
   }
+  const EnableActiveCard = () => {
+    // String ActiveCardActivation = "ActiveCard"
+    if (currentStep===1) {
+        return "ActiveCard"
+    }
+  }
+  const SecondEnableActiveCard = () => {
+    if (currentStep===2) {
+        return "ActiveCard"
+    }
+  }
+  const ThirdEnableActiveCard = () => {
+    if (currentStep===3) {
+        return "ActiveCard"
+    }
+  }
+
     return (
         <div>
         <div className="HeadingCards">
-            <div className="CardHeads" id="ActiveCard" onClick={TotalOrderStage}>
+            <div className="CardHeads" id={currentStep===1 ? "ActiveCard" : "None"} onClick={TotalOrderStage}>
               <div className="SubCard1" >
                 <h4>Total Orders</h4>
               </div>
@@ -42,7 +60,7 @@ const StatusStages = () => {
                 <h1>24</h1>
               </div>
             </div>
-            <div className="CardHeads" onClick={ActiveOrderStage}>
+            <div className="CardHeads" id={currentStep===2 ? "ActiveCard" : "None"} onClick={ActiveOrderStage}>
               <div className="SubCard1" >
                 <h4>Active Orders</h4>
               </div>
@@ -50,7 +68,7 @@ const StatusStages = () => {
                 <h1>4</h1>
               </div>
             </div>
-            <div className="CardHeads" onClick={CompletedOrderStage}>
+            <div className="CardHeads" id={currentStep===3 ? "ActiveCard" : "None"} onClick={CompletedOrderStage}>
               <div className="SubCard1">
                 <h4>Completed Orders</h4>
               </div>
