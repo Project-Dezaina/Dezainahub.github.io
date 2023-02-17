@@ -464,7 +464,7 @@
             flex-direction: column;
             place-items: center;
         h1{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             }
         .ProductCards {
         display: grid;
@@ -481,16 +481,18 @@
             
             .CardHead{
              h5{
-                font-size: 1rem;
+                font-size: 4rem;
                 margin-bottom: 0rem !important;
+                margin-left: -3rem;
              }   
             
             .ProductSubHead{
                 gap: 1rem !important;
                
                 h3{
-                    font-size: 1.3rem;
+                    font-size: 1.2rem !important;
                     margin-bottom: 0rem !important;
+                    margin-left: 0rem;
                 }
             }
             .ProductSVG{
@@ -504,20 +506,24 @@
         }
         .CardBody{
             margin: 1rem 0rem;
+            margin-top: .7rem !important;
             p{
-
+                color:$secondarycolor;
                 font-size: 0.8rem !important;
             }
         }
         .CardBase{
             gap: 7rem;
+            margin-top:-.9rem;
             .BaseButton {
-                font-size: 0.6rem !important;
-                width: 6rem;
-                height: 1.8rem;
+                font-size: 0.8rem !important;
+                width: 6rem !important;
+                height: 2rem !important;
+                margin-top:0rem;
                 p{
-                    font-size: 0.4rem;
-                    margin-top: 0.9rem !important;
+                    font-size: .7rem !important;
+                    margin-top: -1rem !important;
+                    
                 }
             }
                         

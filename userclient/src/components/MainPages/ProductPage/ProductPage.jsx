@@ -2,37 +2,17 @@ import React from "react";
 import "./ProductPage.css";
 import Header from "../../pages/navbar/Navbar";
 import NewFooter from "../../pages/NewFooter/Footer";
-import ProductCards from "./ProductCards/ProductCards";
+import ProductCards from "./ProductCardsPage/ProductCards/ProductCards";
 import ProductNavigation from "./ProductNavigation/ProductNavigation";
-import ProductCard2 from "./ProductCard2/ProductCard2";
-import ProductCard3 from "./ProductCards3/ProductCard3";
+import ProductCard2 from "./ProductCardsPage/ProductCard2/ProductCard2";
+import ProductCard3 from "./ProductCardsPage/ProductCards3/ProductCard3";
+import ProductCardsPage from "./ProductCardsPage/ProductCardsPage";
 
 
 
 
 const ProductPage = () => {
-  // const cards = [
-  //   {
-  //       SVG: PassingSVG(),
-  //       Heads: "Poster",
-  //       Pricing: "300/-",
-  //       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
-  //       },
-  //       {
-  //         SVG: PassingSVG(),
-  //         Heads: "Poster",
-  //         Pricing: "300/-",
-  //         Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
-  //         },
-  //         {
-  //           SVG: PassingSVG(),
-  //           Heads: "Poster",
-  //           Pricing: "300/-",
-  //           Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
-  //           },          
-    
 
-  // ];
     return (
       <div>
         <Header />
@@ -180,9 +160,10 @@ const ProductPage = () => {
             
             <ProductNavigation/>
             
-                <ProductCards />
+                {/* <ProductCards />
                 <ProductCard2 />
-                <ProductCard3 />
+                <ProductCard3 /> */}
+                <ProductCardsPage />
 
             <ProductNavigation/>
           </div>

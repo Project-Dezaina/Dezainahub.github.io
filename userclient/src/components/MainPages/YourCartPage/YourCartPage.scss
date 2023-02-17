@@ -89,6 +89,7 @@
                         border-radius: 1.2em;
                         // margin-bottom: 0rem !important;
                         display: flex;
+                        // flex-direction:row;
                         place-items: center;
                         // justify-content:flex-start;
                         align-items: normal;
@@ -188,9 +189,9 @@
                                   
                                 }
                             }
-                            .TotalPricing{
-                                    // padding: ;
-                            }
+                            // .TotalPricing{
+                            //         // padding: ;
+                            // }
 
 
                         }
@@ -201,6 +202,9 @@
                     .Delete-Button{
                         display: flex;
                         align-items: center;
+                        .DeleteBtn{
+                            visibility: hidden;
+                        }
                     }
 
                 
@@ -222,5 +226,270 @@
     }
 
 
+}
+
+@media screen and (max-width: 900px) {
+    .YourCartMainPage{
+        margin-top: 5rem;
+        font-family: "Montserrat";
+        .CartContainer{
+            display: flex;
+                flex-direction: row;
+                 place-items: center;
+    
+                .YourCart{
+                    width: 95%;
+                    .CartNav-Bar-Content{
+                        background-color:$secondarycolor;
+                    height: 3.5rem;
+                    border-radius: 1.2em 1.2em 0 0;
+                    display: flex;
+                    place-content: center;
+                    place-items: center;
+                    
+                    h3{
+                        margin-bottom: 0rem !important;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+                    }
+                    .CartContent1{
+                        margin-top: 0rem !important;
+                        .Item-Details{
+                            padding: 2rem 0rem ;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            place-items: center;
+                            border-radius: 0 0 1.2em 1.2em;
+                            // place-content: center;
+                            
+                            background-color: #F1F1F1;
+                            width: 100%;
+                            // height: 40rem;
+    
+                            .SubTotal{
+                                display: flex;
+                                gap:43rem;
+                                background-color: $secondarycolor;
+                                width: 60rem;
+                                border-radius: $PrimaryBorderRadius;
+                                padding: 0.5rem ;
+                                place-content: center;
+                                place-items: center;
+                                h4{
+                                    margin-bottom: 0;
+                                    color: #fff;
+                                }
+    
+                                
+                            }
+                            
+                            .Confirmation{
+                                display: flex;
+                                gap: 36rem;
+                                // margin-left: 40rem;
+                                button{
+                                    border: none;
+                                }
+                                .BackArrows , .ProceedArrow{
+                                    display: flex;
+                                    gap:1rem;
+                                }
+                                
+                                h4{
+                                    color: $secondarycolor;
+                                    font-weight: 700;
+                                    margin-bottom: 0;
+                                }
+                            }
+    
+                    
+                   
+                        
+                        
+    
+                        .Item1{
+                            place-content: center !important;
+                            place-items: center !important;
+                            width: 20rem;
+                            background-color: #fff;
+                            border-radius: 1.2em;
+                            // margin-bottom: 0rem !important;
+                            display: flex;
+                            flex-direction:column ;
+                            place-items: center;
+                            // justify-content:flex-start;
+                            align-items: normal;
+                            // place-content: center;
+                            padding: 2rem;
+                            gap: 3rem;
+                            // margin-left:-1rem;
+                            // margin-left: 1rem;
+    
+    
+    
+                        
+                        .ImageBg{
+                            margin-left: -1rem;
+                            background-color: $secondarycolor;
+                            width: 9rem !important;
+                            height: 12rem;
+                            display: flex;
+                            place-content: center;
+                            place-items: center;
+                            border-radius: $PrimaryBorderRadius;
+                            // border-radius: 1.2em;
+                            // margin-right: 2rem;
+                            img{
+                                width: 7rem;
+                                height: auto;
+                                border-radius: $PrimaryBorderRadius;
+                                // border-radius: 1.2em !important;
+                            }
+    
+                        }
+                        .Cart-Item-Content{
+                            text-align: left;
+                            // margin-left: 2rem; 
+                            width: 13rem;
+                            display: flex;
+                            flex-direction: column;
+                            // place-content: center !important;
+                            // place-items: center;
+                            gap: 1rem;
+                            margin-left: 1.1rem;
+                            width: 20rem;
+    
+    
+                            .CartDetails{
+                                // width: 20rem;
+                                place-content: center;
+                                h4{
+                                    // font-size: 1rem;
+                                    font-weight: 700;
+                                    text-align: center;
+                                }
+    
+                                p{
+                                    font-size: .7rem;
+                                    text-align: center;
+                                    text-align: justify;
+                                    // text-align: ;
+                                    // width: 12rem;
+                                }
+                            }
+    
+                            .AddMore{
+                                border: none;
+                                text-align: center;
+                                text-decoration: underline;
+                                font-weight: 700;
+                                background-color: white;
+                            }
+                            .QuantityContainer{
+                                display: flex;
+                                
+                                gap: 18rem;
+                                place-content: center;
+                                place-items: center;
+                                margin-bottom: 0;
+                            
+                            .QuantityBox, .PriceBox{
+                                width: 6rem;
+                                margin-left: -7rem;
+                                margin-right: -8rem;
+                                
+                                
+                               
+                                
+                                
+                                .QuantityButton, .TotalPricing {
+                                    background-color: $thirdcolor;
+                                    height: 2rem;
+                                    // background-color: red;
+                                    // width: 6rem;
+                                    border-radius: $SecondaryBorderRadius;
+                                    display: flex;
+                                    gap: .5rem;
+                                    // padding: 0.2rem 0.5rem;
+                                    place-content: center;
+    
+                                    
+                                    
+    
+                                    #QuantButt{
+                                        border: none !important;
+                                        text-decoration: none;
+                                        outline: none !important;
+                                        background-color: $thirdcolor;
+                                        padding: 0 !important;
+                                        
+                                    }
+    
+                                    h6{
+                                        place-content: center;
+                                      display: flex;
+                                      place-items: center;
+                                      margin-bottom: 0;
+                                      width: 2rem;
+                                      
+                                    }
+                                }
+                                // .TotalPricing{
+                                //         // padding: ;
+                                // }
+    
+    
+                            }
+                        }
+    
+                            
+                        }
+                        .Delete-Button{
+                            display: flex;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            margin-left: -3rem;
+                            // border-radius: 1rem;
+                            svg{
+                                
+                                visibility: hidden;
+                                width: 2rem;
+                                height:2rem;
+                                margin-left: 2rem;
+                            }
+                            .DeleteBtn{
+                                border-radius: $SecondaryBorderRadius;
+                                background-color: $secondarycolor;
+                                color: #fff;
+                                border: none;
+                                width: 20rem ;
+                                // padding: ;
+                                visibility: visible;
+                            }
+                        }
+    
+                    
+                    }
+                }
+    
+                     
+                    }
+                    
+    
+    
+    
+         }
+    
+    
+    
+    
+    
+        }
+    
+    
+    }
+    
 }
 

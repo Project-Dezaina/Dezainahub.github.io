@@ -1,7 +1,6 @@
 .ProductNavigation {
   margin-top: 0rem;
-  background-color: #2F455C;
-  color: #fff;
+  background-color: #364154;
   display: flex;
   gap: 5rem;
   padding: 1.5rem;
@@ -9,6 +8,9 @@
 }
 .ProductNavigation a {
   font-size: 1rem !important;
+}
+.ProductNavigation a h6 {
+  color: #fff !important;
 }
 
 @media screen and (max-width: 900px) {
