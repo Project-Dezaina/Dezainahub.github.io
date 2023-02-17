@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./PageLayout.css";
-
 import LogoImg from "../Image/Dezaina.png";
 // import LoginImg from "../Image/LoginImg.jpg";
 // import LoginSignupImg from "../Image/LoginImage.jpg";
@@ -13,14 +12,16 @@ import { multiStepContext } from "../LoginSignupPage";
 const PageLayout = () => {
   
   const [currentStep, setStep] = useState(1);
-  
-  const [currentStep, setStep] = useState(1);
-  
-  const [currentStep, setStep] = useState(1);
-  
-
-
-
+const Showstep = (step)=>{
+  switch (step) {
+    case 1:
+      return <LoginPage/>;
+    case 2:
+      return <VerificationPage/>;
+    case 3:
+        return <SignupPage/>;
+  }
+}
 const handlestate = ()=>{
   // setStep(3)
   // PresentStep = currentStep
