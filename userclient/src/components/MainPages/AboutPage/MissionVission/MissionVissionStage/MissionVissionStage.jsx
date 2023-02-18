@@ -46,7 +46,7 @@ const MissionVissionStage = () => {
             VissionButton(e);
           }}
         >
-          <button><h6>Our</h6>Vission</button>
+          <button><h6>Our</h6>Vision</button>
         </div>
       </div>
       <div className="MissionVissionBox">{Showstep(currentStep)}</div>
