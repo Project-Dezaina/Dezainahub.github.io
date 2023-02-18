@@ -100,103 +100,96 @@
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
-    margin-bottom: 5rem;
     justify-content: center;
     gap: 3rem;
     font-family: "Montserrat";
+    padding: 0rem 0rem 0rem 0rem;
+    place-content: center !important;
+    place-items: center !important;
   }
   .ContactUsContainer .ContactBio {
-    width: 80%;
-    margin-left: -1rem;
+    width: 23rem;
   }
   .ContactUsContainer .ContactBio h3 {
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 5rem;
-  }
-  .ContactUsContainer .ContactBio h2 {
-    text-align: center;
-    font-size: 2rem;
-    width: 100%;
-  }
-  .ContactUsContainer .ContactBio p {
-    width: 100%;
-    text-align: center;
-  }
-  .ContactUsContainer .ContactForm {
-    width: 33rem !important;
-    margin-right: 1.5rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .ContactUsContainer {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
-    margin-bottom: 5rem;
-    justify-content: center;
-    gap: 3rem;
-    font-family: "Montserrat";
-  }
-  .ContactUsContainer .ContactBio {
-    width: 80%;
-    margin-left: -1rem;
-  }
-  .ContactUsContainer .ContactBio h3 {
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 5rem;
-  }
-  .ContactUsContainer .ContactBio h2 {
-    text-align: center;
-    font-size: 2rem;
-    width: 100%;
-  }
-  .ContactUsContainer .ContactBio p {
-    width: 100%;
-    text-align: center;
-  }
-  .ContactUsContainer .ContactForm {
-    width: 33rem !important;
-    margin-right: 1.5rem;
-  }
-}
-@media screen and (max-width: 1500px) {
-  .ContactUsContainer {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
-    margin-bottom: 5rem;
-    justify-content: center;
-    gap: 3rem;
-    font-family: "Montserrat";
-  }
-  .ContactUsContainer .ContactBio {
-    width: 80%;
-    margin-left: -1rem;
-    display: flex;
-    flex-direction: column;
+    color: #4bace0;
+    font-weight: bold;
     place-content: center;
     place-items: center;
-  }
-  .ContactUsContainer .ContactBio h3 {
-    font-size: 1rem;
     text-align: center;
-    margin-top: 5rem;
   }
   .ContactUsContainer .ContactBio h2 {
-    text-align: center;
-    font-size: 2rem;
-    width: 100%;
+    color: #2f455c;
+    font-size: 20px;
+    font-weight: bold;
+    width: 23rem;
+  }
+  .ContactUsContainer .ContactBio h2 span {
+    color: #4bace0;
   }
   .ContactUsContainer .ContactBio p {
-    width: 70%;
-    text-align: center;
+    width: 23rem;
   }
   .ContactUsContainer .ContactForm {
-    width: 33rem !important;
-    margin-right: 1.5rem;
+    width: 30%;
+    gap: 10rem;
+    margin-right: 20rem;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer {
+    background-color: #f0f2f4;
+    border-radius: 50px;
+    min-height: 30rem;
+    display: flex;
+    place-items: center;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputboxBody {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20rem;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputboxBody .FormButton {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputboxBody .FormButton button {
+    font-size: 0.8rem;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputbox {
+    color: #364154;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputbox input,
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputbox textarea {
+    border: none;
+    width: 20rem;
+    border-radius: 0.6em;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputbox input {
+    height: 3rem;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputbox textarea {
+    padding-top: 0.5rem;
+  }
+  .ContactUsContainer .ContactForm .ContactFormContainer .contactforminputbox label {
+    text-align: left;
+    align-items: left;
+    justify-content: center;
+    width: 20rem;
+  }
+  .ContactUsContainer button {
+    margin-top: 0.5rem;
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    background: #4bace0;
+    color: white;
+    border-radius: 0.6em;
+    width: 20rem;
   }
 }/*# sourceMappingURL=ContactUsPage.css.map */
