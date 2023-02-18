@@ -1,18 +1,15 @@
-import React from 'react';
-import { useContext } from 'react';
-import { multistep } from '../ContactUsContext/ContactUSContext';
+import React, { useContext } from "react";
+import "./ContactForm2.css";
+import { multiStepContactContext } from "../../ContactUsPage";
 
-
-const Cstage1 = () => {
-    const{currentStep,setStep} = useContext(multistep );
-  return (
-    <div>
-    
-      <form action="">
+const ContactForm2 = () => {
+    const {setStep, currentStep} = useContext(multiStepContactContext);
+    return (
+        <div className="ContactFormContainer container">
+            <form action="">
               <div className="contactforminputboxBody">
                 <div className="contactforminputbox">
                   <label htmlFor="">Website URL (if any) </label>
-                  {/* <input type="text"  /> */}
                   <input
                     type="text"
                     name=""
@@ -20,7 +17,6 @@ const Cstage1 = () => {
                     placeholder="URL"
                   ></input>
                 </div>
-                {/* <input type="text" placeholder="enter your name" /> */}
                 <div className="contactforminputbox">
                   <label htmlFor="">Mobile Number</label>
                   <input
@@ -45,18 +41,20 @@ const Cstage1 = () => {
                     id=""
                     placeholder="Select Slot"
                   ></input>
-                  {/* <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea> */}
-                </div>
+                  </div>
                 <div className="FormButton">
+                <button onClick={()=>{
+                    setStep(1)
+                  }}>Edit Details</button>
                   <button onClick={()=>{
-                    setStep(2)
+                    setStep(3)
                   }}> Next</button>
                   
                 </div>
               </div>
             </form>
-    </div>
-  )
+        </div>
+    )
 }
 
-export default Cstage1
+export default ContactForm2;
