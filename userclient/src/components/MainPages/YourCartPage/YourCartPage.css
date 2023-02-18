@@ -4,8 +4,65 @@
 }
 .YourCartMainPage .CartContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 3rem;
   place-items: center;
+}
+.YourCartMainPage .CartContainer .CartPageHead {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 2rem;
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  overflow: hidden;
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatusMain {
+  position: relative;
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatusMain .CartProgressBar {
+  position: absolute;
+  opacity: 50%;
+  top: 1.65rem;
+  left: 0.5rem;
+  z-index: -1;
+  width: 7rem;
+  height: 0.7rem;
+  background-color: #F1F1F1;
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatusMain #ActiveBar {
+  background-image: linear-gradient(90deg, #4BACE0 50%, #F1F1F1 80%);
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatusMain #CompleteBar {
+  background-color: #4BACE0;
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus1, .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus2, .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus3 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #F1F1F1;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus1 svg, .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus2 svg, .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus3 svg {
+  width: 1.5rem !important;
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus #ActiveCartStatus {
+  background-color: #4BACE0;
+}
+.YourCartMainPage .CartContainer .CartPageHead h2 {
+  text-align: center;
+  width: 55rem;
+  font-weight: 700;
+}
+.YourCartMainPage .CartContainer .CartPageHead .CartPageStatus {
+  display: flex;
+  place-content: center;
 }
 .YourCartMainPage .CartContainer .YourCart {
   width: 95%;
@@ -36,6 +93,22 @@
   background-color: #F1F1F1;
   width: 100%;
 }
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .ItemDetailImage {
+  width: 15rem;
+  height: 8rem;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .ItemDetailImage img {
+  width: 15rem;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details h5 {
+  color: #4BACE0;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .SubTotal {
   display: flex;
   gap: 43rem;
@@ -46,9 +119,10 @@
   place-content: center;
   place-items: center;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .SubTotal h4 {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .SubTotal h5 {
   margin-bottom: 0;
   color: #fff;
+  font-weight: 700;
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation {
   display: flex;
@@ -60,13 +134,49 @@
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation .BackArrows, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation .ProceedArrow {
   display: flex;
   gap: 1rem;
+  place-content: center;
+  place-items: center;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation h4 {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation h5 {
   color: #364154;
   font-weight: 700;
   margin-bottom: 0;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation #H5color {
+  color: #4BACE0;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #SubTotal {
+  display: flex;
+  gap: 33rem;
+  background-color: #364154;
+  width: 60rem;
+  border-radius: 1.2em;
+  padding: 0.5rem;
+  place-content: center;
+  place-items: center;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #SubTotal .SubtotalUnder {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  place-content: center;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #SubTotal .SubtotalUnder h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0rem;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #Confirmation {
+  width: 32rem;
+  text-align: center;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #Confirmation h5 {
+  color: #4BACE0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 {
   width: 60rem;
   background-color: #fff;
   border-radius: 1.2em;
@@ -76,7 +186,7 @@
   padding: 2rem;
   gap: 3rem;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .ImageBg {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .ImageBg {
   background-color: #364154;
   width: 12rem;
   height: 16rem;
@@ -85,69 +195,125 @@
   place-items: center;
   border-radius: 1.2em;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .ImageBg img {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .ImageBg img {
   width: 10rem;
   height: auto;
   border-radius: 1.2em;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content {
   text-align: left;
   width: 32rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .CartDetails h4 {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .CartDetails h4 {
   font-weight: 700;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .CartDetails p {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .CartDetails p {
   font-size: 0.8rem;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .AddMore {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .HorizontalLine {
+  height: 0.2rem;
+  background-color: #F1F1F1;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .AddMore {
   border: none;
   text-align: center;
   text-decoration: underline;
   font-weight: 700;
   background-color: white;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer {
   display: flex;
   gap: 18rem;
   place-content: center;
   place-items: center;
   margin-bottom: 0;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox {
-  width: 7rem;
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox h6 {
+  text-align: right;
+  margin-bottom: 0rem;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing {
   background-color: #F1F1F1;
   height: 2rem;
+  width: 7rem;
   border-radius: 0.5em;
   display: flex;
   gap: 0.5rem;
   place-content: center;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing #QuantButt {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing #QuantButt {
   border: none !important;
   text-decoration: none;
   outline: none !important;
   background-color: #F1F1F1;
   padding: 0 !important;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing h6 {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing h6 {
   place-content: center;
   display: flex;
   place-items: center;
   margin-bottom: 0;
   width: 2rem;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Delete-Button {
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  place-content: center;
+  place-items: center;
+  margin-bottom: 0;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox {
+  width: 15rem;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox h6 {
+  text-align: right;
+  width: 50%;
+  margin-bottom: 0rem;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .TotalPricing, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .TotalPricing {
+  background-color: #F1F1F1;
+  height: 2rem;
+  width: 50%;
+  border-radius: 0.5em;
+  display: flex;
+  gap: 0.5rem;
+  place-content: center;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .QuantityButton #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .TotalPricing #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .QuantityButton #QuantButt, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .TotalPricing #QuantButt {
+  border: none !important;
+  text-decoration: none;
+  outline: none !important;
+  background-color: #F1F1F1;
+  padding: 0 !important;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .TotalPricing h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .TotalPricing h6 {
+  place-content: center;
+  display: flex;
+  place-items: center;
+  margin-bottom: 0;
+  width: 2rem;
+}
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Delete-Button {
   display: flex;
   align-items: center;
 }
-.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Delete-Button .DeleteBtn {
-  visibility: hidden;
+.YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Delete-Button .DeleteBtn {
+  display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -157,80 +323,85 @@
   }
   .YourCartMainPage .CartContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 3rem;
     place-items: center;
+  }
+  .YourCartMainPage .CartContainer .CartPageHead {
+    gap: 2rem;
+  }
+  .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus {
+    gap: 2rem;
+  }
+  .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatusMain .CartProgressBar {
+    top: 1.35rem;
+    width: 5rem;
+    height: 0.5rem;
+  }
+  .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus1, .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus2, .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus3 {
+    width: 3rem;
+    height: 3rem;
+  }
+  .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus1 svg, .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus2 svg, .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatus3 svg {
+    width: 1.2rem !important;
+  }
+  .YourCartMainPage .CartContainer .CartPageHead h2 {
+    font-size: 1rem;
+    width: 25rem;
+  }
+  .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus {
+    display: flex;
+    place-content: center;
   }
   .YourCartMainPage .CartContainer .YourCart {
     width: 95%;
   }
-  .YourCartMainPage .CartContainer .YourCart .CartNav-Bar-Content {
-    background-color: #364154;
-    height: 3.5rem;
-    border-radius: 1.2em 1.2em 0 0;
-    display: flex;
-    place-content: center;
-    place-items: center;
-  }
-  .YourCartMainPage .CartContainer .YourCart .CartNav-Bar-Content h3 {
-    margin-bottom: 0rem !important;
-    font-weight: 600;
-    color: #fff;
-  }
-  .YourCartMainPage .CartContainer .YourCart .CartContent1 {
-    margin-top: 0rem !important;
-  }
-  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details {
-    padding: 2rem 0rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    place-items: center;
-    border-radius: 0 0 1.2em 1.2em;
-    background-color: #F1F1F1;
-    width: 100%;
-  }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .SubTotal {
-    display: flex;
-    gap: 43rem;
-    background-color: #364154;
-    width: 60rem;
-    border-radius: 1.2em;
+    gap: 10rem;
+    width: 26rem;
     padding: 0.5rem;
-    place-content: center;
-    place-items: center;
   }
-  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .SubTotal h4 {
-    margin-bottom: 0;
-    color: #fff;
+  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .SubTotal h5 {
+    font-size: 1rem;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation {
-    display: flex;
-    gap: 36rem;
-  }
-  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation button {
-    border: none;
+    gap: 9rem;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation .BackArrows, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation .ProceedArrow {
-    display: flex;
     gap: 1rem;
   }
-  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation h4 {
-    color: #364154;
+  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation .BackArrows svg, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation .ProceedArrow svg {
+    width: 1.5rem;
+  }
+  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation .BackArrows h5, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation .ProceedArrow h5 {
+    font-size: 1rem;
+  }
+  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #SubTotal {
+    gap: 5.5rem;
+    width: 26rem;
+  }
+  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #SubTotal .SubtotalUnder {
+    gap: 1rem;
+  }
+  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #SubTotal .SubtotalUnder h5 {
+    font-size: 0.8rem;
+  }
+  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #Confirmation {
+    width: 20rem;
+    text-align: center;
+  }
+  .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #Confirmation h5 {
+    font-size: 0.7rem;
     font-weight: 700;
-    margin-bottom: 0;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 {
     place-content: center !important;
     place-items: center !important;
-    width: 20rem;
-    background-color: #fff;
-    border-radius: 1.2em;
-    display: flex;
+    width: 26rem;
     flex-direction: column;
-    place-items: center;
     align-items: normal;
-    padding: 2rem;
-    gap: 3rem;
+    padding: 1rem !important;
+    gap: 1rem;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .ImageBg {
     margin-left: -1rem;
@@ -253,7 +424,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-left: 1.1rem;
+    margin-left: 0rem;
     width: 20rem;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .CartDetails {
@@ -277,15 +448,15 @@
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer {
     display: flex;
-    gap: 18rem;
+    gap: 8rem;
     place-content: center;
     place-items: center;
     margin-bottom: 0;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox {
     width: 6rem;
-    margin-left: -7rem;
-    margin-right: -8rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing {
     background-color: #F1F1F1;
@@ -313,13 +484,10 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    margin-left: -3rem;
+    margin-left: 0rem;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Delete-Button svg {
-    visibility: hidden;
-    width: 2rem;
-    height: 2rem;
-    margin-left: 2rem;
+    display: none;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Delete-Button .DeleteBtn {
     border-radius: 0.5em;
@@ -328,5 +496,6 @@
     border: none;
     width: 20rem;
     visibility: visible;
+    display: inline;
   }
 }/*# sourceMappingURL=YourCartPage.css.map */
