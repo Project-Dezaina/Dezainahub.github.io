@@ -1,9 +1,8 @@
 .MissionVission {
   margin-top: 10rem;
   border-radius: 1.2em;
-  background-color: #2f455c;
   width: 100%;
-  height: 25rem;
+  height: 22rem;
   color: #fff !important;
   padding: 20px 50px 20px;
 }
@@ -29,34 +28,32 @@
 
 @media screen and (max-width: 900px) {
   .MissionVission {
-    margin-top: 5rem;
+    margin-top: 10rem;
     border-radius: 1.2em;
-    background-color: #2f455c;
-    width: 100%;
-    height: 25rem;
+    background-color: #364154;
+    width: 28rem !important;
+    height: auto !important;
     color: #fff !important;
-    padding: 20px 50px 20px;
+    padding: 0rem !important;
   }
   .MissionVission .BoxHead {
-    margin-left: -1.9rem;
     font-weight: 700;
-    width: 10rem;
-    text-align: left;
+    text-align: center;
     color: #fff !important;
   }
   .MissionVission .BoxContent {
-    margin-left: -2rem;
     text-align: left;
-    width: 30rem;
-    font-size: 0.8rem;
+    width: 25rem !important;
   }
   .MissionVission .BoxContent h1 {
     font-weight: 700;
     color: #fff !important;
-    width: 30rem;
+    text-align: center;
+    width: 25rem !important;
   }
   .MissionVission .BoxContent p {
     color: #fff !important;
-    width: 30rem;
+    text-align: center;
+    width: 25rem !important;
   }
 }/*# sourceMappingURL=MissionVission.css.map */
