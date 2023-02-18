@@ -3,9 +3,9 @@
 .MissionVission {
     margin-top: 10rem;
     border-radius: 1.2em;
-    background-color: #2f455c;
+    // background-color: #2f455c;
     width: 100%;
-    height: 25rem;
+    height: 22rem;
     color: #fff !important;
     padding: 20px 50px 20px;
     .BoxHead {
@@ -37,41 +37,39 @@
 
   @media screen and (max-width: 900px) {
     
-      
-      .MissionVission {
-        margin-top: 5rem;
-        border-radius: 1.2em;
-        background-color: #2f455c;
-        width: 100%;
-        height: 25rem;
+    .MissionVission {
+      margin-top: 10rem;
+      border-radius: 1.2em;
+      background-color: $secondarycolor;
+      width: 28rem !important;
+      height: auto !important;
+      color: #fff !important;
+      padding: 0rem !important;
+      .BoxHead {
+        font-weight: 700;
+        // width: 25rem !important;
+        text-align: center;
         color: #fff !important;
-        padding: 20px 50px 20px;
-  
-        .BoxHead {
-          margin-left: -1.9rem;
+        // background-color: red;
+      }
+      .BoxContent {
+        text-align: left;
+        width: 25rem !important;
+        // background-color: aqua;
+        h1 {
           font-weight: 700;
-          width: 10rem;
-          text-align: left;
           color: #fff !important;
+          text-align: center;
+          width: 25rem !important;
         }
-        .BoxContent {
-          margin-left: -2rem;
-          text-align: left;
-          width: 30rem;
-          font-size: 0.8rem;
-          h1 {
-            font-weight: 700;
-            color: #fff !important;
-  
-            width: 30rem;
-          }
-          p {
-            color: #fff !important;
-  
-            width: 30rem;
-          }
+        p {
+          color: #fff !important;
+          text-align: center;
+          width: 25rem !important;
         }
       }
+    }
+      
       
       
       

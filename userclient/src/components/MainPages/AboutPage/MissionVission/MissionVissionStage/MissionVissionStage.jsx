@@ -7,17 +7,13 @@ import VissionStage from "../VissionStage/VissionStage";
 
 const MissionVissionStage = () => {
   const { currentcolor, setcolor } = useState("red");
-  console.log(currentcolor);
+  // console.log(currentcolor);
   const { setStep, currentStep } = useContext(multiStepContext);
 
   const MissionButton = () => {
-    // document.body.classList.remove("VissionBoxHeadColor");
-    // document.getelement.classList.remove(VissionBoxHeadColor);
     setStep(1);
   };
   const VissionButton = () => {
-    // document.body.classList.remove("MissionBoxHeadColor");
-    // document.getelement.classList.remove(MissionBoxHeadColor);
     setStep(2);
   };
 
@@ -41,7 +37,7 @@ const MissionVissionStage = () => {
             MissionButton(e);
           }}
         >
-          <button>Mission</button>
+          <button><h6>Our</h6>Mission</button>
         </div>
         <div
           className="VissionBoxHead"
@@ -50,7 +46,7 @@ const MissionVissionStage = () => {
             VissionButton(e);
           }}
         >
-          <button>Vission</button>
+          <button><h6>Our</h6>Vision</button>
         </div>
       </div>
       <div className="MissionVissionBox">{Showstep(currentStep)}</div>
