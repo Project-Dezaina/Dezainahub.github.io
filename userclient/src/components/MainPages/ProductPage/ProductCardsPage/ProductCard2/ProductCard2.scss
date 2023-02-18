@@ -207,14 +207,19 @@
     }
     #BlueBase{
         background-color: $secondarycolor;
-        
     }
+    
     #BlueBaseTextColor {
-        color: #fff !important; 
+        p{
+            
+            color:#fff !important; 
+        }
+        // color: #fff !important; 
         // border: 5px solid red;
         // background-color: #4BACE0;
 
     }
+
     #BlueBaseButtonColor{
         background-color: #fff!important;
         color: $secondarycolor;
@@ -234,3 +239,4 @@
 }
 }
 }
+
