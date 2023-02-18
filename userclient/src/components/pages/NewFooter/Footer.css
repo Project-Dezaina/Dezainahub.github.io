@@ -31,9 +31,11 @@
 }
 .Footer-Main .Newsletter .Newsletter-head {
   width: 30vw;
+  line-height: 1.2;
+}
+.Footer-Main .Newsletter .Newsletter-head h4 {
   font-size: 3rem;
   font-weight: 700;
-  line-height: 1.2;
 }
 .Footer-Main .Newsletter .Newsletter-head span {
   color: #4BACE0;
@@ -134,10 +136,8 @@
 }
 .Footer-Main .Bellow-Newsletter .Footer .footerLinks li a:hover {
   color: #4BACE0;
-  font-size: 1.2rem;
-  transition: 0.3s ease-in-out;
 }
-.Footer-Main .Bellow-Newsletter .Footer-base {
+.Footer-Main .Footer-base {
   display: flex;
   flex-direction: row;
   place-content: center;
@@ -145,10 +145,10 @@
   color: rgb(175, 175, 175);
   align-items: center;
 }
-.Footer-Main .Bellow-Newsletter .Footer-base .BaseContent {
+.Footer-Main .Footer-base .BaseContent {
   width: 50rem !important;
 }
-.Footer-Main .Bellow-Newsletter .Footer-base img {
+.Footer-Main .Footer-base img {
   width: 15vw;
 }
 
@@ -170,4 +170,176 @@ hr {
   display: flex;
   place-content: center;
   gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .Footer-Main {
+    position: relative;
+    background-color: #2f455c;
+    color: #fff;
+    width: 100%;
+    padding-top: 12rem;
+    min-height: 60vh;
+    bottom: 0rem;
+    margin-top: 20rem;
+    font-family: "Montserrat";
+  }
+  .Footer-Main .Newsletter {
+    min-width: 28rem;
+    min-height: 13rem;
+    display: flex;
+    flex-direction: column;
+    left: 3rem;
+    gap: 0rem;
+    border-radius: 1.2em;
+    box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+  }
+  .Footer-Main .Newsletter .NewsletterContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .Footer-Main .Newsletter .NewsletterContent .Newsletter-topic {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .Footer-Main .Newsletter .NewsletterContent .Newsletter-head {
+    width: 15rem;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .Footer-Main .Newsletter .NewsletterContent .Newsletter-head h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .Footer-Main .Newsletter .NewsletterContent .Newsletter-head h4 span {
+    color: #4BACE0;
+  }
+  .Footer-Main .Newsletter .button-box {
+    margin-bottom: 0.5rem;
+  }
+  .Footer-Main .Newsletter .button-box button {
+    position: relative;
+    margin: 0;
+    padding: 1em 2em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: #ccedff;
+    border-radius: 1.2em;
+    color: #2f455c;
+    font-weight: 700;
+    font-size: 15px;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .Footer-Main .Newsletter .button-box button:hover {
+    animation: sh0 0.5s ease-in-out both;
+  }
+  @keyframes sh0 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(7deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-7deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  .Footer-Main .Newsletter .button-box button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  .Footer-Main .Newsletter .button-box button::before,
+  .Footer-Main .Newsletter .button-box button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+  }
+  .Footer-Main .Newsletter .button-box button:hover::before,
+  .Footer-Main .Newsletter .button-box button:hover::after {
+    opacity: 0.15;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .Footer-Main .Newsletter .button-box button:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.9);
+  }
+  .Footer-Main .Newsletter .button-box button:hover::after {
+    transform: translate(50%, 0) scale(1.1);
+  }
+  .Footer-Main .Bellow-Newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .Footer-Main .Bellow-Newsletter .Footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
+    place-content: center;
+    flex-flow: row;
+    margin-bottom: -1.5rem;
+  }
+  .Footer-Main .Bellow-Newsletter .Footer .footerLinks li {
+    font-size: 1rem;
+  }
+  .Footer-Main .Bellow-Newsletter .Footer .footerLinks li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .Footer-Main .Bellow-Newsletter .Footer .footerLinks li a:hover {
+    color: #4BACE0;
+  }
+  .Footer-Main .Bellow-Newsletter .Footer-base {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    gap: 30vw;
+    color: rgb(175, 175, 175);
+    align-items: center;
+  }
+  .Footer-Main .Bellow-Newsletter .Footer-base .BaseContent {
+    width: 50rem !important;
+  }
+  .Footer-Main .Bellow-Newsletter .Footer-base img {
+    width: 15vw;
+  }
+  hr {
+    margin: -3rem !important;
+    width: 100vw !important;
+    display: flex;
+    place-self: center;
+  }
+  .Footer-Heading {
+    color: #4BACE0 !important;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .Email-Footer .SocialIcons {
+    display: flex;
+    place-content: center;
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=Footer.css.map */

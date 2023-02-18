@@ -7,13 +7,14 @@ const NewFooter = () => {
     <div className="Footer-Main">
       <div className="container">
         <div className="Newsletter">
-          <div>
+          <div className="NewsletterContent">
             <div className="Newsletter-topic">Lets Discuss</div>
             <div className="Newsletter-head">
-              Book a Free{" "}
-              <p>
+            <h4>Book a Free <span>consultancy</span> Today</h4>
+              
+              {/* <p>
                 <span>consultancy</span> Today
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="button-box">
@@ -30,20 +31,43 @@ const NewFooter = () => {
             <div className="About-Footer">
               <div className="Footer-Heading">About Dezaina</div>
               <ul className="footerLinks">
-                <li> <a href="">Home</a> </li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Get in Touch</a></li>
-                <li> <a href="">Pricing</a> </li>
-                <li> <a href="">Gallery</a> </li>
+                <li>
+                  {" "}
+                  <a href="">Home</a>{" "}
+                </li>
+                <li>
+                  <a href="">Services</a>
+                </li>
+                <li>
+                  <a href="">Get in Touch</a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="">Pricing</a>{" "}
+                </li>
+                <li>
+                  {" "}
+                  <a href="">Gallery</a>{" "}
+                </li>
               </ul>
             </div>
             <div className="Product-Footer">
               <div className="Footer-Heading">Our category</div>
               <ul className="footerLinks">
-                <li><a href="">Corporate Design</a> </li>
-                <li><a href="">Advertising Content</a> </li>
-                <li> <a href="">Logo Rendering</a></li>
-                <li> <a href="">Explore More</a></li>
+                <li>
+                  <a href="">Corporate Design</a>{" "}
+                </li>
+                <li>
+                  <a href="">Advertising Content</a>{" "}
+                </li>
+                <li>
+                  {" "}
+                  <a href="">Logo Rendering</a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="">Explore More</a>
+                </li>
               </ul>
             </div>
             <div className="Email-Footer">
@@ -111,7 +135,9 @@ const NewFooter = () => {
           </div>
           <hr></hr>
           <div className="Footer-base">
-            <div className="BaseContent">All rights reserved @2022 by Dezaina.hub</div>
+            <div className="BaseContent">
+              All rights reserved @2022 by Dezaina.hub
+            </div>
             <div>
               <img src={Dezainalogo}></img>
             </div>
