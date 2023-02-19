@@ -8,6 +8,7 @@ const AboutUsImageSec = () => {
     return (
             <div className="aboutUsImageSec">
           <div className="abt-img">
+          <div className="AboutImgBackShadow"></div>
             <img src={about} alt="" />
 
             <div className="about-float-window">

@@ -1,7 +1,7 @@
 @import "../../../globalcss//global.scss";
 
 .AboutHeadContent {
-    padding-top: 5rem;
+    margin-top: 2rem;
     // background-color: aqua;
 
     .HeadContent {
@@ -34,7 +34,7 @@
         }
       }
       .button-box {
-        margin-top: 1rem;
+        margin-top: 0rem;
         button {
           position: relative;
           // margin-top: 0rem;
@@ -120,7 +120,7 @@
     .HeadContentImage {
       display: flex;
       flex-direction: row !important;
-      margin-top: 3rem;
+      margin-top: 1rem;
       // place-items: center;
       // place-content: center;
       justify-content: center !important;

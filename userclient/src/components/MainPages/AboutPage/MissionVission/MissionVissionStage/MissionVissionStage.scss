@@ -15,13 +15,13 @@
         display: flex;
         flex-direction: column;
         background-color: $thirdcolor;
-        // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-        border-radius: 1.5rem 0rem 0rem 1.5rem;
+        border-radius: $PrimaryBorderRadius 0rem 0rem $PrimaryBorderRadius;
+        // border-radius: 1.5rem 0rem 0rem 1.5rem;
         // gap: 1rem ;
         #MissionBoxHeadColor{
             background-color: $secondarycolor ;
-            // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-            border-radius: 1.5rem 0rem 0rem 1.5rem;
+            border-radius: $PrimaryBorderRadius 0rem 0rem $PrimaryBorderRadius;
+            // border-radius: 1.5rem 0rem 0rem 1.5rem;
             button{
                 font-weight: 700;
                 font-size: 1.5rem;
@@ -34,8 +34,8 @@
         
         .MissionBoxHead, .VissionBoxHead{
                 background-color: $thirdcolor;
-                // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-                border-radius: 1.5rem 0rem 0rem 1.5rem;
+                border-radius: $PrimaryBorderRadius 0rem 0rem $PrimaryBorderRadius;
+                // border-radius: 1.5rem 0rem 0rem 1.5rem;
                 width: 18rem;
                 height: 12.5rem;
                 display: flex;
@@ -60,7 +60,10 @@
         }
     }
     .MissionVissionBox{
-        padding: 3rem;
+        padding: 5rem !important;
+        display: flex;
+        // place-content: center;
+        place-items: center;
     }
 }
 
@@ -79,14 +82,12 @@
             
             display: flex;
             flex-direction: row;
-            background-color: $thirdcolor;
-            // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-            border-radius: 1.5rem 1.5rem 0rem 0rem !important;
-            // gap: 1rem ;
+            border-radius: $PrimaryBorderRadius $PrimaryBorderRadius 0rem 0rem;
+            
             #MissionBoxHeadColor{
                 background-color: $secondarycolor ;
-                // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-                border-radius: 1.5rem 1.5rem 0rem 0rem !important;
+                border-radius: $PrimaryBorderRadius $PrimaryBorderRadius 0rem 0rem;
+                // border-radius: 1.5rem 1.5rem 0rem 0rem !important;
                 button{
                     font-weight: 700;
                     color: #fff;
@@ -95,27 +96,26 @@
             }
             
             .MissionBoxHead, .VissionBoxHead{
-                    background-color: $thirdcolor;
-                    // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-                    border-radius: 1.5rem 0rem 0rem 1.5rem;
-                    width: 50%;
-                    height: 5rem;
-                    display: flex;
-                    place-content: center;
-                    place-items: center;
-                    // pointer-events:visible;
-                    cursor:pointer ;
-                    button{
-                        background-color: transparent;
-                        border: none;
-                        
-                    color: $secondarycolor;
-                        outline: none;
+                background-color: $thirdcolor;
+                border-radius: $PrimaryBorderRadius $PrimaryBorderRadius 0rem 0rem;
+                width: 50%;
+                height: 8rem;
+                button{
+                    h6{
+                            text-align: center !important;
+
+                        }
                     }
             }
         }
         .MissionVissionBox{
-            padding: 3rem;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            margin: 0rem !important;
+            
+            padding: 4rem !important;
+            padding-left: 4rem !important;
         }
     }
 }

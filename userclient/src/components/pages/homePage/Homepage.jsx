@@ -19,10 +19,7 @@ const Homepage = () => {
       <OurServices />
       <OurWorks/>
       <Testimonial />
-      
       <Blogs/>
-      {/* <NewFooter/> */}
-      {/* <FooterNew/> */}
       <NewFooter/>
     </div>
   )

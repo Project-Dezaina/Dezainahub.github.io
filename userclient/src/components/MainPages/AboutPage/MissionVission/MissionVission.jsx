@@ -9,7 +9,8 @@ const MissionVission = () => {
     const [currentStep, setStep] = useState(1);
   
     return (
-        <div >
+        <div className='MainMissionVission'>
+        <h1 className='MissionVisionHead'>Mission & Vision</h1>
           <multiStepContext.Provider 
       value={{currentStep, setStep}}>
         <MissionVissionStage/>

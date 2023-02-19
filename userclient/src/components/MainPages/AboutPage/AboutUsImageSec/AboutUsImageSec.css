@@ -10,10 +10,21 @@
   height: 20%;
   position: relative;
 }
+.aboutUsImageSec .abt-img .AboutImgBackShadow {
+  height: 38rem;
+  width: 30rem;
+  transform: rotate(-10deg);
+  z-index: -1;
+  border-radius: 1.2em;
+  background-color: #F1F1F1;
+  position: absolute;
+  top: -2.5rem;
+  left: -3.5rem;
+}
 .aboutUsImageSec .abt-img img {
   width: 30rem;
   height: 38rem;
-  border-radius: 10px;
+  border-radius: 1.2em;
   box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, 0.32);
 }
 .aboutUsImageSec .abt-img .about-float-window {
@@ -109,10 +120,16 @@
     align-items: center;
     padding: 0rem !important;
   }
+  .aboutUsImageSec .abt-img .AboutImgBackShadow {
+    height: 25rem;
+    width: 20rem;
+    top: -1.5rem;
+    left: -1.15rem;
+  }
   .aboutUsImageSec .abt-img img {
     width: 20rem;
     height: 25rem;
-    margin-left: 3rem;
+    margin-left: 1rem !important;
   }
   .aboutUsImageSec .abt-img .about-float-window {
     top: 13rem;

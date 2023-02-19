@@ -7,6 +7,7 @@ const AboutFotu = () => {
     return (
         <div className="About-Fotu">
           <div className="abt-img">
+          <div className="AboutImgBackShadow"></div>
             <img src={about} alt="" />
 
             <div className="about-float-window">
@@ -42,7 +43,9 @@ const AboutFotu = () => {
                 </svg>
               </div>
               <div className="about-float-window-content">
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
+              <h5>Minesh H Patel</h5>
+              <p>CTO, Web Developer</p>
+                {/* <p>Lorem Ipsum is simply dummy text of the printing</p> */}
               </div>
             </div>
             <div className="About-Float-2">
@@ -78,7 +81,10 @@ const AboutFotu = () => {
                 </svg>
               </div>
               <div className="about-float-window-content2">
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
+              
+              <h5>Divyankit Singh</h5>
+              <p>CEO, Web Developer</p>
+                {/* <p>Lorem Ipsum is simply dummy text of the printing</p> */}
               </div>
             </div>
           </div>

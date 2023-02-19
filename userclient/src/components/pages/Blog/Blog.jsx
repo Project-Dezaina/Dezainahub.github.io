@@ -14,6 +14,9 @@ import "swiper/css/pagination";
 import "swiper/css/mousewheel";
 
 import Fotu from "./Image/111.jpg";
+import Butter from "./Image/Butter.jpg";
+import Fotu2 from "./Image/Thor.jpg";
+import Fotu3 from "./Image/Shoe.jpg";
 
 // import "./styles.css";
 
@@ -22,17 +25,17 @@ import Fotu from "./Image/111.jpg";
 const Blog = () => {
     const cards = [
         {
-            Image: Fotu,
+            Image: Butter,
             title: "Creation of additional tracks to hold content",
             text: "You can define an explicit grid with grid layout. The Grid Layout specification is flexible",
         },
         {
-            Image: Fotu,
+            Image: Fotu2,
             title: "Creation of additional tracks to hold content",
             text: "You can define an explicit grid with grid layout. The Grid Layout specification is flexible",
         },
           {
-            Image: Fotu,
+            Image: Fotu3,
             title: "Creation of additional tracks to hold content",
             text: "You can define an explicit grid with grid layout. The Grid Layout specification is flexible",
         },
@@ -217,10 +220,10 @@ const Blog = () => {
      
           
             <Swiper
-        slidesPerView={2}
-        spaceBetween={0}
+        slidesPerView={2.08}
+        // spaceBetween={0}
         // loop={true}
-        mousewheel={true}
+        // mousewheel={true}
         // direction={"Vertical"}
         modules={[Pagination, Navigation, Mousewheel]}
         pagination={{
@@ -273,15 +276,15 @@ const Blog = () => {
       spaceBetween: 40
     },
     700: {
-      slidesPerView: 1.5,
-      spaceBetween: 40
+      slidesPerView: 1,
+      spaceBetween: 0
     },
     900: {
-      slidesPerView: 2,
-      spaceBetween: 40
+      slidesPerView: 1,
+      spaceBetween: 0
     },
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 2.08,
       spaceBetween: 60
     }
   }}
