@@ -54,9 +54,9 @@
   cursor: pointer;
   border: none;
   text-transform: uppercase;
-  background-color: #ccedff;
-  border-radius: 1.2em;
-  color: #364154;
+  background-color: #364154;
+  border-radius: 0.5em;
+  color: #fff;
   font-weight: 700;
   font-size: 20px;
   z-index: 0;

@@ -1,5 +1,5 @@
 .AboutHeadContent {
-  padding-top: 5rem;
+  margin-top: 2rem;
 }
 .AboutHeadContent .HeadContent {
   display: flex;
@@ -30,7 +30,7 @@
   font-weight: 600;
 }
 .AboutHeadContent .HeadContent .button-box {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 .AboutHeadContent .HeadContent .button-box button {
   position: relative;
@@ -100,7 +100,7 @@
 .AboutHeadContent .HeadContentImage {
   display: flex;
   flex-direction: row !important;
-  margin-top: 3rem;
+  margin-top: 1rem;
   justify-content: center !important;
   position: relative;
 }
