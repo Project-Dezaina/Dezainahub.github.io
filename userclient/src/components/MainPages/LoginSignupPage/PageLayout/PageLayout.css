@@ -66,7 +66,7 @@
   font-weight: 700;
 }
 .PageLayoutContainer .PageLayoutInnerContent .CommonForm .FormLayoutOuter .FormLayout .LoginButtons .Button-Proceed {
-  background-color: #364154;
+  background-color: #2F455C;
   color: #fff;
 }
 .PageLayoutContainer .PageLayoutInnerContent .LoginImage {
@@ -93,7 +93,7 @@
   display: flex;
   place-content: center;
   place-items: center;
-  background-color: #364154;
+  background-color: #2F455C;
   border-radius: 1.2em;
   color: #fff;
 }
@@ -174,7 +174,7 @@
     font-weight: 700;
   }
   .PageLayoutContainer .PageLayoutInnerContent .FormLayout .LoginButtons .Button-Proceed {
-    background-color: #364154;
+    background-color: #2F455C;
     color: #fff;
   }
   .PageLayoutContainer .LoginImage {
@@ -203,7 +203,7 @@
     display: flex;
     place-content: center;
     place-items: center;
-    background-color: #364154;
+    background-color: #2F455C;
     border-radius: 1.2em;
     color: #fff;
   }

@@ -17,7 +17,7 @@
   place-items: center;
 }
 .ProductPageMain .ProductPageHead .PageHeadContent h1 {
-  color: #364154;
+  color: #2F455C;
   font-size: 3.5rem;
   font-weight: 700;
   width: 60rem;
@@ -289,7 +289,7 @@
     margin-top: 0.7rem !important;
   }
   .container .ProductCards .SingleCards .CardBody p {
-    color: #364154;
+    color: #2F455C;
     font-size: 0.8rem !important;
   }
   .container .ProductCards .SingleCards .CardBase {

@@ -4,7 +4,7 @@
 }
 .ProductCardsPage .ProductCardsContainer .container h1 {
   font-weight: 700;
-  color: #364154;
+  color: #2F455C;
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards {
   display: grid;
@@ -17,7 +17,7 @@
   width: 25rem;
   height: 18.5rem;
   padding: 25px;
-  color: #364154;
+  color: #2F455C;
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards .SingleCards .CardHead {
   display: flex;
@@ -30,10 +30,10 @@
   flex-direction: row;
   gap: 1rem;
   place-items: center;
-  color: #364154;
+  color: #2F455C;
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards .SingleCards .CardHead .ProductSVG {
-  background-color: #364154;
+  background-color: #2F455C;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -63,14 +63,14 @@
   display: flex;
   place-content: center;
   place-items: center;
-  background-color: #364154;
+  background-color: #2F455C;
   border-radius: 1.2em;
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards .SingleCards .CardBase .AddToCartButton .icon-btn {
   width: 50px;
   height: 50px;
   border: 1px solid #cdcdcd;
-  background: #364154;
+  background: #2F455C;
   border-radius: 25px;
   overflow: hidden;
   position: relative;
@@ -152,14 +152,14 @@
   top: calc(50% - 2px);
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards #BlueBase {
-  background-color: #364154;
+  background-color: #2F455C;
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards #BlueBaseTextColor p {
   color: #fff !important;
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards #BlueBaseButtonColor {
   background-color: #fff !important;
-  color: #364154;
+  color: #2F455C;
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards #BlueBaseButtonColor .add-icon::after,
 .ProductCardsPage .ProductCardsContainer .container .ProductCards #BlueBaseButtonColor .add-icon::before {
@@ -167,7 +167,7 @@
 }
 .ProductCardsPage .ProductCardsContainer .container .ProductCards #BlueBaseButtonColor .add-btn::before,
 .ProductCardsPage .ProductCardsContainer .container .ProductCards #BlueBaseButtonColor .add-btn::after {
-  background: #364154 !important;
+  background: #2F455C !important;
 }
 @media screen and (max-width: 900px) {
   .ProductCardsPage .ProductCardsContainer .container {

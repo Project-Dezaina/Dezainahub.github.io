@@ -7,7 +7,7 @@
   gap: 3.15rem;
 }
 .HeadingCards #ActiveCard {
-  background-color: #364154;
+  background-color: #2F455C;
 }
 .HeadingCards #ActiveCard h4 {
   color: #fff;
@@ -29,10 +29,10 @@
 .HeadingCards .SubCard1 h4 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #364154;
+  color: #2F455C;
 }
 .HeadingCards .cardNum h1 {
   font-weight: 700;
-  color: #364154;
+  color: #2F455C;
   font-size: 4rem;
 }/*# sourceMappingURL=StatusStages.css.map */

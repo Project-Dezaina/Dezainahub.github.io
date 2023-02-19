@@ -21,7 +21,7 @@
   position: absolute;
   left: 1.7rem;
   top: -10rem;
-  border-left: 0.5rem solid #364154;
+  border-left: 0.5rem solid #2F455C;
   height: 100%;
 }
 .OrderDetails .OrderContent-Details .PCard1 .OrderContent-Content {
@@ -33,7 +33,7 @@
   height: 4rem;
   display: flex;
   place-items: center;
-  color: #364154;
+  color: #2F455C;
 }
 .OrderDetails .OrderContent-Details .PCard1 .OrderContent-Content p {
   width: 60rem;
