@@ -21,8 +21,6 @@ const Homepage = () => {
       <Testimonial />
       
       <Blogs/>
-      {/* <NewFooter/> */}
-      {/* <FooterNew/> */}
       <NewFooter/>
     </div>
   )

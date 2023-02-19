@@ -120,10 +120,16 @@
     align-items: center;
     padding: 0rem !important;
   }
+  .aboutUsImageSec .abt-img .AboutImgBackShadow {
+    height: 25rem;
+    width: 20rem;
+    top: -1.5rem;
+    left: -1.15rem;
+  }
   .aboutUsImageSec .abt-img img {
     width: 20rem;
     height: 25rem;
-    margin-left: 3rem;
+    margin-left: 1rem !important;
   }
   .aboutUsImageSec .abt-img .about-float-window {
     top: 13rem;

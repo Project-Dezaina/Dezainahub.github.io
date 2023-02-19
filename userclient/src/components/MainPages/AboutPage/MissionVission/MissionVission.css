@@ -58,18 +58,24 @@
     color: #fff !important;
   }
   .MissionVission .BoxContent {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    text-align: center !important;
     width: 25rem !important;
+  }
+  .MissionVission .BoxContent h6 {
+    color: #4BACE0;
+    margin-bottom: 0rem;
+    width: 100% !important;
   }
   .MissionVission .BoxContent h1 {
     font-weight: 700;
     color: #fff !important;
-    text-align: center;
-    width: 25rem !important;
+    width: 100% !important;
   }
   .MissionVission .BoxContent p {
     color: #fff !important;
-    text-align: center;
-    width: 25rem !important;
+    width: 100% !important;
   }
 }/*# sourceMappingURL=MissionVission.css.map */

@@ -69,19 +69,25 @@
         // background-color: red;
       }
       .BoxContent {
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem !important;
+        text-align: center !important;
         width: 25rem !important;
         // background-color: aqua;
+        h6{
+          color: $primarycolor;
+          margin-bottom: 0rem;
+          width: 100% !important;
+        }
         h1 {
           font-weight: 700;
           color: #fff !important;
-          text-align: center;
-          width: 25rem !important;
+          width: 100% !important;
         }
         p {
           color: #fff !important;
-          text-align: center;
-          width: 25rem !important;
+          width: 100% !important;
         }
       }
     }
