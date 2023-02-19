@@ -8,8 +8,9 @@ const AboutUs = () => {
   return (
     <div className="aboutUsContainer">
       <div className="aboutUsImageSec container">
-        <div className="abt-img">
-          <img src={about} alt="" />
+        <div className="abt-img" data-aos="fade-up">
+        <div className="AboutImgBackShadow"  ></div>
+          <img src={about} alt=""  />
 
           <div className="about-float-window">
             <div className="about-float-icon">

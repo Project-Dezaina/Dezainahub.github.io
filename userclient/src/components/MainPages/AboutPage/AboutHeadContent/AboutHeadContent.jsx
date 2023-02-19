@@ -12,7 +12,7 @@ import Img1 from "../Image/Img1.jpg";
 const AboutHeadContent = () => {
   return (
     <div className="AboutHeadContent">
-      <div className="HeadContent">
+      <div className="HeadContent" data-aos="fade-up">
         <div className="HeadContentHead">
           <h1>Everything you need to grow your business visually</h1>
           <p>
@@ -28,7 +28,7 @@ const AboutHeadContent = () => {
           <h6>Best at Affordable Prices</h6>
         </div>
       </div>
-      <div className="HeadContentImage">
+      <div className="HeadContentImage" data-aos="fade-up">
         {/* <div className="AboutImage2"><img src={Img1} alt="" /></div> */}
 
         <Swiper

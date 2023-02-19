@@ -1,5 +1,6 @@
-import { lazy, Suspense } from "react";
-import { Route, Router, Routes } from "react-router-dom";
+import { react, useEffect,  } from "react";
+
+// import { Route, Router, Routes } from "react-router-dom";
 import "./App.css";
 import ErrorPage from "./components/404ErrorPage/404ErrorPage";
 import LazzyLoader from "./components/LazzyLoader/LazzyLoader";
@@ -7,19 +8,25 @@ import LoginSignupPage from "./components/MainPages/LoginSignupPage/LoginSignupP
 import Navbar from "./components/pages/navbar/Navbar";
 import NewFooter from "./components/pages/NewFooter/Footer";
 // const Homepage = lazy(()=>import("./components/pages/homePage/Homepage"));
-// import Homepage from "./components/pages/homePage/Homepage";
-// import AboutPage from "./components/MainPages/AboutPage/AboutPage";
+import Homepage from "./components/pages/homePage/Homepage";
+import AboutPage from "./components/MainPages/AboutPage/AboutPage";
 import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import GalleryPage from "./components/MainPages/GalleryPage/GalleryPage";
 // import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
 // import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
 import YourCartPage from "./components/MainPages/YourCartPage/YourCartPage";
+import AOS from "aos";
 // import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
 // import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
 // import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
-
+ 
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+ 
   return (
     // <div className="App">
     // <Suspense
@@ -55,14 +62,14 @@ function App() {
     // <LazzyLoader/>
     // <ErrorPage/>
     //  {/* <LoginSignupPage/> */}
-    //   {/* <Homepage /> */}
-    //   {/* <AboutPage/> */}
+    // <Homepage />
+       <AboutPage/> 
     //  <ProductPage/> 
     //   {/* <GalleryPage/> */}
     //   {/* <ContactUsPage/> */}
       
     //  {/* <CheckStatusPage/> */}
-    <YourCartPage/> 
+    // <YourCartPage/> 
   );
 }
 <div id="root"></div>;

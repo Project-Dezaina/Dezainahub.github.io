@@ -5,7 +5,7 @@ import about from "../Image/124.png";
 
 const AboutFotu = () => {
     return (
-        <div className="About-Fotu">
+        <div className="About-Fotu" data-aos="fade-up">
           <div className="abt-img">
           <div className="AboutImgBackShadow"></div>
             <img src={about} alt="" />

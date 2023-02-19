@@ -7,7 +7,8 @@ const LandingPage = () => {
   return (
     <div className="LandingPageMainComponents">
       <div className="landingPageContainer container">
-        <div className="Landing-Content">
+        <div className="Landing-Content" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
           <h1>DESIGNING <span>VISUAL</span> STORIES</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -40,8 +41,8 @@ const LandingPage = () => {
         </div>
         <div className="Landing-img-box">
           <div className="landing-box"></div>
-          <div className="landing-img">
-            <img src={brandImg} alt="Brand img" />
+          <div className="landing-img" >
+            <img src={brandImg} alt="Brand img" data-aos="fade-left" />
           </div>
           <div className="landing-small-box">
             <div className="small-box-content">

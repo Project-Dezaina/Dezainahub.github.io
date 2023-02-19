@@ -4,7 +4,8 @@ import Image1 from "./Image/11.jpeg";
 
 const Testimonial = () => {
   return (
-    <div className="Testimonial-Main container">
+    <div className="Testimonial-Main container" data-aos="fade-up"
+    data-aos-anchor-placement="center-center">
       <div className="Testimonial-heading">
         <div className="Testimonial-Topic">Testimonial</div>
         <div className="Testimonial-head">
@@ -12,7 +13,7 @@ const Testimonial = () => {
         </div>
       </div>
       <div>
-        <div className="Client-1">
+        <div className="Client-1" data-aos="zoom-in-up">
           <div className="Client-Img">
             <img src={Image1} alt="Image-1"></img>
           </div>

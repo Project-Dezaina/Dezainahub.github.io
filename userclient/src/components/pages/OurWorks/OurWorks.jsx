@@ -75,7 +75,8 @@ const Ourworks = () => {
             </div>
               </div>
             ))}  */}
-            <div className="Work-card-body">
+            <div className="Work-card-body" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
             <div className="New-Card" id="aa">
               <div className="card-img">
                 <img src={Img2} alt="" />

@@ -9,7 +9,7 @@ const MissionVission = () => {
     const [currentStep, setStep] = useState(1);
   
     return (
-        <div className='MainMissionVission'>
+        <div className='MainMissionVission' data-aos="fade-up">
         <h1 className='MissionVisionHead'>Mission & Vision</h1>
           <multiStepContext.Provider 
       value={{currentStep, setStep}}>
