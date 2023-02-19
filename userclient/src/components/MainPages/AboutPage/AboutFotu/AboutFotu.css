@@ -40,13 +40,19 @@
 }
 .About-Fotu .abt-img .about-float-window .about-float-window-content {
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  text-align: left;
   padding-top: 1rem;
-  padding-bottom: 0px !important;
+  padding-bottom: 0rem !important;
 }
 .About-Fotu .abt-img .about-float-window .about-float-window-content p {
+  padding-bottom: 0rem !important;
   font-size: 0.8rem;
   width: 12rem;
+}
+.About-Fotu .abt-img .about-float-window .about-float-window-content h5 {
+  font-weight: 700;
+  margin-bottom: 0rem;
 }
 .About-Fotu .abt-img .about-float-window .about-float-icon {
   display: flex;
@@ -74,11 +80,18 @@
 }
 .About-Fotu .abt-img .About-Float-2 .about-float-window-content2 {
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  margin-bottom: 0rem;
   padding-top: 1rem;
+  text-align: left;
   padding-bottom: 0px !important;
 }
+.About-Fotu .abt-img .About-Float-2 .about-float-window-content2 h5 {
+  font-weight: 700;
+  margin-bottom: 0rem;
+}
 .About-Fotu .abt-img .About-Float-2 .about-float-window-content2 p {
+  padding-bottom: 0rem !important;
   font-size: 0.8rem;
   width: 12rem;
 }

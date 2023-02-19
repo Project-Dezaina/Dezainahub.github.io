@@ -1,8 +1,17 @@
-.MissionVission {
+.MainMissionVission {
   margin-top: 10rem;
+}
+.MainMissionVission .MissionVisionHead {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.MissionVission {
+  margin-top: 3rem;
   border-radius: 1.2em;
   width: 100%;
-  height: 22rem;
+  height: 25rem;
   color: #fff !important;
   padding: 20px 50px 20px;
 }

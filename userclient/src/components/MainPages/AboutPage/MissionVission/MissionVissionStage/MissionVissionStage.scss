@@ -15,13 +15,13 @@
         display: flex;
         flex-direction: column;
         background-color: $thirdcolor;
-        // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-        border-radius: 1.5rem 0rem 0rem 1.5rem;
+        border-radius: $PrimaryBorderRadius 0rem 0rem $PrimaryBorderRadius;
+        // border-radius: 1.5rem 0rem 0rem 1.5rem;
         // gap: 1rem ;
         #MissionBoxHeadColor{
             background-color: $secondarycolor ;
-            // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-            border-radius: 1.5rem 0rem 0rem 1.5rem;
+            border-radius: $PrimaryBorderRadius 0rem 0rem $PrimaryBorderRadius;
+            // border-radius: 1.5rem 0rem 0rem 1.5rem;
             button{
                 font-weight: 700;
                 font-size: 1.5rem;
@@ -34,8 +34,8 @@
         
         .MissionBoxHead, .VissionBoxHead{
                 background-color: $thirdcolor;
-                // border-radius: $SecondaryBorderRadius 0rem 0rem $SecondaryBorderRadius;
-                border-radius: 1.5rem 0rem 0rem 1.5rem;
+                border-radius: $PrimaryBorderRadius 0rem 0rem $PrimaryBorderRadius;
+                // border-radius: 1.5rem 0rem 0rem 1.5rem;
                 width: 18rem;
                 height: 12.5rem;
                 display: flex;
