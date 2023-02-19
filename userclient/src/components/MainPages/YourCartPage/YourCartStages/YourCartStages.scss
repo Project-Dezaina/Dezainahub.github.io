@@ -1,17 +1,17 @@
-@import "../../globalcss/global.scss";
+@import "../../../globalcss/global.scss";
 
 .YourCartMainPage{
     margin-top: 5rem;
     font-family: "Montserrat";
     .CartContainer{
         display: flex;
-            flex-direction: row;
+            flex-direction: column;
              place-items: center;
 
             .YourCart{
                 width: 95%;
                 .CartNav-Bar-Content{
-                    background-color:$secondarycolor;
+                background-color:$secondarycolor;
                 height: 3.5rem;
                 border-radius: 1.2em 1.2em 0 0;
                 display: flex;
@@ -186,7 +186,9 @@
                                   place-items: center;
                                   margin-bottom: 0;
                                   width: 2rem;
-                                  
+                                  input {
+                                    text-align: center;
+                                  }
                                 }
                             }
                             // .TotalPricing{

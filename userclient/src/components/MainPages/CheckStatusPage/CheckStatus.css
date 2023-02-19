@@ -17,7 +17,7 @@
 .CheckStatusPageMain .CheckStatus-container .CheckStatusContent h1 {
   font-size: 4rem;
   font-weight: 700;
-  color: #364154;
+  color: #2F455C;
 }
 .CheckStatusPageMain .CheckStatus-container .CheckStatusContent p {
   font-size: 1.5rem;
@@ -28,7 +28,7 @@
   margin-top: 3.15rem;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .Nav-Order-Content {
-  background-color: #364154;
+  background-color: #2F455C;
   height: 3.5rem;
   border-radius: 1.2em 1.2em 0 0;
   display: flex;
@@ -62,7 +62,7 @@
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .PosterHead h4 {
   font-size: 2rem;
   font-weight: 700;
-  color: #364154;
+  color: #2F455C;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderCard1 .OrderCard-Inner-Inner {
   display: flex;
@@ -114,7 +114,7 @@
   padding: 0.5em 2em;
   border: transparent;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  background: #364154;
+  background: #2F455C;
   color: white;
   border-radius: 4px;
 }
@@ -146,7 +146,7 @@
   .CheckStatusPageMain .CheckStatus-container .CheckStatusContent h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #364154;
+    color: #2F455C;
   }
   .CheckStatusPageMain .CheckStatus-container .CheckStatusContent p {
     font-size: 1rem;
@@ -161,7 +161,7 @@
     gap: 1rem;
   }
   .CheckStatusPageMain .CheckStatus-container .HeadingCards #ActiveCard {
-    background-color: #364154;
+    background-color: #2F455C;
   }
   .CheckStatusPageMain .CheckStatus-container .HeadingCards #ActiveCard h4 {
     color: #fff;
@@ -182,11 +182,11 @@
   .CheckStatusPageMain .CheckStatus-container .HeadingCards .SubCard1 h4 {
     font-size: 1rem;
     font-weight: 700;
-    color: #364154;
+    color: #2F455C;
   }
   .CheckStatusPageMain .CheckStatus-container .HeadingCards .cardNum h1 {
     font-weight: 700;
-    color: #364154;
+    color: #2F455C;
     font-size: 2.5rem;
   }
   .CheckStatusPageMain .CheckStatus-container .OrderContent {
@@ -194,7 +194,7 @@
     margin-top: 3.15rem;
   }
   .CheckStatusPageMain .CheckStatus-container .OrderContent .Nav-Order-Content {
-    background-color: #364154;
+    background-color: #2F455C;
     height: 3.3rem;
     border-radius: 1.2em 1.2em 0 0;
     display: flex;
@@ -228,7 +228,7 @@
   .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .PosterHead h4 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #364154;
+    color: #2F455C;
   }
   .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details {
     margin-top: 2.5rem;
@@ -253,7 +253,7 @@
     position: absolute;
     left: 1.6rem;
     top: -10rem;
-    border-left: 0.35rem solid #364154;
+    border-left: 0.35rem solid #2F455C;
     height: 100%;
   }
   .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .OrderContent-Content {
@@ -265,7 +265,7 @@
     height: 4rem;
     display: flex;
     place-items: center;
-    color: #364154;
+    color: #2F455C;
   }
   .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers .OrderNum-Content .OrderContent-Details .PCard1 .OrderContent-Content p {
     width: 23rem;
@@ -282,7 +282,7 @@
     padding: 0.5em 2em;
     border: transparent;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    background: #364154;
+    background: #2F455C;
     color: white;
     border-radius: 4px;
   }

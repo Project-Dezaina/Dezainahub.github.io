@@ -68,7 +68,7 @@
   width: 95%;
 }
 .YourCartMainPage .CartContainer .YourCart .CartNav-Bar-Content {
-  background-color: #364154;
+  background-color: #2F455C;
   height: 3.5rem;
   border-radius: 1.2em 1.2em 0 0;
   display: flex;
@@ -112,7 +112,7 @@
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .SubTotal {
   display: flex;
   gap: 43rem;
-  background-color: #364154;
+  background-color: #2F455C;
   width: 60rem;
   border-radius: 1.2em;
   padding: 0.5rem;
@@ -138,7 +138,7 @@
   place-items: center;
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Confirmation h5 {
-  color: #364154;
+  color: #2F455C;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -148,7 +148,7 @@
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details #SubTotal {
   display: flex;
   gap: 33rem;
-  background-color: #364154;
+  background-color: #2F455C;
   width: 60rem;
   border-radius: 1.2em;
   padding: 0.5rem;
@@ -187,7 +187,7 @@
   gap: 3rem;
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .ImageBg {
-  background-color: #364154;
+  background-color: #2F455C;
   width: 12rem;
   height: 16rem;
   display: flex;
@@ -405,7 +405,7 @@
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .ImageBg {
     margin-left: -1rem;
-    background-color: #364154;
+    background-color: #2F455C;
     width: 9rem !important;
     height: 12rem;
     display: flex;
@@ -491,7 +491,7 @@
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Delete-Button .DeleteBtn {
     border-radius: 0.5em;
-    background-color: #364154;
+    background-color: #2F455C;
     color: #fff;
     border: none;
     width: 20rem;

@@ -1,6 +1,6 @@
 .Footer-Main {
   position: relative;
-  background-color: #364154;
+  background-color: #2F455C;
   color: #fff;
   width: 100%;
   padding-top: 12rem;
@@ -14,7 +14,7 @@
   min-width: 80rem;
   min-height: 17rem;
   background-color: #fff;
-  color: #364154;
+  color: #2F455C;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,7 +54,7 @@
   cursor: pointer;
   border: none;
   text-transform: uppercase;
-  background-color: #364154;
+  background-color: #2F455C;
   border-radius: 0.5em;
   color: #fff;
   font-weight: 700;

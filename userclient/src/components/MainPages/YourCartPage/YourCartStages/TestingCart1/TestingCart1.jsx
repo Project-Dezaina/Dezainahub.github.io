@@ -18,8 +18,40 @@ const TestingCart1 = () => {
 
 
     const [items, setItems] = useState([
-        { id: 1, name: 'Item 1', Image: PosterImg, price: 300, quantity: 0 },
-        { id: 2, name: 'Item 2', Image: BannerImg, price: 500, quantity: 0 }
+        { 
+            id: 1, 
+            name: "Poster", 
+            Image: PosterImg, 
+            price: 300, 
+            text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            quantity: 0 
+        },
+        { 
+            id: 2, 
+            name: "Poster", 
+            Image: BannerImg, 
+            price: 500, 
+            text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            quantity: 0 
+        },
+        
+        { 
+            id: 3, 
+            name: "Poster", 
+            Image: PosterImg, 
+            price: 300, 
+            
+            text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            quantity: 0 
+        },
+        { 
+            id: 4, 
+            name: "Poster", 
+            Image: BannerImg, 
+            price: 500, 
+            text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            quantity: 0 
+        }
       ]);
       const [totalPrice, setTotalPrice] = useState(0);
     
@@ -109,23 +141,23 @@ const TestingCart1 = () => {
     }
   }
 
-  const CartCards = [
-    {
-      // id: ,
-      Image: PosterImg,
-      Quantity: counter,
-      title: "Poster",
-      Price: 500,
-      text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    },
-    {
-      Image: BannerImg,
-      Quantity: counter,
-      title: "Banner",
-      Price: 300,
-      text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    },
-  ];
+//   const CartCards = [
+//     {
+//       // id: ,
+//       Image: PosterImg,
+//       Quantity: counter,
+//       title: "Poster",
+//       Price: 500,
+//       text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+//     },
+//     {
+//       Image: BannerImg,
+//       Quantity: counter,
+//       title: "Banner",
+//       Price: 300,
+//       text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+//     },
+//   ];
   return (
     <div className="YourCartMainPage">
       <div className="CartContainer container">
@@ -201,7 +233,7 @@ const TestingCart1 = () => {
                       {/* <h4>{card.title}</h4> */}
                       <h4>{item.name}</h4>
                       {/* <h4>Poster</h4> */}
-                      <p>Lodeium lipsum Testing</p>
+                      <p>{item.text}</p>
                       {/* <p>{card.text}</p> */}
                       {/* <p>1.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, tandard dummy text ever since the 1500s</p> */}
                     </div>
@@ -213,7 +245,7 @@ const TestingCart1 = () => {
                         <div className="QuantityButton" >
                           <button type="button" id="QuantButt">
                             
-                            <svg
+                            {/* <svg
                             onChange={e => handleQuantityChange(item.id, e.target.value)}
                               onClick={handleSub}
                               width="25"
@@ -226,21 +258,22 @@ const TestingCart1 = () => {
                                 d="M16.8215 3.05713H8.15508C4.39066 3.05713 2.14648 5.3013 2.14648 9.06573V17.7218C2.14648 21.4966 4.39066 23.7408 8.15508 23.7408H16.8112C20.5756 23.7408 22.8198 21.4966 22.8198 17.7322V9.06573C22.8301 5.3013 20.5859 3.05713 16.8215 3.05713ZM16.625 14.1746H8.35158C7.92756 14.1746 7.57594 13.823 7.57594 13.3989C7.57594 12.9749 7.92756 12.6233 8.35158 12.6233H16.625C17.049 12.6233 17.4007 12.9749 17.4007 13.3989C17.4007 13.823 17.049 14.1746 16.625 14.1746Z"
                                 fill="#4BACE0"
                               />
-                            </svg>{" "}
+                            </svg>{" "} */}
                           </button>
                           <h6 >
-                          {/* <input className="QuantityButton"
+                          <input className="QuantityButton"
                 type="number"
                 min="0"
                 value={item.quantity}
                 onChange={e => handleQuantityChange(item.id, e.target.value)}
-              /> */}
-              {item.quantity=counter}
+              />
+              {/* {item.quantity=counter} */}
+              {/* {item.quantity} */}
               </h6>
                           {/* <h6>{counter}</h6> */}
                           <button id="QuantButt">
                             {" "}
-                            <svg
+                            {/* <svg
                             onChange={e => handleQuantityChange(item.id, e.target.value)}
                               onClick={handleAdd}
                               width="26"
@@ -253,7 +286,7 @@ const TestingCart1 = () => {
                                 d="M16.97 3.05713H8.30352C4.5391 3.05713 2.29492 5.3013 2.29492 9.06573V17.7218C2.29492 21.4966 4.5391 23.7408 8.30352 23.7408H16.9596C20.724 23.7408 22.9682 21.4966 22.9682 17.7322V9.06573C22.9786 5.3013 20.7344 3.05713 16.97 3.05713ZM16.7735 14.1746H13.4124V17.5357C13.4124 17.9597 13.0608 18.3113 12.6367 18.3113C12.2127 18.3113 11.8611 17.9597 11.8611 17.5357V14.1746H8.50001C8.076 14.1746 7.72438 13.823 7.72438 13.3989C7.72438 12.9749 8.076 12.6233 8.50001 12.6233H11.8611V9.26222C11.8611 8.83821 12.2127 8.48658 12.6367 8.48658C13.0608 8.48658 13.4124 8.83821 13.4124 9.26222V12.6233H16.7735C17.1975 12.6233 17.5491 12.9749 17.5491 13.3989C17.5491 13.823 17.1975 14.1746 16.7735 14.1746Z"
                                 fill="#4BACE0"
                               />
-                            </svg>{" "}
+                            </svg>{" "} */}
                           </button>
                         </div>
                       </div>
