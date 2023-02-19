@@ -6,14 +6,14 @@ import LazzyLoader from "./components/LazzyLoader/LazzyLoader";
 import LoginSignupPage from "./components/MainPages/LoginSignupPage/LoginSignupPage";
 import Navbar from "./components/pages/navbar/Navbar";
 import NewFooter from "./components/pages/NewFooter/Footer";
-const Homepage = lazy(()=>import("./components/pages/homePage/Homepage"));
+// const Homepage = lazy(()=>import("./components/pages/homePage/Homepage"));
 // import Homepage from "./components/pages/homePage/Homepage";
 // import AboutPage from "./components/MainPages/AboutPage/AboutPage";
-// import ProductPage from "./components/MainPages/ProductPage/ProductPage";
+import ProductPage from "./components/MainPages/ProductPage/ProductPage";
 // import GalleryPage from "./components/MainPages/GalleryPage/GalleryPage";
 // import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
 // import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
-// import YourCartPage from "./components/MainPages/YourCartPage/YourCartPage";
+import YourCartPage from "./components/MainPages/YourCartPage/YourCartPage";
 // import ContactUSContext from "./components/MainPages/ContactUsPage/ContactUsContext/ContactUSContext";
 // import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
 // import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
@@ -53,7 +53,16 @@ function App() {
 
     // </div>
     // <LazzyLoader/>
-    <ErrorPage/>
+    // <ErrorPage/>
+    //  {/* <LoginSignupPage/> */}
+    //   {/* <Homepage /> */}
+    //   {/* <AboutPage/> */}
+    //  <ProductPage/> 
+    //   {/* <GalleryPage/> */}
+    //   {/* <ContactUsPage/> */}
+      
+    //  {/* <CheckStatusPage/> */}
+    <YourCartPage/> 
   );
 }
 <div id="root"></div>;

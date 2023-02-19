@@ -5,6 +5,7 @@ import { multiStepContactContext } from "../YourCartPage";
 import CartStage1 from './CartStage1/CartStage1';
 import CartStage2 from './CartStage2/CartStage2';
 import CartStage3 from './CartStage3/CartStage3';
+import TestingCart1 from './TestingCart1/TestingCart1';
 import "./YourCartStages.css";
 
 
@@ -14,7 +15,8 @@ const YourCartStages = () => {
   const Showstep = (step)=>{
     switch (step) {
       case 1:
-        return <CartStage1/>;
+        // return <CartStage1/>;
+        return <TestingCart1/>;
       case 2:
         return <CartStage2/>;
       case 3:

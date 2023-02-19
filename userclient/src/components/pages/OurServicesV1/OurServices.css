@@ -1,24 +1,27 @@
 .ourServices-container {
-  margin: 20vh;
-  background: #2f455c;
+  box-shadow: 50%;
+  margin: 10rem auto;
+}
+.ourServices-container .container {
   padding: 5rem;
+  background: #364154;
   border-radius: 2rem;
   display: flex;
   align-items: center;
   place-content: center;
   font-family: "Montserrat";
   flex-direction: row;
-  box-shadow: 50%;
 }
 .ourServices-container .Service-sec {
   color: #fff;
-  margin-right: 10vw;
+  margin-right: 10rem;
   display: flex;
   align-items: center;
 }
 .ourServices-container .Service-sec h2 {
   font-size: 3rem;
   font-weight: 700;
+  width: 30rem;
 }
 .ourServices-container .Service-sec h2 span {
   color: #5ac5ff;

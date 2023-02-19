@@ -1,21 +1,22 @@
 .Blog-Main {
-  margin: 10rem 0rem;
+  margin: 7rem 0rem;
   padding: 5rem;
   font-family: "Montserrat";
+  overflow: hidden;
 }
 .Blog-Main .container .Blog-Head {
-  color: #2f455c;
+  color: #364154;
   margin-bottom: 5rem;
 }
 .Blog-Main .container .Blog-Head h5 {
-  color: #4bace0;
+  color: #4BACE0;
 }
 .Blog-Main .container .Blog-Head h1 {
   font-size: 3.5rem;
   font-weight: 700;
 }
 .Blog-Main .container .Blog-Head h1 span {
-  color: #4bace0;
+  color: #4BACE0;
 }
 .Blog-Main .container .cards {
   border: none !important;
@@ -51,8 +52,8 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  width: 25rem;
+  gap: 2rem !important;
+  width: 40rem;
 }
 .Blog-Main .container .cards .cardNew .Blog-card .Anime-Card .card .Inner-Article img {
   width: 126px;
@@ -62,6 +63,7 @@
 .Blog-Main .container .cards .cardNew .Blog-card .Anime-Card .card .Inner-Article .Blog-Writing {
   display: flex;
   flex-direction: column;
+  width: 25rem;
   gap: 1rem;
   text-align: left !important;
 }

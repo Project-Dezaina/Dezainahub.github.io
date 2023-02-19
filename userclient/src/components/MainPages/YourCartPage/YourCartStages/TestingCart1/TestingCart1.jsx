@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Header from "../../../../pages/navbar/Navbar";
 import NewFooter from "../../../../pages/NewFooter/Footer";
-import "./CartStage1.css";
+import "./TestingCart1.css";
 import PosterImg from "../../Images/Poster.jpeg";
 import BannerImg from "../../Images/Banner.jpeg";
 import { multiStepContactContext } from "../../YourCartPage";
@@ -11,50 +11,59 @@ import { multiStepContactContext } from "../../YourCartPage";
 
 
 
-  
 
 
-
-
-
-
-const CartStage1 = () => {
+const TestingCart1 = () => {
     
 
 
-  const [items, setItems] = useState([
-    { id: 1, name: 'Item 1', price: 10, quantity: 0 },
-    { id: 2, name: 'Item 2', price: 20, quantity: 0 },
-    { id: 3, name: 'Item 3', price: 30, quantity: 0 }
-  ]);
-  const [totalPrice, setTotalPrice] = useState(0);
-
-  const handleQuantityChange = (itemId, newQuantity) => {
-    const newItems = items.map(item => {
-      if (item.id === itemId) {
-        return {
-          ...item,
-          quantity: newQuantity
-        };
-      }
-      return item;
-    });
-    setItems(newItems);
-    calculateTotalPrice(newItems);
-  };
-  const calculateTotalPrice = (items) => {
-    const totalPrice = items.reduce((total, item) => {
-      return total + (item.price * item.quantity);
-    }, 0);
-    setTotalPrice(totalPrice);
-  };
-
-
-
+    const [items, setItems] = useState([
+        { id: 1, name: 'Item 1', Image: PosterImg, price: 300, quantity: 0 },
+        { id: 2, name: 'Item 2', Image: BannerImg, price: 500, quantity: 0 }
+      ]);
+      const [totalPrice, setTotalPrice] = useState(0);
+    
+      const handleQuantityChange = (itemId, newQuantity) => {
+        const newItems = items.map(item => {
+          if (item.id === itemId) {
+            return {
+              ...item,
+              quantity: newQuantity
+            };
+          }
+          return item;
+        });
+        setItems(newItems);
+        calculateTotalPrice(newItems);
+      };
+    
+      const calculateTotalPrice = (items) => {
+        const totalPrice = items.reduce((total, item) => {
+          return total + (item.price * item.quantity);
+        }, 0);
+        setTotalPrice(totalPrice);
+      };
+      
 
 
+    //   const CalculatePrice = (items) => {
+    //     const TIPrice = items.reduce((item) => {
+    //         for (i = 0; i <= item.quantity; i++) {
+    //             // text += cars[i] + "<br>";
+    //             quant = 
+    //           }
+    //       }, 0);
+    //       return TIPrice;
+    //     // for (i = 0; i <= item.quantity; i++) {
+    //         // text += cars[i] + "<br>";
+
+    //     //   }
+    //   }
 
 
+
+
+      
 
 
     const {setStep, currentStep} = useContext(multiStepContactContext);
@@ -69,29 +78,36 @@ const CartStage1 = () => {
 
 
   const [counter, setCounter] = useState(1)
-  const [ProductValue, setPrice] = useState(counter)
+//   const [ProductValue, setPrice] = useState(counter)
   const handleAdd=()=>{
     setCounter(counter+1)
   }
   const handleSub=()=>{
-    if(counter>0){
+    // const newItems = items.map(item => {
+    //     // if (item.id === Pid) {
+            
+    //     //     if(item.counter>1){
+    //     //           setCounter(counter-1)
+    //     //         }
+    //     //         else{
+    //     //           setCounter(counter)
+    //     //         }
+    //     //   }
+    //     if(item.counter>1){
+    //           setCounter(item.counter-1)
+    //         }
+    //         else{
+    //           setCounter(item.counter)
+    //         }
+    //     return item.counter;
+    //   });
+    if(counter>1){
       setCounter(counter-1)
     }
     else{
       setCounter(counter)
     }
   }
-
-// const settingPrice=()=>{
-//   return counter*300
-// }
-
-//   const handlePrice=()=>{
-    
-//     const ProductValue = settingPrice()
-//     setPrice(ProductValue*300)
-//   }
-
 
   const CartCards = [
     {
@@ -175,16 +191,18 @@ const CartStage1 = () => {
           </div>
           <div className="CartContent1">
             <div className="Item-Details">
-              {CartCards.map((card, i) => (
-                <div key={i} className="Item1">
+              {items.map((item, i) => (
+                <div key={item.id} className="Item1">
                   <div className="ImageBg">
-                    <img src={card.Image} alt="" />
+                    <img src={item.Image} alt="" />
                   </div>
                   <div className="Cart-Item-Content">
                     <div className="CartDetails">
-                      <h4>{card.title}</h4>
+                      {/* <h4>{card.title}</h4> */}
+                      <h4>{item.name}</h4>
                       {/* <h4>Poster</h4> */}
-                      <p>{card.text}</p>
+                      <p>Lodeium lipsum Testing</p>
+                      {/* <p>{card.text}</p> */}
                       {/* <p>1.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, tandard dummy text ever since the 1500s</p> */}
                     </div>
                     <button className="AddMore">+Add More</button>
@@ -192,10 +210,11 @@ const CartStage1 = () => {
                     <div className="QuantityContainer">
                       <div className="QuantityBox">
                         <h6>Quantity</h6>
-                        <div className="QuantityButton">
+                        <div className="QuantityButton" >
                           <button type="button" id="QuantButt">
-                            {" "}
+                            
                             <svg
+                            onChange={e => handleQuantityChange(item.id, e.target.value)}
                               onClick={handleSub}
                               width="25"
                               height="26"
@@ -209,11 +228,20 @@ const CartStage1 = () => {
                               />
                             </svg>{" "}
                           </button>
-                          <h6>{card.Quantity}</h6>
+                          <h6 >
+                          {/* <input className="QuantityButton"
+                type="number"
+                min="0"
+                value={item.quantity}
+                onChange={e => handleQuantityChange(item.id, e.target.value)}
+              /> */}
+              {item.quantity=counter}
+              </h6>
                           {/* <h6>{counter}</h6> */}
                           <button id="QuantButt">
                             {" "}
                             <svg
+                            onChange={e => handleQuantityChange(item.id, e.target.value)}
                               onClick={handleAdd}
                               width="26"
                               height="26"
@@ -232,7 +260,7 @@ const CartStage1 = () => {
                       <div className="PriceBox">
                         <h6>Total Value</h6>
                         <div className="TotalPricing">
-                          <h6>{card.Price}</h6>
+                          <h6>{item.price * item.quantity}</h6>
                           {/* <h6>{ProductValue}</h6> */}
                         </div>
                       </div>
@@ -258,9 +286,9 @@ const CartStage1 = () => {
                   </div>
                 </div>
               ))}
-              <div className="SubTotal">
+              <div className="SubTotal" id="TestingSubtotal">
                 <h5>Sub total</h5>
-                <h5>1000/-</h5>
+                <h5>{totalPrice}</h5>
               </div>
               <div className="Confirmation">
                 {/* <button className="BackArrows" onClick={handlePrevClick} >
@@ -312,4 +340,4 @@ const CartStage1 = () => {
   );
 };
 
-export default CartStage1;
+export default TestingCart1;

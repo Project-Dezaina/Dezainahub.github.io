@@ -19,7 +19,6 @@ const Homepage = () => {
       <OurServices />
       <OurWorks/>
       <Testimonial />
-      
       <Blogs/>
       <NewFooter/>
     </div>
