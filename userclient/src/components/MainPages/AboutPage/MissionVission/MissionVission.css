@@ -22,17 +22,24 @@
   color: #fff !important;
 }
 .MissionVission .BoxContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   text-align: left;
   width: 50rem;
+}
+.MissionVission .BoxContent h6 {
+  color: #4BACE0;
+  margin-bottom: 0rem;
 }
 .MissionVission .BoxContent h1 {
   font-weight: 700;
   color: #fff !important;
-  width: 37rem;
+  width: 45rem;
 }
 .MissionVission .BoxContent p {
   color: #fff !important;
-  width: 37rem;
+  width: 45rem;
 }
 
 @media screen and (max-width: 900px) {

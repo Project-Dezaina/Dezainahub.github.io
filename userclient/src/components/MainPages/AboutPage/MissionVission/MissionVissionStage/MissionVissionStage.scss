@@ -60,7 +60,10 @@
         }
     }
     .MissionVissionBox{
-        padding: 3rem;
+        padding: 5rem !important;
+        display: flex;
+        // place-content: center;
+        place-items: center;
     }
 }
 

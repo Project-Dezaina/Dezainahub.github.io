@@ -48,7 +48,9 @@
   text-align: left;
 }
 .MissionVission .MissionVissionBox {
-  padding: 3rem;
+  padding: 5rem !important;
+  display: flex;
+  place-items: center;
 }
 
 @media screen and (max-width: 900px) {
