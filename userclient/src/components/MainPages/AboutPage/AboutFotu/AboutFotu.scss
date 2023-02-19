@@ -7,6 +7,17 @@
       width: 43%;
       height: 20%;
       position: relative;
+      .AboutImgBackShadow{
+        height: 38rem;
+        width: 30rem;
+        transform: rotate(10deg);
+        z-index: -1;
+        border-radius: $PrimaryBorderRadius;
+        background-color: $thirdcolor;
+        position: absolute;
+        top: -2.5rem;
+        left: 3.5rem;
+      }
       img {
         width: 30rem;
         height: 38rem;
@@ -15,26 +26,51 @@
       }
       .about-float-window {
         background-color: rgb(255, 255, 255);
-        border-radius: 10px;
+        border-radius: $SecondaryBorderRadius;
         box-shadow: 0px 5px 30px 2px rgba(136, 137, 137, 0.25);
+        display: flex;
+        gap: 1rem;
+        place-content: center;
+        place-items: center;
         position: absolute;
         top: 24rem;
-        right: 0rem;
-        width: 10rem;
-        height: 10rem;
-        justify-content: baseline;
+        right: -20rem;
+        width: 20rem;
+        height: 5rem;
+        // justify-content: baseline;
         .about-float-window-content {
-          color: gray;
-          width: 8rem;
-          text-align: center;
-          margin-top: 0.5rem;
-          margin-left: 1rem;
-          font-size: 11px;
+          // color: gray;
+          // width: 12rem;
+          // text-align: left;
+          // margin-top: 0.5rem;
+          // margin-left: 1rem;
+          // font-size: 11px;
+          // display: flex;
+          // place-content: center ;
+          // place-items: center;
+          // p{
+          //   margin-bottom: 0rem;
+          //   // width: 12rem;
+          // }
+          display: flex;
+          // place-content: center;
+          place-items: center;
+          
+          padding-top: 1rem;
+          padding-bottom: 0px !important;
+          p {
+            font-size: 0.8rem;
+            width: 12rem;
+          }
         }
         .about-float-icon {
-          padding-top: 2rem;
-          text-align: center;
-          margin-left: 0.8rem;
+          // padding-top: 2rem;
+          // text-align: center;
+          // margin-left: 0.8rem;
+          display: flex;
+          place-content: center;
+          place-items: center;
+          
         }
       }
       .About-Float-2 {
@@ -47,7 +83,8 @@
         position: absolute;
         // padding: 50px;
         top: 3rem;
-        right: 20rem;
+        // right: 20rem;
+        left: -25rem;
         width: 20rem;
         height: 5rem;
         place-content: center;
@@ -92,6 +129,7 @@
           width: 25rem;
           height: 25rem;
           margin-left: 2rem;
+
           img {
             width: 20rem;
             height: 25rem;

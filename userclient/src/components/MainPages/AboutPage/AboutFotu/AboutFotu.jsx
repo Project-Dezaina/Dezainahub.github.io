@@ -7,6 +7,7 @@ const AboutFotu = () => {
     return (
         <div className="About-Fotu">
           <div className="abt-img">
+          <div className="AboutImgBackShadow"></div>
             <img src={about} alt="" />
 
             <div className="about-float-window">
