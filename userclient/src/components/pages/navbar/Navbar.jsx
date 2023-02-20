@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet,NavLink, Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import "./Navbar.css";
 import NavbarImg from "./image/Logo-Name.png";
 
@@ -26,68 +26,68 @@ const Navbar = () => {
                 <ul class="navbar-nav">
                   <div className="nav-image"></div>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">
+                    {/* <a class="nav-link" aria-current="page" href="/"> */}
                       {/* <NavLink to="/" class="nav-link active" aria-current="page">  */}
-                      {/* <Link to="/" class="nav-link active" aria-current="page">  */}
+                      <Link to="/" class="nav-link active" aria-current="page"> 
                       Home 
-                      {/* </Link> */}
+                      </Link>
                       {/* </NavLink> */}
-                    </a>
+                    {/* </a> */}
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/AboutUs">
+                    {/* <a class="nav-link" href="/AboutUs"> */}
                     {/* <NavLink to="/AboutUs" class="nav-link">  */}
-                    {/* <Link to="/AboutUs" class="nav-link">  */}
+                    <Link to="/AboutUs" class="nav-link"> 
                     About Us 
-                    {/* </Link> */}
+                    </Link>
                     {/* </NavLink> */}
-                    </a>
+                    {/* </a> */}
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/Gallery">
+                    {/* <a class="nav-link" href="/Gallery"> */}
                     {/* <NavLink to="/Gallery" class="nav-link">  */}
-                    {/* <Link to="/Gallery" class="nav-link">  */}
+                    <Link to="/Gallery" class="nav-link"> 
                     Gallery 
-                    {/* </Link> */}
+                    </Link>
                     {/* </NavLink> */}
-                    </a>
+                    {/* </a> */}
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/LoginSignup">
+                    {/* <a class="nav-link active" aria-current="page" href="/LoginSignup"> */}
                       {/* <NavLink to="/LoginSignup" class="nav-link active" aria-current="page">  */}
-                      {/* <Link to="/LoginSignup" class="nav-link active" aria-current="page">  */}
+                      <Link to="/LoginSignup" class="nav-link active" aria-current="page"> 
                       Login 
-                      {/* </Link> */}
+                      </Link>
                       {/* </NavLink> */}
-                    </a>
+                    {/* </a> */}
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/YourCart">
+                    {/* <a class="nav-link" href="/YourCart"> */}
                     {/* <NavLink to="/YourCart" class="nav-link">  */}
-                    {/* <Link to="/YourCart" class="nav-link">  */}
+                    <Link to="/YourCart" class="nav-link"> 
                     Your Cart 
-                    {/* </Link> */}
+                    </Link>
                     {/* </NavLink> */}
-                    </a>
+                    {/* </a> */}
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/product">
+                    {/* <a class="nav-link" href="/product"> */}
                     {/* <NavLink to="/product" class="nav-link">  */}
-                    {/* <Link to="/product" class="nav-link">  */}
+                    <Link to="/product" class="nav-link"> 
                     Products 
-                    {/* </Link> */}
+                    </Link>
                     {/* </NavLink> */}
-                    </a>
+                    {/* </a> */}
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="/contact">
+                    {/* <a class="nav-link" href="/contact"> */}
                     {/* <NavLink to="/contact" class="nav-link">  */}
-                    {/* <Link to="/contact" class="nav-link">  */}
+                    <Link to="/contact" class="nav-link"> 
                     Contact Us
-                    {/* </Link> */}
+                    </Link>
                     {/* </NavLink> */}
-                    </a>
+                    {/* </a> */}
                   </li>
                 </ul>
               </div>

@@ -45,7 +45,7 @@
   margin-left: 1rem;
 }
 .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers {
-  background-color: red;
+  background-color: #F5F5F5;
   border-radius: 0 0 1.2em 1.2em;
   padding: 1rem 0rem;
   padding-bottom: 2rem;
@@ -172,7 +172,7 @@
   .CheckStatusPageMain .CheckStatus-container .HeadingCards .CardHeads {
     width: 23rem;
     height: 10rem;
-    background-color: red;
+    background-color: #F5F5F5;
     padding: 30px;
     border-radius: 1.2em;
     display: flex;
@@ -211,7 +211,7 @@
     margin-left: 1rem;
   }
   .CheckStatusPageMain .CheckStatus-container .OrderContent .OrderNumbers {
-    background-color: red;
+    background-color: #F5F5F5;
     border-radius: 0 0 1.2em 1.2em;
     padding: 1rem 0rem;
     padding-bottom: 2rem;

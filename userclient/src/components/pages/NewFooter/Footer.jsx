@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+
+import { Outlet, Link } from "react-router-dom";
 import Dezainalogo from "../navbar/image/Logo-Name.png";
 
 const NewFooter = () => {
@@ -29,28 +31,72 @@ const NewFooter = () => {
         <div className="Bellow-Newsletter">
           <div className="Footer">
             <div className="About-Footer">
-              <div className="Footer-Heading">About Dezaina</div>
+              <div className="Footer-Heading">Dezaina.hub Sections</div>
               <ul className="footerLinks">
-                <li>
-                  {" "}
-                  <a href="">Home</a>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <a href="">Products</a>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <a href="">Gallery</a>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <a href="">Contact Us</a>{" "}
-                </li>
-                <li>
-                  {" "}
-                  <a href="">Check Status</a>{" "}
-                </li>
+              <li >
+                    {/* <a class="nav-link" aria-current="page" href="/"> */}
+                      {/* <NavLink to="/" class="nav-link active" aria-current="page">  */}
+                      <Link to="/" class="nav-link active" aria-current="page"> 
+                      Home 
+                      </Link>
+                      {/* </NavLink> */}
+                    {/* </a> */}
+                  </li>
+                  <li>
+                    {/* <a class="nav-link" href="/AboutUs"> */}
+                    {/* <NavLink to="/AboutUs" class="nav-link">  */}
+                    <Link to="/AboutUs" class="nav-link"> 
+                    About Us 
+                    </Link>
+                    {/* </NavLink> */}
+                    {/* </a> */}
+                  </li>
+                  <li>
+                    {/* <a class="nav-link" href="/Gallery"> */}
+                    {/* <NavLink to="/Gallery" class="nav-link">  */}
+                    <Link to="/Gallery" class="nav-link"> 
+                    Gallery 
+                    </Link>
+                    {/* </NavLink> */}
+                    {/* </a> */}
+                  </li>
+                  <li>
+                    {/* <a class="nav-link active" aria-current="page" href="/LoginSignup"> */}
+                      {/* <NavLink to="/LoginSignup" class="nav-link active" aria-current="page">  */}
+                      <Link to="/LoginSignup" class="nav-link active" aria-current="page"> 
+                      Login 
+                      </Link>
+                      {/* </NavLink> */}
+                    {/* </a> */}
+                  </li>
+                  <li>
+                    {/* <a class="nav-link" href="/YourCart"> */}
+                    {/* <NavLink to="/YourCart" class="nav-link">  */}
+                    <Link to="/YourCart" class="nav-link"> 
+                    Your Cart 
+                    </Link>
+                    {/* </NavLink> */}
+                    {/* </a> */}
+                  </li>
+                  <li>
+                    {/* <a class="nav-link" href="/product"> */}
+                    {/* <NavLink to="/product" class="nav-link">  */}
+                    <Link to="/product" class="nav-link"> 
+                    Products 
+                    </Link>
+                    {/* </NavLink> */}
+                    {/* </a> */}
+                  </li>
+                  
+                  <li>
+                    {/* <a class="nav-link" href="/contact"> */}
+                    {/* <NavLink to="/contact" class="nav-link">  */}
+                    <Link to="/contact" class="nav-link"> 
+                    Contact Us
+                    </Link>
+                    {/* </NavLink> */}
+                    {/* </a> */}
+                  </li>
                 
               </ul>
               <div className="SocialIcons">
@@ -207,6 +253,7 @@ const NewFooter = () => {
           </div>
         </div>
       </div>
+      <Outlet/>
     </div>
   );
 };

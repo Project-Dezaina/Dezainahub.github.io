@@ -5,7 +5,7 @@
   width: 100%;
   padding-top: 12rem;
   bottom: 0rem;
-  margin-top: 20rem;
+  margin-top: 10rem;
   font-family: "Montserrat";
 }
 .Footer-Main .Newsletter {
@@ -163,7 +163,7 @@
 .Footer-Main .HorizontalLine {
   height: 0.2rem;
   opacity: 50%;
-  background-color: red;
+  background-color: #F5F5F5;
 }
 .Footer-Main .Footer-base {
   display: flex;
@@ -174,7 +174,7 @@
   margin: 1rem auto;
 }
 .Footer-Main .Footer-base .BaseContent {
-  color: red;
+  color: #F5F5F5;
   width: 50rem !important;
 }
 .Footer-Main .Footer-base img {
