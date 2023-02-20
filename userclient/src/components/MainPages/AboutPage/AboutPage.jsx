@@ -25,7 +25,7 @@ const AboutPage = () => {
     
 
   <div>
-      <Header />
+      {/* <Header /> */}
       <div className="AboutPageContainer container">
        
         <AboutHeadContent/>
@@ -36,7 +36,7 @@ const AboutPage = () => {
       </div>
 
       
-      <NewFooter />
+      {/* <NewFooter /> */}
     </div>
   );
 }

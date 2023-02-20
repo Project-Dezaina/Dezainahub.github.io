@@ -7,13 +7,13 @@ const GalleryPage = () => {
     return (
         <div>
             
-      <Header />
+      {/* <Header /> */}
         
         <div className="GalleryPageContent container">
             <iframe class="fp-iframe" src="https://heyzine.com/flip-book/5c5560b9f6.html"></iframe>
         </div>
         
-      <NewFooter />
+      {/* <NewFooter /> */}
         </div>
     );
 }

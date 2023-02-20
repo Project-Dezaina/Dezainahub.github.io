@@ -13,14 +13,14 @@ import NewFooter from "../NewFooter/Footer";
 const Homepage = () => {
   return (
     <div className='homePageMainContainer'>
-      <Navbar />
+      {/* <Navbar /> */}
       <LandingPage/>
       <AboutUs />
       <OurServices />
       <OurWorks/>
       <Testimonial />
       <Blogs/>
-      <NewFooter/>
+      {/* <NewFooter/> */}
     </div>
   )
 }
