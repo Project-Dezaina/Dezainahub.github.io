@@ -16,7 +16,7 @@
   transform: rotate(-10deg);
   z-index: -1;
   border-radius: 1.2em;
-  background-color: #F1F1F1;
+  background-color: red;
   position: absolute;
   top: -2.5rem;
   left: -3.5rem;

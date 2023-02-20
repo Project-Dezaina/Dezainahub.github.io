@@ -12,7 +12,7 @@ const ContactUsPage = () => {
   const [currentStep, setStep] = useState(1);
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className="ContactUsContainer ">
         <ContactContent/>
         <div className="ContactForm">
@@ -23,7 +23,7 @@ const ContactUsPage = () => {
         </div>
       </div>
 
-      <NewFooter />
+      {/* <NewFooter /> */}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet,NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 import NavbarImg from "./image/Logo-Name.png";
 
@@ -25,18 +26,67 @@ const Navbar = () => {
                 <ul class="navbar-nav">
                   <div className="nav-image"></div>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">
-                      Home
+                    <a class="nav-link" aria-current="page" href="/">
+                      {/* <NavLink to="/" class="nav-link active" aria-current="page">  */}
+                      {/* <Link to="/" class="nav-link active" aria-current="page">  */}
+                      Home 
+                      {/* </Link> */}
+                      {/* </NavLink> */}
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/">
-                      Services
+                    <a class="nav-link" href="/AboutUs">
+                    {/* <NavLink to="/AboutUs" class="nav-link">  */}
+                    {/* <Link to="/AboutUs" class="nav-link">  */}
+                    About Us 
+                    {/* </Link> */}
+                    {/* </NavLink> */}
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/">
-                      Gallery
+                    <a class="nav-link" href="/Gallery">
+                    {/* <NavLink to="/Gallery" class="nav-link">  */}
+                    {/* <Link to="/Gallery" class="nav-link">  */}
+                    Gallery 
+                    {/* </Link> */}
+                    {/* </NavLink> */}
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/LoginSignup">
+                      {/* <NavLink to="/LoginSignup" class="nav-link active" aria-current="page">  */}
+                      {/* <Link to="/LoginSignup" class="nav-link active" aria-current="page">  */}
+                      Login 
+                      {/* </Link> */}
+                      {/* </NavLink> */}
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/YourCart">
+                    {/* <NavLink to="/YourCart" class="nav-link">  */}
+                    {/* <Link to="/YourCart" class="nav-link">  */}
+                    Your Cart 
+                    {/* </Link> */}
+                    {/* </NavLink> */}
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/product">
+                    {/* <NavLink to="/product" class="nav-link">  */}
+                    {/* <Link to="/product" class="nav-link">  */}
+                    Products 
+                    {/* </Link> */}
+                    {/* </NavLink> */}
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">
+                    {/* <NavLink to="/contact" class="nav-link">  */}
+                    {/* <Link to="/contact" class="nav-link">  */}
+                    Contact Us
+                    {/* </Link> */}
+                    {/* </NavLink> */}
                     </a>
                   </li>
                 </ul>
@@ -46,13 +96,16 @@ const Navbar = () => {
                     {/* <a class="nav-link" href="/">
                       Check Status
                     </a> */}
-                    <button class="c-button c-button--gooey"> Check Status
+                    <a href="/CheckStatus"> 
+                    <button class="c-button c-button--gooey" id="c-Button">Check Status
   <div class="c-button__blobs">
   <div></div>
   <div></div>
   <div></div>
+  <div></div>
+  <div></div>
   </div>
-</button>
+</button></a>
 {/* <svg style="display: block; height: 0; width: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="goo">
@@ -67,6 +120,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
+      <Outlet/>
     </div>
   );
 };

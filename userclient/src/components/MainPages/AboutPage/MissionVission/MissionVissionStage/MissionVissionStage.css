@@ -9,7 +9,7 @@
 .MissionVission .MissionVissionButton {
   display: flex;
   flex-direction: column;
-  background-color: #F1F1F1;
+  background-color: red;
   border-radius: 1.2em 0rem 0rem 1.2em;
 }
 .MissionVission .MissionVissionButton #MissionBoxHeadColor {
@@ -25,7 +25,7 @@
   font-weight: 700;
 }
 .MissionVission .MissionVissionButton .MissionBoxHead, .MissionVission .MissionVissionButton .VissionBoxHead {
-  background-color: #F1F1F1;
+  background-color: red;
   border-radius: 1.2em 0rem 0rem 1.2em;
   width: 18rem;
   height: 12.5rem;
@@ -74,7 +74,7 @@
     color: #fff;
   }
   .MissionVission .MissionVissionButton .MissionBoxHead, .MissionVission .MissionVissionButton .VissionBoxHead {
-    background-color: #F1F1F1;
+    background-color: red;
     border-radius: 1.2em 1.2em 0rem 0rem;
     width: 50%;
     height: 8rem;
