@@ -28,7 +28,12 @@ const ContactUsPage = () => {
   };
   const PostData = async (e) => {
     e.preventDefault();
-    const { yname, yemail, about } = contactdata;
+    const { yname,
+      CompanyName,
+      MessageBoxInput,
+      WebURL,
+      MobileNo,
+      EmailId, } = contactdata;
     const res = await fetch("/contactUs", {
       method: "POST",
       headers: {
