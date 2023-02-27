@@ -1,13 +1,26 @@
+@import "../../globalcss/global.scss";
 .aboutUsImageSec {
   display: flex;
   flex-direction: row;
   font-family: Montserrat;
+  // background-color: aqua;
   padding: 0rem 5rem 0rem 5rem;
   margin-top: 10rem;
   .abt-img {
     width: 80%;
     height: 20%;
     position: relative;
+    .AboutImgBackShadow{
+      height: 38rem;
+      width: 30rem;
+      transform: rotate(-10deg);
+      z-index: -1;
+      border-radius: $PrimaryBorderRadius;
+      background-color: $thirdcolor;
+      position: absolute;
+      top: -2.5rem;
+      left: -3.5rem;
+    }
     img {
       width: 30rem;
       height: 38rem;

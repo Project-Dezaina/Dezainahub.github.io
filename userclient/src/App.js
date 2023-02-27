@@ -36,6 +36,11 @@ const ErrorPage = lazy(() => import("./components/404ErrorPage/404ErrorPage"));
 
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+ 
   return (
     <div> 
 
@@ -92,7 +97,7 @@ function App() {
           <Route path="/contact" exact element={<ContactUsPage/>} />
           <Route path="/CheckStatus" exact element={<CheckStatusPage/>} />
           <Route path="/product" exact element={<ProductPage/>} />
-          <Route path="*" exactelement={<ErrorPage/>} />
+          <Route path="*" exact element={<ErrorPage/>} />
         {/* </Route> */}
       </Routes>
       <NewFooter/>

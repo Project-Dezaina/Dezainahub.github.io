@@ -208,7 +208,7 @@ const Blog = () => {
         </div> */}
         
 
-        <div className="container">
+        <div className="container" data-aos="fade-up">
         
         <div className="Blog-Head">
             <h5>Blogs</h5>

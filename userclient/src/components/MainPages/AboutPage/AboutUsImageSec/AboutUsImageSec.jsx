@@ -7,7 +7,7 @@ import about from "../Image/124.png";
 const AboutUsImageSec = () => {
     return (
             <div className="aboutUsImageSec">
-          <div className="abt-img">
+          <div className="abt-img" data-aos="fade-up">
           <div className="AboutImgBackShadow"></div>
             <img src={about} alt="" />
 
@@ -51,7 +51,7 @@ const AboutUsImageSec = () => {
               </div>
             </div>
           </div>
-          <div className="About-Content">
+          <div className="About-Content" data-aos="fade-up">
             <div className="about-icon"></div>
             {/* <div className="About-Content1"> */} {/* <h6>Who are we</h6> */}
             <h6>Our Duties</h6>

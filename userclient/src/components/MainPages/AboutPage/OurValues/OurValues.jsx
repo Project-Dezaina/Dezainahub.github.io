@@ -3,7 +3,7 @@ import "./OurValues.css";
 
 const OurValues = () => {
     return (
-        <div className="OurValues">
+        <div className="OurValues" data-aos="fade-up">
           <div className="ValuesHead">
             <h6>Why Dezaina?</h6>
             <h1>Our Values Towards Our Customers</h1>
