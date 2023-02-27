@@ -3,7 +3,7 @@ import "./ContactForm1.css";
 import { multiStepContactContext } from "../../ContactUsPage";
 
 const ContactForm1 = () => {
-    const {setStep, currentStep} = useContext(multiStepContactContext);
+    const {setStep, currentStep, contactdata, setContactData} = useContext(multiStepContactContext);
 
     const handleClickForm1 =()=> {
         setStep(2)
@@ -11,25 +11,36 @@ const ContactForm1 = () => {
 
     return (
         <div className="ContactFormContainer container">
-            <form action="">
               <div className="contactforminputboxBody">
+              {JSON.stringify(contactdata, undefined,2)}
                 <div className="contactforminputbox">
                   <label htmlFor="">Name</label>
-                  <input type="text" name="" id="" placeholder="Enter your name" ></input>
+                  <input type="text" name="yname" id="" placeholder="Enter your name" 
+                  value={contactdata["name"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, yname: e.target.value });
+            }}></input>
                 </div>
                 <div className="contactforminputbox">
                   <label htmlFor="">Company</label>
-                  <input type="text" name="" id="" placeholder="Enter your Company name"></input>
+                  <input type="text" name="CompanyName" id="CompanyName" placeholder="Enter your Company name"
+                  value={contactdata["name"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, CompanyName: e.target.value });
+            }}></input>
                 </div>
                 <div className="contactforminputbox">
                   <label htmlFor="">Message</label>
-                  <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                  <textarea name="MessageBoxInput" id="MessageBoxInput" cols="30" rows="10" placeholder="Message"
+                  value={contactdata["name"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, MessageBoxInput: e.target.value });
+            }}></textarea>
                 </div>
                 <div className="FormButton">
                   <button onClick={handleClickForm1}> Next</button>
                 </div>
               </div>
-            </form>
         </div>
     )
 }
