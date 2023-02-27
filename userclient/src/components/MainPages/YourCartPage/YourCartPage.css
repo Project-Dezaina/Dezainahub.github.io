@@ -32,10 +32,10 @@
   z-index: -1;
   width: 7rem;
   height: 0.7rem;
-  background-color: #F1F1F1;
+  background-color: #F5F5F5;
 }
 .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatusMain #ActiveBar {
-  background-image: linear-gradient(90deg, #4BACE0 50%, #F1F1F1 80%);
+  background-image: linear-gradient(90deg, #4BACE0 50%, #F5F5F5 80%);
 }
 .YourCartMainPage .CartContainer .CartPageHead .CartPageStatus .CartStatusMain #CompleteBar {
   background-color: #4BACE0;
@@ -44,7 +44,7 @@
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: #F1F1F1;
+  background-color: #F5F5F5;
   display: flex;
   place-content: center;
   place-items: center;
@@ -215,7 +215,7 @@
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .HorizontalLine {
   height: 0.2rem;
-  background-color: #F1F1F1;
+  background-color: #F5F5F5;
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .AddMore {
   border: none;
@@ -243,7 +243,7 @@
   margin-bottom: 0rem;
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing {
-  background-color: #F1F1F1;
+  background-color: #F5F5F5;
   height: 2rem;
   width: 7rem;
   border-radius: 0.5em;
@@ -255,7 +255,7 @@
   border: none !important;
   text-decoration: none;
   outline: none !important;
-  background-color: #F1F1F1;
+  background-color: #F5F5F5;
   padding: 0 !important;
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing h6 {
@@ -286,7 +286,7 @@
   margin-bottom: 0rem;
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .TotalPricing, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .TotalPricing {
-  background-color: #F1F1F1;
+  background-color: #F5F5F5;
   height: 2rem;
   width: 50%;
   border-radius: 0.5em;
@@ -298,7 +298,7 @@
   border: none !important;
   text-decoration: none;
   outline: none !important;
-  background-color: #F1F1F1;
+  background-color: #F5F5F5;
   padding: 0 !important;
 }
 .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .QuantityBox .TotalPricing h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item1 .Cart-Item-Content #QuantityContainer .PriceBox .TotalPricing h6 {
@@ -459,7 +459,7 @@
     margin-right: 0rem;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing {
-    background-color: #F1F1F1;
+    background-color: #F5F5F5;
     height: 2rem;
     border-radius: 0.5em;
     display: flex;
@@ -470,7 +470,7 @@
     border: none !important;
     text-decoration: none;
     outline: none !important;
-    background-color: #F1F1F1;
+    background-color: #F5F5F5;
     padding: 0 !important;
   }
   .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .QuantityBox .TotalPricing h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .QuantityButton h6, .YourCartMainPage .CartContainer .YourCart .CartContent1 .Item-Details .Item1 .Cart-Item-Content .QuantityContainer .PriceBox .TotalPricing h6 {

@@ -13,7 +13,7 @@ const YourCartPage = () => {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className="YourCartMainPage">
         
       <multiStepContactContext.Provider 
@@ -21,7 +21,7 @@ const YourCartPage = () => {
         <YourCartStages/>
       </multiStepContactContext.Provider>
       </div>
-      <NewFooter />
+      {/* <NewFooter /> */}
     </div>
   );
 };

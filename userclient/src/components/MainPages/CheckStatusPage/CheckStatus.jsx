@@ -13,7 +13,7 @@ const CheckStatus = () => {
   const [currentStep, setStep] = useState(1);
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className="CheckStatusPageMain ">
         <div className="CheckStatus-container container">
           <div className="CheckStatusContent">
@@ -56,7 +56,7 @@ const CheckStatus = () => {
         </div>
       </div>
 
-      <NewFooter />
+      {/* <NewFooter /> */}
     </div>
   );
 };

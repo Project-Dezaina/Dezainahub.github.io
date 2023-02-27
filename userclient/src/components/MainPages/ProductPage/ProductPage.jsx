@@ -15,7 +15,7 @@ const ProductPage = () => {
 
     return (
       <div>
-        <Header />
+        {/* <Header /> */}
         <div className="ProductPageMainV ">
           <div className="ProductPageMain ">
             <div className="ProductPageHead container">
@@ -168,7 +168,7 @@ const ProductPage = () => {
             <ProductNavigation/>
           </div>
         </div>
-        <NewFooter />
+        {/* <NewFooter /> */}
       </div>
     );
     
