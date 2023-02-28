@@ -1,4 +1,5 @@
 .NavigationBarMainContainer {
+  margin-top: -2rem;
   font-family: "Montserrat";
 }
 .NavigationBarMainContainer .NavigationBarImage {
