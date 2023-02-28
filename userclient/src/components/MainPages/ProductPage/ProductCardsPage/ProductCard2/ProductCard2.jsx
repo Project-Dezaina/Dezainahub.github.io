@@ -1,10 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./ProductCard2.css";
 
-const ProductCards = () => {
+
+const Product2Cards = () => {
   const cards = [
     {
+
       // SVG: PassingSVG(),
+      buttonid: "1",
       BodyId: "BlueBase" ,
       TextId: "BlueBaseTextColor",
       buttonId: "BlueBaseButtonColor",
@@ -14,24 +18,28 @@ const ProductCards = () => {
     },
     {
         //   SVG: PassingSVG(),
+      buttonid: "2",
       Heads: "Poster",
       Pricing: "300/-",
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
     },
     {
       // SVG: PassingSVG(),
+      buttonid: "3",
       Heads: "Poster",
       Pricing: "300/-",
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
     },
     {
       //   SVG: PassingSVG(),
+      buttonid: "4",
       Heads: "Poster",
       Pricing: "300/-",
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
     },
     {
       // SVG: PassingSVG(),
+      buttonid: "5",
       Heads: "Poster",
       Pricing: "300/-",
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
@@ -55,10 +63,11 @@ const ProductCards = () => {
             <div className="CardBase">
               <div className="BaseButton" id={card.buttonId}>Learn More</div>
               <div className="AddToCartButton">
+              <NavLink to="/yourcart">
                 <button class="icon-btn add-btn" id={card.buttonId}>
                   <div class="add-icon"></div>
                   <div class="btn-txt" id={card.buttonId}>Add To Cart</div>
-                </button>
+                </button></NavLink>
               </div>
             </div>
           </div>
@@ -68,4 +77,4 @@ const ProductCards = () => {
     </div>
   );
 };
-export default ProductCards;
+export default Product2Cards;
