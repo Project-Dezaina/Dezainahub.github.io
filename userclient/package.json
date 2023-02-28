@@ -2,6 +2,7 @@
   "name": "userclient",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",
     "@emotion/react": "^11.10.5",
@@ -13,7 +14,7 @@
     "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "swiper": "^8.4.6",
     "web-vitals": "^2.1.4"
   },

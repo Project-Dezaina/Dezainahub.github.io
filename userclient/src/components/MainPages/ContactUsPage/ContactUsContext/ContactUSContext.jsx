@@ -8,6 +8,7 @@ import ContactFinalStage from '../ContactPageStages/ContactFinalStage/ContactFin
 
 
 const ContactUSContext = () => {
+
   const {setStep, currentStep} = useContext(multiStepContactContext);
   const Showstep = (step)=>{
     switch (step) {
@@ -19,10 +20,52 @@ const ContactUSContext = () => {
           return <ContactFinalStage/>;
     }
   }
-    
+
+
+
+  let yname, value;
+  const [contactdata, setContactData] = useState([]);
+  // const handlecontactus = (e) => {
+  //   console.log(e);
+  //   yname = e.target.yname;
+  //   value = e.target.value;
+  //   setContactData({ ...yname, [yname]: value });
+  // };
+  const handleInputs = (e) => {
+    console.log(e);
+    yname = e.target.name;
+    value = e.target.value;
+
+    setContactData({ ...yname, [yname]: value });
+  };
+  const PostData = async (e) => {
+    e.preventDefault();
+    const { yname, yemail, about } = contactdata;
+    const res = await fetch("/contactUs", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        yname,
+        yemail,
+        about,
+      }),
+    });
+    const data = await res.json();
+    if (data.status === 422 || !data) {
+      window.alert("invalid");
+      console.log("invalid");
+    } else {
+      window.alert("valid");
+      console.log("Send succesfully");
+    }
+  };
   return (
     <div>
-    {Showstep(currentStep)}
+    <form method='POST'>
+    {Showstep(currentStep)};
+    </form>
     </div>
   )
 }

@@ -3,56 +3,74 @@ import "./ContactForm2.css";
 import { multiStepContactContext } from "../../ContactUsPage";
 
 const ContactForm2 = () => {
-    const {setStep, currentStep} = useContext(multiStepContactContext);
+    const {setStep, currentStep,contactdata, setContactData} = useContext(multiStepContactContext);
     return (
         <div className="ContactFormContainer container">
-            <form action="">
+         
               <div className="contactforminputboxBody">
+              {JSON.stringify(contactdata, undefined,2)}
                 <div className="contactforminputbox">
                   <label htmlFor="">Website URL (if any) </label>
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name="WebURL"
+                    id="WebURL"
                     placeholder="URL"
+                    value={contactdata["name"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, WebURL: e.target.value });
+            }}
                   ></input>
                 </div>
                 <div className="contactforminputbox">
                   <label htmlFor="">Mobile Number</label>
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name="MobileNo"
+                    id="MobileNo"
                     placeholder="Mobile Number"
+                    value={contactdata["name"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, MobileNo: e.target.value });
+            }}
                   ></input>
                 </div>
                 <div className="contactforminputbox">
                   <label htmlFor="">Email</label>
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name="EmailId"
+                    id="EmailId"
                     placeholder="Email"
+                    value={contactdata["name"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, EmailId: e.target.value });
+            }}
                   ></input>
-                  <label htmlFor="">Select Slot</label>
+                  {/* <label htmlFor="">Select Slot</label>
                   <input
                     type="text"
                     name=""
                     id=""
                     placeholder="Select Slot"
-                  ></input>
+                    value={contactdata["name"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, name: e.target.value });
+            }}
+                  ></input> */}
                   </div>
                 <div className="FormButton">
                 <button onClick={()=>{
                     setStep(1)
                   }}>Edit Details</button>
                   <button onClick={()=>{
-                    setStep(3)
-                  }}> Next</button>
+                    setStep(3);
+                    
+                  }}> Submit</button>
                   
                 </div>
               </div>
-            </form>
+           
         </div>
     )
 }
