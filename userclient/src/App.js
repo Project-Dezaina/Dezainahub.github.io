@@ -87,7 +87,8 @@ function App() {
     {/* <div> */}
     <BrowserRouter>
     {/* <Switch> */}
-    <Navbar/>
+    {window.location.pathname !==("/LoginSignup") ? <Navbar/> : (null)  }
+    {/* <Navbar/> */}
      <Routes>
         <Route path="/" exact element={<Homepage />}/> 
           <Route path="/Gallery" exact element={<GalleryPage/>} />
@@ -100,7 +101,9 @@ function App() {
           <Route path="*" exact element={<ErrorPage/>} />
         {/* </Route> */}
       </Routes>
-      <NewFooter/>
+      
+    {window.location.pathname !==("/LoginSignup") ? <NewFooter/> : (null)  }
+      {/* <NewFooter/> */}
       {/* </Switch> */}
     </BrowserRouter>
       {/* </div> */}
