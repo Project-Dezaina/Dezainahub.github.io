@@ -18,8 +18,7 @@ import NewFooter from "./components/pages/NewFooter/Footer";
 // import ContactUsPage from "./components/MainPages/ContactUsPage/ContactUsPage";
 // import YourCartPage from "./components/MainPages/YourCartPage/YourCartPage";
 // import CheckStatusPage from "./components/MainPages/CheckStatusPage/CheckStatus";
-
-
+  
 
 
 // const Landing = React.lazy(() => import("./components/pages/homePage/Homepage"));
