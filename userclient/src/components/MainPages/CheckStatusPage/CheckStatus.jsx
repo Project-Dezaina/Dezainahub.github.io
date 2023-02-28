@@ -4,14 +4,17 @@ import NewFooter from "../../pages/NewFooter/Footer";
 import "./CheckStatus.css";
 import OrderContent from "./OrderContent/OrderContent";
 import StatusStages from "./StatusStages/StatusStages";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 export const multiStepContext = React.createContext();
 
 
 const CheckStatus = () => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
   const [currentStep, setStep] = useState(1);
   return (
+    isAuthenticated && (
     <div>
       {/* <Header /> */}
       <div className="CheckStatusPageMain ">
@@ -58,6 +61,7 @@ const CheckStatus = () => {
 
       {/* <NewFooter /> */}
     </div>
+    )
   );
 };
 

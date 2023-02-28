@@ -1,6 +1,7 @@
 @import "../../globalcss/global.scss";
 
 .NavigationBarMainContainer {
+    font-family: "Montserrat";
     .NavigationBarImage {
         
         position: relative;
@@ -29,79 +30,200 @@
         gap: 2rem;
     }
     .nav-item-last{
-        // a{
-        //     text-decoration: none;
-        //     color: black;
-        // }
-        .c-button {
-            color: #000;
-            font-weight: 700;
-            font-size: 16px;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            cursor: pointer;
-            display: inline-block;
-            vertical-align: middle;
-            position: relative;
-            z-index: 1;
-           }
+
+        #AfterLoginButton-Button{
+            text-decoration: none !important;
+        }
+
+        .AfterLoginButton{
+            display: flex;
+            gap: 1rem;
+          
+            .AfterLoginButton-Button {
+                position: relative;
+                // height: 3rem;
+                margin: 0;
+                // padding: 1em;
+                padding: 0.5em 1em;
+                outline: none;
+                text-decoration: none !important;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: none;
+                background-color: $secondarycolor;
+                border-radius: 1.2em;
+                color: #fff !important;
+                font-weight: 500;
+                font-size: 1rem !important;
+                font-family: inherit;
+                z-index: 0;
+                overflow: hidden;
+                transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+               
+              }
+      
+              .AfterLoginButton-Button:hover {
+                animation: sh0 0.5s ease-in-out both;
+              }
+      
+              @keyframes sh0 {
+                0% {
+                  transform: rotate(0deg) translate3d(0, 0, 0);
+                }
+      
+                25% {
+                  transform: rotate(7deg) translate3d(0, 0, 0);
+                }
+      
+                50% {
+                  transform: rotate(-7deg) translate3d(0, 0, 0);
+                }
+      
+                75% {
+                  transform: rotate(1deg) translate3d(0, 0, 0);
+                }
+      
+                100% {
+                  transform: rotate(0deg) translate3d(0, 0, 0);
+                }
+              }
+      
+              .AfterLoginButton-Button:hover span {
+                animation: storm 0.7s ease-in-out both;
+                animation-delay: 0.06s;
+              }
+      
+              .AfterLoginButton-Button::before,
+              .AfterLoginButton-Button::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background: #fff;
+                opacity: 0;
+                transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1),
+                  opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+                z-index: -1;
+                transform: translate(100%, -25%) translate3d(0, 0, 0);
+              }
+      
+              .AfterLoginButton-Button:hover::before,
+              .AfterLoginButton-Button:hover::after {
+                opacity: 0.15;
+                transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
+                  opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+              }
+      
+              .AfterLoginButton-Button:hover::before {
+                transform: translate3d(50%, 0, 0) scale(0.9);
+              }
+      
+              .AfterLoginButton-Button:hover::after {
+                transform: translate(50%, 0) scale(1.1);
+              }
+       
+    }
+        
+        
+
+           .Main-LoginButton{
+          
+                .Login-Main-Button {
+                    position: relative;
+                    height: 3rem;
+                    margin: 0;
+                    // padding: 1em;
+                    padding: 0em 2em;
+                    outline: none;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    border: none;
+                    text-transform: uppercase;
+                    background-color: $secondarycolor;
+                    border-radius: 1.2em;
+                    color: #fff !important;
+                    font-weight: 500;
+                    font-size: 17px;
+                    font-family: inherit;
+                    z-index: 0;
+                    overflow: hidden;
+                    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+                   
+                  }
+          
+                  .Login-Main-Button:hover {
+                    animation: sh0 0.5s ease-in-out both;
+                  }
+          
+                  @keyframes sh0 {
+                    0% {
+                      transform: rotate(0deg) translate3d(0, 0, 0);
+                    }
+          
+                    25% {
+                      transform: rotate(7deg) translate3d(0, 0, 0);
+                    }
+          
+                    50% {
+                      transform: rotate(-7deg) translate3d(0, 0, 0);
+                    }
+          
+                    75% {
+                      transform: rotate(1deg) translate3d(0, 0, 0);
+                    }
+          
+                    100% {
+                      transform: rotate(0deg) translate3d(0, 0, 0);
+                    }
+                  }
+          
+                  .Login-Main-Button:hover span {
+                    animation: storm 0.7s ease-in-out both;
+                    animation-delay: 0.06s;
+                  }
+          
+                  .Login-Main-Button::before,
+                  .Login-Main-Button::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background: #fff;
+                    opacity: 0;
+                    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1),
+                      opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+                    z-index: -1;
+                    transform: translate(100%, -25%) translate3d(0, 0, 0);
+                  }
+          
+                  .Login-Main-Button:hover::before,
+                  .Login-Main-Button:hover::after {
+                    opacity: 0.15;
+                    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
+                      opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+                  }
+          
+                  .Login-Main-Button:hover::before {
+                    transform: translate3d(50%, 0, 0) scale(0.9);
+                  }
+          
+                  .Login-Main-Button:hover::after {
+                    transform: translate(50%, 0) scale(1.1);
+                  }
            
-           .c-button--gooey {
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            // border: 4px solid #06c8d9;
-            border: none;
-            background-color: $secondarycolor;
-            border-radius: $PrimaryBorderRadius;
-            position: relative;
-            transition: all 700ms ease;
-           }
-           
-           .c-button--gooey .c-button__blobs {
-            height: 100%;
-            filter: url(#goo);
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: -3px;
-            right: -1px;
-            z-index: -1;
-            border-radius: $PrimaryBorderRadius;
-           }
-           
-           .c-button--gooey .c-button__blobs div {
-            background-color: $primarycolor;
-            width: 34%;
-            height: 100%;
-            border-radius: 100%;
-            position: absolute;
-            transform: scale(1.4) translateY(125%) translateZ(0);
-            transition: all 700ms ease;
-           }
-           
-           .c-button--gooey .c-button__blobs div:nth-child(1) {
-            left: -5%;
-           }
-           
-           .c-button--gooey .c-button__blobs div:nth-child(2) {
-            left: 30%;
-            transition-delay: 60ms;
-           }
-           
-           .c-button--gooey .c-button__blobs div:nth-child(3) {
-            left: 66%;
-            transition-delay: 25ms;
-           }
-           
-           .c-button--gooey:hover {
-            color: #fff;
-           }
-           
-           .c-button--gooey:hover .c-button__blobs div {
-            transform: scale(1.4) translateY(0) translateZ(0);
-           }
+        }
     }
     
 }
