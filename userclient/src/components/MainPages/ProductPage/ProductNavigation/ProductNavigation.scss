@@ -9,13 +9,18 @@
     padding: 1.5rem;
     place-content: center;
     a{
+        &:hover{
+        font-size: 2rem !important;
+        }
         font-size: 1rem !important;
+        cursor: pointer;
         h6{
             color: #fff !important;
 
         }
     }
 }
+
 
 @media screen and (max-width:900px) {
     .ProductNavigation{

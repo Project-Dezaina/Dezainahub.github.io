@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink} from "react-router-dom";
 import "./ProductCards.css";
 import YourCartPage from "../../../YourCartPage/YourCartPage"; 
@@ -15,8 +15,20 @@ const Product1Cards = () => {
 
   // const {productItemDetails}= useProductContext();
 
-  
-
+  const [cartItems, setCartItems]= useState([]);
+  const onAdd = (cards) => {
+    const exist = cartItems.find((x)=>x.id===cards.id);
+    if(exist){
+      setCartItems(
+        cartItems.map((x)=>
+        x.id === cards.id ? {...exist,qty: exist.qty+1}:x
+        )
+      )
+    }
+    else {
+      setCartItems([...cartItems, {...cards, qty:1}])
+    }
+  }
 
 
 
@@ -28,7 +40,7 @@ const Product1Cards = () => {
   const cards = [
     {
       // SVG: PassingSVG(),
-      buttonid: "1",
+      id: "1",
       BodyId: "BlueBase" ,
       TextId: "BlueBaseTextColor",
       buttonId: "BlueBaseButtonColor",
@@ -37,28 +49,28 @@ const Product1Cards = () => {
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
     },
     {
-      buttonid: "2",
+      id: "2",
       Heads: "Poster",
       Pricing: "300/-",
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
     },
     {
       // SVG: PassingSVG(),
-      buttonid: "3",
+      id: "3",
       Heads: "Poster",
       Pricing: "300/-",
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
     },
     {
       //   SVG: PassingSVG(),
-      buttonid: "4",
+      id: "4",
       Heads: "Poster",
       Pricing: "300/-",
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
     },
     {
       // SVG: PassingSVG(),
-      buttonid: "5",
+      id: "5",
       Heads: "Poster",
       Pricing: "300/-",
       Body: "Understanding clients' goals and feelings, and being able to put themselves in their clients' shoes to create designs that resonate with..... Read More",
