@@ -27,7 +27,7 @@ const ProductPage = () => {
                 </p>
               </div>
               <div className="PageHeadCards">
-                <div className="PageCards" id="PageCard1">
+                <div className="PageCards" data-aos="fade-right" id="PageCard1">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard1">
                     <h3>Click on Learn More</h3>
@@ -59,7 +59,7 @@ const ProductPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="PageCards" id="PageCard2">
+                <div className="PageCards" data-aos="fade-down"id="PageCard2">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard2">
                     <h3>Click on Learn More</h3>
@@ -91,7 +91,7 @@ const ProductPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="PageCards" id="PageCard3">
+                <div className="PageCards" data-aos="fade-down" id="PageCard3">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard3">
                     <h3>Click on Learn More</h3>
@@ -123,7 +123,7 @@ const ProductPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="PageCards" id="PageCard4">
+                <div className="PageCards" data-aos="fade-left" id="PageCard4">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard4">
                     <h3>Click on Learn More</h3>

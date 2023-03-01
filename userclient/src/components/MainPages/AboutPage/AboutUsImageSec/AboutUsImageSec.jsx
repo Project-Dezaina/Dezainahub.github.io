@@ -2,7 +2,7 @@ import React from "react";
 import "swiper/css/navigation";
 import "./AboutUsImageSec.css";
 // import Img1 from "../Image/Img1.jpg";
-import about from "../Image/124.png";
+import about from "../Image/111.jpg";
 
 const AboutUsImageSec = () => {
     return (
@@ -47,7 +47,7 @@ const AboutUsImageSec = () => {
               
        
               <div className="about-float-window-content">
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                <p>Design adds value faster than it adds cost</p>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ const AboutUsImageSec = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <h6>Let’s Discuss</h6>
+                <h6>UX/UI Design</h6>
               </div>
               <div className="AboutPoints">
                 <svg
@@ -115,7 +115,7 @@ const AboutUsImageSec = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <h6>Let’s Discuss</h6>
+                <h6>Social Media Design</h6>
               </div>
               <div className="AboutPoints">
                 <svg
@@ -142,7 +142,7 @@ const AboutUsImageSec = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <h6>Let’s Discuss</h6>
+                <h6>Graphic Design </h6>
               </div>
               <div className="AboutPoints">
                 <svg
@@ -169,12 +169,12 @@ const AboutUsImageSec = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <h6>Let’s Discuss</h6>
+                <h6>Brand Design</h6>
               </div>
             </div>
             {/* <div className="aboutUs-button">
             <button class="button-40" role="button">
-              Know More
+              Know Morea
             </button>
           </div> */}
           </div>

@@ -103,7 +103,7 @@ const Product3Cards = () => {
     },
   ];
   return (
-    <div className="ProductCardsContainer">
+    <div className="ProductCardsContainer" data-aos="fade-up">
       <div className="container">
         <h1>Corporate Branding</h1>
         <div className="ProductCards">

@@ -105,7 +105,7 @@ const Product2Cards = () => {
   ];
   return (
     <div className="ProductCardsContainer">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
     <h1>Advertising Content</h1>
     <div className="ProductCards">
         {cards.map((card, i) => (
