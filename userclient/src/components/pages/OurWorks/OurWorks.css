@@ -19,6 +19,12 @@
   gap: 3rem;
   grid-template-areas: "a d" "b c";
 }
+.OurWork-Main .work-cards .Work-card-body .New-Card {
+  overflow: hidden;
+}
+.OurWork-Main .work-cards .Work-card-body .New-Card .img {
+  margin-top: -10;
+}
 .OurWork-Main .work-cards .Work-card-body .ourWorksBio {
   padding-left: 3rem;
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import "./AboutUs.css";
 import about from "../navbar/ImageM/aboutUs/S4.jpeg";
+import aboutImg from "../navbar/ImageM/aboutUs/5.jpg";
+
   
 
 
@@ -10,7 +12,7 @@ const AboutUs = () => {
       <div className="aboutUsImageSec container">
         <div className="abt-img" data-aos="fade-up">
         <div className="AboutImgBackShadow"  ></div>
-          <img src={about} alt=""  />
+          <img src={aboutImg} alt=""  />
 
           <div className="about-float-window">
             <div className="about-float-icon">
@@ -45,7 +47,7 @@ const AboutUs = () => {
               </svg>
             </div>
             <div className="about-float-window-content">
-              <p>Lorem Ipsum is simply dummy text of the printing</p>
+              <p>Design is not just what it looks like and feels like.</p>
             </div>
           </div>
         </div>
@@ -63,12 +65,7 @@ const AboutUs = () => {
             of experienced professionals have the knowledge and expertise to
             create stunning visuals that will help you stand out from the
             competition Yes.
-            <p>
-              We are the perfect solution for your graphic design needs.Our team
-              of experienced professionals have the knowledge and expertise to
-              create stunning visuals that will help you stand out from{" "}
-              <span>...Read More</span>
-            </p>
+            
             <p></p>
           </p>
           <div className="aboutUs-button">

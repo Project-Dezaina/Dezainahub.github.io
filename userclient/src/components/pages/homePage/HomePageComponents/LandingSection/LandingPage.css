@@ -17,7 +17,7 @@
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #364154;
+  color: #2F455C;
 }
 .LandingPageMainComponents .landingPageContainer .Landing-Content h1 span {
   color: #25c1ec;
@@ -43,13 +43,13 @@
   cursor: pointer;
   border: none;
   text-transform: uppercase;
-  background-color: #ccedff;
   border-radius: 1.2em;
-  color: black;
+  color: white;
   font-weight: 500;
   font-size: 17px;
   font-family: inherit;
   z-index: 0;
+  background-color: #2F455C;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
@@ -123,7 +123,7 @@
   padding-right: 3.3em;
 }
 .LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .cssbuttons-io-button .icon {
-  background: #ccedff;
+  background: #2F455C;
   margin-left: 1em;
   position: absolute;
   display: flex;
@@ -142,7 +142,7 @@
 .LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .cssbuttons-io-button .icon svg {
   width: 1.1em;
   transition: transform 0.3s;
-  color: #7b52b9;
+  color: white;
 }
 .LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .cssbuttons-io-button:hover .icon svg {
   transform: translateX(0.1em);

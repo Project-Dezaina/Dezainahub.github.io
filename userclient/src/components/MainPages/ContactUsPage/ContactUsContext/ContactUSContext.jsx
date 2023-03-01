@@ -38,29 +38,7 @@ const ContactUSContext = () => {
 
     setContactData({ ...yname, [yname]: value });
   };
-  const PostData = async (e) => {
-    e.preventDefault();
-    const { yname, yemail, about } = contactdata;
-    const res = await fetch("/contactUs", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        yname,
-        yemail,
-        about,
-      }),
-    });
-    const data = await res.json();
-    if (data.status === 422 || !data) {
-      window.alert("invalid");
-      console.log("invalid");
-    } else {
-      window.alert("valid");
-      console.log("Send succesfully");
-    }
-  };
+
   return (
     <div>
     <form method='POST'>

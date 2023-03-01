@@ -31,13 +31,13 @@ const Blog = () => {
         },
         {
             Image: Fotu2,
-            title: "Creation of additional tracks to hold content",
-            text: "You can define an explicit grid with grid layout. The Grid Layout specification is flexible",
+            title: "The Power of Visual Storytelling in Design",
+            text: "In design, visual storytelling can take many forms, from illustrations and infographics to animations.",
         },
           {
             Image: Fotu3,
-            title: "Creation of additional tracks to hold content",
-            text: "You can define an explicit grid with grid layout. The Grid Layout specification is flexible",
+            title: "The Psychology of Color in Design: Understanding the Impact of Color Choices",
+            text: "Color is a fundamental element in design and can have a significant impact on the way people perceive and respond to visual content.",
         },
 
       ];

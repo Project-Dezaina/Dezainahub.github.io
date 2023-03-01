@@ -10,7 +10,29 @@ export const multiStepContactContext = React.createContext();
 
 const ContactUsPage = () => {
 
-
+  const PostData = async (e) => {
+    e.preventDefault();
+    const { yname, yemail, about } = contactdata;
+    const res = await fetch("/contactUs", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        yname,
+        yemail,
+        about,
+      }),
+    });
+    const data = await res.json();
+    if (data.status === 422 || !data) {
+      window.alert("invalid");
+      console.log("invalid");
+    } else {
+      window.alert("valid");
+      console.log("Send succesfully");
+    }
+  };
   let yname, value;
   const [contactdata, setContactData] = useState([]);
   // const handlecontactus = (e) => {
@@ -26,37 +48,7 @@ const ContactUsPage = () => {
 
     setContactData({ ...yname, [yname]: value });
   };
-  const PostData = async (e) => {
-    e.preventDefault();
-    const { yname,
-      CompanyName,
-      MessageBoxInput,
-      WebURL,
-      MobileNo,
-      EmailId, } = contactdata;
-    const res = await fetch("/contactUs", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        yname,
-        CompanyName,
-        MessageBoxInput,
-        WebURL,
-        MobileNo,
-        EmailId,
-      }),
-    });
-    const data = await res.json();
-    if (data.status === 422 || !data) {
-      window.alert("invalid");
-      console.log("invalid");
-    } else {
-      window.alert("valid");
-      console.log("Send succesfully");
-    }
-  };
+ 
 
 
 
@@ -64,11 +56,11 @@ const ContactUsPage = () => {
   return (
     <div>
       {/* <Header /> */}
-      <div className="ContactUsContainer ">
+      <div className="ContactUsContainer " data-aos="fade-up">
         <ContactContent/>
         <div className="ContactForm">
             <multiStepContactContext.Provider 
-      value={{currentStep, setStep, contactdata, setContactData}}>
+      value={{currentStep, setStep, contactdata, setContactData,PostData}}>
         <ContactUSContext/>
       </multiStepContactContext.Provider>
         </div>
