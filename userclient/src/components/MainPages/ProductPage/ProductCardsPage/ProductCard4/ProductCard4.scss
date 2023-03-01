@@ -1,0 +1,242 @@
+@import "../../../../globalcss/global.scss";
+
+
+.ProductCardsContainer{
+    background-color: $thirdcolor;
+    padding: 5rem 0rem;
+   
+    .container{
+        // margin-top: 2rem ;
+    h1{
+        font-weight: 700;
+        color: $secondarycolor;
+    }
+    .ProductCards {
+    display: grid;
+    grid-template-columns: 28rem 28rem 28rem;
+   
+    .SingleCards{
+        margin-top: 3rem;
+        // background-color: #2F455C;
+        background-color: #fff;
+        border-radius: 1.2em;
+        width: 25rem;
+        height: 18.5rem;
+        padding: 25px;
+        color: $secondarycolor;
+        .CardHead{
+            display: flex;
+            gap: 6rem;
+            flex-direction: row;
+            place-items: center;
+
+        
+        .ProductSubHead{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            place-items: center;
+            color: $secondarycolor;
+            // font-size: 2rem !important;
+
+            // height: 2rem;
+        }
+        .ProductSVG{
+            background-color: $secondarycolor;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            svg{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+    .CardBody{
+        margin: 1.5rem 0rem;
+    }
+    .CardBase{
+        display: flex;
+        gap: 7rem;
+        place-items: center;
+        margin-bottom: 1rem;
+        .BaseButton {
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.8rem !important;
+            width: 10rem;
+            height: 2.5rem;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            background-color: $secondarycolor;
+            border-radius: 1.2em;
+            // padding: 0.2rem;
+        }
+                    .AddToCartButton {
+                        .icon-btn {
+                            // width: 2.5rem;
+                            // height: 2.5rem;
+                            width: 50px;
+                            height: 50px;
+                            border: 1px solid #cdcdcd;
+                            background: $secondarycolor;
+                            border-radius: 25px;
+                            overflow: hidden;
+                            position: relative;
+                            transition: width 0.2s ease-in-out;
+                            font-weight: 500;
+                            font-family: inherit;
+                        }
+        
+                        .add-btn:hover {
+                            width: 8rem;
+                        }
+        
+                        .add-btn::before,
+                        .add-btn::after {
+                            transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+                            content: "";
+                            position: absolute;
+                            height: 4px;
+                            width: 10px;
+                            top: calc(50% - 2px);
+                            background: #fff ;
+                            // background: $primarycolor ;
+                        }
+        
+                        .add-btn::after {
+                            right: 14px;
+                            overflow: hidden;
+                            border-top-right-radius: 2px;
+                            border-bottom-right-radius: 2px;
+                        }
+        
+                        .add-btn::before {
+                            left: 14px;
+                            border-top-left-radius: 2px;
+                            border-bottom-left-radius: 2px;
+                        }
+        
+                        .icon-btn:focus {
+                            outline: none;
+                        }
+        
+                        .btn-txt {
+                            opacity: 0;
+                            font-size: 0.8rem !important;
+                            // padding: 4px !important;
+                            margin: 0px 5px !important;
+                            transition: opacity 0.2s;
+                            color: #fff;
+                        }
+        
+                        .add-btn:hover::before,
+                        .add-btn:hover::after {
+                            width: 4px;
+                            border-radius: 2px;
+                        }
+        
+                        .add-btn:hover .btn-txt {
+                            opacity: 1;
+                        }
+        
+                        .add-icon::after,
+                        .add-icon::before {
+                            transition: all 0.2s ease-in-out;
+                            content: "";
+                            position: absolute;
+                            height: 20px;
+                            width: 2px;
+                            top: calc(50% - 10px);
+                            // background: $primarycolor;
+                            background: #fff;
+                            overflow: hidden;
+                        }
+        
+                        .add-icon::before {
+                            left: 22px;
+                            border-top-left-radius: 2px;
+                            border-bottom-left-radius: 2px;
+                        }
+        
+                        .add-icon::after {
+                            right: 22px;
+                            border-top-right-radius: 2px;
+                            border-bottom-right-radius: 2px;
+                        }
+        
+                        .add-btn:hover .add-icon::before {
+                            left: 15px;
+                            height: 4px;
+                            top: calc(50% - 2px);
+                        }
+        
+                        .add-btn:hover .add-icon::after {
+                            right: 15px;
+                            height: 4px;
+                            top: calc(50% - 2px);
+                        }
+                    }
+    }
+    }
+    #WhiteBase{
+        background-color: #fff;
+        
+    }
+    #WhiteBaseTextColor {
+        color: $secondarycolor !important; 
+        // border: 5px solid red;
+        // background-color: #4BACE0;
+
+    }
+    #WhiteBaseButtonColor{
+        background-color: $secondarycolor !important;
+        color: #fff;
+        .add-icon::after, .add-icon::before{
+            background: #fff !important;
+        }
+        .add-btn::before,
+        .add-btn::after {
+            background: #fff !important;
+
+        }
+    }
+    #BlueBase{
+        background-color: $secondarycolor;
+    }
+    
+    #BlueBaseTextColor {
+        p{
+            
+            color:#fff !important; 
+        }
+        // color: #fff !important; 
+        // border: 5px solid red;
+        // background-color: #4BACE0;
+
+    }
+
+    #BlueBaseButtonColor{
+        background-color: #fff!important;
+        color: $secondarycolor;
+        // background: $primarycolor;
+        .add-icon::after,
+        .add-icon::before{
+            // background: #fff ;
+            background: $primarycolor !important;
+        }
+        .add-btn::before,
+        .add-btn::after {
+            // background: #fff ;
+            background: $secondarycolor !important ;
+
+        }
+    }
+}
+}
+}
+

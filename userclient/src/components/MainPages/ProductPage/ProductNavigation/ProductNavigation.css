@@ -8,6 +8,10 @@
 }
 .ProductNavigation a {
   font-size: 1rem !important;
+  cursor: pointer;
+}
+.ProductNavigation a:hover {
+  font-size: 2rem !important;
 }
 .ProductNavigation a h6 {
   color: #fff !important;

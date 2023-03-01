@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext,createContext, useState, useReducer, useEffect } from "react";
 import Header from "../../../../pages/navbar/Navbar";
 import NewFooter from "../../../../pages/NewFooter/Footer";
 import "./TestingCart1.css";
@@ -6,49 +6,100 @@ import PosterImg from "../../Images/Poster.jpeg";
 import BannerImg from "../../Images/Banner.jpeg";
 import { multiStepContactContext } from "../../YourCartPage";
 import { TestingCartItem } from "./TestingCartItem";
-// import ItemCard from "./ItemCard";
+import ItemCard from "./ItemCard";
+import { reducer } from "./reducer";
 // import BannerImg from "./Images/Banner.jpeg";
 
 // export const CounterValue = useState(counter)
 
+export const CartContext = createContext();
+
+const initialState = {
+  items: TestingCartItem,
+  totalValue:0,
+  totalItem:0,
+}
+
+
+
+
+
+
 const TestingCart1 = () => {
   const [items, setItems] = useState(TestingCartItem);
-  const [totalPrice, setTotalPrice] = useState(0);
+  // const items = useContext(CartContext)
+  const [state, dispatch] = useReducer(reducer, initialState);
 
-  const handleQuantityChange = (itemId, newQuantity) => {
-    const newItems = items.map((item) => {
-      if (item.id === itemId) {
-        return {
-          ...item,
-          quantity: newQuantity,
-        };
-      }
-      return item;
+
+  const RemoveItem = (id) => {
+    return dispatch({
+      type:"REMOVE_ITEM",
+      payload:id,
     });
-    setItems(newItems);
-    calculateTotalPrice(newItems);
-  };
+  }
 
-  const calculateTotalPrice = (items) => {
-    const totalPrice = items.reduce((total, item) => {
-      return total + item.price * item.quantity;
-    }, 0);
-    setTotalPrice(totalPrice);
-  };
+  const increment = (id) => {
+    return dispatch({
+      type:"INCREMENT",
+      payload: id 
+    })
+
+  }
+
+  // useEffect(()=>{
+  //   dispatch({type:"GET_TOTAL"})
+  // }, [state.item])
+
+  // const totalPrice = () => {
+
+    // item.id*
+    
+    // price = {price};
+    // cartTotal= 0 ;
+    // for(var i = 0; i <= items.id; i++)
+    // {
+    //     cartTotal += price[i];
+    // }
+    // cartTotal = cartTotal;  
+  // }
+
+
+  // const [totalPrice, setTotalPrice] = useState(0);
+
+  // const handleQuantityChange = (itemId, newQuantity) => {
+  //   const newItems = items.map((item) => {
+  //     if (item.id === itemId) {
+  //       return {
+  //         ...item,
+  //         quantity: newQuantity,
+  //       };
+  //     }
+  //     return item;
+  //   });
+  //   setItems(newItems);
+  //   calculateTotalPrice(newItems);
+  // };
+
+  // const calculateTotalPrice = (items) => {
+  //   const totalPrice = items.reduce((total, item) => {
+  //     return total + item.price * item.quantity;
+  //   }, 0);
+  //   setTotalPrice(totalPrice);
+  // };
 
   //   const CalculatePrice = (items) => {
   //     const TIPrice = items.reduce((item) => {
   //         for (i = 0; i <= item.quantity; i++) {
-  //             // text += cars[i] + "<br>";
-  //             quant =
-  //           }
-  //       }, 0);
-  //       return TIPrice;
-  //     // for (i = 0; i <= item.quantity; i++) {
-  //         // text += cars[i] + "<br>";
+              // text += cars[i] + "<br>";
+              // quant =
+        //     }
+        // }, 0);
+        // return TIPrice;
+      // for (i = 0; i <= item.quantity; i++) {
+          // text += cars[i] + "<br>";
 
-  //     //   }
-  //   }
+      //   }
+    // }
 
   const { setStep, currentStep } = useContext(multiStepContactContext);
 
@@ -109,6 +160,8 @@ const TestingCart1 = () => {
   //   ];
   return (
     <div className="YourCartMainPage">
+    {/* <CartContext.Provider value={TestingCartItem}> */}
+    <CartContext.Provider value={{...state , RemoveItem, increment}}>
       <div className="CartContainer container">
         <div className="CartPageHead">
           <h2>
@@ -183,7 +236,7 @@ const TestingCart1 = () => {
           </div>
           <div className="CartContent1">
             <div className="Item-Details">
-              {items.map((item, i) => (
+              {/* {items.map((item, i) => (
                 <div key={item.id} className="Item1">
                   <div className="ImageBg">
                     <img src={item.Image} alt="" />
@@ -248,13 +301,13 @@ const TestingCart1 = () => {
                     <button className="DeleteBtn">Delete Item</button>
                   </div>
                 </div>
-              ))}
-              {/* {items.map((item, i) => { 
-                return <ItemCard key={item.id} {...item} />
-              })} */}
+              ))} */}
+              {items.map((item, i) => { 
+                return <ItemCard key={item.id} {...item}/>
+              })}
               <div className="SubTotal" id="TestingSubtotal">
                 <h5>Sub total</h5>
-                <h5>{totalPrice}</h5>
+                <h5>3750/-</h5>
               </div>
               <div className="Confirmation">
                 {/* <button className="BackArrows" onClick={handlePrevClick} >
@@ -302,6 +355,7 @@ const TestingCart1 = () => {
           </div>
         </div>
       </div>
+      </CartContext.Provider>
     </div>
   );
 };

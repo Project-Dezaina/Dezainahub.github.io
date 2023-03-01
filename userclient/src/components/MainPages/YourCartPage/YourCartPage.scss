@@ -567,6 +567,9 @@
     .YourCartMainPage{
         margin-top: 5rem;
         font-family: "Montserrat";
+        
+        display: flex;
+        flex-direction: column;
         .CartContainer{
             display: flex;
                 flex-direction: column;
