@@ -13,6 +13,13 @@
     place-items: center;
     // text-align: center;
     .Work-card-body {
+     
+      .New-Card{
+        overflow: hidden;
+        .img{
+          margin-top: -10;
+        }
+      }
       
         .ourWorksBio{
             padding-left: 3rem;

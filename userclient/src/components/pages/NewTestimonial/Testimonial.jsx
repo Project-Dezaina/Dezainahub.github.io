@@ -97,9 +97,7 @@ const Testimonial = () => {
               </defs>
             </svg>
           </div>
-          <div className="Client-Words"><p>Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s</p></div>
+          <div className="Client-Words"><p>"Working with this design company was a fantastic experience. They took the time to understand our needs and preferences and delivered a beautiful and functional website that exceeded our expectations." </p></div>
         </div>
       </div>
     </div>

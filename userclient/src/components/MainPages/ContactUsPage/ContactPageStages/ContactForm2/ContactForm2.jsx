@@ -3,12 +3,11 @@ import "./ContactForm2.css";
 import { multiStepContactContext } from "../../ContactUsPage";
 
 const ContactForm2 = () => {
-    const {setStep, currentStep,contactdata, setContactData} = useContext(multiStepContactContext);
+    const {setStep, currentStep,contactdata, setContactData,PostData} = useContext(multiStepContactContext);
     return (
         <div className="ContactFormContainer container">
          
               <div className="contactforminputboxBody">
-              {JSON.stringify(contactdata, undefined,2)}
                 <div className="contactforminputbox">
                   <label htmlFor="">Website URL (if any) </label>
                   <input
@@ -63,10 +62,9 @@ const ContactForm2 = () => {
                 <button onClick={()=>{
                     setStep(1)
                   }}>Edit Details</button>
-                  <button onClick={()=>{
-                    setStep(3);
-                    
-                  }}> Submit</button>
+                  <button onClick={
+                    PostData
+                  }> Submit</button>
                   
                 </div>
               </div>

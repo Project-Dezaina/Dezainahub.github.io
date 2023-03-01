@@ -3,7 +3,7 @@ import "./ContactContent.css";
 
 const ContactContent = () => {
     return (
-        <div className="ContactBio">
+        <div className="ContactBio" data-aos="fade-up" >
           <h3>Contact</h3>
    
           <h2>Looking To Find And Heir Great <span>Designers?</span></h2>

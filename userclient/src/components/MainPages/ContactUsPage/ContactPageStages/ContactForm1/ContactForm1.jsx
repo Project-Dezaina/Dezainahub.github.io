@@ -12,18 +12,17 @@ const ContactForm1 = () => {
     return (
         <div className="ContactFormContainer container">
               <div className="contactforminputboxBody">
-              {JSON.stringify(contactdata, undefined,2)}
                 <div className="contactforminputbox">
                   <label htmlFor="">Name</label>
-                  <input type="text" name="yname" id="" placeholder="Enter your name" 
+                  <input type="text" name="yname" required  id="" placeholder="Enter your name" 
                   value={contactdata["name"]}
             onChange={(e) => {
-              setContactData({ ...contactdata, yname: e.target.value });
+              setContactData({ ...contactdata, yname : e.target.value });
             }}></input>
                 </div>
                 <div className="contactforminputbox">
                   <label htmlFor="">Company</label>
-                  <input type="text" name="CompanyName" id="CompanyName" placeholder="Enter your Company name"
+                  <input type="text" name="CompanyName" required id="CompanyName" placeholder="Enter your Company name"
                   value={contactdata["name"]}
             onChange={(e) => {
               setContactData({ ...contactdata, CompanyName: e.target.value });
@@ -38,7 +37,7 @@ const ContactForm1 = () => {
             }}></textarea>
                 </div>
                 <div className="FormButton">
-                  <button onClick={handleClickForm1}> Next</button>
+                  <button type="Submit" onClick={handleClickForm1}> Next</button>
                 </div>
               </div>
         </div>

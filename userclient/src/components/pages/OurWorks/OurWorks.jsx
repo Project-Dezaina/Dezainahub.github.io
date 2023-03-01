@@ -5,7 +5,8 @@ import "./OurWorks.css";
 import Img1 from "../OurWorks/Image/12.jpeg";
 import Img2 from "../OurWorks/Image/11.jpeg";
 import Img3 from "../OurWorks/Image/13.jpeg";
-
+import Img4 from "../OurWorks/Image/14.jpg";
+import Img5 from "../OurWorks/Image/15.jpg"
 const Ourworks = () => {
 
   // const card = [
@@ -84,8 +85,7 @@ const Ourworks = () => {
               <div className="NewCard-body">
                 <h3>Project Rendering</h3>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Necessitatibus aut praesentium officia eveniet ad est
+                Project rendering is a crucial aspect of the design process that helps clients visualize their projects in 3D before they are built. 
                 </p>
               </div>
             </div>
@@ -95,12 +95,11 @@ const Ourworks = () => {
               </div>
               <div className="NewCard-body">
                 <div className="Body-Header">
-                  <h3>Project Rendering</h3>
+                  <h3>Project Branding</h3>
                 </div>
 
                 <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Necessitatibus aut praesentium officia eveniet ad est
+                Project branding is a critical aspect of creating a successful project that resonates with your target audience. 
                 </p>
               </div>
             </div>
@@ -111,12 +110,11 @@ const Ourworks = () => {
               </div>
               <div className="NewCard-body">
                 <div className="Body-Header">
-                  <h3>Project Rendering</h3>
+                  <h3>Project Banner</h3>
                 </div>
 
                 <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Necessitatibus aut praesentium officia eveniet ad est
+                Project banners are an essential element of any successful marketing campaign or event promotion.
                 </p>
               </div>
             </div>
@@ -125,8 +123,7 @@ const Ourworks = () => {
             <h3>See <span>Our Works</span> or Portfolio </h3>
               {/* <h3>or Portfolio</h3> */}
               <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Necessitatibus aut praesentium officia eveniet ad est
+              At our design company, we take pride in the high-quality work we produce for our clients. We have a diverse portfolio of projects, ranging from architecture and interior design to product design and branding.
                   </p>
               <div className="OurWorks-button">
             <button class="button-5" role="button">
