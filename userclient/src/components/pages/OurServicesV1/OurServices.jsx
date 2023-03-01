@@ -1,5 +1,6 @@
 import React from "react";
 import "./OurServices.css";
+import { Outlet, Link } from "react-router-dom";
 
 const OurServices = () => {
   return (
@@ -49,9 +50,11 @@ const OurServices = () => {
                     Advertising content is a crucial aspect of promoting your business and reaching your target audience. 
                   </p>
                   <div className="Services-button">
+                  <Link to="/product">
                     <button class="button-10" role="button">
-                      <span> Let 's Discuss</span>
+                      <span> View Products</span>
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -89,9 +92,11 @@ const OurServices = () => {
                   </p>
 
                   <div className="Services-button">
+                  <Link to="/product">
                     <button class="button-10" role="button">
-                      <span> Let 's Discuss</span>
+                      <span> View Products</span>
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -140,9 +145,11 @@ const OurServices = () => {
                   </p>
 
                   <div className="Services-button">
+                  <Link to="/product">
                     <button class="button-10" role="button">
-                      <span> Let 's Discuss</span>
+                      <span> View Products</span>
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -172,15 +179,18 @@ const OurServices = () => {
                   Explore our portfolio and see how our design solutions have helped businesses enhance their brand identity and  drive growth.
                   </p>
                   <div className="Services-button">
+                  <Link to="/product">
                     <button class="button-10" role="button">
                       <span>Explore More</span>
                     </button>
+                      </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <Outlet />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
+import { Outlet, Link } from "react-router-dom";
 
 import brandImg from "./Image/Landing-img.jpg";
 // import Icon2 from "./Image/Icon2.png";
@@ -12,14 +13,17 @@ const LandingPage = () => {
      data-aos-anchor-placement="top-bottom">
           <h1>DESIGNING <span>VISUAL</span> STORIES</h1>
           <p>
-          Crafting Your Vision: "Our Professional Design Services for Your Business"
+          Our goal is to help you visually communicate your brand's message effectively. We understand that design is not just about aesthetics, it's about creating an experience for your customers.
           </p>
           <div className="landing-buttons">
-            <button type="button" className="discuss-button" >
-              <span>Let's Discuss</span>
+            <button type="button" className="discuss-button"  >
+          <Link to="/contact">
+              <span id="discuss-button">Let's Discuss</span>
+            </Link>
             </button>
-            <button class="cssbuttons-io-button">
-              {" "}
+            <Link to="/AboutUs">
+            <button class="cssbuttons-io-button" >
+              
               Explore More
               <div class="icon">
                 <svg
@@ -36,6 +40,7 @@ const LandingPage = () => {
                 </svg>
               </div>
             </button>
+            </Link>
           </div>
         </div>
         <div className="Landing-img-box">
@@ -86,6 +91,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <Outlet />
       {/* <div className="LandingPageContent"></div> */}
     </div>
     // </div>
