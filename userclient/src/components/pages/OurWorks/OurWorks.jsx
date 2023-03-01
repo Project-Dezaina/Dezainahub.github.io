@@ -7,6 +7,12 @@ import Img2 from "../OurWorks/Image/11.jpeg";
 import Img3 from "../OurWorks/Image/13.jpeg";
 import Img4 from "../OurWorks/Image/14.jpg";
 import Img5 from "../OurWorks/Image/15.jpg"
+
+import { Outlet, Link } from "react-router-dom";
+
+
+
+
 const Ourworks = () => {
 
   // const card = [
@@ -126,9 +132,11 @@ const Ourworks = () => {
               At our design company, we take pride in the high-quality work we produce for our clients. We have a diverse portfolio of projects, ranging from architecture and interior design to product design and branding.
                   </p>
               <div className="OurWorks-button">
+              <Link to="/Gallery">
             <button class="button-5" role="button">
              Explore Gallery
             </button>
+            </Link>
           </div>
             </div>
             
@@ -137,6 +145,7 @@ const Ourworks = () => {
           </div>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };

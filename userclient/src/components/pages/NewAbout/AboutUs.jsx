@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutUs.css";
 import about from "../navbar/ImageM/aboutUs/S4.jpeg";
 import aboutImg from "../navbar/ImageM/aboutUs/5.jpg";
+import { Outlet, Link } from "react-router-dom";
 
   
 
@@ -69,12 +70,15 @@ const AboutUs = () => {
             <p></p>
           </p>
           <div className="aboutUs-button">
+          <Link to="/AboutUs">
             <button class="button-40" role="button">
               Know More
             </button>
+            </Link>
           </div>
         </div>
       </div>
+      <Outlet />
     </div>
     // </div
   );
