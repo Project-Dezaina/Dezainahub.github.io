@@ -8,7 +8,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = () => {
   const { user, isAuthenticated, isLoading, logout, loginWithRedirect } = useAuth0();
   return (
-    <div className="NavigationBarMainContainer">
+    <div className="NavigationBarMainContainer" data-aos="fade-up">
       <div className="NavigationBarImage">
         <nav class="navbar navbar-class navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
