@@ -12,6 +12,9 @@ const GalleryPage = () => {
         <div className= "GalleryPageContent  container">
         {/* <div data-aos="fade-left"> */}
             <iframe  data-aos="fade-left" src="https://heyzine.com/flip-book/5c5560b9f6.html"></iframe>
+        
+            <iframe  src="https://heyzine.com/flip-book/ebb779089e.html"></iframe>
+                        
         </div>
         {/* </div> */}
         
