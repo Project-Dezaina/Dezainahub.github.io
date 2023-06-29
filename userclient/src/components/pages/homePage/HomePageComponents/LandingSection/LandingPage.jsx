@@ -46,7 +46,7 @@ const LandingPage = () => {
         <div className="Landing-img-box">
           <div className="landing-box"></div>
           <div className="landing-img" >
-            <img src={brandImg} alt="Brand img" data-aos="fade-left" />
+            <img src={ brandImg} alt="Brand img" data-aos="fade-left" />
           </div>
           <div className="landing-small-box">
             <div className="small-box-content">
