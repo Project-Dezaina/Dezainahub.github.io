@@ -8,7 +8,22 @@
         position: relative;
         z-index: 1;
         nav {
-            background-color: white !important;
+            background-color: transparent !important;
+            // background-color: whitesmoke !important;
+            button{
+              color: $secondarycolor;
+              border: none;
+              background-color: transparent;
+              font-size: 1rem !important;
+              // border: 2px solid red !important;
+            // color: aqua !important;
+            font-weight: 600 !important;
+              
+            }
+            button:hover {
+              font-size: 1.5rem;
+              font-weight: 900;
+            }
         }
 
         img {
@@ -18,10 +33,43 @@
         li {
             .nav-item {
                 text-align: center;
+                // border: 2px solid red;
+                // visibility: hidden;
+            }
+        .nav-list-items{
+            .nav-list-items-inner{
+              ul{
+                // border: 2px solid red;
+                li{
+                  // border: 2px solid red;
+                  .nav-link {
+                    // border: 2px solid red;
+                    span{
+                      font-size: 2rem !important;
+                      border: 2px solid red !important;
+                    color: aqua !important;
+                    font-weight: 700 !important;
+                  }
+                  }
+                }
+              }
+            }
             }
         }
     }
 }
+
+.Active-Nav-Btn{
+  font-size: 2rem;
+  color: $primarycolor;
+  font-weight: 900;
+  text-decoration: none;
+}
+.Non-Active-Nav-Btn{
+  font-size: 1rem !important;
+  font-weight: 700;
+}
+
 .container-fluid{
     // border: 1px solid black;
     width: 100%;
