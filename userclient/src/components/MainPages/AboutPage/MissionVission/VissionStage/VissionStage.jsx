@@ -12,9 +12,7 @@ const VissionStage = () => {
           <h6>Design adds value faster than it adds cost.</h6>
             <h1>At Dezaina.hub, we know that your time is valuable, and we value it as much as you do. </h1>
             <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever 
-since the 1500s,
+            Embrace creativity and innovation to craft unique and visually stunning web page designs that stand out from the competition. 
             </p>
           </div>
         </div>
