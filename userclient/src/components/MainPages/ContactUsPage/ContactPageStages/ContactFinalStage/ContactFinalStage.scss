@@ -1,0 +1,21 @@
+@import "../../../../globalcss/global.scss";
+
+.FormFinalStage{
+    img{
+        width: 30rem;
+        height: auto;
+    }
+    h4{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 700;
+    }
+    h6{
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 700;
+        span{
+            color: $primarycolor;
+        }
+    }
+}

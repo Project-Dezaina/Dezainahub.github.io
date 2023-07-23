@@ -1,1 +1,17 @@
-/*# sourceMappingURL=ContactFinalStage.css.map */
+.FormFinalStage img {
+  width: 30rem;
+  height: auto;
+}
+.FormFinalStage h4 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+.FormFinalStage h6 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+.FormFinalStage h6 span {
+  color: #4BACE0;
+}/*# sourceMappingURL=ContactFinalStage.css.map */
