@@ -10,7 +10,8 @@ const GalleryPage = () => {
   const CardImg = [
     {
       "id":"1",
-      "CardImg":"https://heyzine.com/flip-book/5c5560b9f6.html"
+      "Title":"this is title",
+      "CardImg":"https://heyzine.com/flip-book/1ec8079ab0.html"
 
     },
     {
@@ -75,7 +76,7 @@ const GalleryPage = () => {
         CardImg.map((data, index) => (
           <div className="GalleryImageBox">
           <div className="GalleryInnerImage">
-          <iframe src={data.CardImg} ></iframe>
+          <iframe src={data.CardImg}  title={data.Title}  ></iframe>
           {/* <img src={InnerImg1} alt="" /> */}
           </div>
 
