@@ -1,3 +1,12 @@
+@import "../../globalcss/global.scss";
+
+.Testimonial-Main-Parent{
+  margin-top: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  // padding: 5rem auto !important;
+background-color: rgba(75, 172, 224, 0.15);
+
 .Testimonial-Main {
     padding: 50px;
     color: #364154;
@@ -5,7 +14,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 15vh auto 15vh auto;
+    // margin: 15vh auto 15vh auto;
     font-family: 'Montserrat';
     .Testimonial-heading {
       width: 50rem;
@@ -71,12 +80,14 @@
         }
     }
   }
+}
   
   // @media screen and (max-width: 900px) {
   
   // }
   
   @media screen and (max-width: 900px) {
+    .Testimonial-Main-Parent{
     .Testimonial-Main {
       flex-direction: column;
       // padding-right: -50rem;
@@ -100,5 +111,6 @@
         }
       }
     }
+  }
   }
   

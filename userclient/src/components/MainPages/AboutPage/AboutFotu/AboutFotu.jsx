@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutFotu.css";
 import about from "../Image/124.png";
+import abt from "../Image/2222.jpeg";
 // import about from "./Image/124.png";
 
 const AboutFotu = () => {
@@ -8,7 +9,8 @@ const AboutFotu = () => {
         <div className="About-Fotu" data-aos="fade-up">
           <div className="abt-img">
           <div className="AboutImgBackShadow"></div>
-            <img src={about} alt="" />
+          <img src={abt} alt="" />
+            {/* <img src={about} alt="" /> */}
 
             <div className="about-float-window">
               <div className="about-float-icon">

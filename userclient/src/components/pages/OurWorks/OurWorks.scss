@@ -1,6 +1,7 @@
 .OurWork-Main {
   font-family: "Montserrat";
   margin: 5rem auto;
+  margin-bottom: 0rem !important;
   h1 {
     font-weight: 700;
   }
@@ -16,6 +17,7 @@
      
       .New-Card{
         overflow: hidden;
+        background-color: #fff;
         .img{
           margin-top: -10;
         }

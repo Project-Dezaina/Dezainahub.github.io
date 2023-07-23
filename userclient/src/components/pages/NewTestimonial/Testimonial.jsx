@@ -4,6 +4,7 @@ import Image1 from "./Image/11.jpeg";
 
 const Testimonial = () => {
   return (
+    <div className="Testimonial-Main-Parent">
     <div className="Testimonial-Main container" data-aos="fade-up"
     data-aos-anchor-placement="center-center">
       <div className="Testimonial-heading">
@@ -100,6 +101,7 @@ const Testimonial = () => {
           <div className="Client-Words"><p>"Working with this design company was a fantastic experience. They took the time to understand our needs and preferences and delivered a beautiful and functional website that exceeded our expectations." </p></div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

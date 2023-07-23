@@ -1,31 +1,36 @@
-.Testimonial-Main {
+.Testimonial-Main-Parent {
+  margin-top: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: rgba(75, 172, 224, 0.15);
+}
+.Testimonial-Main-Parent .Testimonial-Main {
   padding: 50px;
   color: #364154;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 15vh auto 15vh auto;
   font-family: "Montserrat";
 }
-.Testimonial-Main .Testimonial-heading {
+.Testimonial-Main-Parent .Testimonial-Main .Testimonial-heading {
   width: 50rem;
 }
-.Testimonial-Main .Testimonial-heading .Testimonial-Topic {
+.Testimonial-Main-Parent .Testimonial-Main .Testimonial-heading .Testimonial-Topic {
   color: #4bace0;
   font-size: 18px;
   font-weight: 500;
 }
-.Testimonial-Main .Testimonial-heading .Testimonial-head {
+.Testimonial-Main-Parent .Testimonial-Main .Testimonial-heading .Testimonial-head {
   width: 35rem;
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
-.Testimonial-Main .Testimonial-heading .Testimonial-head span {
+.Testimonial-Main-Parent .Testimonial-Main .Testimonial-heading .Testimonial-head span {
   color: #4bace0;
 }
-.Testimonial-Main .Client-1 {
+.Testimonial-Main-Parent .Testimonial-Main .Client-1 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -39,43 +44,43 @@
   align-items: center;
   justify-items: center;
 }
-.Testimonial-Main .Client-1 .Client-Img img {
+.Testimonial-Main-Parent .Testimonial-Main .Client-1 .Client-Img img {
   border-radius: 50%;
   width: 80px;
   height: 80px;
 }
-.Testimonial-Main .Client-1 .Client-Name h3 {
+.Testimonial-Main-Parent .Testimonial-Main .Client-1 .Client-Name h3 {
   text-align: center;
   font-size: 1.7rem;
   font-weight: 700;
 }
-.Testimonial-Main .Client-1 .Client-Rate {
+.Testimonial-Main-Parent .Testimonial-Main .Client-1 .Client-Rate {
   margin-top: -0.8rem;
 }
-.Testimonial-Main .Client-1 .Client-Words {
+.Testimonial-Main-Parent .Testimonial-Main .Client-1 .Client-Words {
   margin-top: 1rem;
 }
-.Testimonial-Main .Client-1 .Client-Words p {
+.Testimonial-Main-Parent .Testimonial-Main .Client-1 .Client-Words p {
   width: 18rem;
   text-align: center;
   font-size: 0.9rem;
 }
 
 @media screen and (max-width: 900px) {
-  .Testimonial-Main {
+  .Testimonial-Main-Parent .Testimonial-Main {
     flex-direction: column;
   }
-  .Testimonial-Main .Testimonial-heading {
+  .Testimonial-Main-Parent .Testimonial-Main .Testimonial-heading {
     text-align: center;
     padding-bottom: 2rem;
   }
-  .Testimonial-Main .Testimonial-heading .Testimonial-head {
+  .Testimonial-Main-Parent .Testimonial-Main .Testimonial-heading .Testimonial-head {
     min-width: 100%;
     margin-right: 0em !important;
     font-size: 2rem !important;
     font-weight: 700;
   }
-  .Testimonial-Main .Testimonial-heading .Client-1 {
+  .Testimonial-Main-Parent .Testimonial-Main .Testimonial-heading .Client-1 {
     margin-top: 10rem !important;
     width: 20rem;
     height: 25rem;
