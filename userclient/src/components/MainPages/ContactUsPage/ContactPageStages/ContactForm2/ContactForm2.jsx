@@ -43,7 +43,7 @@ const ContactForm2 = () => {
             name="WebURL"
             id="WebURL"
             placeholder="URL"
-            value={contactdata["name"]}
+            value={contactdata["WebURL"]}
             onChange={(e) => {
               setContactData({ ...contactdata, WebURL: e.target.value });
             }}
@@ -56,7 +56,7 @@ const ContactForm2 = () => {
             name="MobileNo"
             id="MobileNo"
             placeholder="Mobile Number"
-            value={contactdata["name"]}
+            value={contactdata["MobileNo"]}
             onChange={(e) => {
               setContactData({ ...contactdata, MobileNo: e.target.value });
             }}
@@ -69,7 +69,7 @@ const ContactForm2 = () => {
             name="EmailId"
             id="EmailId"
             placeholder="Email"
-            value={contactdata["name"]}
+            value={contactdata["EmailId"]}
             onChange={(e) => {
               setContactData({ ...contactdata, EmailId: e.target.value });
             }}
@@ -160,9 +160,7 @@ const ContactForm2 = () => {
           >
             Edit Details
           </button>
-          <button onClick={() => {
-              setStep(3);
-            }}> Submit</button>
+          <button type="submit" onClick={PostData}> Submit</button>
         </div>
       </div>
     </div>

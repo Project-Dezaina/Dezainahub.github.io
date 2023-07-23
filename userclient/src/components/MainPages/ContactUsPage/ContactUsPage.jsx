@@ -52,16 +52,20 @@ const ContactUsPage = () => {
 
   const PostData = async (e) => {
     e.preventDefault();
-    const { yname, yemail, about } = contactdata;
+    const {Fname,CompanyName,MessageBoxInput, WebURL, MobileNo, EmailId, } = contactdata;
     const res = await fetch("/contactUs", {
       method: "POST",
-      headers: {
+      headers: { 
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        yname,
-        yemail,
-        about,
+        Fname,
+        CompanyName,
+        MessageBoxInput,
+        WebURL,
+        MobileNo,
+        EmailId,
+        
       }),
     });
     const data = await res.json();
@@ -75,21 +79,21 @@ const ContactUsPage = () => {
   };
 
 
-  let yname, value;
+  let Fname, value;
   const [contactdata, setContactData] = useState([]);
   console.log(contactdata)
   const handlecontactus = (e) => {
     console.log(e);
-    yname = e.target.yname;
+    Fname = e.target.Fname;
     value = e.target.value;
-    setContactData({ ...yname, [yname]: value });
+    setContactData({ ...Fname, [Fname]: value });
   };
   const handleInputs = (e) => {
     console.log(e);
-    yname = e.target.name;
+    Fname = e.target.name;
     value = e.target.value;
 
-    setContactData({ ...yname, [yname]: value });
+    setContactData({ ...Fname, [Fname]: value });
   };
   function checkboxChecked() {
     return (

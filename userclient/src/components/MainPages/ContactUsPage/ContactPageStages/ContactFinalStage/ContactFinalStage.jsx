@@ -14,6 +14,6 @@ const ContactFinalStage = () => {
             <h6>Our <span>Designers Will Contact</span> You within 24hrs to discuss further about your project</h6>
         </div>
     )
-}
+}           
 
 export default ContactFinalStage;
