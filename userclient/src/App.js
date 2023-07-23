@@ -10,6 +10,7 @@ import LazzyLoader from "./components/LazzyLoader/LazzyLoader";
 // import LoginSignupPage from "./components/MainPages/LoginSignupPage/LoginSignupPage";
 import Navbar from "./components/pages/navbar/Navbar";
 import NewFooter from "./components/pages/NewFooter/Footer";
+import { AnimatedCursorBG } from "./components/AnimatedCursorBG/AnimatedCursorBG";
 // const Homepage = lazy(()=>import("./components/pages/homePage/Homepage"));
 // import Homepage from "./components/pages/homePage/Homepage";
 // import AboutPage from "./components/MainPages/AboutPage/AboutPage";
@@ -44,7 +45,7 @@ function App() {
   return (
     <div> 
 
-
+    <AnimatedCursorBG />
    {/* <div className="App">
     <Suspense
     fallback={
