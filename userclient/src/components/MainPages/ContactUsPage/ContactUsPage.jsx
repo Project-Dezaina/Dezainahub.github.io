@@ -4,10 +4,50 @@ import NewFooter from "../../pages/NewFooter/Footer";
 import ContactContent from "./ContactContent/ContactContent";
 import ContactUSContext from "./ContactUsContext/ContactUSContext";
 import "./ContactUsPage.css";
-
-
+import { StyledEngineProvider } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 export const multiStepContactContext = React.createContext();
 
+// mui multiselect function
+const ITEM_HEIGHT = 48;
+const ITEM_PADDING_TOP = 8;
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      width: 250,
+    },
+  },
+};
+// mui multiselect array  --provided
+const names = [
+  'Poster',
+  'Banner',
+  'Logo',
+  'Business Card',
+  'Social Media Post',
+  'Flyer',
+  'Website UI',
+  'App UI',
+  'Logo 3d Rendering',
+  'Brand Kit',
+];
+// multiselect mui css style  --provided
+
+function getStyles(name, personName, theme) {
+  return {
+    fontWeight:
+      personName.indexOf(name) === -1
+        ? theme.typography.fontWeightRegular
+        : theme.typography.fontWeightMedium,
+  };
+}
+// Context api start 
 const ContactUsPage = () => {
 
   const PostData = async (e) => {
@@ -33,14 +73,17 @@ const ContactUsPage = () => {
       console.log("Send succesfully");
     }
   };
+
+
   let yname, value;
   const [contactdata, setContactData] = useState([]);
-  // const handlecontactus = (e) => {
-  //   console.log(e);
-  //   yname = e.target.yname;
-  //   value = e.target.value;
-  //   setContactData({ ...yname, [yname]: value });
-  // };
+  console.log(contactdata)
+  const handlecontactus = (e) => {
+    console.log(e);
+    yname = e.target.yname;
+    value = e.target.value;
+    setContactData({ ...yname, [yname]: value });
+  };
   const handleInputs = (e) => {
     console.log(e);
     yname = e.target.name;
@@ -48,7 +91,14 @@ const ContactUsPage = () => {
 
     setContactData({ ...yname, [yname]: value });
   };
- 
+  function checkboxChecked() {
+    return (
+    //   <div>
+      console.log("Kar Diya Tick")
+    //   </div>
+    )
+  }
+  
 
 
 
@@ -60,7 +110,7 @@ const ContactUsPage = () => {
         <ContactContent/>
         <div className="ContactForm">
             <multiStepContactContext.Provider 
-      value={{currentStep, setStep, contactdata, setContactData,PostData}}>
+      value={{checkboxChecked, currentStep, setStep, contactdata, setContactData,PostData, getStyles, names, MenuProps}}>
         <ContactUSContext/>
       </multiStepContactContext.Provider>
         </div>
