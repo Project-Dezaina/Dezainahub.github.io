@@ -7,7 +7,18 @@
   z-index: 1;
 }
 .NavigationBarMainContainer .NavigationBarImage nav {
-  background-color: white !important;
+  background-color: transparent !important;
+}
+.NavigationBarMainContainer .NavigationBarImage nav button {
+  color: #2F455C;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+.NavigationBarMainContainer .NavigationBarImage nav button:hover {
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 .NavigationBarMainContainer .NavigationBarImage img {
   width: 250px;
@@ -15,6 +26,24 @@
 }
 .NavigationBarMainContainer .NavigationBarImage li .nav-item {
   text-align: center;
+}
+.NavigationBarMainContainer .NavigationBarImage li .nav-list-items .nav-list-items-inner ul li .nav-link span {
+  font-size: 2rem !important;
+  border: 2px solid red !important;
+  color: aqua !important;
+  font-weight: 700 !important;
+}
+
+.Active-Nav-Btn {
+  font-size: 2rem;
+  color: #4BACE0;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.Non-Active-Nav-Btn {
+  font-size: 1rem !important;
+  font-weight: 700;
 }
 
 .container-fluid {
