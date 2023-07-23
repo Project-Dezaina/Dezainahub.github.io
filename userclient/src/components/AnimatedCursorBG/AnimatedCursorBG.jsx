@@ -24,9 +24,10 @@ export const AnimatedCursorBG = () => {
         filter: 'blur(100px)'
       }}
       innerStyle={{
+        // color:'red',
         opacity: '10%',
     // border: '3px solid red',
-        cursor:'auto'   
+        cursor:'default'   
     
   }}
     //   clickables={[
