@@ -7,9 +7,7 @@ import brandImg from "./Image/Landing-img.jpg";
 // import Icon3 from "./Image/Icon3.png";
 const LandingPage = () => {
   return (
-    <div className
-    
-    ="LandingPageMainComponents">
+    <div className="LandingPageMainComponents">
       <div className="landingPageContainer container">
         <div className="Landing-Content" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
