@@ -16,16 +16,17 @@ const ContactForm1 = () => {
     <div className="ContactFormContainer container">
       <div className="contactforminputboxBody">
         <div className="contactforminputbox">
+        {/* {JSON.stringify()} */}
           <label htmlFor="">Name</label>
           <input
             type="text"
-            name="yname"
+            name="Fname"
             required
-            id=""
+            id="Fname"
             placeholder="Enter your name"
             value={contactdata["name"]}
             onChange={(e) => {
-              setContactData({ ...contactdata, yname: e.target.value });
+              setContactData({ ...contactdata, Fname: e.target.value });
             }}
           ></input>
         </div>
@@ -37,7 +38,7 @@ const ContactForm1 = () => {
             required
             id="CompanyName"
             placeholder="Enter your Company name"
-            value={contactdata["name"]}
+            value={contactdata["CompanyName"]}
             onChange={(e) => {
               setContactData({ ...contactdata, CompanyName: e.target.value });
             }}
@@ -51,7 +52,7 @@ const ContactForm1 = () => {
             cols="30"
             rows="10"
             placeholder="Message"
-            value={contactdata["name"]}
+            value={contactdata["MessageBoxInput"]}
             onChange={(e) => {
               setContactData({
                 ...contactdata,
