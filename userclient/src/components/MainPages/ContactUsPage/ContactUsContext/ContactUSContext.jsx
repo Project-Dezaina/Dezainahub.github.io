@@ -30,7 +30,7 @@ const ContactUSContext = () => {
 
 
 
-  let yname, value;
+  let Fname, value;
   const [contactdata, setContactData] = useState([]);
   // const handlecontactus = (e) => {
   //   console.log(e);
@@ -40,10 +40,10 @@ const ContactUSContext = () => {
   // };
   const handleInputs = (e) => {
     console.log(e);
-    yname = e.target.name;
+    Fname = e.target.name;
     value = e.target.value;
 
-    setContactData({ ...yname, [yname]: value });
+    setContactData({ ...Fname, [Fname]: value });
   };
 
   return (

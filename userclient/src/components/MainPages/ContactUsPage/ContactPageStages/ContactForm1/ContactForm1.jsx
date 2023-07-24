@@ -24,7 +24,7 @@ const ContactForm1 = () => {
             required
             id="Fname"
             placeholder="Enter your name"
-            value={contactdata["name"]}
+            value={contactdata["Fname"]}
             onChange={(e) => {
               setContactData({ ...contactdata, Fname: e.target.value });
             }}
