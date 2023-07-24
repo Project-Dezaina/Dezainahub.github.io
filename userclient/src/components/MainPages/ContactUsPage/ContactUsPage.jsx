@@ -53,7 +53,7 @@ const ContactUsPage = () => {
   const PostData = async (e) => {
     e.preventDefault();
     const {Fname,CompanyName,MessageBoxInput, WebURL, MobileNo, EmailId, } = contactdata;
-    const res = await fetch("/contactUs", {
+    const res = await fetch("http://localhost:5000/contactUs", {
       method: "POST",
       headers: { 
         "Content-Type": "application/json",
