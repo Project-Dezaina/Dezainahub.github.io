@@ -3,13 +3,15 @@ import "./OurValues.css";
 
 const OurValues = () => {
     return (
-        <div className="OurValues" data-aos="fade-up">
+        <div className="OurValues" >
+        <div className="container" data-aos="fade-up">
           <div className="ValuesHead">
             <h6>Why Dezaina?</h6>
             <h1>Our Values Towards Our Customers</h1>
           </div>
           <div className="ValuesBody">
             <div className="Value1">
+            <div className="HoverEffectValue"></div>
               <div className="ValueSVG">
                 <svg
                   width="29"
@@ -42,6 +44,7 @@ const OurValues = () => {
               </div>
             </div>
             <div className="Value1">
+            <div className="HoverEffectValue"></div>
               <div className="ValueSVG">
                 <svg
                   width="29"
@@ -70,6 +73,7 @@ const OurValues = () => {
               </div>
             </div>
             <div className="Value1">
+            <div className="HoverEffectValue"></div>
               <div className="ValueSVG">
                 <svg
                   width="29"
@@ -98,6 +102,7 @@ const OurValues = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
     )
 }

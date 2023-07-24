@@ -26,11 +26,22 @@
   width: 35rem;
 }
 .ProductPageMain .ProductPageHead .PageHeadCards {
+  position: relative;
   margin: 5rem auto;
   display: grid;
   gap: 0rem;
   grid-template-columns: 20rem 20rem 20rem 20rem;
   margin-left: 2rem;
+}
+.ProductPageMain .ProductPageHead .PageHeadCards .PageCards-Line {
+  position: absolute;
+}
+.ProductPageMain .ProductPageHead .PageHeadCards .PageCards-Line svg {
+  position: relative;
+  top: 2rem;
+  left: -0.5rem;
+  opacity: 25%;
+  transform: rotate(2.5deg);
 }
 .ProductPageMain .ProductPageHead .PageHeadCards .PageCards {
   position: relative;

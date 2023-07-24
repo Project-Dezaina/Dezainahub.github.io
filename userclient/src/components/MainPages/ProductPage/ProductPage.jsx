@@ -27,6 +27,13 @@ const ProductPage = () => {
                 </p>
               </div>
               <div className="PageHeadCards">
+              <div className="PageCards-Line">
+              <svg width="1053" height="299" viewBox="0 0 1053 299" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 5C63.6479 7.06846 122.154 48.4378 266.607 209.778C408.887 368.692 664.391 265.811 740.5 196C813.878 128.695 1002.85 91.8755 1051 107.389" stroke="#4BACE0" stroke-width="10"/>
+</svg>
+
+
+              </div>
                 <div className="PageCards" data-aos="fade-right" id="PageCard1">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard1">

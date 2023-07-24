@@ -1,7 +1,9 @@
 @import "../../../globalcss/global.scss";
 
 .MainMissionVission{
+  padding: 10rem;
   margin-top: 10rem;
+  background-color: $primarycolorTransparent;
   .MissionVisionHead{
     font-weight: 700;
     text-align: center;
