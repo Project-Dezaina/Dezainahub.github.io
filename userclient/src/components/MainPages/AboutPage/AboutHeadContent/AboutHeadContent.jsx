@@ -15,7 +15,7 @@ import Img5 from "../Image/7.jpg";
 
 const AboutHeadContent = () => {
   return (
-    <div className="AboutHeadContent">
+    <div className="AboutHeadContent container">
       <div className="HeadContent" data-aos="fade-up">
         <div className="HeadContentHead">
           <h1>Everything you need to grow your business visually</h1>

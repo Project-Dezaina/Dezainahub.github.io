@@ -26,7 +26,7 @@ const AboutPage = () => {
 
   <div>
       {/* <Header /> */}
-      <div className="AboutPageContainer container">
+      <div className="AboutPageContainer">
        
         <AboutHeadContent/>
         <AboutUsImageSec/>
