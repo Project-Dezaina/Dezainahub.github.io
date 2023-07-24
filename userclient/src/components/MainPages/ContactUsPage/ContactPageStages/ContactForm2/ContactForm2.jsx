@@ -52,7 +52,7 @@ const ContactForm2 = () => {
         <div className="contactforminputbox">
           <label htmlFor="">Mobile Number</label>
           <input
-            type="text"
+            type="Number"
             name="MobileNo"
             id="MobileNo"
             placeholder="Mobile Number"
