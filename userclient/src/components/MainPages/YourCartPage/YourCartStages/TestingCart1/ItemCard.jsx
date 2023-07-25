@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import PosterImage from "../../Images/Poster.jpeg";
 import { TestingCartItem } from "./TestingCartItem";
 import { CartContext } from "./TestingCart1";
+import { multiStepContactContext } from "../../YourCartPage";
 // import map from "";
 // import reduce from "";
 // import setItems from "";
@@ -9,7 +10,7 @@ import { CartContext } from "./TestingCart1";
 
 
 const ItemCard = ({id, Image, name, text, price, quantity})  =>{
-  const {RemoveItem, increment} = useContext(CartContext)
+  const {RemoveItem, increment} = useContext(multiStepContactContext);
     const [totalPrice, setTotalPrice] = useState(0);
     // const price="300";
 
@@ -68,6 +69,8 @@ const ItemCard = ({id, Image, name, text, price, quantity})  =>{
   //   let totalAmount = counter*price;
   //   return totalAmount;
   // }
+
+  console.log(name,quantity);
   
 
     return (
@@ -79,7 +82,7 @@ const ItemCard = ({id, Image, name, text, price, quantity})  =>{
                   </div>
                   <div className="Cart-Item-Content">
                     <div className="CartDetails">
-                      <h4>{name}</h4>
+                      <h4>{name} - {id}</h4>
                       {/* <h4>Poster</h4> */}
                       <p>{text}</p>
                       {/* <p>1.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, tandard dummy text ever since the 1500s</p> */}
@@ -93,7 +96,7 @@ const ItemCard = ({id, Image, name, text, price, quantity})  =>{
                           <button type="button" id="QuantButt">
                               {" "}
                               <svg
-                              onClick={handleSub}
+                              onClick={() => RemoveItem(id)}
                               // onClick={handleSub}
                                 width="25"
                                 height="26"
@@ -108,12 +111,12 @@ const ItemCard = ({id, Image, name, text, price, quantity})  =>{
                               </svg>{" "}
                             </button>
                           {/* <h6>{card.quantity}</h6> */}
-                          <h6>{counter}</h6>
+                          <h6>{quantity}</h6>
                           <button id="QuantButt">
                               {" "}
                               <svg
-                                // onClick={()=>increment(id)}
-                                onClick={handleAdd}
+                                onClick={()=>increment(id)}
+                                // onClick={handleAdd}
                                 width="26"
                                 height="26"
                                 viewBox="0 0 26 26"

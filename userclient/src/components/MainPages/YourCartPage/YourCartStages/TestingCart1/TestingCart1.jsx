@@ -1,4 +1,4 @@
-import React, { useContext,createContext, useState, useReducer, useEffect } from "react";
+import React, { useContext,createContext, useState, useReducer, useEffect, useMemo } from "react";
 import Header from "../../../../pages/navbar/Navbar";
 import NewFooter from "../../../../pages/NewFooter/Footer";
 import "./TestingCart1.css";
@@ -14,38 +14,10 @@ import { reducer } from "./reducer";
 
 export const CartContext = createContext();
 
-const initialState = {
-  items: TestingCartItem,
-  totalValue:0,
-  totalItem:0,
-}
-
-
-
-
-
 
 const TestingCart1 = () => {
   const [items, setItems] = useState(TestingCartItem);
   // const items = useContext(CartContext)
-  const [state, dispatch] = useReducer(reducer, initialState);
-
-
-  const RemoveItem = (id) => {
-    return dispatch({
-      type:"REMOVE_ITEM",
-      payload:id,
-    });
-  }
-
-  const increment = (id) => {
-    return dispatch({
-      type:"INCREMENT",
-      payload: id 
-    })
-
-  }
-
   // useEffect(()=>{
   //   dispatch({type:"GET_TOTAL"})
   // }, [state.item])
@@ -101,7 +73,7 @@ const TestingCart1 = () => {
       //   }
     // }
 
-  const { setStep, currentStep } = useContext(multiStepContactContext);
+  const { setStep, currentStep,state } = useContext(multiStepContactContext);
 
   const handleNextClick = () => {
     setStep(2);
@@ -158,10 +130,17 @@ const TestingCart1 = () => {
   //       text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   //     },
   //   ];
+
+  const getTotal = () => {
+    return state?.items?.reduce((result, item ) => {
+      return result + (item?.price * item?.quantity);
+    }, 0);
+  }
+
+
   return (
     <div className="YourCartMainPage">
     {/* <CartContext.Provider value={TestingCartItem}> */}
-    <CartContext.Provider value={{...state , RemoveItem, increment}}>
       <div className="CartContainer container">
         <div className="CartPageHead">
           <h2>
@@ -302,12 +281,12 @@ const TestingCart1 = () => {
                   </div>
                 </div>
               ))} */}
-              {items.map((item, i) => { 
+              {state?.items?.map((item, i) => { 
                 return <ItemCard key={item.id} {...item}/>
               })}
               <div className="SubTotal" id="TestingSubtotal">
                 <h5>Sub total</h5>
-                <h5>3750/-</h5>
+                <h5>{getTotal()}/-</h5>
               </div>
               <div className="Confirmation">
                 {/* <button className="BackArrows" onClick={handlePrevClick} >
@@ -355,7 +334,6 @@ const TestingCart1 = () => {
           </div>
         </div>
       </div>
-      </CartContext.Provider>
     </div>
   );
 };
