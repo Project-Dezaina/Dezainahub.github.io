@@ -11,6 +11,7 @@ import LazzyLoader from "./components/LazzyLoader/LazzyLoader";
 import Navbar from "./components/pages/navbar/Navbar";
 import NewFooter from "./components/pages/NewFooter/Footer";
 import { AnimatedCursorBG } from "./components/AnimatedCursorBG/AnimatedCursorBG";
+import SendMail from "./components/SendMail/SendMail";
 // const Homepage = lazy(()=>import("./components/pages/homePage/Homepage"));
 // import Homepage from "./components/pages/homePage/Homepage";
 // import AboutPage from "./components/MainPages/AboutPage/AboutPage";
@@ -32,6 +33,9 @@ const ContactUsPage = lazy(() => import("./components/MainPages/ContactUsPage/Co
 const YourCartPage = lazy(() => import("./components/MainPages/YourCartPage/YourCartPage"));
 const CheckStatusPage = lazy(() => import("./components/MainPages/CheckStatusPage/CheckStatus"));
 const ErrorPage = lazy(() => import("./components/404ErrorPage/404ErrorPage"));
+
+
+
 
 
 
@@ -93,6 +97,7 @@ function App() {
      <Routes>
         <Route path="/" exact element={<Homepage />}/> 
           <Route path="/Gallery" exact element={<GalleryPage/>} />
+          <Route path="/SendMail" exact element={<SendMail />} />
           <Route path="/YourCart" exact element={<YourCartPage/>} />
           <Route path="/AboutUs" exact element={<AboutPage/>} />
           <Route path="/LoginSignup" exact element={<LoginSignupPage/>} />

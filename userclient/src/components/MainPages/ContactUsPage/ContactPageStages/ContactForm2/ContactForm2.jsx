@@ -13,7 +13,6 @@ import { json } from "react-router-dom";
 
 
 
-
 const ContactForm2 = () => {
   // context api 
   const { checkboxChecked,setStep, currentStep, contactdata, setContactData, PostData ,MultipleSelect, getStyles, names, MenuProps} =
@@ -40,7 +39,7 @@ const ContactForm2 = () => {
           <label htmlFor="">Website URL (if any) </label>
           <input
             type="text"
-            name="WebURL"
+            name="web_url"
             id="WebURL"
             placeholder="URL"
             value={contactdata["WebURL"]}
@@ -53,7 +52,7 @@ const ContactForm2 = () => {
           <label htmlFor="">Mobile Number</label>
           <input
             type="Number"
-            name="MobileNo"
+            name="mobile_number"
             id="MobileNo"
             placeholder="Mobile Number"
             value={contactdata["MobileNo"]}
@@ -66,7 +65,7 @@ const ContactForm2 = () => {
           <label htmlFor="">Email</label>
           <input
             type="text"
-            name="EmailId"
+            name="email_id"
             id="EmailId"
             placeholder="Email"
             value={contactdata["EmailId"]}
@@ -87,7 +86,7 @@ const ContactForm2 = () => {
                   ></input> */}
         </div>
         <div className="contactforminputbox">
-          <label htmlFor="">Select the Service</label>
+          {/* <label htmlFor="">Select the Service</label> */}
           {/* <input
                     type="text"
                     name="WebURL"
@@ -96,37 +95,19 @@ const ContactForm2 = () => {
                     readOnly={true} ></input> */}
 
           {/* ------------- */}
-{/* dropdown draft 1 */}
-            {/* <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Select The Service
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><div class="dropdown-item"><input type="checkbox" value="Poster" onChange={checkboxChecked()}></input>
-    <label>Poster</label></div> </li>
-    <li><div class="dropdown-item"><input type="checkbox" value="Banner" onChange={checkboxChecked()}></input><label>Banner</label></div></li>
-    <li><div class="dropdown-item"><input type="checkbox" value="Thumbnail" onChange={checkboxChecked()}></input><label>Thumbnail</label></div></li>
-    <li><div class="dropdown-item"><input type="checkbox" value="Business Card" onChange={checkboxChecked()}></input><label>Business Card</label></div></li>
-    <li><div class="dropdown-item"><input type="checkbox" value="Flyer" onClick={checkboxChecked()}></input><label>Flyer</label></div></li>
-    <li><div class="dropdown-item"><input type="checkbox" value="Logo"></input><label>Logo</label></div></li>
-  </ul>
-  <select name="cars" id="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-</div> */}
+
 {/* Dropdown draft2  */}
 
 {/* mui multiple selct ui  */}
 
-<div>
+{/* <div>
+    <label htmlFor="">Select the Service</label>
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-name-label">Services</InputLabel>
         <Select
-          labelId="demo-multiple-name-label"
-          id="demo-multiple-name"
+          labelId="Select-multiple-name-label"
+          id="Select-multiple-name"
+          name=""
           multiple
           value={personName}
           onChange={handleChange}
@@ -144,7 +125,7 @@ const ContactForm2 = () => {
           ))}
         </Select>
       </FormControl>
-    </div>
+    </div> */}
 
 
 
@@ -160,7 +141,10 @@ const ContactForm2 = () => {
           >
             Edit Details
           </button>
-          <button type="submit" onClick={PostData}> Submit</button>
+          <button type="submit" 
+          // onClick={() => {setStep(3);}}
+          // onClick={PostData}
+           value="Send"> Submit</button>
         </div>
       </div>
     </div>
@@ -168,3 +152,5 @@ const ContactForm2 = () => {
 };
 
 export default ContactForm2;
+
+// onClick={() => {setStep(3);}}

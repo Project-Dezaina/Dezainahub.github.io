@@ -4,13 +4,6 @@ import NewFooter from "../../pages/NewFooter/Footer";
 import ContactContent from "./ContactContent/ContactContent";
 import ContactUSContext from "./ContactUsContext/ContactUSContext";
 import "./ContactUsPage.css";
-import { StyledEngineProvider } from '@mui/material/styles';
-import { useTheme } from '@mui/material/styles';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 export const multiStepContactContext = React.createContext();
 
 // mui multiselect function
