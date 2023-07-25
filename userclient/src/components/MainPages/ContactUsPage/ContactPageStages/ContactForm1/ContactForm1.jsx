@@ -2,11 +2,34 @@ import React, { useContext } from "react";
 import "./ContactForm1.css";
 import { multiStepContactContext } from "../../ContactUsPage";
 import { StyledEngineProvider } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+// import { multiStepContactContext } from "../../ContactUsPage";
 
 const ContactForm1 = () => {
-  const { setStep, currentStep, contactdata, setContactData } = useContext(
+  const { setStep, currentStep, contactdata, setContactData, getStyles, names, MenuProps } = useContext(
     multiStepContactContext
   );
+// Stage 2 form 
+    // mui function
+    const theme = useTheme();
+    const [personName, setPersonName] = React.useState([]);
+  
+    const handleChange = (event) => {
+      const {
+        target: { value },
+      } = event;
+      setPersonName(
+        // On autofill we get a stringified value.
+        typeof value === 'string' ? value.split(',') : value,
+      );
+    };
+    
+  
 
   const handleClickForm1 = () => {
     setStep(2);
@@ -16,11 +39,12 @@ const ContactForm1 = () => {
     <div className="ContactFormContainer container">
       <div className="contactforminputboxBody">
         <div className="contactforminputbox">
-        {/* {JSON.stringify()} */}
+          {/* {JSON.stringify()} */}
           <label htmlFor="">Name</label>
           <input
             type="text"
-            name="Fname"
+            // name="Fname"
+            name="user_name"
             required
             id="Fname"
             placeholder="Enter your name"
@@ -34,7 +58,8 @@ const ContactForm1 = () => {
           <label htmlFor="">Company</label>
           <input
             type="text"
-            name="CompanyName"
+            // name="CompanyName"
+            name="user_email"
             required
             id="CompanyName"
             placeholder="Enter your Company name"
@@ -47,7 +72,8 @@ const ContactForm1 = () => {
         <div className="contactforminputbox">
           <label htmlFor="">Message</label>
           <textarea
-            name="MessageBoxInput"
+            // name="MessageBoxInput"
+            name="message"
             id="MessageBoxInput"
             cols="30"
             rows="10"
@@ -61,10 +87,38 @@ const ContactForm1 = () => {
             }}
           ></textarea>
         </div>
+        <div>
+          <label htmlFor="">Select the Service</label>
+          <FormControl sx={{ m: 1, width: 300 }}>
+            <InputLabel id="demo-multiple-name-label">Services</InputLabel>
+            <Select
+              labelId="Select-multiple-name-label"
+              id="Select-multiple-name"
+              name="Service"
+              multiple
+              value={personName}
+              onChange={handleChange}
+              input={<OutlinedInput label="Name" />}
+              MenuProps={MenuProps}
+            >
+              {names.map((name) => (
+                <MenuItem
+                  key={name}
+                  value={name}
+                  style={getStyles(name, personName, theme)}
+                >
+                  {name}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </div>
         <div className="FormButton">
-          <button type="Submit" onClick={() => {
-              setStep(2);
-            }} >
+          <button
+            type="Submit"
+            // onClick={() => {setStep(2);}}
+            value="send"
+          >
             Next
           </button>
         </div>
