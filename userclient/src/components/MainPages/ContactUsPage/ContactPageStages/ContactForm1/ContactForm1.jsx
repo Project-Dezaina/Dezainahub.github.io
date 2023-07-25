@@ -11,25 +11,29 @@ import Select from "@mui/material/Select";
 // import { multiStepContactContext } from "../../ContactUsPage";
 
 const ContactForm1 = () => {
-  const { setStep, currentStep, contactdata, setContactData, getStyles, names, MenuProps } = useContext(
-    multiStepContactContext
-  );
-// Stage 2 form 
-    // mui function
-    const theme = useTheme();
-    const [personName, setPersonName] = React.useState([]);
-  
-    const handleChange = (event) => {
-      const {
-        target: { value },
-      } = event;
-      setPersonName(
-        // On autofill we get a stringified value.
-        typeof value === 'string' ? value.split(',') : value,
-      );
-    };
-    
-  
+  const {
+    setStep,
+    currentStep,
+    contactdata,
+    setContactData,
+    getStyles,
+    names,
+    MenuProps,
+  } = useContext(multiStepContactContext);
+  // Stage 2 form
+  // mui function
+  const theme = useTheme();
+  const [personName, setPersonName] = React.useState([]);
+
+  const handleChange = (event) => {
+    const {
+      target: { value },
+    } = event;
+    setPersonName(
+      // On autofill we get a stringified value.
+      typeof value === "string" ? value.split(",") : value
+    );
+  };
 
   const handleClickForm1 = () => {
     setStep(2);
@@ -99,8 +103,8 @@ const ContactForm1 = () => {
             // name="MessageBoxInput"
             name="message"
             id="MessageBoxInput"
-            cols="20"
-            rows="10"
+            cols="30"
+            rows="3"
             placeholder="Message"
             value={contactdata["MessageBoxInput"]}
             onChange={(e) => {
@@ -141,7 +145,9 @@ const ContactForm1 = () => {
           <button
             type="Submit"
             // onClick={() => {setStep(2);}}
-            onSubmit={() => {setStep(3);}}
+            onSubmit={() => {
+              setStep(2);
+            }}
             value="send"
           >
             Next
