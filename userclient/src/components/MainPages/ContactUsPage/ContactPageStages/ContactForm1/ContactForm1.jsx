@@ -55,11 +55,11 @@ const ContactForm1 = () => {
           ></input>
         </div>
         <div className="contactforminputbox">
-          <label htmlFor="">Company</label>
+          <label htmlFor="">Contact Number</label>
           <input
-            type="text"
+            type="Number"
             // name="CompanyName"
-            name="user_email"
+            name="user_contact"
             required
             id="CompanyName"
             placeholder="Enter your Company name"
@@ -70,12 +70,36 @@ const ContactForm1 = () => {
           ></input>
         </div>
         <div className="contactforminputbox">
+          <label htmlFor="">Email</label>
+          <input
+            type="text"
+            name="email_id"
+            id="EmailId"
+            placeholder="Email"
+            value={contactdata["EmailId"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, EmailId: e.target.value });
+            }}
+          ></input>
+          {/* <label htmlFor="">Select Slot</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Select Slot"
+                    value={contactdata["name"]}
+            onChange={(e) => {
+              setContactData({ ...contactdata, name: e.target.value });
+            }}
+                  ></input> */}
+        </div>
+        <div className="contactforminputbox">
           <label htmlFor="">Message</label>
           <textarea
             // name="MessageBoxInput"
             name="message"
             id="MessageBoxInput"
-            cols="30"
+            cols="20"
             rows="10"
             placeholder="Message"
             value={contactdata["MessageBoxInput"]}
@@ -117,6 +141,7 @@ const ContactForm1 = () => {
           <button
             type="Submit"
             // onClick={() => {setStep(2);}}
+            onSubmit={() => {setStep(3);}}
             value="send"
           >
             Next
