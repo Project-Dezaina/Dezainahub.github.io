@@ -8,19 +8,15 @@ import Congratulations from "../../Images/Congratulations.gif"
 
 const CartStage3 =() => {
     
-    const {setStep, currentStep} = useContext(multiStepContactContext);
+    const {setStep, currentStep, state} = useContext(multiStepContactContext);
 
-    const CartCards = [
-        {
-          Image: PosterImg,
-          // Quantity: counter,
-          Quantity: 2,
-          Price: 200,
-          title: "Poster",
-          text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        },
-        
-      ];
+   
+    const getTotal = () => {
+      return state?.items?.reduce((result, item ) => {
+        return result + (item?.price * item?.quantity);
+      }, 0);
+    }
+
     return (
       <div className="YourCartMainPage">
         <div className="CartContainer container">
@@ -96,18 +92,18 @@ const CartStage3 =() => {
             <div className="CartContent1">
               <div className="Item-Details">
               <div className="ItemDetailImage">
-                <img src={Congratulations}></img>
+                <img src={Congratulations} alt='Congratulations' />
                 </div>
                 <h5>*Your Order Placed Successfully*</h5>
                 
-                {CartCards.map((card, i) => (
-                  <div key={i} className="Item1">
+                {state?.items?.filter(item => item.quantity > 0).map((card, i) => (
+                  <div key={card.id} className="Item1">
                     <div className="ImageBg">
                       <img src={card.Image} alt="" />
                     </div>
                     <div className="Cart-Item-Content">
                       <div className="CartDetails">
-                        <h4>{card.title}</h4>
+                        <h4>{card.name}</h4>
                         {/* <h4>Poster</h4> */}
                         <p>{card.text}</p>
                         {/* <p>1.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, tandard dummy text ever since the 1500s</p> */}
@@ -118,14 +114,14 @@ const CartStage3 =() => {
                         <div className="QuantityBox">
                           <h6>Quantity</h6>
                           <div className="QuantityButton">
-                            <h6>{card.Quantity}</h6>
+                            <h6>{card.quantity}</h6>
                             {/* <h6>{counter}</h6> */}
                           </div>
                         </div>
                         <div className="PriceBox">
                           <h6>Total Value</h6>
                           <div className="TotalPricing">
-                            <h6>{card.Price}</h6>
+                            <h6>{card.price * card.quantity}</h6>
                             {/* <h6>{ProductValue}</h6> */}
                           </div>
                         </div>
@@ -136,7 +132,7 @@ const CartStage3 =() => {
                 <div className="" id="SubTotal">
                   <div className="SubtotalUnder">
                     <h5>Sub total -</h5>
-                    <h5>1000/-</h5>
+                    <h5>{getTotal()}/-</h5>
                   </div>
                   <div className="SubtotalUnder">
                     <h5>Order Status - </h5>
