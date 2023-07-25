@@ -20,6 +20,13 @@ const YourCartPage = () => {
   const [currentStep, setStep] = useState(1);
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const deleteItem = (id) => {
+    return dispatch({
+      type: 'DELETE_ITEM',
+      payload: id
+    });
+  }
+
 
   const RemoveItem = (id) => {
     return dispatch({
@@ -36,7 +43,7 @@ const YourCartPage = () => {
 
   }
 
-  const value = useMemo(() => ({currentStep, setStep, state, RemoveItem, increment}), [currentStep,state])
+  const value = useMemo(() => ({currentStep, setStep, state, RemoveItem, increment,deleteItem}), [currentStep,state])
 
   return (
     <div>
