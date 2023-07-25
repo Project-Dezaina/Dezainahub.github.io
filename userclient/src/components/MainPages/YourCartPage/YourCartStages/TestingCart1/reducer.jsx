@@ -1,5 +1,17 @@
 export const reducer = (state, action) => {
-      if (action.type == "REMOVE_ITEM") {
+  if(action.type === 'DELETE_ITEM') {
+    return {
+      ...state,
+      items: state?.items?.map(item => {
+        if(item.id === action.payload) 
+          return { ...item, quantity: 0 }
+
+        return item;
+      })
+    }
+  }
+
+  if (action.type == "REMOVE_ITEM") {
     return {
       ...state,
       items: state?.items?.map(item => {

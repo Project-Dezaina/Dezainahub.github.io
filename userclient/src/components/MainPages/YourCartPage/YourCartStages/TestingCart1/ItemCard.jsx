@@ -10,7 +10,7 @@ import { multiStepContactContext } from "../../YourCartPage";
 
 
 const ItemCard = ({id, Image, name, text, price, quantity})  =>{
-  const {RemoveItem, increment} = useContext(multiStepContactContext);
+  const {RemoveItem, increment,deleteItem} = useContext(multiStepContactContext);
     const [totalPrice, setTotalPrice] = useState(0);
     // const price="300";
 
@@ -136,14 +136,14 @@ const ItemCard = ({id, Image, name, text, price, quantity})  =>{
                         <div className="TotalPricing">
                           {/* <h6>{card.Price}</h6> */}
                           {/* <h6>{ProductValue}</h6> */}
-                          <h6>{counter*price}</h6>
+                          <h6>{quantity*price}</h6>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="Delete-Button">
                     <button class="DeleteSVG" 
-                    onClick={()=>{RemoveItem(id)}}
+                    onClick={()=>{deleteItem(id)}}
                     >
                       <svg
 
