@@ -145,12 +145,18 @@ const ContactForm1 = () => {
           <button
             type="Submit"
             // onClick={() => {setStep(2);}}
-            onSubmit={() => {
-              setStep(2);
-            }}
+
             value="send"
           >
-            Next
+            <button
+              type="Submit"
+              onClick={() => {
+                setStep(3);
+              }}
+              value="send"
+            >
+              Next
+            </button>
           </button>
         </div>
       </div>
