@@ -148,7 +148,7 @@ const ContactForm1 = () => {
 
             value="send"
           >
-            <button
+            <button className="NextStateButton"
               type="Submit"
               onClick={() => {
                 setStep(3);
