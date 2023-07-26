@@ -142,7 +142,7 @@ const TestingCart1 = () => {
               </div>
               <div className="Confirmation">
                 
-                <button disabled={totalQuantity === 0} style={{...(totalQuantity === 0 &&{ opacity: 0.3, border: '1px solid #2F455C', borderRadius: 4 })}} className="ProceedArrow" onClick={handleNextClick}>
+                <button disabled={totalQuantity === 0} style={{...(totalQuantity === 0 &&{ opacity: 0.3, border: '0px solid #2F455C', borderRadius: 4 })}} className="ProceedArrow" onClick={handleNextClick}>
                   <h5>Confirm Your Order</h5>
                   <svg
                     // color="White"
