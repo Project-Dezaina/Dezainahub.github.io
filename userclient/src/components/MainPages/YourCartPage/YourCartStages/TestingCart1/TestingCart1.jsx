@@ -17,61 +17,7 @@ export const CartContext = createContext();
 
 const TestingCart1 = () => {
   const [items, setItems] = useState(TestingCartItem);
-  // const items = useContext(CartContext)
-  // useEffect(()=>{
-  //   dispatch({type:"GET_TOTAL"})
-  // }, [state.item])
-
-  // const totalPrice = () => {
-
-    // item.id*
-    
-    // price = {price};
-    // cartTotal= 0 ;
-    // for(var i = 0; i <= items.id; i++)
-    // {
-    //     cartTotal += price[i];
-    // }
-    // cartTotal = cartTotal;  
-  // }
-
-
-  // const [totalPrice, setTotalPrice] = useState(0);
-
-  // const handleQuantityChange = (itemId, newQuantity) => {
-  //   const newItems = items.map((item) => {
-  //     if (item.id === itemId) {
-  //       return {
-  //         ...item,
-  //         quantity: newQuantity,
-  //       };
-  //     }
-  //     return item;
-  //   });
-  //   setItems(newItems);
-  //   calculateTotalPrice(newItems);
-  // };
-
-  // const calculateTotalPrice = (items) => {
-  //   const totalPrice = items.reduce((total, item) => {
-  //     return total + item.price * item.quantity;
-  //   }, 0);
-  //   setTotalPrice(totalPrice);
-  // };
-
-  //   const CalculatePrice = (items) => {
-  //     const TIPrice = items.reduce((item) => {
-  //         for (i = 0; i <= item.quantity; i++) {
-              // text += cars[i] + "<br>";
-              // quant =
-        //     }
-        // }, 0);
-        // return TIPrice;
-      // for (i = 0; i <= item.quantity; i++) {
-          // text += cars[i] + "<br>";
-
-      //   }
-    // }
+  
 
   const { setStep, currentStep,state } = useContext(multiStepContactContext);
 
@@ -88,24 +34,7 @@ const TestingCart1 = () => {
     setCounter(counter + 1);
   };
   const handleSub = () => {
-    // const newItems = items.map(item => {
-    //     // if (item.id === Pid) {
-
-    //     //     if(item.counter>1){
-    //     //           setCounter(counter-1)
-    //     //         }
-    //     //         else{
-    //     //           setCounter(counter)
-    //     //         }
-    //     //   }
-    //     if(item.counter>1){
-    //           setCounter(item.counter-1)
-    //         }
-    //         else{
-    //           setCounter(item.counter)
-    //         }
-    //     return item.counter;
-    //   });
+   
     if (counter > 1) {
       setCounter(counter - 1);
     } else {
@@ -113,23 +42,7 @@ const TestingCart1 = () => {
     }
   };
 
-  //   const CartCards = [
-  //     {
-  //       // id: ,
-  //       Image: PosterImg,
-  //       Quantity: counter,
-  //       title: "Poster",
-  //       Price: 500,
-  //       text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  //     },
-  //     {
-  //       Image: BannerImg,
-  //       Quantity: counter,
-  //       title: "Banner",
-  //       Price: 300,
-  //       text: "1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  //     },
-  //   ];
+ 
 
   const getTotal = () => {
     return state?.items?.reduce((result, item ) => {
@@ -219,72 +132,7 @@ const TestingCart1 = () => {
           </div>
           <div className="CartContent1">
             <div className="Item-Details">
-              {/* {items.map((item, i) => (
-                <div key={item.id} className="Item1">
-                  <div className="ImageBg">
-                    <img src={item.Image} alt="" />
-                  </div>
-                  <div className="Cart-Item-Content">
-                    <div className="CartDetails">
-                      <h4>{item.name}</h4>
-                      <p>{item.text}</p>
-                       </div>
-                    <button className="AddMore">+Add More</button>
-
-                    <div className="QuantityContainer">
-                      <div className="QuantityBox">
-                        <h6>Quantity</h6>
-                        <div className="QuantityButton">
-                          <button type="button" id="QuantButt">
-                            
-                          </button>
-                          <h6>
-                            <input
-                              className="QuantityButton"
-                              type="number"
-                              min="0"
-                              value={item.quantity}
-                              onChange={(e) =>
-                                handleQuantityChange(item.id, e.target.value)
-                              }
-                            />
-                          </h6>
-                          <button id="QuantButt">
-                            
-                          </button>
-                        </div>
-                      </div>
-                      <div className="PriceBox">
-                        <h6>Total Value</h6>
-                        <div className="TotalPricing">
-                          <h6>{item.price * item.quantity}</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="Delete-Button">
-                    <button class="DeleteSVG" 
-                    // onClick={RemoveItem(id)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 20 20"
-                        height="25"
-                        width="25"
-                      >
-                        <path
-                          fill="#6361D9"
-                          d="M8.78842 5.03866C8.86656 4.96052 8.97254 4.91663 9.08305 4.91663H11.4164C11.5269 4.91663 11.6329 4.96052 11.711 5.03866C11.7892 5.11681 11.833 5.22279 11.833 5.33329V5.74939H8.66638V5.33329C8.66638 5.22279 8.71028 5.11681 8.78842 5.03866ZM7.16638 5.74939V5.33329C7.16638 4.82496 7.36832 4.33745 7.72776 3.978C8.08721 3.61856 8.57472 3.41663 9.08305 3.41663H11.4164C11.9247 3.41663 12.4122 3.61856 12.7717 3.978C13.1311 4.33745 13.333 4.82496 13.333 5.33329V5.74939H15.5C15.9142 5.74939 16.25 6.08518 16.25 6.49939C16.25 6.9136 15.9142 7.24939 15.5 7.24939H15.0105L14.2492 14.7095C14.2382 15.2023 14.0377 15.6726 13.6883 16.0219C13.3289 16.3814 12.8414 16.5833 12.333 16.5833H8.16638C7.65805 16.5833 7.17054 16.3814 6.81109 16.0219C6.46176 15.6726 6.2612 15.2023 6.25019 14.7095L5.48896 7.24939H5C4.58579 7.24939 4.25 6.9136 4.25 6.49939C4.25 6.08518 4.58579 5.74939 5 5.74939H6.16667H7.16638ZM7.91638 7.24996H12.583H13.5026L12.7536 14.5905C12.751 14.6158 12.7497 14.6412 12.7497 14.6666C12.7497 14.7771 12.7058 14.8831 12.6277 14.9613C12.5495 15.0394 12.4436 15.0833 12.333 15.0833H8.16638C8.05588 15.0833 7.94989 15.0394 7.87175 14.9613C7.79361 14.8831 7.74972 14.7771 7.74972 14.6666C7.74972 14.6412 7.74842 14.6158 7.74584 14.5905L6.99681 7.24996H7.91638Z"
-                          clip-rule="evenodd"
-                          fill-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                    <button className="DeleteBtn">Delete Item</button>
-                  </div>
-                </div>
-              ))} */}
+              
               {state?.items?.map((item, i) => { 
                 return <ItemCard key={item.id} {...item}/>
               })}
@@ -293,26 +141,7 @@ const TestingCart1 = () => {
                 <h5>{getTotal()}/-</h5>
               </div>
               <div className="Confirmation">
-                {/* <button className="BackArrows" onClick={handlePrevClick} >
-                    <svg
-                      width="39"
-                      height="32"
-                      viewBox="0 0 39 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.5289 7.73853L5.67877 15.6597L15.5289 23.5808M33.2656 15.6597H5.95464"
-                        stroke="#2F455C"
-                        stroke-width="3"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-
-                    <h4>Back</h4>
-                  </button> */}
+                
                 <button disabled={totalQuantity === 0} style={{...(totalQuantity === 0 &&{ opacity: 0.3, border: '1px solid #2F455C', borderRadius: 4 })}} className="ProceedArrow" onClick={handleNextClick}>
                   <h5>Confirm Your Order</h5>
                   <svg

@@ -565,6 +565,8 @@
 
 @media screen and (max-width: 900px) {
     .YourCartMainPage{
+        position: relative;
+        left: -12rem;
         margin-top: 5rem;
         font-family: "Montserrat";
         
@@ -611,6 +613,9 @@
                     
                     .CartContent1{
                         .Item-Details{
+                            display: grid;
+                            grid-template-rows: column;
+
                             .SubTotal{
                                 gap:10rem;
                                 width: 26rem;
@@ -623,6 +628,7 @@
                             }
                             
                             .Confirmation{
+                                position: relative;
                                 gap: 9rem;
                                 .BackArrows , .ProceedArrow{
                                     gap: 1rem;
