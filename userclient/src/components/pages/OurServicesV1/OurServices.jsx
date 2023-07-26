@@ -6,7 +6,7 @@ const OurServices = () => {
   return (
     <div>
       <div className="ourServices-container ">
-        <div className="container" data-aos="fade-down">
+        <div className="InnerServices-container container" data-aos="fade-down">
           <div className="Service-sec">
             <div>
               <h4> Services </h4>

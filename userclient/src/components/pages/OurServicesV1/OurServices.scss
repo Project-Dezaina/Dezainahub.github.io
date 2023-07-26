@@ -180,10 +180,13 @@
   .ourServices-container {
     padding: 3rem;
     margin: 5vh;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     width: 30rem;
+    .InnerServices-container {
+      display: flex;
+      flex-direction: column;
+
+    
     .Service-sec {
       margin-right: 0px;
       // display: flex;
@@ -193,48 +196,55 @@
       
   
           h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        width: 20rem;
+        // width: 100%;
         
       
     }
-    .service-content {
-      display:flex ;
-      flex-direction: column;
-      margin-top: 3rem;
+   
+  }
+  .service-content {
+    flex-direction: column !important;
+    margin-top: 3rem;
+    // border: 5px solid red;
+    
+    gap: 3rem;
+    text-align: center;
+
+    // .service1-side,
+    // .service2-side {
+    //   gap: 3rem;
       
-      gap: 3rem;
-      // place-content: center;
-      // place-items: center;
+      
+    //   .Content {
+    //     gap: 0.5rem;
+    //     align-items: center;
+    //   }
+    // }
+
+    .icon1 {
       text-align: center;
-
-      .service1-side,
-      .service2-side {
-        gap: 3rem;
-        
-        
-        .Content {
-          gap: 0.5rem;
-          align-items: center;
-        }
+      svg {
+        // position: relative;
+        // display: flex;
+        // border: 2px solid red;
+        align-content: center;
+        height: 40px !important;
+        width: 40px !important;
       }
+    }
 
-      .icon1 {
-        svg {
-          height: 40px !important;
-          width: 40px !important;
-        }
+    .service-head-content {
+      p {
+        font-size: 0.6rem;
       }
-
-      .service-head-content {
-        p {
-          font-size: 0.6rem;
-        }
-        .Services-button {
-          padding-left: 25%;
-        }
+      .Services-button {
+        padding-left: 25%;
       }
     }
   }
 }
 
+}
 }
