@@ -32,9 +32,10 @@ const ContactUSContext = () => {
   //   value = e.target.value;
   //   setContactData({ ...yname, [yname]: value });
   // };
-  const handleInputs = (e) => {
+  // const handleInputs = (e) => {
+    const handleContactus = (e) => {
     console.log(e);
-    Fname = e.target.name;
+    Fname = e.target.Fname;
     value = e.target.value;
 
     setContactData({ ...Fname, [Fname]: value });
