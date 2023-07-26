@@ -137,6 +137,10 @@ const TestingCart1 = () => {
     }, 0);
   }
 
+  const totalQuantity = state?.items?.reduce((result,item) => {
+    return result + item?.quantity;
+  }, 0)
+
 
   return (
     <div className="YourCartMainPage">
@@ -309,7 +313,7 @@ const TestingCart1 = () => {
 
                     <h4>Back</h4>
                   </button> */}
-                <button className="ProceedArrow" onClick={handleNextClick}>
+                <button disabled={totalQuantity === 0} style={{...(totalQuantity === 0 &&{ opacity: 0.3, border: '1px solid #2F455C', borderRadius: 4 })}} className="ProceedArrow" onClick={handleNextClick}>
                   <h5>Confirm Your Order</h5>
                   <svg
                     // color="White"
