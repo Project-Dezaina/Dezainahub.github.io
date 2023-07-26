@@ -40,7 +40,7 @@
       background-color: #f0f2f4;
 
       border-radius: 50px;
-      min-height: 37rem;
+      min-height: 40rem;
       min-width: 33rem;
       display: flex;
       //  align-items: center;
@@ -103,30 +103,40 @@
   }
   button {
     margin-top: 0.5rem;
-    font-size: 17px;
-    padding: 0.5em 2em;
+    padding: 0.2em 2em;
     border: transparent;
     background: #4bace0;
     color: white;
     border-radius: 0.6em;
     width: 20rem;
   }
+  .NextStateButton{
+    width: 10rem;
+    font-size: 1rem !important;
+  }
 }
 @media screen and (max-width: 900px) {
   .ContactUsContainer {
+    margin-top: 5rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  position: relative;
+  left: -1.5rem !important;
   font-family: "Montserrat";
   padding: 0rem 0rem 0rem 0rem;
  place-content: center !important;
  place-items: center !important;
 
   .ContactBio {
-    width:23rem;
+    text-align: center;
+    // display: flex;
+    position: relative;
+    left: -3.05rem;
+    width: 30rem;
     
     
    
@@ -134,6 +144,7 @@
     // padding: 0 0 0 10rem;
 
     h3 {
+      // width: 100%;
       color: #4bace0;
       font-weight: bold;
       place-content: center;
@@ -144,24 +155,26 @@
       color: #2f455c;
       font-size: 20px;
       font-weight: bold;
-      width: 23rem;
+      width: 100%;
       span{
         color: #4bace0;
       }
     }
     p {
-      width: 23rem;
+      width: 100%;
     }
   }
   .ContactForm {
     width: 30%;
     gap: 10rem;
+    // padding-top: 5rem;
+    // padding: 5rem auto !important;
     margin-right: 20rem;
 
     .ContactFormContainer {
       background-color: #f0f2f4;
       border-radius: 50px;
-      min-height: 30rem; 
+      min-height: 40rem; 
       display: flex;
       place-items: center;
       .contactforminputboxBody {
