@@ -9,25 +9,32 @@ import GalleryLandingImg from "./Image/9.jpg"
 const GalleryPage = () => {
   const CardImg = [
     {
+      "CardImg":"https://heyzine.com/flip-book/5c5560b9f6.html"
+
+    },
+    {
       "id":"1",
       "Title":"this is title",
       "CardImg":"https://heyzine.com/flip-book/1ec8079ab0.html"
 
     },
+    
     {
-      "CardImg":"https://heyzine.com/flip-book/5c5560b9f6.html"
+      "CardImg": "https://heyzine.com/flip-book/e6241a10c3.html"
 
     },
     {
-      "CardImg":"https://heyzine.com/flip-book/5c5560b9f6.html"
+      "CardImg":
+        
+    "https://heyzine.com/flip-book/21866d6505.html"
+                        
+  
 
     },
     {
-      "CardImg":"https://heyzine.com/flip-book/5c5560b9f6.html"
-
-    },
-    {
-      "CardImg":"https://heyzine.com/flip-book/5c5560b9f6.html"
+      "CardImg":
+     "https://heyzine.com/flip-book/573aed76dd.html"
+  
 
     }
     
@@ -55,13 +62,13 @@ const GalleryPage = () => {
         </div>
 
         <div className="GalleryPatti">
-      <button>Business Card</button> 
-      <button>Posters</button> 
-      <button>Banners</button> 
-      <button>Logo</button> 
-      <button>Web UI</button> 
-      <button>Rendering</button> 
-      <button>Social Media Post</button> 
+      {/* <button>Business Card</button>  */}
+      <button>Magazine</button> 
+      <button>Graphic Novel</button> 
+      <button>Pitch Deck</button> 
+      {/* <button>Rendering</button>  */}
+      <button>Illustrations</button> 
+      <button>Table Menu</button> 
 
 
 
