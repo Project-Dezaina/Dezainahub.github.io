@@ -1,21 +1,39 @@
 export const reducer = (state, action) => {
+  if(action.type === 'DELETE_ITEM') {
+    return {
+      ...state,
+      items: state?.items?.map(item => {
+        if(item.id === action.payload) 
+          return { ...item, quantity: 0 }
+
+        return item;
+      })
+    }
+  }
+
   if (action.type == "REMOVE_ITEM") {
     return {
       ...state,
-      items: state.items.filter((item) => {
-        return item.id !== action.payload;
-      }),
+      items: state?.items?.map(item => {
+        const quantity = item.quantity;
+
+        if(item.id === action.payload) 
+          return { ...item, quantity: quantity === 0 ? 0: quantity - 1 }
+
+        return item;
+      })
     };
   }
 
   if (action.type == "INCREMENT") {
-    let updatedCart = state.item.map((item) => {
+
+    let updatedCart = state.items?.map((item) => {
       if (item.id == action.payload) {
         return { ...item, quantity: item.quantity + 1 };
       }
       return item;
     });
-    return { ...state, item: updatedCart };
+    return { ...state, items: updatedCart };
   }
 
   if(action.type=="GET_TOTAL"){
