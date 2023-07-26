@@ -31,6 +31,9 @@
   flex-direction: row;
   gap: 1rem;
 }
+.LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons a {
+  text-decoration: none;
+}
 .LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .discuss-button {
   position: relative;
   margin: 0;
@@ -53,15 +56,24 @@
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
+.LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .discuss-button a {
+  text-decoration: none;
+}
 .LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .discuss-button Link {
   color: white !important;
   outline: none !important;
   text-decoration: none !important;
 }
+.LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .discuss-button Link a {
+  text-decoration: none;
+}
 .LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .discuss-button Link span {
   color: white !important;
   outline: none !important;
   text-decoration: none !important;
+}
+.LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons .discuss-button Link a {
+  text-decoration: none;
 }
 .LandingPageMainComponents .landingPageContainer .Landing-Content .landing-buttons #discuss-button {
   color: white !important;

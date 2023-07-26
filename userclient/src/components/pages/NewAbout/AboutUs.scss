@@ -106,7 +106,8 @@
             margin: 0;
             padding: 1em 2em;
             outline: none;
-            text-decoration: none;
+            text-decoration: none !important;
+          
             display: flex;
             justify-content: center;
             align-items: center;
@@ -194,10 +195,21 @@
     flex-direction: column;
     margin-top: 2rem;
     .abt-img {
+      .AboutImgBackShadow{
+        height: 26rem;
+        width: 20rem;
+        transform: rotate(-14deg);
+        z-index: -1;
+        border-radius: $PrimaryBorderRadius;
+        background-color:$thirdcolor;
+        position: absolute;
+        top: -2.9rem;
+        left: -1.3rem;
+      }
       img {
         width: 20rem;
         height: 25rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
       }
       .about-float-window {
         top: 13rem;
@@ -208,7 +220,7 @@
         .about-float-icon {
           padding-top: 0.7rem;
           text-align: center;
-          margin-left: 0rem;
+          margin-left: 1rem;
         }
 
         .about-float-window-content {
@@ -227,21 +239,26 @@
       place-items: center;
 
       // margin-left: 0px !important;
-      h6 {
+      h4 {
         font-size: 1rem;
       }
       h1 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 32rem;
+        
       }
       p {
-        font-size: 1rem;
+        font-size: .8rem;
         width: 30.5rem;
       }
       .aboutUs-button{
+        
+        
         button{
-            font-size: 13px;
+            font-size: 11px;
+            height: 2.5rem;
+            width: 8rem;
             // background-color: red;
         }
       }

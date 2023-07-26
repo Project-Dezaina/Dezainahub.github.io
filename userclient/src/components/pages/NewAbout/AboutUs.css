@@ -99,7 +99,7 @@
   margin: 0;
   padding: 1em 2em;
   outline: none;
-  text-decoration: none;
+  text-decoration: none !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,10 +171,21 @@
     flex-direction: column;
     margin-top: 2rem;
   }
+  .aboutUsImageSec .abt-img .AboutImgBackShadow {
+    height: 26rem;
+    width: 20rem;
+    transform: rotate(-14deg);
+    z-index: -1;
+    border-radius: 1.2em;
+    background-color: #F5F5F5;
+    position: absolute;
+    top: -2.9rem;
+    left: -1.3rem;
+  }
   .aboutUsImageSec .abt-img img {
     width: 20rem;
     height: 25rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .aboutUsImageSec .abt-img .about-float-window {
     top: 13rem;
@@ -185,7 +196,7 @@
   .aboutUsImageSec .abt-img .about-float-window .about-float-icon {
     padding-top: 0.7rem;
     text-align: center;
-    margin-left: 0rem;
+    margin-left: 1rem;
   }
   .aboutUsImageSec .abt-img .about-float-window .about-float-window-content {
     width: 8rem;
@@ -200,19 +211,21 @@
     margin: 3rem auto 5rem -4.3rem;
     place-items: center;
   }
-  .aboutUsImageSec .About-Content h6 {
+  .aboutUsImageSec .About-Content h4 {
     font-size: 1rem;
   }
   .aboutUsImageSec .About-Content h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 32rem;
   }
   .aboutUsImageSec .About-Content p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 30.5rem;
   }
   .aboutUsImageSec .About-Content .aboutUs-button button {
-    font-size: 13px;
+    font-size: 11px;
+    height: 2.5rem;
+    width: 8rem;
   }
 }/*# sourceMappingURL=AboutUs.css.map */

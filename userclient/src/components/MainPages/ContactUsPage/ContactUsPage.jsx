@@ -75,19 +75,19 @@ const ContactUsPage = () => {
   let Fname, value;
   const [contactdata, setContactData] = useState([]);
   console.log(contactdata)
-  const handlecontactus = (e) => {
+  const handleContactUs = (e) => {
     console.log(e);
     Fname = e.target.Fname;
     value = e.target.value;
     setContactData({ ...Fname, [Fname]: value });
   };
-  const handleInputs = (e) => {
-    console.log(e);
-    Fname = e.target.name;
-    value = e.target.value;
+  // const handleInputs = (e) => {
+  //   console.log(e);
+  //   Fname = e.target.name;
+  //   value = e.target.value;
 
-    setContactData({ ...Fname, [Fname]: value });
-  };
+  //   setContactData({ ...Fname, [Fname]: value });
+  // };
   function checkboxChecked() {
     return (
     //   <div>
