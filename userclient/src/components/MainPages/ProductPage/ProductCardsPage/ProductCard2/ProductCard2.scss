@@ -26,7 +26,7 @@
         color: $secondarycolor;
         .CardHead{
             display: flex;
-            gap: 6rem;
+            gap: 1.5rem !important;
             flex-direction: row;
             place-items: center;
 
@@ -40,6 +40,11 @@
             // font-size: 2rem !important;
 
             // height: 2rem;
+            h3{
+                width: 12rem;
+                font-size: 1.3rem;
+                font-weight: 500 !important;
+            }
         }
         .ProductSVG{
             background-color: $secondarycolor;
