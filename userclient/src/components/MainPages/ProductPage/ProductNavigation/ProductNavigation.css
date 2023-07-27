@@ -2,7 +2,7 @@
   margin-top: 0rem;
   background-color: #2F455C;
   display: flex;
-  gap: 5rem;
+  gap: 10rem;
   padding: 1.5rem;
   place-content: center;
 }
@@ -10,11 +10,13 @@
   font-size: 1rem !important;
   cursor: pointer;
 }
-.ProductNavigation a:hover {
-  font-size: 2rem !important;
-}
 .ProductNavigation a h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
   color: #fff !important;
+}
+.ProductNavigation a a:hover {
+  font-size: 2rem !important;
 }
 
 @media screen and (max-width: 900px) {

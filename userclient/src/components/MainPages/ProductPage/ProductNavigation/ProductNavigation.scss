@@ -5,19 +5,22 @@
 
     background-color: $secondarycolor;
     display: flex;
-    gap: 5rem;
+    gap: 10rem;
     padding: 1.5rem;
     place-content: center;
     a{
-        &:hover{
-        font-size: 2rem !important;
-        }
+        
         font-size: 1rem !important;
         cursor: pointer;
         h6{
+            font-size: 1.2rem;
+            font-weight: 700;
             color: #fff !important;
 
         }
+        a:hover{
+            font-size: 2rem !important;
+            }
     }
 }
 
