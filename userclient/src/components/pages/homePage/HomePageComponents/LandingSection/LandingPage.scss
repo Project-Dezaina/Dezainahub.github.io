@@ -310,6 +310,8 @@
 
 @media screen and (max-width: 900px) {
   .LandingPageMainComponents {
+    position: relative;
+    top: -10rem;
     .landingPageContainer {
       flex-direction: column-reverse;
       .Landing-Content {

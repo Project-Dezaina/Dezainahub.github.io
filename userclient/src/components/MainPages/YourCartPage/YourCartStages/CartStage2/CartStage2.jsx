@@ -97,6 +97,7 @@ const getTotal = () => {
             <h3>Review Your Cart</h3>
           </div>
           <div className="CartContent1">
+          <form>
             <div className="Item-Details">
               {state?.items?.filter(item => item.quantity > 0).map((card) => (
                 <div key={card.id} className="Item1">
@@ -210,6 +211,7 @@ const getTotal = () => {
                 </button>
               </div>
             </div>
+            </form>
           </div>
         </div>
       </div>
