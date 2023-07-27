@@ -5,13 +5,13 @@ const ProductNavigation = () => {
     return (
         <div className="ProductNavigation">
               <div>
-                <a><h6>Corporate Branding</h6></a>
+                <a><h6>Impactful</h6></a>
               </div>
               <div>
-                <a><h6>Advertising Content</h6></a>
+                <a><h6>Professional</h6></a>
               </div>
               <div>
-                <a><h6>Corporate Branding</h6></a>
+                <a><h6>Elegant</h6></a>
               </div>
             </div>
     )

@@ -37,10 +37,9 @@ const ProductPage = () => {
                 <div className="PageCards" data-aos="fade-right" id="PageCard1">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard1">
-                    <h3>Click on Learn More</h3>
+                    <h3>Login</h3>
                     <p>
-                      Read how some proficient designs can help your business
-                      become more efficient
+                    We take the security of your data seriously. Rest assured that all your personal information is encrypted and safeguarded to provide you with a worry-free experience.
                     </p>
                     <div className="ProgressBar">
                       <div className="ProgressBarContent">
@@ -69,10 +68,9 @@ const ProductPage = () => {
                 <div className="PageCards" data-aos="fade-down"id="PageCard2">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard2">
-                    <h3>Click on Learn More</h3>
+                    <h3>Add to Cart</h3>
                     <p>
-                      Read how some proficient designs can help your business
-                      become more efficient
+                    Want to explore more? Click the "Continue Shopping" button to return to the website and add more items to your cart.
                     </p>
                     <div className="ProgressBar">
                       <div className="ProgressBarContent">
@@ -101,10 +99,9 @@ const ProductPage = () => {
                 <div className="PageCards" data-aos="fade-down" id="PageCard3">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard3">
-                    <h3>Click on Learn More</h3>
+                    <h3>Place Order</h3>
                     <p>
-                      Read how some proficient designs can help your business
-                      become more efficient
+                    Before proceeding, take a moment to review the items in your shopping cart. Ensure that the quantities, colors, sizes, and any other options are correct.
                     </p>
                     <div className="ProgressBar">
                       <div className="ProgressBarContent">
@@ -133,10 +130,9 @@ const ProductPage = () => {
                 <div className="PageCards" data-aos="fade-left" id="PageCard4">
                   <div className="CardBackShadow"></div>
                   <div className="PageSubCard1" id="Subcard4">
-                    <h3>Click on Learn More</h3>
+                    <h3>Connect with Designer</h3>
                     <p>
-                      Read how some proficient designs can help your business
-                      become more efficient
+                    Visit our "Contact Us" page, where you'll find a user-friendly contact form. Fill in your name, email address, subject, and a brief message detailing your design requirements or questions.
                     </p>
                     <div className="ProgressBar">
                       <div className="ProgressBarContent">

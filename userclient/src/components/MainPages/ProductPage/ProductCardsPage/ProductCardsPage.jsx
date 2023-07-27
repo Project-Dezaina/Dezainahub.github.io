@@ -12,8 +12,8 @@ const ProductCardsPage = () => {
                 {/* <ProductCards /> */}
                 {/* <TestProductCards1/> */}
                 <ProductCard2 />
-                <ProductCard3 />
-                <Product4Cards/>
+                {/* <ProductCard3 /> */}
+                {/* <Product4Cards/> */}
 
     </div>
   )
